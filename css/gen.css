@@ -3,20 +3,7 @@ html{min-height: 100%;}
 body{width: 100%; overflow-x:hidden; margin: 0%;background-color:#1c1c1c}
 #page{background-color: white;min-height: 100%;}
 .blackbackground {background-color: black;}
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-.navbutton{margin-top: 15px;}
-/*-----Nav-Button---*/
-#navbar{background-color: #d4d6d8; height: 70px; border-color: transparent; margin-bottom: 0px; border-radius: 0px;}
-.navbutton {display: inline-block;position:relative;overflow:hidden;text-transform: capitalize;}
-=======
-=======
 .whitebackground{background-color: white;}
->>>>>>> f66cc78... Website Complete Overhaul
-=======
-.whitebackground{background-color: white;}
->>>>>>> d92c9034cbe3ae795c01d7fd2a3cbad6649c7769
 
 /*-----Nav-Button & Nav-Bar---*/
 #navbar{background-color: white; height: 70px; border-color: transparent; margin-bottom: 0px; border-radius: 0px;overflow: hidden;}
@@ -26,30 +13,11 @@ body{width: 100%; overflow-x:hidden; margin: 0%;background-color:#1c1c1c}
 }
 #blacknav h4{font-weight: 900;}
 .navbutton {text-align: left;display: inline-block;position:relative;overflow:hidden;color: black;text-transform: capitalize;margin-top: 15px;}
-<<<<<<< HEAD
->>>>>>> 76bbdb9... Design Page
-.navbutton:hover{color: crimson;text-decoration: none;}
-.navbutton:before {content: "";position: absolute;width: 0;background : crimson;left: 45%;height: 2px;bottom: 0;transition: all .3s;}
-.navbutton:hover:before {width: 100%;left:0;}
-.white{color: white}.black{color: #1c1c1c; font-size: 20px;}.font{font-family: 'Quattrocento Sans', sans-serif;}
-.navbutton {text-align: left;display: inline-block;position:relative;overflow:hidden;color: black;}
-.navbutton:hover{color: crimson;}
-.navbutton:before {content: "";position: absolute;width: 0;background : crimson;left: 45%;height: 2px;bottom: 0;transition: all .3s;}
-<<<<<<< HEAD
-<<<<<<< HEAD
-.navbutton:hover:before {width: 100%;left:0;}
-=======
-=======
-.navbar{margin: 0px;}
-.navbar img{padding-left: 0px;}
->>>>>>> 60f0310... Small Fixes
-=======
 .navbutton:hover{color: crimson;text-decoration: none;}
 .navbutton:hover:before {width: 100%;left:0;}
 .navbutton:before {content: "";position: absolute;width: 0;background : crimson;left: 45%;height: 2px;bottom: 0;transition: all .3s;}
 .navbar{margin: 0px;}
 .navbar img{padding-left: 0px;}
->>>>>>> d92c9034cbe3ae795c01d7fd2a3cbad6649c7769
 
 /* Generic Colors for Text*/
 .white{color: white}
@@ -58,113 +26,16 @@ body{width: 100%; overflow-x:hidden; margin: 0%;background-color:#1c1c1c}
 
 /* Font Call Class*/
 .font{font-family: 'Quattrocento Sans', sans-serif;}
-<<<<<<< HEAD
-<<<<<<< HEAD
-.fontTitle{}
->>>>>>> 73da3fc... Tekton Logo
-.blackhr {background-color: #1c1c1c;height: 1px;opacity: .5;}
-#footer{background-color: #1c1c1c;height: 50px;z-index: 1};
-=======
-=======
->>>>>>> d92c9034cbe3ae795c01d7fd2a3cbad6649c7769
 
 
 
 /*----Footer-----*/
-<<<<<<< HEAD
-<<<<<<< HEAD
-#footer{background-color: #1c1c1c;height: 50px;z-index: 1;width: 100%;}
->>>>>>> f66cc78... Website Complete Overhaul
-=======
-#footer{background-color: #1c1c1c;height: 10vh;z-index: 1;width: 100%;}
->>>>>>> 2f06e46... Intsa Add
-#footer a{text-decoration: none;color: white;}
-#footer h3{text-decoration: none;color: white;}
-#footer h3:hover{text-decoration: none;color: crimson;}
-<<<<<<< HEAD
-.style{text-decoration: none;color: inherit;}.style:hover{text-decoration: none;color: inherit;}.style:active{text-decoration: none;color: inherit;}
-.navbutton {text-align: left;display: inline-block;position:relative;overflow:hidden;color: black;}
-.navbutton:hover{color: crimson;}
-.navbutton:before {content: "";position: absolute;width: 0;background : crimson;left: 45%;height: 2px;bottom: 0;transition: all .3s;}
-.navbutton:hover:before {width: 100%;left:0;}
-#blacknav{color: black; padding-top: 0px; padding-bottom: 0px; padding-left: 13px; padding-right: 13px;}
-.copyright{font-size: 20px; margin-top: 15px; margin-bottom: 3px;}
-#fb{margin-top: 3px;}
-#footer{position: relative;bottom: 0;width: 100%;}
-<<<<<<< HEAD
-.background{background-color: #d4d6d8;}
-=======
-.background{background-color: white;}
-
-
-.container-fluid {
-    padding-right:0;
-    padding-left:0;
-    margin-right:auto;
-    margin-left:auto;
-    overflow: hidden;
- }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-=======
-.copyright{font-size: 20px; margin-top: 15px; margin-bottom: 3px;}
-#fb{margin-top: 3px;}
->>>>>>> f66cc78... Website Complete Overhaul
-=======
 #footer{background-color: #1c1c1c;height: 10vh;z-index: 1;width: 100%;}
 #footer a{text-decoration: none;color: white;}
 #footer h3{text-decoration: none;color: white;font-weight: 900;}
 #footer h3:hover{text-decoration: none;color: crimson;}
 .copyright{font-size: 20px; margin-top: 15px; margin-bottom: 3px;}
 #fb{margin-top: 3px;}
->>>>>>> d92c9034cbe3ae795c01d7fd2a3cbad6649c7769
 
 .container-fluid{padding-right:0px;padding-left:0;margin-right:auto;margin-left:auto;overflow: hidden;}
 .navbar-right{margin-right:15px;}
@@ -173,12 +44,6 @@ a:link {text-decoration: none;}a:visited {text-decoration: none;}a:hover {text-d
 
 .main-title{font-weight: 900;font-size: 5em;margin-top: 60%;}
 
-<<<<<<< HEAD
-<<<<<<< HEAD
->>>>>>> 76bbdb9... Design Page
-=======
-=======
->>>>>>> d92c9034cbe3ae795c01d7fd2a3cbad6649c7769
 @media screen and (max-width: 991px) {
     .main-title {font-size: 3em; margin: 55% 0%;}
     .copyright{margin-bottom: 0px;}
@@ -189,12 +54,6 @@ a:link {text-decoration: none;}a:visited {text-decoration: none;}a:hover {text-d
     .navbar-header{padding-left: 10px; padding-right: 10px;}
     .whitebackground{padding-bottom: 27%;}
 }
-<<<<<<< HEAD
-<<<<<<< HEAD
->>>>>>> f66cc78... Website Complete Overhaul
-=======
-=======
->>>>>>> d92c9034cbe3ae795c01d7fd2a3cbad6649c7769
 
 /* Navbar Attributes */
 /* width */
@@ -204,16 +63,4 @@ a:link {text-decoration: none;}a:visited {text-decoration: none;}a:hover {text-d
 ::-webkit-scrollbar-track {background: transparent;}
 
 /* Handle */
-<<<<<<< HEAD
-<<<<<<< HEAD
-::-webkit-scrollbar-thumb {
-    background: crimson;
-    border-radius: 10px;
-}
->>>>>>> 2f06e46... Intsa Add
-=======
 ::-webkit-scrollbar-thumb {background: crimson;border-radius: 10px;}
->>>>>>> 60f0310... Small Fixes
-=======
-::-webkit-scrollbar-thumb {background: crimson;border-radius: 10px;}
->>>>>>> d92c9034cbe3ae795c01d7fd2a3cbad6649c7769

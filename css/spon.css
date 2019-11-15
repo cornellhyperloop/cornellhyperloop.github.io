@@ -1,25 +1,3 @@
-<<<<<<< HEAD
-<<<<<<< HEAD
-.border{border: solid white 2px;padding-bottom: 5px;}
-.border:hover{background-color: rgba(255,255,255,.5);}
-.donate{color: white;margin-top: 0px; text-align: center;}
-.donate:hover{color: white;}
-.background2{background-image: url("../images/brightSpace.jpg");background-size: cover;}
-a {text-decoration: none;} a:hover{text-decoration: none;}
-.sponHold{margin-bottom: 40px;}
-<<<<<<< HEAD
-=======
-h1 {font-weight: 900;}
-.black2{color: #1c1c1c}
-.pre-back{background: url(../images/spons1.jpg) fixed;background-size: cover;height: 100%;}
-.main-title{font-weight: 900;font-size: 5em;margin-top: 60%;}
-#images img{border-bottom: solid 5px transparent;padding-bottom: 5px;transition: 1s;}
-#images img:hover{opacity: .8;border-bottom-color: #1c1c1c;}
-
->>>>>>> eb68298... Sponser
-=======
-=======
->>>>>>> d92c9034cbe3ae795c01d7fd2a3cbad6649c7769
 html{height: 100%;width: 100%;}
 body{height: 100%;width: 100%;}
 
@@ -56,18 +34,8 @@ p  {font-size: 2.4vh}
     .tier_title {display: block;}
     .tiers_desc{white-space: pre-wrap; /* css-3 */}
 }
-<<<<<<< HEAD
-<<<<<<< HEAD
->>>>>>> f66cc78... Website Complete Overhaul
-=======
-=======
->>>>>>> d92c9034cbe3ae795c01d7fd2a3cbad6649c7769
 
 /* Seven columns bootstrap */
 @media (min-width: 768px){.seven-cols .col-md-1, .seven-cols .col-sm-1,.seven-cols .col-lg-1  {width: 100%;*width: 100%;}}
 @media (min-width: 992px) {.seven-cols .col-md-1,.seven-cols .col-sm-1,.seven-cols .col-lg-1 {width: 14.285714285714285714285714285714%;*width: 14.285714285714285714285714285714%;}}
 @media (min-width: 1200px) {.seven-cols .col-md-1,.seven-cols .col-sm-1,.seven-cols .col-lg-1 {width: 14.285714285714285714285714285714%;*width: 14.285714285714285714285714285714%;}}
-<<<<<<< HEAD
->>>>>>> 176e8bf... Added sponsors, made mobile-friendly
-=======
->>>>>>> d92c9034cbe3ae795c01d7fd2a3cbad6649c7769

@@ -50,15 +50,12 @@
 
 /* Mobile Sizing */
 @media only screen and (max-width: 767px){
-<<<<<<< HEAD
-=======
   .blurb-container{
     width: 80%;
     margin: 0 auto;
     padding-bottom: 2em;
   }
 
->>>>>>> d92c9034cbe3ae795c01d7fd2a3cbad6649c7769
   .navbar-container-computer{
       display: none;
   }
@@ -217,15 +214,9 @@
 
   .page-content{
     width: 100%;
-<<<<<<< HEAD
-    height: calc(100% - 72px);
-    display: inline-flex;
-    flex-direction: column;
-=======
     height: calc(100vh - 50px);
     flex-direction: column;
     
->>>>>>> d92c9034cbe3ae795c01d7fd2a3cbad6649c7769
   }
 
   .heading{
@@ -240,21 +231,14 @@
 
 /* Tablet Sizing */
 @media only screen and (min-width: 768px){
-<<<<<<< HEAD
-=======
   
->>>>>>> d92c9034cbe3ae795c01d7fd2a3cbad6649c7769
 
   .navbar-container-computer{
     display: none;
   }
 
   header{
-<<<<<<< HEAD
-    height: 100px;
-=======
     height: 66px;
->>>>>>> d92c9034cbe3ae795c01d7fd2a3cbad6649c7769
     position: sticky;
     z-index: 5;
   }
@@ -306,11 +290,7 @@
   }
 
   #button-bar2{
-<<<<<<< HEAD
-    top: 30px;
-=======
     top: 28px;
->>>>>>> d92c9034cbe3ae795c01d7fd2a3cbad6649c7769
   }
   #button-bar3{
     bottom: 18px;
@@ -318,11 +298,7 @@
   
   #button-bar1-X{
     top: 18px;
-<<<<<<< HEAD
-    transform: translate(0px, 12px) rotate(135deg) scale(1.2);
-=======
     transform: translate(0px, 10px) rotate(135deg);
->>>>>>> d92c9034cbe3ae795c01d7fd2a3cbad6649c7769
   }
 
   #button-bar2-X{
@@ -333,12 +309,8 @@
 
   #button-bar3-X{
     bottom: 18px;
-<<<<<<< HEAD
-    transform: translate(0px, -12px) rotate(-135deg) scale(1.2);
-=======
     /* transform: translate(0px, -12px) rotate(-135deg) scale(1.2); */
     transform: translate(0px, -10px) rotate(-135deg);
->>>>>>> d92c9034cbe3ae795c01d7fd2a3cbad6649c7769
   }
 
 
@@ -432,13 +404,10 @@
 
 /* Desktop/Laptop Sizing */
 @media only screen and (min-width: 1024px){
-<<<<<<< HEAD
-=======
   .mobile-only{
     display: none;
   }
 
->>>>>>> d92c9034cbe3ae795c01d7fd2a3cbad6649c7769
   #navbar-container-mobile{
     display: none;
   }
@@ -688,9 +657,6 @@
     width: 95%;
     height: 95%;
   }
-<<<<<<< HEAD
-}
-=======
 }
 
 .mobile-content-image img{
@@ -732,4 +698,3 @@
   margin: 10px auto auto auto;
 }
 
->>>>>>> d92c9034cbe3ae795c01d7fd2a3cbad6649c7769

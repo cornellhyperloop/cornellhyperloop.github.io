@@ -23,12 +23,8 @@ function scrollToContainer(infoContainerKey) {
 
 // This executes once the DOM has been loaded. This selects the buttons and adds a click event listener
 // to them once it's safe to manipulate them.
-<<<<<<< HEAD
-window.onload = function () {
-=======
 function pageSpecificOnLoad() {
   console.log("sponsors window.onload()...")
->>>>>>> d92c9034cbe3ae795c01d7fd2a3cbad6649c7769
   infoContainers = {
     "sponsors": {
       "index" : 0,
@@ -44,10 +40,7 @@ function pageSpecificOnLoad() {
   };
 
   addEventListenersToLabels()
-<<<<<<< HEAD
-=======
   console.log("Adding event listeners to labels...")
->>>>>>> d92c9034cbe3ae795c01d7fd2a3cbad6649c7769
 
   infoContainerKeyInViewCache = "sponsors";
   let infoContainerKeyInViewCacheRect = document.getElementById(infoContainers[infoContainerKeyInViewCache]["infoContainerID"]).getBoundingClientRect()
@@ -66,18 +59,11 @@ function pageSpecificOnLoad() {
 
 function addEventListenersToLabels(){
   for (const key in infoContainers) {
-<<<<<<< HEAD
-    // console.log(key)
-    if (infoContainers.hasOwnProperty(key)) {
-      let label = getLabelElement(key);
-      label.addEventListener('click', function () { scrollToContainer(key); console.log("hi")} )
-=======
     console.log(key)
     if (infoContainers.hasOwnProperty(key)) {
       let label = getLabelElement(key);
       label.addEventListener('click', function () { scrollToContainer(key); 
     } )
->>>>>>> d92c9034cbe3ae795c01d7fd2a3cbad6649c7769
     }
   }
 }

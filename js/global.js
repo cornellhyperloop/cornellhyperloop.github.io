@@ -1,9 +1,6 @@
 
 mobileLimit = 767;
-<<<<<<< HEAD
-=======
 initialLoadDone = false;
->>>>>>> d92c9034cbe3ae795c01d7fd2a3cbad6649c7769
 
 pageType = {
     "index" : 0,
@@ -25,13 +22,6 @@ function getPageType(){
 pageIndex = getPageType();
 
 window.onload = function() {
-<<<<<<< HEAD
-    resizeElements();
-    // configureMobileDropdown();
-};
-
-window.onresize = resizeElements
-=======
     console.log("Global window.onload()...")
     window.addEventListener("resize",resizeElements);
     resizeElements();
@@ -44,7 +34,6 @@ window.onresize = resizeElements
 };
 
 // window.onresize = resizeElements
->>>>>>> d92c9034cbe3ae795c01d7fd2a3cbad6649c7769
 
 function handleMobileDropdownButtonClick(){
     const dropdownContainer = document.getElementsByClassName("mobile-dropdown-container")[0];
@@ -92,11 +81,7 @@ function configureMobileDropdown(){
 }
 
 function resizeElements() {
-<<<<<<< HEAD
-    console.log("Page Index: " + String(pageIndex) + " html: " + window.location.pathname );
-=======
     console.log("Resizing Elements on: Page Index: " + String(pageIndex) + " html: " + window.location.pathname );
->>>>>>> d92c9034cbe3ae795c01d7fd2a3cbad6649c7769
 
     if ([2,3,4].includes(pageIndex)){
         console.log("Resizing Page Background");
@@ -155,11 +140,6 @@ function resizePageBackground() {
 
 function resizeLandingVideo() {
     if (window.innerHeight < mobileLimit || window.innerWidth < mobileLimit){
-<<<<<<< HEAD
-        console.log("Resizing Video Aborted")
-        return
-    }
-=======
         
         console.log("Resizing Video Aborted")
         return
@@ -168,27 +148,10 @@ function resizeLandingVideo() {
         initialLoadDone = true;
         return
     }
->>>>>>> d92c9034cbe3ae795c01d7fd2a3cbad6649c7769
     const landingVideoAspectRatio = 0.5625;
     windowAspectRatio = window.innerHeight/window.innerWidth;
     // console.log("windowAspectRatio: " + String(windowAspectRatio).substring(0,4));
     // console.log("Resizing event occured: Client Aspect Ratio: " + String(windowAspectRatio));
-<<<<<<< HEAD
-    var landingVideo = document.getElementById("landing-video");
-    var page = document.getElementsByClassName("page")[0];
-    var offset;
-
-    if (windowAspectRatio < landingVideoAspectRatio){
-        console.log("Height is too small for video")
-        offset = ((window.innerWidth * landingVideoAspectRatio) - window.innerHeight)/2;
-        landingVideo.style.height = "";
-        landingVideo.style.width = String(window.innerWidth) + "px";
-        landingVideo.style.top = "-" + String(offset) + "px";
-        landingVideo.style.left = "";
-        page.style.width = String(window.innerWidth) + "px";
-        page.style.height = String(landingVideoAspectRatio * window.innerWidth) + "px";
-        // console.log("Making page height: " + String(landingVideoAspectRatio * window.innerWidth));
-=======
 
     const landingVideo = document.getElementById("landing-video");
     const page = document.getElementsByClassName("page")[0];
@@ -209,21 +172,10 @@ function resizeLandingVideo() {
         // console.log("Making page height: " + String(landingVideoAspectRatio * window.innerWidth));
         landingVideo.parentNode.style.position = "absolute"
         landingVideo.parentNode.style.top = "0px"
->>>>>>> d92c9034cbe3ae795c01d7fd2a3cbad6649c7769
     }
     else{
         console.log("Width is too small for video")
         // console.log("clientHeight: " + String(window.innerHeight))
-<<<<<<< HEAD
-        offset = (((1/ landingVideoAspectRatio) * window.innerHeight) - window.innerWidth)/2;
-        landingVideo.style.height = String(window.innerHeight) + "px";
-        landingVideo.style.width = "";
-        landingVideo.style.top = "";
-        // landingVideo.style.left = "-" + String(offset) + "px";
-        page.style.width = String((1/landingVideoAspectRatio) * window.innerHeight) + "px";
-        // console.log("Making page width: " + String((1/landingVideoAspectRatio) * window.innerHeight));
-        page.style.height = String(window.innerHeight) + "px";
-=======
         // offset = (((1/ landingVideoAspectRatio) * window.innerHeight) - window.innerWidth)/2;
         // landingVideo.style.height = String(window.innerHeight) + "px";
         // landingVideo.style.width = "";
@@ -236,7 +188,6 @@ function resizeLandingVideo() {
         landingVideo.parentNode.style.position = "inherit"
         landingVideo.parentNode.style.top = ""
 
->>>>>>> d92c9034cbe3ae795c01d7fd2a3cbad6649c7769
     }
     // 1920 x 1080
 }

@@ -1,21 +1,3 @@
-<<<<<<< HEAD
-# Project Title
-
-One Paragraph of project description goes here
-
-## Getting Started
-
-These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
-
-### Prerequisites
-
-What things you need to install the software and how to install them
-
-```
-Give examples
-```
-
-=======
 
 # Web Development Team
 Welcome to the web-dev internal site for Cornell Hyperloop! Although the team is small, it is important we stay organized and consistent throughout our development process, and this site will be updated with relevant information on how we will be executing on that goal.
@@ -124,7 +106,6 @@ Hotfixes needed:
 
 
 <!-- 
->>>>>>> d92c9034cbe3ae795c01d7fd2a3cbad6649c7769
 ### Installing
 
 A step by step series of examples that tell you how to get a development env running
@@ -195,8 +176,4 @@ This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md
 
 * Hat tip to anyone whose code was used
 * Inspiration
-<<<<<<< HEAD
-* etc
-=======
 * etc -->
->>>>>>> d92c9034cbe3ae795c01d7fd2a3cbad6649c7769
