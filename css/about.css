@@ -1,0 +1,215 @@
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+a {text-decoration: none;} a:hover {text-decoration: none;}
+<<<<<<< HEAD
+<<<<<<< HEAD
+.background{background-color: #d4d6d8;}
+.background2{background-image: url("http://i.imgur.com/eHSVOgC.jpg");background-size: cover;min-height:100%;}
+#page a:hover{color: crimson;}
+#navbar{background-color: #d4d6d8; min-width: 50%;}
+#lngtxt{margin-bottom: 40px;}
+=======
+.background2{background-image: url("../images/backgrounds/stars.jpg");background-size: cover;min-height:100%;background-position: center;}
+=======
+.background2{background-image: url("../images/backgrounds/stars.jpg");background-size: cover;min-height:100%;background-position: center;background-repeat: repeat-y;}
+>>>>>>> 2f06e46... Intsa Add
+=======
+html{height: 100%;}
+body{height: 100%;}
+a {text-decoration: none;} a:hover {text-decoration: none;}
+.background2{background-image: url("../images/backgrounds/stars.jpg");background-size: cover;min-height:100%;background-position: center;background-repeat: repeat-y;}
+>>>>>>> f7b4c81... Revert "phasing out the nav-bar"
+.pre-back{background: url(../images/backgrounds/pod%20blur.jpg) fixed;background-size: cover;height: 100%;background-position: center;}
+#page a:hover{color: crimson;}
+#lngtxt{margin-bottom: 40px; font-size: 2.3vh;}
+#page h1{font-weight: 900; font-size: 4vh}
+#page h2{font-weight: 900; font-size: 4vh}
+p  {font-size: 2.3vh}
+.insta{height: 30vh; overflow: scroll;overflow-x: hidden;margin-bottom: 10vh;}
+=======
+=======
+
+
+
+
+>>>>>>> 2fc10d8... started to create tablet sizing
+=======
+>>>>>>> c883122... new design page
+=======
+>>>>>>> d92c9034cbe3ae795c01d7fd2a3cbad6649c7769
+.page{
+    background-image: url("../images/backgrounds/stars.jpg");
+}
+.page-content{
+    height: unset;
+    color: white;
+    align-items: center;
+}
+
+<<<<<<< HEAD
+.blurb-container{
+    width: 80%;
+    padding-bottom: 2em;
+}
+>>>>>>> f40308b... about page done
+=======
+
+>>>>>>> d92c9034cbe3ae795c01d7fd2a3cbad6649c7769
+
+.blurb-container h2{
+    margin-bottom: .25em;
+}
+.blurb-container hr{
+    margin: 9px 0 9px 0;
+}
+.blurb-container p {
+    font-size: 1.3em;
+    text-indent: 2.6em;
+    line-height: 1.3em;
+    text-align: justify;
+}
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> f66cc78... Website Complete Overhaul
+=======
+
+=======
+html{
+    height: 100%;
+}
+ body{
+    height: 100%;
+}
+ a {
+    text-decoration: none;
+}
+ a:hover {
+    text-decoration: none;
+}
+ .background2{
+    background-image: url("../images/backgrounds/stars.jpg");
+    background-size: cover;
+    min-height:100%;
+    background-position: center;
+    background-repeat: repeat-y;
+}
+ .pre-back{
+    background: url(../images/backgrounds/pod%20blur.jpg) fixed;
+    background-size: cover;
+    height: 100%;
+    background-position: center;
+}
+ #page a:hover{
+    color: crimson;
+}
+ #lngtxt{
+    margin-bottom: 40px;
+     font-size: 2.3vh;
+}
+ #page h1{
+    font-weight: 900;
+     font-size: 4vh
+}
+ #page h2{
+    font-weight: 900;
+     font-size: 4vh
+}
+ p {
+    font-size: 2.3vh
+}
+ .insta{
+    height: 30vh;
+     overflow: scroll;
+    overflow-x: hidden;
+    margin-bottom: 10vh;
+}
+ @media screen and (max-width: 991px) {
+     .pre-back{
+        height: 50%;
+    }
+}
+>>>>>>> 23630f9... phasing out the nav-bar
+=======
+
+<<<<<<< HEAD
+>>>>>>> f7b4c81... Revert "phasing out the nav-bar"
+/* width */
+::-webkit-scrollbar {
+    width: 5px;
+=======
+.values-container{
+    flex-grow: initial;
+<<<<<<< HEAD
+    width: 80%;
+    justify-content: center
+>>>>>>> f40308b... about page done
+=======
+=======
+
+.values-container{
+    flex-grow: initial;
+>>>>>>> d92c9034cbe3ae795c01d7fd2a3cbad6649c7769
+    width: 100%;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+<<<<<<< HEAD
+>>>>>>> 525ad42... fixed about.html
+=======
+>>>>>>> d92c9034cbe3ae795c01d7fd2a3cbad6649c7769
+}
+
+.value{
+    display: inline-flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 50%;
+    max-width: 300px;
+    min-width: 200px;
+    padding-bottom: 30px;
+}
+
+
+.value img{
+    max-height: 125px;
+    margin: 0 auto 0 auto;
+}
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> 2f06e46... Intsa Add
+=======
+ 
+>>>>>>> 23630f9... phasing out the nav-bar
+=======
+>>>>>>> f7b4c81... Revert "phasing out the nav-bar"
+=======
+=======
+>>>>>>> d92c9034cbe3ae795c01d7fd2a3cbad6649c7769
+
+.value h2, .value p{
+    text-align: center;
+    margin: 10px auto 0 auto;
+    max-width: 90%;
+<<<<<<< HEAD
+<<<<<<< HEAD
+}
+<<<<<<< HEAD
+>>>>>>> f40308b... about page done
+=======
+    
+}
+>>>>>>> 2fc10d8... started to create tablet sizing
+=======
+}
+>>>>>>> c883122... new design page
+=======
+}
+>>>>>>> d92c9034cbe3ae795c01d7fd2a3cbad6649c7769

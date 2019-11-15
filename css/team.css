@@ -1,0 +1,240 @@
+<<<<<<< HEAD
+<<<<<<< HEAD
+html{width: 100%;}body{width: 100%;}
+.page-scroll{}
+<<<<<<< HEAD
+.background2{background-image: url("../images/teamBG.jpg");background-size: cover;width: 100%;background-position: center center;}
+.bhr{background-color: black;height: px;border: solid black 2px;margin-top: 2px;margin-bottom: 2px;}
+.top{margin-top: 0%;}.notop{margin-top: 1px;margin-bottom: 15px;}@media (min-width: 1900px){.top{margin-top: 10%;}}
+.button{text-decoration: none;}.button:hover{text-decoration: none;}
+.hovereffect{width:250px;height:250px;float:left;overflow:hidden;position:relative;text-align:center;cursor:default;margin-top:10px;}
+.hovereffect .overlay{position:absolute;overflow:hidden;width:80%;height:80%;left:10%;top:10%;border-bottom:1px solid #FFF;border-top:1px solid #FFF;-webkit-transition:opacity 0.35s, -webkit-transform 0.35s;transition:opacity 0.35s, transform 0.35s;-webkit-transform:scale(0,1);-ms-transform:scale(0,1);transform:scale(0,1);}
+.hovereffect:hover .overlay{opacity:1;filter:alpha(opacity=100);-webkit-transform:scale(1);-ms-transform:scale(1);transform:scale(1);}
+.hovereffect img{display:block;width:100%;height:100%;position:relative;-webkit-transition:all 0.35s;transition:all 0.35s;}
+.hovereffect:hover img{filter:url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg"><filter id="filter"><feComponentTransfer color-interpolation-filters="sRGB"><feFuncR type="linear" slope="0.6" /><feFuncG type="linear" slope="0.6" /><feFuncB type="linear" slope="0.6" /></feComponentTransfer></filter></svg>#filter');filter:brightness(0.6);-webkit-filter:brightness(0.6);}
+.hovereffect h2{text-transform:uppercase;text-align:center;position:relative;font-size:17px;background-color:transparent;color:#FFF;padding:1em 0;opacity:0;filter:alpha(opacity=0);-webkit-transition:opacity 0.35s, -webkit-transform 0.35s;transition:opacity 0.35s, transform 0.35s;-webkit-transform:translate3d(0,-100%,0);transform:translate3d(0,-100%,0);}
+.hovereffect p{color:#FFF;}
+.hovereffect a, hovereffect p{color:#FFF;padding:1em 0;opacity:0;filter:alpha(opacity=0);-webkit-transition:opacity 0.35s, -webkit-transform 0.35s;transition:opacity 0.35s, transform 0.35s;-webkit-transform:translate3d(0,100%,0);transform:translate3d(0,100%,0);}
+.hovereffect:hover a, .hovereffect:hover p, .hovereffect:hover h2{opacity:1;filter:alpha(opacity=100);-webkit-transform:translate3d(0,0,0);transform:translate3d(0,0,0);}
+.picHold{height: 175px; }
+.picHold2{height: 175px; }
+=======
+.top{margin-top: 0%;}.notop{margin-top: 0;margin-bottom: 0;font-weight: 800; text-align: center;}
+<<<<<<< HEAD
+<<<<<<< HEAD
+.picHold{height: 175px; margin-bottom: 60px;}
+.picHold2{height: 175px; margin-bottom: 60px;}
+>>>>>>> 5f06221... Slidedown with new icons
+.pic{height: 100%;border-radius: 50%;position: relative;margin: auto;}
+<<<<<<< HEAD
+.nameTxt{color: white; margin-bottom: 1px;}
+.picTxt{color: crimson;}
+.prow{margin-bottom: 60px;}
+=======
+=======
+.picHold{height: 175px; margin-bottom: 20vh;}
+=======
+.picHold{height: 175px; margin-bottom: 20vh;align-content: center;}
+>>>>>>> 68af40c... Center Image
+.picHold2{height: 175px; margin-bottom: 15vh;}
+.pic{height: auto;border-radius: 50%;position: relative;margin: auto; max-width:100%;}
+>>>>>>> f66cc78... Website Complete Overhaul
+.nameTxt{color: black; margin-bottom: 1px;font-family: 'Quattrocento Sans', sans-serif;font-weight: 900;}
+.picTxt{color: crimson;font-weight: 900;}
+.pre-back{background: url(../images/backgrounds/team.jpg) fixed;background-size: cover;height: 100%;background-position: center;}
+.whitebackground{background-color: white;}
+.sec{margin-top: 20px;}
+.blackhr2{background-color: black;height: 5px;color: black;}
+.unhide-mobile{display: none;}
+
+<<<<<<< HEAD
+<<<<<<< HEAD
+.pre-back2{background: url(../images/team.jpg) fixed;background-size: cover;height: 100%;}
+<<<<<<< HEAD
+>>>>>>> 78b2816... Align all icons horizontally
+=======
+.icon-row-bg {
+  background-image: url("../images/icons/bg.png");
+  width: 80%;
+  /*background-color: red;*/
+  background-repeat: no-repeat;
+  background-size: 100%;
+  margin: 2% auto;
+}
+.icons{
+  margin: 2% auto;
+}
+.icons img {
+  width: 80%;
+}
+#one img {
+  margin-top: 25%;
+  margin-left: 23%;
+}
+#two img {
+  margin-left: 18%;
+}
+#six img {
+  margin-top: 25%;
+  margin-left: 12%;
+}
+#three img {
+  margin-left: 8%;
+}
+#five img {
+  margin-top: 25%;
+  margin-left: 0;
+}
+#four img {
+  margin-left: 0%;
+}
+#icons {
+  width: 100%;
+}
+=======
+.pre-back2{background: url(../images/team/team1.jpg) fixed;background-size: cover;height: 100%;background-position: top;}
+=======
+.pre-back2{background: url(../images/team/team1compressed.jpg) fixed;background-size: cover;height: calc(70vh);background-position: top;}
+>>>>>>> 50231ae... team.html tweaks
+.icon-row-bg {background-image: url("../images/icons/bg.png");width: 80%;/*background-color: red;*/background-repeat: no-repeat;background-size: 100%;margin: 2% auto;}
+.subteam-container{
+  min-height: calc(23vh);
+}
+.icons{margin: 2% auto;}
+.icons img {width: 80%;}
+#one img {margin-top: 25%;margin-left: 23%;}
+#two img {margin-left: 18%;}
+#six img {margin-top: 25%;margin-left: 12%;}
+#three img {margin-left: 8%;}
+#five img {margin-top: 25%;margin-left: 0;}
+#four img {margin-left: 0%;}
+#icons {width: 100%;}
+>>>>>>> f66cc78... Website Complete Overhaul
+
+
+#one, #one:hover, #one:active, #one:visited, #one:focus {text-decoration: none;}
+#two, #two:hover, #two:active, #two:visited, #two:focus {text-decoration: none;}
+#three, #three:hover, #three:active, #three:visited, #three:focus {text-decoration: none;}
+#four, #four:hover, #four:active, #four:visited, #four:focus {text-decoration: none;}
+#five, #five:hover, #five:active, #five:visited, #five:focus {text-decoration: none;}
+#six, #six:hover, #six:active, #six:visited, #six:focus {text-decoration: none;}
+
+
+<<<<<<< HEAD
+.clear {
+  clear: both;
+}
+<<<<<<< HEAD
+>>>>>>> 5f06221... Slidedown with new icons
+=======
+=======
+.clear {clear: both;}
+>>>>>>> f66cc78... Website Complete Overhaul
+@media screen and (max-width: 991px) {
+    .icon-row-bg{background-image: none;margin: 0 auto; width: 90%;}
+    .pre-back2 {background: url(../images/team/team1compressed.jpg) fixed; background-repeat: no-repeat;background-size: cover; background-size:100% auto; max-height: calc(30vh); background-position: 0px 30px;}
+    .notop{font-size: 10px;}
+    .unhide-mobile{display: block; margin: 0px auto;}
+    .hide-mobile{display: none;}
+
+    #one img{margin: 0;}
+    #two img{margin: 0;}
+    #five img{margin: 0;}
+    #six img{margin: 0;}
+
+    .row{height: 0px;}
+    .one_lead{height: auto; display: block;}
+    .one_lead img{max-width: 50%;}
+    #leads,#business,#suspension,#electrical,#maglev,#fuselage{margin: 2%;}
+=======
+=======
+>>>>>>> d92c9034cbe3ae795c01d7fd2a3cbad6649c7769
+
+::-webkit-scrollbar {
+  width: 0px;  /* remove scrollbar space */
+  background: transparent;  /* optional: just make scrollbar invisible */
+}
+
+.page{
+  background-image: url("../images/backgrounds/stars.jpg");
+}
+
+.page-content{
+  position: relative;
+  height: calc(100vh - 98px);
+  margin: 0 auto 0 auto;
+  overflow-y: hidden;
+}
+
+
+#sidebar-list-container{
+  border-right: solid 2px lightgray;
+}
+
+.sidebar-list-label{
+  /* text-transform: uppercase; */
+}
+
+#inactive-label{
+  cursor: pointer;
+  color: white;
+  background-position: 0%;
+  opacity: .4;
+}
+
+#inactive-label:hover {
+  opacity: .8;
+  transition: all 1s;
+}
+
+#active-label{
+  cursor: inherit;
+  opacity: 1;
+  color: var(--HyperloopRed);
+  background-position: -100%;
+  box-shadow: 0 0 4px 1px rgba(0, 0, 0, 0.01), 0 3px 24px rgba(0, 0, 0, 0.8);
+}
+
+.profile{
+  /* background-color: lightgray; */
+  border-radius: 15px;
+  color: white;
+  position: relative;
+  width: 21%;
+  max-height: 33%;
+  text-align: center;
+  margin: 1% 10px 0 10px;
+}
+
+.profile h3{
+    font-size: 1.3em;
+}
+
+.headshot{
+
+}
+.headshot img{
+  opacity: 1;
+  border-radius: 50%;
+<<<<<<< HEAD
+<<<<<<< HEAD
+  width: 100%;
+<<<<<<< HEAD
+>>>>>>> 569ed9f... changed team photos. made auto re-active-labeling javascript logic
+}
+>>>>>>> 41349c8... Icons change color on hover. Collapse subteam when another is clicked.
+=======
+=======
+  width: 85%;
+>>>>>>> 38059c1... Fixed headshot sizing for snap scrolling
+=======
+  width: 85%;
+>>>>>>> d92c9034cbe3ae795c01d7fd2a3cbad6649c7769
+  box-shadow: 0 0 4px 1px rgba(0, 0, 0, 0.01), 0 3px 24px rgba(0, 0, 0, 0.8);
+}
+
+
+<<<<<<< HEAD
+>>>>>>> dad987e... made subteam labels into classes
+=======
+>>>>>>> d92c9034cbe3ae795c01d7fd2a3cbad6649c7769

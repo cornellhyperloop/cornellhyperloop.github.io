@@ -1,0 +1,346 @@
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+
+=======
+/* Background + Video Background */
+>>>>>>> 60f0310... Small Fixes
+.background{background-color: #d4d6d8; overflow: auto;}
+video {z-index: 1;width: 100%; display: inline-block;margin:0;padding:0;position: relative;top: 0px;}
+
+<<<<<<< HEAD
+<<<<<<< HEAD
+.maintitle{text-align: center;font-size: 10em;letter-spacing: .2em;margin-top: 10%;}
+.backgroundtext{background-color: transparent;background-position: 50% 25%;-webkit-background-clip: text;-webkit-text-fill-color: transparent;background-size: cover;}
+a:link {text-decoration: none;}a:visited {text-decoration: none;}a:hover {text-decoration: none;}a:active {text-decoration: none;}
+
+.col-sm-12 {margin-top: 16%; position: absolute; z-index: 2;}
+
+.donate-butt{margin-top: 17%;}
+.donate{background-color: rgba(244,244,244,.4);border: solid black 2px;color: black; padding: 0px;margin-top: 0px; text-align: center;}
+.donate:hover{background-color: rgba(0,0,0,.5);color: white;}
+
+#buttonholder{margin-top: 10px; z-index: 2; position: absolute;}
+=======
+=======
+/* Text Above Video*/
+>>>>>>> 60f0310... Small Fixes
+.col-sm-12 {margin-top: 16%; position: absolute; z-index: 2;}
+.font2{font-size: 30px; font-weight: 700; color: #1c1c1c;}
+
+/* Button Attributes + Holder */
+.donate{background-color: crimson;color: white; padding: 10px;margin-top: 0px; text-align: center;font-weight: 900;transition: all 1s;}
+.donate:hover{background-color: rgba(0,0,0,.5);color: white;}
+<<<<<<< HEAD
+<<<<<<< HEAD
+#buttonholder{margin-top: 15vh; z-index: 2; position: absolute;}
+
+>>>>>>> f66cc78... Website Complete Overhaul
+.font2{font-size: 30px; font-weight: 700; color: #1c1c1c;}
+<<<<<<< HEAD
+video {
+    z-index: 1;
+    width: 100%;
+    display: inline-block;
+    margin:0;
+    padding:0;
+    position: relative;
+    top: 0px;
+}
+.vidH{
+  font-size: 0;
+}
+=======
+video {z-index: 1;width: 100%; display: inline-block;margin:0;padding:0;position: relative;top: 0px;}
+.vidH{font-size: 0;}
+>>>>>>> 2f06e46... Intsa Add
+=======
+#buttonholder{margin-top: 15vh; z-index: 2; position: absolute;}
+>>>>>>> 60f0310... Small Fixes
+=======
+#buttonholder{margin-top: 15vh; z-index: 2; position: absolute;}
+#buttonholder2{margin:0px; margin-top: 15vh; z-index: 3; position: absolute;}
+#apply{border: none; font-size: 24px; padding: 10px 40px; margin-left: 15px;}
+#smalltext{font-size:11px;}
+
+/* Modal View */
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 3; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+=======
+html{
+    overflow-y: hidden;
+>>>>>>> dc1447c... fixed dynamic resizing of backgrounds
+=======
+html{
+    overflow-y: hidden;
+>>>>>>> d92c9034cbe3ae795c01d7fd2a3cbad6649c7769
+}
+
+.page{
+    /* width: 100vw; */
+    /* height: 100vh; */
+    background-image: none;
+    position: relative;
+    overflow-y: hidden;
+}
+<<<<<<< HEAD
+=======
+@keyframes title-hover{
+    /* 0%{
+        transform: scale(1) translateY(0%);
+        } */
+    /* 12.5%{
+        transform: scale(1.01) translateY(-1%);
+    }
+    25%{
+        transform: scale(1.02) translateY(-2.5%);
+        }
+    37.5%{
+        transform: scale(1.02) translateY(-1%);
+        }
+    50%{
+        transform: scale(1.02) translateY(0%);
+        }
+    62.5%{
+        transform: scale(1.01) translateY(1%);
+    }
+    75%{
+        transform: scale(1.01) translateY(1.5%);
+    }
+    87.5%{
+        transform: scale(1.01) translateY(1%);
+    } */
+    12.5%{
+        transform: translateY(-1.5%);
+    }
+    25%{
+        transform: scale(1.002) translateY(-3.5%);
+        }
+    37.5%{
+        transform: scale(1.003) translateY(-1%);
+        }
+    50%{
+        transform: scale(1.004) translateY(0%);
+        }
+    62.5%{
+        transform: scale(1.003) translateY(1%);
+    }
+    75%{
+        transform: scale(1.002) translateY(2.5%);
+    }
+    87.5%{
+        transform: scale(1.001) translateY(1%);
+    }
+}
+>>>>>>> d92c9034cbe3ae795c01d7fd2a3cbad6649c7769
+
+
+@media only screen and (max-width: 767px){
+    .landing-video-container video{
+        display: none;
+    }
+    #apply-button{
+        position: absolute;
+        margin: 1.5em auto .5em auto;
+        width: 60%;
+        top: 330px;
+        left: 0;
+        right: 0;
+    }
+ 
+    #application-pdf-button{
+        position: absolute;
+        width: 60%;
+        margin: .5em auto;
+        top: 420px;
+        left: 0;
+        right: 0;
+    }
+    .applications-info-box{
+        z-index: -100;
+        font-weight: bold;
+        text-align: center;
+        color: white;
+        width: 100%;
+        margin: 2em 0;
+        font-size: 1.1em;
+        background-color: rgba(0,0, 0, .5);
+        padding: 20px 0;
+    }
+
+    .mobile-version-in-progress-container{
+        text-align: center;
+        position: absolute;
+<<<<<<< HEAD
+        width: 90%;
+        bottom: 1.5em;
+=======
+        bottom: 1em;
+        width: 90%;
+>>>>>>> d92c9034cbe3ae795c01d7fd2a3cbad6649c7769
+        margin: 0 auto;
+        left: 0;
+        right: 0;
+    }
+
+    .mobile-version-in-progress-container img{
+        width: 100%;
+    }
+
+<<<<<<< HEAD
+}
+@media only screen and (min-width: 768px){
+    .landing-video-container{
+        z-index: -1;
+        height: 0px;
+        width: 100vw;
+        align-items: center
+=======
+    .page{
+        background-image: url("../images/backgrounds/stars.jpg");
+    }
+    .team-picture{
+        border-bottom: 1px solid rgba(255,255, 255, .7);
+        border-top: 1px solid rgba(255,255, 255, .7);
+        width: 100vw;
+        height: fit-content;
+        /* display: inline-flex; */
+        background-color: beige;
+    }
+
+
+    
+    #hyperloop-mobile-title{
+        animation: title-hover 3s infinite 0s linear;
+    }
+
+}
+@media only screen and (min-width: 768px){
+    .mobile-only{
+        display: none;
+    }
+
+    .landing-video-container{
+        position: absolute;
+        top: 0px;
+        width: 100%;
+        
+>>>>>>> d92c9034cbe3ae795c01d7fd2a3cbad6649c7769
+    }
+    #apply-button{
+        position: absolute;
+        top: 90px;
+        left: 2em;
+    }
+    #donate-button{
+        position: absolute;
+        top: 90px;
+        right: 2em;
+    }
+    
+    #application-pdf-button{
+        position: absolute;
+        top: 90px;
+        right: 2em;
+    }
+
+    .applications-info-box{
+        font-weight: bold;
+        position: absolute;
+        top: 65%;
+        text-align: center;
+        color: white;
+        width: 100%;
+        font-size: 1.1em;
+        background-color: rgba(0,0, 0, .5);
+    }
+
+    .mobile-version-in-progress-container{
+        display: none;
+    }
+}
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> d2804a6... Apply button on homepage
+=======
+
+
+#landing-video{
+    position: absolute;
+}
+<<<<<<< HEAD
+>>>>>>> dc1447c... fixed dynamic resizing of backgrounds
+=======
+
+<<<<<<< HEAD
+#apply-button{
+    position: absolute;
+    top: 90px;
+    left: 2em;
+}
+#donate-button{
+    position: absolute;
+    top: 90px;
+    right: 2em;
+}
+<<<<<<< HEAD
+>>>>>>> 86cad92... made red buttons
+=======
+
+#application-pdf-button{
+    position: absolute;
+    top: 90px;
+    right: 2em;
+}
+<<<<<<< HEAD
+>>>>>>> 86713ba... pdf app uploaded
+=======
+=======
+
+>>>>>>> 1513f16... mobile quickfix
+=======
+
+
+#landing-video{
+    /* position: absolute; */
+    width: 100%;
+}
+
+
+>>>>>>> d92c9034cbe3ae795c01d7fd2a3cbad6649c7769
+
+
+.applications-info-box h3{
+    margin-top: .5em;
+    /* color: var); */
+}
+<<<<<<< HEAD
+>>>>>>> 9b9cc38... info session label made
+=======
+
+
+
+.blurb-container{
+    color: white;
+}
+
+
+.team-picture-container{
+    width: 100vw;
+}
+
+.team-picture-container img{
+    width: 100%;
+}
+>>>>>>> d92c9034cbe3ae795c01d7fd2a3cbad6649c7769

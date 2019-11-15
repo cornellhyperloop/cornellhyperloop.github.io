@@ -1,0 +1,73 @@
+<<<<<<< HEAD
+<<<<<<< HEAD
+.border{border: solid white 2px;padding-bottom: 5px;}
+.border:hover{background-color: rgba(255,255,255,.5);}
+.donate{color: white;margin-top: 0px; text-align: center;}
+.donate:hover{color: white;}
+.background2{background-image: url("../images/brightSpace.jpg");background-size: cover;}
+a {text-decoration: none;} a:hover{text-decoration: none;}
+.sponHold{margin-bottom: 40px;}
+<<<<<<< HEAD
+=======
+h1 {font-weight: 900;}
+.black2{color: #1c1c1c}
+.pre-back{background: url(../images/spons1.jpg) fixed;background-size: cover;height: 100%;}
+.main-title{font-weight: 900;font-size: 5em;margin-top: 60%;}
+#images img{border-bottom: solid 5px transparent;padding-bottom: 5px;transition: 1s;}
+#images img:hover{opacity: .8;border-bottom-color: #1c1c1c;}
+
+>>>>>>> eb68298... Sponser
+=======
+=======
+>>>>>>> d92c9034cbe3ae795c01d7fd2a3cbad6649c7769
+html{height: 100%;width: 100%;}
+body{height: 100%;width: 100%;}
+
+.border{padding: 10px;background-color:crimson;transition: all 1s;font-weight: 900;color: white;text-align: center;text-decoration: none;}
+.border:hover{background-color: rgba(0,0,0,.5);letter-spacing: 5px;}
+.pre-back{background: url(../images/backgrounds/spons1.jpg) fixed;background-size: cover;height: 100%;background-position: center;}
+
+.sponHold{margin-bottom: 40px;}
+h1 {font-weight: 900; font-size: 5.1vh; margin: 10px 5px 0 0;} h2{font-size: 3.9vh; margin: 5px;} h3{font-weight: 900; font-size: 3.5vh;}
+/* .tier_title {font-weight: 900; font-size: 3.5vh; color: #9e9e9e; margin: 0 auto; text-align: center; margin-bottom: 30px; letter-spacing: 1px} */
+hr {color: #1c1c1c;background-color: #1c1c1c;height: 2px;}
+p  {font-size: 2.4vh}
+
+.red-button{background-color: crimson; padding: 15px;font-weight: 900;font-size: 1.5em;transition: all ease-in .4s;letter-spacing:normal; }
+.red-button:hover{color: white;transition: all 1s;letter-spacing: 5px;transition: all ease-in .4s;}
+
+.tiers_titles, .tiers_desc {font-size: 16px;}
+.tier_icon {width: 75%;}
+.tier_lhs {margin-bottom: 0px; font-size: 20px;}
+.tier{width:90%; margin: 0 auto; margin-bottom: 5%; text-align: center;}
+.tier img{border-bottom: solid 5px transparent;padding-bottom: 5px;transition: 1s; max-width: 100%;}
+.tier img:hover{opacity: .8;border-bottom-color: #1c1c1c;}
+#whitespace_right {margin-right: 50px;}
+
+.tiers_titles {text-align: center;}
+.tiers_desc td.tier_lhs {vertical-align: middle}
+.tiers_desc tr:first {margin-top: 50px;}
+
+@media screen and (max-width: 991px) {
+    .pre-back{height: 50%;}
+    .tier img{width: 80%;}
+    #whitespace_right{margin: 0;}
+    .tiers_desc td{display: block;}
+    .tier_title {display: block;}
+    .tiers_desc{white-space: pre-wrap; /* css-3 */}
+}
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> f66cc78... Website Complete Overhaul
+=======
+=======
+>>>>>>> d92c9034cbe3ae795c01d7fd2a3cbad6649c7769
+
+/* Seven columns bootstrap */
+@media (min-width: 768px){.seven-cols .col-md-1, .seven-cols .col-sm-1,.seven-cols .col-lg-1  {width: 100%;*width: 100%;}}
+@media (min-width: 992px) {.seven-cols .col-md-1,.seven-cols .col-sm-1,.seven-cols .col-lg-1 {width: 14.285714285714285714285714285714%;*width: 14.285714285714285714285714285714%;}}
+@media (min-width: 1200px) {.seven-cols .col-md-1,.seven-cols .col-sm-1,.seven-cols .col-lg-1 {width: 14.285714285714285714285714285714%;*width: 14.285714285714285714285714285714%;}}
+<<<<<<< HEAD
+>>>>>>> 176e8bf... Added sponsors, made mobile-friendly
+=======
+>>>>>>> d92c9034cbe3ae795c01d7fd2a3cbad6649c7769
