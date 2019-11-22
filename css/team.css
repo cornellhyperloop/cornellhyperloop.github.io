@@ -7,6 +7,73 @@
 .page{
   background-image: url("../images/backgrounds/stars.jpg");
 }
+@media only screen and (max-width: 768px) {
+
+  .page-content{
+    position: relative;
+    height: 100vh;
+    margin: 0 auto 0 auto;
+    overflow-y: scroll;
+    overflow-x: hidden;
+  }
+  .profile {
+    /* background-color: lightgray; */
+    border-radius: 15px;
+    color: white;
+    position: relative;
+    width: 110%;
+    max-height: 33%;
+    text-align: center;
+    margin: 10% 10px 0 0;
+    font-size: 120%;
+  }
+  .rightside-info-container {
+    text-align: center;
+    color:white;
+  }
+  .rightside-info-container h1 {
+    height: 200px;
+
+  }
+
+  .rightside-info-subcontainer {
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    position: relative;
+    top: 1em;
+    width: 100%;
+    height:100%;
+    margin-bottom: 50px;
+    left: 7%;
+    font-size: 50%;
+    color:white;
+  }
+  .mobile-only{
+    display: block;
+  }
+
+  .left-right-infocontainer-wrapper {
+  }
+
+  #sidebar-list-container {
+    display: inline;
+    float: left;
+    border-bottom: solid 1px lightgray;
+    border-right: solid 0px deeppink;
+    width:100%;
+  }
+
+  .sidebar-list-label {
+    border-bottom: solid 1px lightgray;
+    border-right: solid 1px lightgray;
+    float: left;
+    display: inline;
+    width: 50%;
+    text-align: center;
+    /* text-transform: uppercase; */
+  }
+}
 
 .page-content{
   position: relative;
@@ -16,8 +83,8 @@
 }
 
 
-#sidebar-list-container{
-  border-right: solid 2px lightgray;
+#sidebar-list-container {
+  border-right: solid 1px lightgrey;
 }
 
 .sidebar-list-label{
@@ -39,6 +106,7 @@
 #active-label{
   cursor: inherit;
   opacity: 1;
+  width: 100%;
   color: var(--HyperloopRed);
   background-position: -100%;
   box-shadow: 0 0 4px 1px rgba(0, 0, 0, 0.01), 0 3px 24px rgba(0, 0, 0, 0.8);
@@ -54,9 +122,8 @@
   text-align: center;
   margin: 1% 10px 0 10px;
 }
-
 .profile h3{
-    font-size: 1.3em;
+    font-size: 150%;
 }
 
 .headshot{
@@ -65,7 +132,7 @@
 .headshot img{
   opacity: 1;
   border-radius: 50%;
-  width: 85%;
+  width: 90%;
   box-shadow: 0 0 4px 1px rgba(0, 0, 0, 0.01), 0 3px 24px rgba(0, 0, 0, 0.8);
 }
 
