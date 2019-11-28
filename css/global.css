@@ -11,7 +11,11 @@
   background-image: url('../images/backgrounds/tunnel.png');
   background-size: cover;
   background-repeat: no-repeat;
-  min-height: 100vh;
+  min-height: 100vh; /* will cover the 100% of viewport */
+  overflow: hidden;
+  display: block;
+  position: relative;
+  padding-bottom: var(--footerHeight);
 }
 
 .page-content{
@@ -46,15 +50,13 @@
 :root {
   --HyperloopRed: #b41414 ;
   --buttonColor: #dd413c;
+  --footerHeight: 120px;
 }
 
 /* Mobile Sizing */
+/* asdfa */
 @media only screen and (max-width: 767px){
-  .blurb-container{
-    width: 80%;
-    margin: 0 auto;
-    padding-bottom: 2em;
-  }
+  
 
   .navbar-container-computer{
       display: none;
@@ -214,9 +216,8 @@
 
   .page-content{
     width: 100%;
-    height: calc(100vh - 50px);
+    min-height: calc(100vh - 50px);
     flex-direction: column;
-    
   }
 
   .heading{
@@ -698,3 +699,23 @@
   margin: 10px auto auto auto;
 }
 
+.footer{
+  width: 100vw;
+  height: var(--footerHeight);
+  background-color: rgba(255, 255, 255, .80);
+  display: flex;
+  align-items: center;
+  align-content: center;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+
+.footer-content-container{
+  margin: auto;
+  width: fit-content;
+}
+.footer-icon{
+  width: 40px;
+  height: 40px;
+}

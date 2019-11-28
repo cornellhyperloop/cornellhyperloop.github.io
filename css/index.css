@@ -3,11 +3,17 @@ html{
 }
 
 .page{
-    /* width: 100vw; */
-    /* height: 100vh; */
     background-image: none;
     position: relative;
-    overflow-y: hidden;
+}
+@media only screen and (max-width: 767px){
+    .blurb-container{
+        width: 90%;
+        margin: 0 auto;
+        padding-bottom: 2em;
+        line-height: 1.3em;
+    }
+    
 }
 @keyframes title-hover{
     /* 0%{
@@ -186,13 +192,18 @@ html{
 
 .blurb-container{
     color: white;
+    font-size: 1.2em;
 }
 
 
 .team-picture-container{
-    width: 100vw;
+    width: 90vw;
+    margin: 0 auto;
 }
 
 .team-picture-container img{
     width: 100%;
+}
+.blurb-container p{
+    margin-bottom: 1.5em;
 }
