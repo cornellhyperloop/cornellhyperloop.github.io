@@ -75,7 +75,7 @@
   }
 }
 /* Tablet Sizing */
-@media only screen and (min-width: 768px){
+@media only screen and (min-width: 768px) and (max-width: 1023px){
   .page-content{
     position: relative;
     margin: 0 auto 0 auto;
@@ -114,7 +114,6 @@
   
 
   .team-divisions-info-container {
-    display: inline;
     display: none;
     float: left;
     border-bottom: solid 1px lightgray;
@@ -125,11 +124,8 @@
   .sidebar-list-label {
     border-bottom: solid 1px lightgray;
     border-right: solid 1px lightgray;
-    float: left;
     display: inline;
-    width: 50%;
     text-align: center;
-    /* text-transform: uppercase; */
   }
   .profile{
     border-radius: 15px;
@@ -156,9 +152,10 @@
     align-items: center;
     align-content: center;
   }
+  
   .roster-info-container {
     height: 100%;
-    margin: 0 1% 0 2%;
+    margin: 0;
     position: relative;
     float: right;
     min-width: 570px;
@@ -168,7 +165,8 @@
   
   .team-divisions-info-container{
     padding: 0 1em 0 2em;
-      border-right: solid 1px lightgrey;
+    border-right: solid 1px lightgrey;
+    display: unset;
   }
   .team-info-container-wrapper {
     display: flex;
