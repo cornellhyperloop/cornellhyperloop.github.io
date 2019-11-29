@@ -7,16 +7,39 @@
   font-family: 'Quattrocento Sans', sans-serif;
 }
 
-.page{
-  background-image: url('../images/backgrounds/tunnel.png');
-  background-size: cover;
-  background-repeat: no-repeat;
-  min-height: 100vh; /* will cover the 100% of viewport */
-  overflow: hidden;
-  display: block;
-  position: relative;
-  padding-bottom: var(--footerHeight);
+/* Put all global colors here */
+:root {
+  --HyperloopRed: #b41414 ;
+  --buttonColor: #dd413c;
+  --footerHeight: 120px;
+  --desktopHeaderHeight: 72px;
 }
+
+/* Animations & Keyframes */
+@keyframes hyperloop-hover{
+  12.5%{
+      transform: translateY(-1.5%);
+  }
+  25%{
+      transform: scale(1.002) translateY(-3.5%);
+      }
+  37.5%{
+      transform: scale(1.003) translateY(-1%);
+      }
+  50%{
+      transform: scale(1.004) translateY(0%);
+      }
+  62.5%{
+      transform: scale(1.003) translateY(1%);
+  }
+  75%{
+      transform: scale(1.002) translateY(2.5%);
+  }
+  87.5%{
+      transform: scale(1.001) translateY(1%);
+  }
+}
+
 
 .page-content{
   z-index: 0;
@@ -46,16 +69,14 @@
 
 
 
-/* Put all global colors here */
-:root {
-  --HyperloopRed: #b41414 ;
-  --buttonColor: #dd413c;
-  --footerHeight: 120px;
-}
+
 
 /* Mobile Sizing */
-/* asdfa */
 @media only screen and (max-width: 767px){
+
+  .page{
+    background-repeat: repeat;
+  }
   
 
   .navbar-container-computer{
@@ -225,7 +246,7 @@
     color: white;
     font-weight: bold;
     width: auto;
-    margin: .7em auto .5em auto;
+    margin: .7em auto .3em auto;
   }
 }
 
@@ -406,7 +427,7 @@
 /* Desktop/Laptop Sizing */
 @media only screen and (min-width: 1024px){
   .mobile-only{
-    display: none;
+    display: none !important;
   }
 
   #navbar-container-mobile{
@@ -416,11 +437,14 @@
       display: inline-block;
   }
 
-  .page{  
+  .page{
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 100vh; /* will cover the 100% of viewport */
+    overflow: hidden;
+    display: block;
+    position: relative;
   }
-
-
-
 
   .page-content{
   width: 100%;
@@ -430,7 +454,7 @@
   }
 
   header{
-    height: 72px;
+    height: var(--desktopHeaderHeight);
   }
 
 
@@ -718,4 +742,7 @@
 .footer-icon{
   width: 40px;
   height: 40px;
+}
+.hovering{
+  animation: hyperloop-hover 3s infinite 0s linear;
 }

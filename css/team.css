@@ -11,10 +11,8 @@
 
   .page-content{
     position: relative;
-    height: 100vh;
     margin: 0 auto 0 auto;
-    overflow-y: scroll;
-    overflow-x: hidden;
+    background-repeat: repeat-y;
   }
   .profile {
     /* background-color: lightgray; */
@@ -27,37 +25,30 @@
     margin: 10% 10px 0 0;
     font-size: 120%;
   }
-  .rightside-info-container {
+  .roster-info-container {
     text-align: center;
     color:white;
+    overflow: auto;
+    display: flex;
+    flex-direction: column;
+    font-size: 135%;
   }
-  .rightside-info-container h1 {
-    height: 200px;
 
-  }
-
-  .rightside-info-subcontainer {
+  .roster-subteam-info-container {
     display: flex;
     flex-wrap: wrap;
-    text-align: center;
-    position: relative;
-    top: 1em;
-    width: 100%;
-    height:100%;
-    margin-bottom: 50px;
-    left: 7%;
     font-size: 50%;
-    color:white;
+    margin: 1em 0 2.5em 0;
   }
   .mobile-only{
     display: block;
   }
 
-  .left-right-infocontainer-wrapper {
-  }
+  
 
-  #sidebar-list-container {
+  .team-divisions-info-container {
     display: inline;
+    display: none;
     float: left;
     border-bottom: solid 1px lightgray;
     border-right: solid 0px deeppink;
@@ -73,19 +64,152 @@
     text-align: center;
     /* text-transform: uppercase; */
   }
+  .profile{
+    border-radius: 15px;
+    color: white;
+    position: relative;
+    width: 30%;
+    max-height: 33%;
+    text-align: center;
+    margin: 1em auto 1em auto;
+  }
+}
+/* Tablet Sizing */
+@media only screen and (min-width: 768px){
+  .page-content{
+    position: relative;
+    margin: 0 auto 0 auto;
+    background-repeat: repeat-y;
+  }
+  .profile {
+    /* background-color: lightgray; */
+    border-radius: 15px;
+    color: white;
+    position: relative;
+    width: 110%;
+    max-height: 33%;
+    text-align: center;
+    margin: 10% 10px 0 0;
+    font-size: 120%;
+  }
+  .roster-info-container {
+    text-align: center;
+    color:white;
+    overflow: auto;
+    display: flex;
+    flex-direction: column;
+    font-size: 175%;
+  }
+
+  .roster-subteam-info-container {
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 50%;
+    margin: 1em 0 2.5em 0;
+  }
+  .mobile-only{
+    display: block;
+  }
+
+  
+
+  .team-divisions-info-container {
+    display: inline;
+    display: none;
+    float: left;
+    border-bottom: solid 1px lightgray;
+    border-right: solid 0px deeppink;
+    width:100%;
+  }
+
+  .sidebar-list-label {
+    border-bottom: solid 1px lightgray;
+    border-right: solid 1px lightgray;
+    float: left;
+    display: inline;
+    width: 50%;
+    text-align: center;
+    /* text-transform: uppercase; */
+  }
+  .profile{
+    border-radius: 15px;
+    color: white;
+    position: relative;
+    width: 30%;
+    max-height: 33%;
+    text-align: center;
+    margin: 1em auto 1em auto;
+  }
 }
 
+/* Desktop Sizing */
+@media only screen and (min-width: 1024px){
+  .roster-subteam-info-container{
+    position: relative;
+    width: 100%;
+    max-height: 100%;
+    height: 100%;
+    display: flex;
+    flex-flow: wrap;
+    scroll-snap-align: start;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+  }
+  .roster-info-container {
+    height: 100%;
+    margin: 0 1% 0 2%;
+    position: relative;
+    float: right;
+    min-width: 570px;
+    overflow-y: scroll;
+    scroll-snap-type: y mandatory;
+  }
+  
+  .team-divisions-info-container{
+    padding: 0 1em 0 2em;
+      border-right: solid 1px lightgrey;
+  }
+  .team-info-container-wrapper {
+    display: flex;
+    flex-direction: row;
+    height: 95%;
+    margin: auto;
+    position: relative;
+    /* height: calc(100% - 4px); */
+    min-width: 840px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+  }
+  .page-content{
+    height: calc(100vh - var(--desktopHeaderHeight));
+    overflow-y: hidden;
+    position: relative;
+    margin: 0 auto 0 auto;
+    min-height: 720px;
+  }
+  
+  .profile{
+    max-width: 190px;
+    border-radius: 15px;
+    color: white;
+    position: relative;
+    width: 23%;
+    max-height: 33%;
+    text-align: center;
+    margin: 8px 4px;
+  }
+}
 .page-content{
+  display: inline-flex;
   position: relative;
-  height: calc(100vh - 98px);
   margin: 0 auto 0 auto;
-  overflow-y: hidden;
 }
 
 
-#sidebar-list-container {
-  border-right: solid 1px lightgrey;
-}
+
 
 .sidebar-list-label{
   /* text-transform: uppercase; */
@@ -112,16 +236,7 @@
   box-shadow: 0 0 4px 1px rgba(0, 0, 0, 0.01), 0 3px 24px rgba(0, 0, 0, 0.8);
 }
 
-.profile{
-  /* background-color: lightgray; */
-  border-radius: 15px;
-  color: white;
-  position: relative;
-  width: 21%;
-  max-height: 33%;
-  text-align: center;
-  margin: 1% 10px 0 10px;
-}
+
 .profile h3{
     font-size: 150%;
 }
@@ -136,4 +251,20 @@
   box-shadow: 0 0 4px 1px rgba(0, 0, 0, 0.01), 0 3px 24px rgba(0, 0, 0, 0.8);
 }
 
+.subteam-info-container-heading{
+  width: 100%;
+}
 
+.subteam-info-container-heading hr{
+  width: 75%;
+  margin: auto;
+  background-color: var(--HyperloopRed);
+  border: 2px solid white;
+  border-radius: 15px;
+  margin: 2px auto 4px auto;
+}
+
+
+.team-divisions-info-container ul{
+  list-style: none;
+}

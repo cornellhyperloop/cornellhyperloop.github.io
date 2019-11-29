@@ -31,7 +31,7 @@ window.onload = function () {
   subteamInViewCache = 'teamLeads';
   let subteamInViewCacheRect = document.getElementById('teamLeads').getBoundingClientRect()
 
-  subteamInfoContainer = document.getElementById('rightside-info-container')
+  subteamInfoContainer = document.getElementsByClassName('roster-info-container')[0]
   subteamInfoContainer.addEventListener('wheel',updateLabelforSubteamInView)
 
   subteamInfoContainerRect = subteamInfoContainer.getBoundingClientRect()

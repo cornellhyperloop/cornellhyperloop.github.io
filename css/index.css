@@ -15,53 +15,7 @@ html{
     }
     
 }
-@keyframes title-hover{
-    /* 0%{
-        transform: scale(1) translateY(0%);
-        } */
-    /* 12.5%{
-        transform: scale(1.01) translateY(-1%);
-    }
-    25%{
-        transform: scale(1.02) translateY(-2.5%);
-        }
-    37.5%{
-        transform: scale(1.02) translateY(-1%);
-        }
-    50%{
-        transform: scale(1.02) translateY(0%);
-        }
-    62.5%{
-        transform: scale(1.01) translateY(1%);
-    }
-    75%{
-        transform: scale(1.01) translateY(1.5%);
-    }
-    87.5%{
-        transform: scale(1.01) translateY(1%);
-    } */
-    12.5%{
-        transform: translateY(-1.5%);
-    }
-    25%{
-        transform: scale(1.002) translateY(-3.5%);
-        }
-    37.5%{
-        transform: scale(1.003) translateY(-1%);
-        }
-    50%{
-        transform: scale(1.004) translateY(0%);
-        }
-    62.5%{
-        transform: scale(1.003) translateY(1%);
-    }
-    75%{
-        transform: scale(1.002) translateY(2.5%);
-    }
-    87.5%{
-        transform: scale(1.001) translateY(1%);
-    }
-}
+
 
 
 @media only screen and (max-width: 767px){
@@ -123,11 +77,6 @@ html{
         background-color: beige;
     }
 
-
-    
-    #hyperloop-mobile-title{
-        animation: title-hover 3s infinite 0s linear;
-    }
 
 }
 @media only screen and (min-width: 768px){
