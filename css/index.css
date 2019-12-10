@@ -1,5 +1,5 @@
 html{
-    overflow-y: hidden;
+    /* overflow-y: hidden; */
 }
 
 .page{
@@ -17,11 +17,14 @@ html{
 }
 
 
-
+/* mobile sizing */
 @media only screen and (max-width: 767px){
-    .landing-video-container video{
+    .landing-video-container{
         display: none;
     }
+    /* .landing-video-container video{ */
+        /* display: none; */
+    /* } */
     #apply-button{
         position: absolute;
         margin: 1.5em auto .5em auto;
