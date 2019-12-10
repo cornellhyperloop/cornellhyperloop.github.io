@@ -151,6 +151,7 @@ html{
 .team-picture-container{
     width: 90vw;
     margin: 0 auto;
+    padding-bottom: 2em;
 }
 
 .team-picture-container img{
