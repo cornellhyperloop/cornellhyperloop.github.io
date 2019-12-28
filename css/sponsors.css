@@ -1,60 +1,105 @@
 .page {
-    background-image: url("../images/backgrounds/stars.jpg");
-    color: black;
-  }
-.sidebar-list-label{
-    text-transform: uppercase;
-    white-space: pre-line;
-    text-align: center;
+  background-image: url("../images/backgrounds/stars.jpg");
+  color: black;
+}
+.sidebar-list-label {
+  text-transform: uppercase;
+  white-space: pre-line;
+  text-align: center;
 }
 
-#inactive-label{
-    cursor: pointer;
-    color: white;
-    opacity: 0.4;
+
+/* Mobile Sizing */
+@media only screen and (max-width: 1023px) {
+    #sponsor-packages{
+        display: none;
+    }
+  #sidebar-list-container {
+    display: none;
+  }
+  .rightside-info-subcontainer {
+    background-color: rgb(255, 255, 255, 0.2);
+    margin: 0 0 1.5em 0;
+  }
+  #sponsors-content img {
+    max-width: 29%;
+  }
+  #sponsors-content {
+    padding: 1em 0;
+  }
+}
+
+/* Cellular Sizing */
+@media only screen and (max-width: 767px) {
+
+}
+
+/* Tablet Sizing */
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+  #sidebar-list-container {
+    display: none;
+  }
+  .rightside-info-subcontainer {
+    background-color: rgb(255, 255, 255, 0.2);
+  }
+}
+
+/* Desktop/Laptop Sizing */
+@media only screen and (min-width: 1024px) {
+  #sidebar-list-container {
+    border-right: solid 2px lightgray;
+  }
+  .rightside-info-subcontainer {
+    background-color: rgb(255, 255, 255, 0.5);
+  }
+  #sponsors-content img {
+    max-width: 25%;
+  }
+  .active-tier-description {
+  background-color: rgba(0, 0, 0, 0.3);
+  color: white;
+}
+}
+
+.rightside-info-subcontainer {
+  align-items: center;
+}
+#inactive-label {
+  cursor: pointer;
+  color: white;
+  opacity: 0.4;
 }
 
 #inactive-label:hover {
-    opacity: 1;
-    transition: all 1s;
+  opacity: 1;
+  transition: all 1s;
 }
 
-#active-label{
-    cursor: inherit;
-    opacity: 1;
-    color: var(--HyperloopRed);
-    background-position: -100%;
-    box-shadow: 0 0 4px 1px rgba(0, 0, 0, 0.01), 0 3px 24px rgba(0, 0, 0, 0.8);
-  
-  }
-
-#sidebar-list-container{
-    border-right: solid 2px lightgray;
-  }
-
-#rightside-info-container{
-    border-radius: 10px;
-}
-.rightside-info-subcontainer{
-    background-color: rgb(255, 255, 255, .5);
-    align-items: center;
+#active-label {
+  cursor: inherit;
+  opacity: 1;
+  color: var(--HyperloopRed);
+  background-position: -100%;
+  box-shadow: 0 0 4px 1px rgba(0, 0, 0, 0.01), 0 3px 24px rgba(0, 0, 0, 0.8);
 }
 
-#sponsors-content{
-    display: inline-flex;
-    flex-basis: auto;
-    justify-content: center;
-    flex-wrap: wrap;
-    align-items: center;
+#rightside-info-container {
+  border-radius: 10px;
 }
 
-#sponsors-content img{
-    height: auto%;
-    max-width: 25%;
-    margin: 5px;
-    flex-grow: 1;
+#sponsors-content {
+  display: inline-flex;
+  flex-basis: auto;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: center;
 }
 
+#sponsors-content img {
+  height: auto;
+  margin: 5px;
+  flex-grow: 1;
+}
 
 /* .rightside-info-subcontainer-content #autodesk{
     width: 30%;
@@ -81,97 +126,115 @@
     width: auto;
 } */
 
-#sponsor-packages-content{
+#sponsor-packages-content {
 }
 
-.rightside-info-subcontainer-content-header{
-    height: 7%;
-    align-items: center;
+.rightside-info-subcontainer-content-header {
+  height: 7%;
+  align-items: center;
+  margin-bottom: 1%;
 }
 
-.rightside-info-subcontainer-content-header h1{
-    width: 100%;
-    text-align: center;
-    font-size: 2.5em;
-    line-height: 100%;
+.rightside-info-subcontainer-content-header h1 {
+  width: 100%;
+  text-align: center;
+  font-size: 2.5em;
+  line-height: 100%;
 }
 
-#tier-packages-logos{
-    width: 100%;
-    padding: 0 0 1% 0;
-    height: 28%;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
+.tier-packages-logos {
+  width: 100%;
+  padding: 0 0 0 0;
+  margin: 1% 0;
+  height: 28%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
 }
 
-.package{
-    padding: 0 2% 0 2%;
-    height: 100%;
-    width: auto;
-    text-align: center;
+.package {
+  padding: 1% 0.4%;
+  margin: 5px 4px;
+  height: 100%;
+  max-width: 22.5%;
+  text-align: center;
+  border-radius: 20px;
+  transition: ease-in-out;
+  transition-duration: 0.25s;
 }
 
-.package img{
-    height: calc(90% - 1.85em);
-    width: auto;
+.package:hover {
+  background-color: rgba(0, 0, 0, 0.3);
+  color: white;
 }
 
-.package h3{
-    font-size: 1em;
-}
-.package p{
-    font-size: .85em;
+.package img {
+  height: calc(90% - 1.85em);
+  width: auto;
 }
 
-#package-descriptions-container{
-    height: 65%;
+.package h3 {
+  font-size: 1em;
 }
-#sponsor-packages-content hr{
-    background-color: black;
-    border: 0;
-    height: 1px;
-    width: 100%;
-    margin: 1px 0 1px 0;
-}
-.package-description{
-    width: 100%;
-    height: calc(25% - 5px);
-    display: flex;
+.package p {
+  font-size: 0.85em;
 }
 
-.package-description-label{
-    display: flex;
-    width: 25%;
-    justify-content: center;
-    align-items: center;
-    /* background-color: yellow; */
-    font-size: 1.3em;
+#package-descriptions-container {
+  height: 65%;
+}
+#sponsor-packages-content hr {
+  background-color: black;
+  border: 0;
+  height: 1px;
+  width: 90%;
+  margin: 1px auto 1px auto;
+  max-width: 800px;
+}
+.package-description {
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+  height: calc(25% - 5px);
+  display: flex;
+  border-radius: 10px;
+  transition: ease-in-out;
+  transition-duration: 0.25s;
 }
 
-.package-description-content{
-    display: flex;
-    align-items: center;
-    width: 75%;
-    list-style-position: inside;
-    font-size: 1.2em;
-
-}
-#sponsorship-packet-label a{
-    text-decoration: none;
-    cursor: pointer;
-    color: white;
-    opacity: 0.4;
-    transition: .3s;
+.package-description-label {
+  display: flex;
+  width: 25%;
+  justify-content: center;
+  align-items: center;
+  /* background-color: yellow; */
+  font-size: 1.3em;
 }
 
-#sponsorship-packet-label a:hover{
-    text-decoration: none;
-    cursor: pointer;
-    color: white;
-    opacity: 1;
+.package-description-content {
+  display: flex;
+  align-items: center;
+  width: 75%;
+  list-style-position: inside;
+  font-size: 1.2em;
+}
+#sponsorship-packet-label a {
+  text-decoration: none;
+  cursor: pointer;
+  color: white;
+  opacity: 0.4;
+  transition: 0.3s;
 }
 
+#sponsorship-packet-label a:hover {
+  text-decoration: none;
+  cursor: pointer;
+  color: white;
+  opacity: 1;
+}
 
-
+.mobile-sponsor-packages-content{
+    margin: 1.5em 0;
+    height: 3em;
+}

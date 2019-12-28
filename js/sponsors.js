@@ -40,6 +40,7 @@ function pageSpecificOnLoad() {
   };
 
   addEventListenersToLabels()
+  addEventListenersToLogos()
   console.log("Adding event listeners to labels...")
 
   infoContainerKeyInViewCache = "sponsors";
@@ -56,6 +57,30 @@ function pageSpecificOnLoad() {
   // console.log("infoContainerKeyInViewCacheCenterX: " + infoContainerKeyInViewCacheCenterX)
 
 }
+
+function addEventListenersToLogos(){
+  console.log("Adding event listeners to logos...")
+  const tiers = ["pioneer","disruptor","innovator","visionary"]
+  tiers.forEach(tierName => {
+    tierLogoElement = document.getElementById(tierName + "-logo")
+    tierLogoElement.addEventListener('mouseenter',function(){
+      console.log("mouse entered " + tierName)
+      toggleLogoDescription(tierName)
+    })
+    tierLogoElement.addEventListener('mouseleave',function(){
+      console.log("mouse entered " + tierName)
+      toggleLogoDescription(tierName)
+    })
+
+  });
+
+  function toggleLogoDescription(tierName){
+    tierDescriptionElement = document.getElementById(tierName + "-description")
+    tierDescriptionElement.classList.toggle("active-tier-description")
+  }
+}
+
+
 
 function addEventListenersToLabels(){
   for (const key in infoContainers) {

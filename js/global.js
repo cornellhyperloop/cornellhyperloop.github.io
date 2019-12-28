@@ -82,11 +82,13 @@ function configureMobileDropdown(){
 
 function resizeElements() {
     console.log("Resizing Elements on: Page Index: " + String(pageIndex) + " html: " + window.location.pathname );
-
+    
     if ([2,3,4].includes(pageIndex)){
+        // Don't resize on mobile backgrounds
+        
+        
         console.log("Resizing Page Background");
         resizePageBackground();
-        
     }
     if ([0].includes(pageIndex)){
         console.log("Resizing Landing Video");
@@ -109,6 +111,13 @@ function resizePageBackground() {
     var page = document.getElementsByClassName("page")[0];
 
     var offset;
+
+    if (window.innerWidth < 1023) {
+        page.style.height = null;
+        page.style.backgroundPositionX = null ;
+        return;
+    }
+
 
     if (windowAspectRatio < pageAspectRatio){
         console.log("Height is too small for video")
