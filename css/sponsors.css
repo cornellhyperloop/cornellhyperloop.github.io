@@ -58,7 +58,10 @@
   .active-tier-description {
   background-color: rgba(0, 0, 0, 0.3);
   color: white;
-}
+  }
+  .mobile-sponsor-packages-content{
+      display: none;
+  }
 }
 
 .rightside-info-subcontainer {
