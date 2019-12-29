@@ -60,6 +60,9 @@
   #sidebar-list-container {
     display: none;
   }
+  #sponsor-packages-content{
+      font-size: 135%;
+  }
 }
 
 /* Desktop/Laptop Sizing */
@@ -260,8 +263,7 @@
   height: 3em;
 }
 
-.sponsorship-description-wrapper {
-}
+
 
 .sponsorship-description-wrapper ul li {
   transition: ease-in-out;
