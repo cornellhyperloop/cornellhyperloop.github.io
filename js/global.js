@@ -1,5 +1,6 @@
 
-mobileLimit = 767;
+cellularMaxWidth = 767;
+tabletMaxWidth = 1023;
 initialLoadDone = false;
 
 pageType = {
@@ -148,7 +149,7 @@ function resizePageBackground() {
 }
 
 function resizeLandingVideo() {
-    if (window.innerHeight < mobileLimit || window.innerWidth < mobileLimit){
+    if (window.innerHeight < cellularMaxWidth || window.innerWidth < cellularMaxWidth){
         
         console.log("Resizing Video Aborted")
         return

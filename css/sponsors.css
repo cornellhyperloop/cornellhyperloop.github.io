@@ -8,18 +8,29 @@
   text-align: center;
 }
 
-
 /* Mobile Sizing */
 @media only screen and (max-width: 1023px) {
-    #sponsor-packages{
-        display: none;
-    }
+    #sponsor-packages-content {
+        padding: 1em 0;
+}
+  .sponsorship-description-wrapper {
+    margin: 1em auto;
+  }
+  .rightside-info-subcontainer {
+    color: white;
+  }
+  .package img {
+    width: 100%;
+  }
+  #sponsor-packages {
+    /* display: none; */
+  }
   #sidebar-list-container {
     display: none;
   }
   .rightside-info-subcontainer {
     background-color: rgb(255, 255, 255, 0.2);
-    margin: 0 0 1.5em 0;
+    margin: 1.5em 0;
   }
   #sponsors-content img {
     max-width: 29%;
@@ -27,11 +38,13 @@
   #sponsors-content {
     padding: 1em 0;
   }
+  .rightside-info-subcontainer-content-header {
+    display: none;
+  }
 }
 
 /* Cellular Sizing */
 @media only screen and (max-width: 767px) {
-
 }
 
 /* Tablet Sizing */
@@ -39,13 +52,17 @@
   #sidebar-list-container {
     display: none;
   }
-  .rightside-info-subcontainer {
-    background-color: rgb(255, 255, 255, 0.2);
-  }
 }
 
 /* Desktop/Laptop Sizing */
 @media only screen and (min-width: 1024px) {
+  .sponsorship-description-wrapper {
+    margin: 1em auto 0 auto;
+  }
+  .package img {
+    height: calc(90% - 1.85em);
+    width: auto;
+  }
   #sidebar-list-container {
     border-right: solid 2px lightgray;
   }
@@ -56,11 +73,16 @@
     max-width: 25%;
   }
   .active-tier-description {
-  background-color: rgba(0, 0, 0, 0.3);
-  color: white;
+    background-color: rgba(0, 0, 0, 0.3);
+    color: white;
   }
-  .mobile-sponsor-packages-content{
-      display: none;
+  .mobile-sponsor-packages-content {
+    display: none;
+  }
+  .rightside-info-subcontainer-content-header {
+    height: 7%;
+    align-items: center;
+    margin-bottom: 1%;
   }
 }
 
@@ -129,15 +151,6 @@
     width: auto;
 } */
 
-#sponsor-packages-content {
-}
-
-.rightside-info-subcontainer-content-header {
-  height: 7%;
-  align-items: center;
-  margin-bottom: 1%;
-}
-
 .rightside-info-subcontainer-content-header h1 {
   width: 100%;
   text-align: center;
@@ -160,21 +173,12 @@
   padding: 1% 0.4%;
   margin: 5px 4px;
   height: 100%;
-  max-width: 22.5%;
+  width: 22%;
+  max-width: 170px;
   text-align: center;
   border-radius: 20px;
   transition: ease-in-out;
   transition-duration: 0.25s;
-}
-
-.package:hover {
-  background-color: rgba(0, 0, 0, 0.3);
-  color: white;
-}
-
-.package img {
-  height: calc(90% - 1.85em);
-  width: auto;
 }
 
 .package h3 {
@@ -185,7 +189,7 @@
 }
 
 #package-descriptions-container {
-  height: 65%;
+  height: 63%;
 }
 #sponsor-packages-content hr {
   background-color: black;
@@ -237,7 +241,26 @@
   opacity: 1;
 }
 
-.mobile-sponsor-packages-content{
-    margin: 1.5em 0;
-    height: 3em;
+.mobile-sponsor-packages-content {
+  margin: 1.5em 0;
+  height: 3em;
+}
+
+.sponsorship-description-wrapper {
+  width: 80%;
+  max-width: 800px;
+  font-size: x-large;
+}
+
+
+.sponsorship-description-wrapper ul li {
+  transition: ease-in-out;
+  transition-duration: 0.4s;
+  opacity: 0.5;
+  margin: 5px 0px;
+}
+
+.active-package-logo{
+    background-color: rgba(0, 0, 0, 0.3);
+    color: white;
 }
