@@ -1,109 +1,125 @@
-<!DOCTYPE HTML>
+<!DOCTYPE html>
 <html>
+  <head>
+    <title>Cornell Hyperloop</title>
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="css/global.css" />
+    <!--  -->
+    <link rel="stylesheet" href="css/index.css" />
+    <!--  -->
+    <script src="js/global.js"></script>
 
-<head>
-  <title>Cornell Hyperloop</title>
-  <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
-  <link rel="icon" href="images/favicon.ico" type="image/x-icon">
-  <link rel="stylesheet" href="css/global.css">
-  <!--  -->
-  <link rel="stylesheet" href="css/index.css">
-  <!--  -->
-  <script src="js/global.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+  </head>
 
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-</head>
-
-<body>
-  <div class="page">
-    <header>
-      <div class="navbar-container-computer">
-        <div class="navbar-logo">
-          <a href="https://hyperloop.cornell.edu"><img src="images/logotextthin.png"
-              alt="Hyperloop Logo"></a>
-        </div>
-
-        <nav>
-          <ul>
-            <li><a class="nav-link" href="">Home</a></li>
-            <li><a class="nav-link" href="about">About</a></li>
-            <li><a class="nav-link" href="team">Team</a></li>
-            <li><a class="nav-link" href="design">Design</a></li>
-            <li><a class="nav-link" href="sponsors">Sponsors</a></li>
-          </ul>
-        </nav>
-
-      </div>
-      <div id="navbar-container-mobile">
-        <div class="navbar-logo">
-          <a id="desktop-logo" href="https://hyperloop.cornell.edu"><img
-              src="images/logotextthin.png" alt="Hyperloop Logo"></a>
-          <a id="mobile-logo" href="https://hyperloop.cornell.edu"><img
-              src="images/logo.png" alt="Hyperloop Logo"></a>
-        </div>
-
-        <button id="mobile-dropdown-button" onclick="handleMobileDropdownButtonClick()">
-          <div class="mobile-dropdown-button-bar" id="button-bar1"></div>
-          <div class="mobile-dropdown-button-bar" id="button-bar2"></div>
-          <div class="mobile-dropdown-button-bar" id="button-bar3"></div>
-
-
-          <div class="mobile-dropdown-container" id="mobile-dropdown-container-hidden">
-            <ul>
-              <li><a class="mobile-link" href="https://hyperloop.cornell.edu">Home</a>
-              </li>
-              <li><a class="mobile-link" href="about">About</a></li>
-              <li><a class="mobile-link" href="team">Team</a></li>
-              <li><a class="mobile-link" href="design">Design</a></li>
-              <li><a class="mobile-link" href="sponsors">Sponsors</a></li>
-            </ul>
+  <body>
+    <div class="page">
+      <header>
+        <div class="navbar-container-computer">
+          <div class="navbar-logo">
+            <a href="https://hyperloop.cornell.edu"
+              ><img src="images/logotextthin.png" alt="Hyperloop Logo"
+            /></a>
           </div>
-        </button>
-      </div>
-  </header>
 
-  <div class="page-content">
-      <div class="landing-video-container">
+          <nav>
+            <ul>
+              <li><a class="nav-link" href="">Home</a></li>
+              <li><a class="nav-link" href="about">About</a></li>
+              <li><a class="nav-link" href="team">Team</a></li>
+              <li>
+                <a class="nav-link" href="design">Design</a>
+              </li>
+              <li>
+                <a class="nav-link" href="sponsors">Sponsors</a>
+              </li>
+              <li>
+                <a
+                  class="red-button"
+                  id="giving-day-link"
+                  href="https://givingday.cornell.edu/campaigns/cu-hyperloop"
+                  >Donate</a
+                >
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <div id="navbar-container-mobile">
+          <div class="navbar-logo">
+            <a id="desktop-logo" href="https://hyperloop.cornell.edu"
+              ><img src="images/logotextthin.png" alt="Hyperloop Logo"
+            /></a>
+
+            <a id="mobile-logo" href="https://hyperloop.cornell.edu"
+              ><img src="images/logo.png" alt="Hyperloop Logo"
+            /></a>
+          </div>
+
+          <button id="mobile-dropdown-button" onclick="handleMobileDropdownButtonClick()">
+            <div class="mobile-dropdown-button-bar" id="button-bar1"></div>
+            <div class="mobile-dropdown-button-bar" id="button-bar2"></div>
+            <div class="mobile-dropdown-button-bar" id="button-bar3"></div>
+
+            <div class="mobile-dropdown-container" id="mobile-dropdown-container-hidden">
+              <ul>
+                <li>
+                  <a class="mobile-link" href="https://hyperloop.cornell.edu">Home</a>
+                </li>
+                <li>
+                  <a class="mobile-link" href="about">About</a>
+                </li>
+                <li>
+                  <a class="mobile-link" href="team">Team</a>
+                </li>
+                <li>
+                  <a class="mobile-link" href="design">Design</a>
+                </li>
+                <li>
+                  <a class="mobile-link" href="sponsors">Sponsors</a>
+                </li>
+              </ul>
+            </div>
+          </button>
+        </div>
+      </header>
+      <div class="page-content">
+        <div class="landing-video-container">
           <video autoplay muted loop id="landing-video">
-            <source src="images/backgrounds/loop.mp4" type="video/mp4">
+            <source src="images/backgrounds/loop.mp4" type="video/mp4" />
           </video>
-      </div>
-      <div class="cellular-only heading centered-text" 
-      id="hyperloop-mobile-title">
-        <h1 class="hovering">
-        Cornell Hyperloop
-        </h1>
-      </div>
-      <div class="cellular-only blurb-container">
-        <p class="centered-text"> is Cornell's <em>only</em> project team dedicated towards developing a new form of travel. The task of moving from point A to point B in space has existed since the dawn of time and we are seeking to revolutionize it for the 21st century.
-        </p>
+        </div>
+        <div class="cellular-only centered-text" id="hyperloop-mobile-title">
+          <h1 class="heading hovering">
+            Cornell Hyperloop
+          </h1>
+        </div>
+        <div class="cellular-only blurb-container">
+          <p class="centered-text">
+            is Cornell's <em>only</em> project team dedicated towards developing a new
+            form of travel. The task of moving from point A to point B in space has
+            existed since the dawn of time and we are seeking to revolutionize it for the
+            21st century.
+          </p>
 
-        <hr>
-      </div>
-        <!-- <div class="cellular-only mobile-content-image blur team-picture" >
-          <img src="./images/team_shots/teamfa2019_cropped.jpg" alt="">
-        </div> -->
-        <!-- <div class="debug-div"></div> -->
+          <hr />
+        </div>
         <div class="cellular-only team-picture-container">
-          <img src="./images/team_shots/teamfa2019_cropped.jpg" alt="">
+          <img src="./images/team_shots/teamfa2019_compressed.jpg" alt="" />
         </div>
-        <!-- <div class="debug-div"></div> -->
-        
-        </div>
-    </div>
-    <!-- <footer class="cellular-only footer">
+      </div>
+
+      <footer class="cellular-only">
         <div class="footer-content-container">
-          <svg class="footer-icon">
-            <path d="M41.1,25H22.9l9.1,7.1L41.1,25z M44,26.6l-12,9.3l-12-9.3V39h24V26.6z M0,0v64h64V0H0z M47,42H17V22h30V42z"></path>
-          </svg>
+          <a id="mae-department-footer-logo">
+            <img src="./images/icons/logo-mobile-mae_department.svg" alt="" />
+          </a>
+
+          <a id="hyperloop-footer-logo" href="">
+            <img src="./images/logotext.png" alt="" />
+          </a>
         </div>
-      </footer> -->
-  </div>
-
-
-
-  </div>
-
-</body>
-
+      </footer>
+    </div>
+  </body>
 </html>

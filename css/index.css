@@ -6,16 +6,6 @@ html{
     background-image: none;
     position: relative;
 }
-@media only screen and (max-width: 767px){
-    .blurb-container{
-        width: 90%;
-        margin: 0 auto;
-        padding-bottom: 2em;
-        line-height: 1.3em;
-    }
-    
-}
-
 
 /* mobile sizing */
 @media only screen and (max-width: 767px){
@@ -142,14 +132,10 @@ html{
 
 
 
-.blurb-container{
-    color: white;
-    font-size: 1.2em;
-}
 
 
 .team-picture-container{
-    width: 90vw;
+    width: 100vw;
     margin: 0 auto;
     padding-bottom: 2em;
 }
@@ -157,6 +143,4 @@ html{
 .team-picture-container img{
     width: 100%;
 }
-.blurb-container p{
-    margin-bottom: 1.5em;
-}
+

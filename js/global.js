@@ -4,6 +4,7 @@ tabletMaxWidth = 1023;
 initialLoadDone = false;
 
 pageType = {
+    "404" : -1,
     "index" : 0,
     "about" : 1,
     "team" : 2,
