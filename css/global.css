@@ -244,7 +244,8 @@
     width: 100%;
     flex-direction: column;
     overflow: auto;
-    min-height: calc(100vh - var(--tabletHeaderHeight) - var(--footerHeight));
+    /* min-height: calc(100vh - var(--tabletHeaderHeight) - var(--footerHeight)); */
+    min-height: calc(100vh - var(--tabletHeaderHeight));
   }
 
   .heading {
@@ -712,6 +713,7 @@
 }
 
 footer {
+  display: none;
   background-color: white;
   height: var(--footerHeight);
   width: 100vw;
