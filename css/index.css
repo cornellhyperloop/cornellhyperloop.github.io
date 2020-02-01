@@ -9,12 +9,16 @@ html{
 
 /* mobile sizing */
 @media only screen and (max-width: 767px){
-    .landing-video-container{
+    .info-session-div-container{
+        background-color: rgba(255,255, 255, .5);
+        color: black;
+        margin: 1.5em 0;
+        text-align: center;
+    }
+
+    #landing-video{
         display: none;
     }
-    /* .landing-video-container video{ */
-        /* display: none; */
-    /* } */
     #apply-button{
         position: absolute;
         margin: 1.5em auto .5em auto;
@@ -115,6 +119,23 @@ html{
         display: none;
     }
 }
+/* Desktop/Laptop Sizing */
+@media only screen and (min-width: 1024px) {
+.info-session-div-container{
+    text-align: center;
+    position: absolute;
+    width: 100%;
+    /* background-color: rgba(255, 255, 255, 0.5); */
+    background-color: rgba(0, 0, 0, 0.6);
+    color: white;
+    padding: .25em 0;
+    box-shadow: 0px 0px 0px -15px rgba(0, 0, 0, 0.6), 0 3px 24px rgba(0, 0, 0, 0.8);
+    /* margin-top: 4em; */
+  }
+}
+
+
+
 
 
 #landing-video{

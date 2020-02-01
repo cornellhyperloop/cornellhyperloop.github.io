@@ -259,6 +259,14 @@
 
 /* Tablet Sizing */
 @media only screen and (min-width: 768px) and (max-width: 1023px) {
+  .info-session-div-container{
+    color: white;
+    position: absolute;
+    text-align: center;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.3);
+    margin-top: .5em;
+  }
   .cellular-only {
     display: none !important;
   }
@@ -395,6 +403,11 @@
 
 /* Desktop/Laptop Sizing */
 @media only screen and (min-width: 1024px) {
+  
+  .landing-page-video-offset-div {
+    /* margin-top: 485px; */
+    width: 100%;
+  }
   .mobile-only {
     display: none !important;
   }
