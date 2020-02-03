@@ -133,6 +133,13 @@ html{
     /* margin-top: 4em; */
   }
 }
+.info-session-div-container a{
+    color: inherit;
+    text-decoration: none;
+    line-height: 1.2em;
+    text-align: center;
+    font-size: 1.2em;
+  }
 
 
 
