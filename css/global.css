@@ -13,8 +13,9 @@
   --HyperloopRed: #b41414;
   --buttonColor: #dd413c;
   --footerHeight: 120px;
-  --cellularHeaderHeight: 50px;
   --navigationButtonHeight: 5px;
+
+  --cellularHeaderHeight: 50px;
   --tabletHeaderHeight: 66px;
   --desktopHeaderHeight: 72px;
   --cellularMaxWidth: 767px;
@@ -117,6 +118,15 @@
 }
 /* Cellular Sizing */
 @media only screen and (max-width: 767px) {
+  #mae-department-footer-logo img{
+    height: 40px;
+    width: auto;
+  }
+  #hyperloop-footer-logo img{
+    height: 45px;
+    width: auto;
+  }
+
   .page {
     background-repeat: repeat;
   }
@@ -244,8 +254,7 @@
     width: 100%;
     flex-direction: column;
     overflow: auto;
-    /* min-height: calc(100vh - var(--tabletHeaderHeight) - var(--footerHeight)); */
-    min-height: calc(100vh - var(--tabletHeaderHeight));
+    min-height: calc(100vh - var(--cellularHeaderHeight) - var(--footerHeight));
   }
 
   .heading {
@@ -433,7 +442,8 @@
 
   .page-content {
     width: 100%;
-    height: calc(100% - 72px);
+    /* height: calc(100% - 72px); */
+    min-height: calc(100vh - var(--desktopHeaderHeight) - var(--footerHeight));
     display: inline-flex;
     flex-direction: column;
   }
@@ -743,8 +753,8 @@ footer {
   height: 100%;
 }
 
-#mae-department-footer-logo img {
-  width: 400px;
-  height: auto;
+footer a{
+  display: inline-block;
 }
+
 
