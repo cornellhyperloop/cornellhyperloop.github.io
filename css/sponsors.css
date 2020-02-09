@@ -67,6 +67,9 @@
 
 /* Desktop/Laptop Sizing */
 @media only screen and (min-width: 1024px) {
+  .page-content{
+    height: calc(100% - var(--desktopHeaderHeight));
+  }
   .sponsorship-description-wrapper {
     font-size: x-large;
     margin: 1em auto 0 auto;
