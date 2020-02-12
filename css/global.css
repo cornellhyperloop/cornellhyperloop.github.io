@@ -442,7 +442,7 @@
 
   .page-content {
     width: 100%;
-    /* height: calc(100% - 72px); */
+    height: calc(100% - var(--desktopHeaderHeight));
     min-height: calc(100vh - var(--desktopHeaderHeight) - var(--footerHeight));
     display: inline-flex;
     flex-direction: column;
