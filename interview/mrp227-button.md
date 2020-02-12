@@ -13,6 +13,8 @@ localmax(listA)
 
 >> [1]
 ```
+
+
 <button class= "intervew-button">
-  <a href="./q2.md" >Continue</a>
+  <a href="./q2" >Continue</a>
 </button>
