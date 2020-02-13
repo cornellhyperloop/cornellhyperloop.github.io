@@ -6,7 +6,7 @@ const submitButton = document.getElementById("interview-file-submit-button");
 
 submitButton.addEventListener('click', function (e) {
 
-  
+
   var file = fileInput.files[0];
   // 
   const first_name = document.getElementById("first-name").value
