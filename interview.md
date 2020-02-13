@@ -21,10 +21,10 @@ localmax(listB)
 >> [1,1]
 ```
 
-<link href="./css/md.css" rel="stylesheet" type="text/css" />
+<!-- <link href="./css/md.css" rel="stylesheet" type="text/css" />
 <link href="./materialize/css/materialize.css" rel="stylesheet" type="text/css" />
 <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-<script language="JavaScript" type="text/javascript" src="js/md.js"></script>
+
 
 <div class="row">
     <form class="">
@@ -65,7 +65,6 @@ localmax(listB)
 <!-- The core Firebase JS SDK is always required and must be listed first -->
 <script src="https://www.gstatic.com/firebasejs/7.8.1/firebase-app.js"></script>
 
-
 <script>
   // Your web app's Firebase configuration
   var firebaseConfig = {
@@ -82,3 +81,5 @@ localmax(listB)
 
   var storage = firebase.storage();
 </script>
+<script src="https://www.gstatic.com/firebasejs/7.8.0/firebase-storage.js"></script>
+<script language="JavaScript" type="text/javascript" src="js/md.js"></script> -->
