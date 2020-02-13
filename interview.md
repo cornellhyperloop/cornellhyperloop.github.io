@@ -1,5 +1,5 @@
 
-# Melissa Psaras (mrp227)
+# Spring 2020 Recruitment
 Welcome to your interview. Let's work the following problem- you may choose and language and ask guiding questions.
 
 ## Local Maxima
@@ -21,18 +21,30 @@ localmax(listB)
 >> [1,1]
 ```
 
-<link href="./css/materialize/materialize.min.css" rel="stylesheet" type="text/css" />
 <link href="./css/md.css" rel="stylesheet" type="text/css" />
+<link href="./materialize/css/materialize.css" rel="stylesheet" type="text/css" />
 <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-<script src="./../css/materialize/js/materialize.min.js"></script>
 <script language="JavaScript" type="text/javascript" src="js/md.js"></script>
 
-
+<div class="row">
+    <form class="">
+      <div class="">
+        <div class="blue-text lighten input-field col s6">
+          <input placeholder="First Name" id="first_name" type="text" class="validate">
+          <label for="first_name"></label>
+        </div>
+        <div class="blue-text lighten input-field col s6">
+          <input placeholder="Last Name" id="last_name" type="text" class="validate">
+          <label for="last_name"></label>
+        </div>
+      </div>
+    </form>
+  </div>
 <form action="#">
     <div class="file-field input-field">
-      <div class="btn">
+      <div class="md-blue-button btn">
         <span>File</span>
-        <input type="file">
+        <input id = "file-input" type="file">
       </div>
       <div class="file-path-wrapper">
         <input class="file-path validate" type="text">
@@ -40,9 +52,9 @@ localmax(listB)
     </div>
   </form>
 
-<button class="btn waves-effect waves-light centered" 
+<button class="btn md-blue-button waves-effect waves-light right-aligned" 
   type="submit" 
-  id = "submit-interview-file"
+  id= "interview-file-submit-button"
   name="action">
   Submit
     <i class="material-icons right">send</i>
@@ -67,10 +79,6 @@ localmax(listB)
   };
   // Initialize Firebase
   firebase.initializeApp(firebaseConfig);
-  console.log("Hello")
-  button = document.getElementById("submit-interview-file")
-  button.addEventListner(submitform)
-  function submitform(){
-    console.log("sumitting..")
-  }
+
+  var storage = firebase.storage();
 </script>
