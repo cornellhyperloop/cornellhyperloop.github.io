@@ -9,8 +9,8 @@ submitButton.addEventListener('click', function (e) {
 
   var file = fileInput.files[0];
   // 
-  const first_name = document.getElementById("first-name").value
-  const last_name = document.getElementById("last-name").value
+  const first_name = document.getElementById("first_name").value
+  const last_name = document.getElementById("last_name").value
   const uploadRef = storage.ref().child('sp20/' + first_name + "_" + last_name + "localmax");
 
   var task = uploadRef.put(file)
