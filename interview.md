@@ -82,4 +82,4 @@ localmax(listB)
   var storage = firebase.storage();
 </script>
 <script src="https://www.gstatic.com/firebasejs/7.8.0/firebase-storage.js"></script>
-<script language="JavaScript" type="text/javascript" src="js/md.js"></script> -->
+<script language="JavaScript" type="text/javascript" src="js/md.js"></script>
