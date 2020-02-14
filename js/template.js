@@ -1,14 +1,16 @@
 var storage = firebase.storage();
+var storageRef = storage.ref();
 
-var storageRef = firebase.storage().ref();
+const fileInput = document.getElementById("file-input")
+const submitButton = document.getElementById("interview-file-submit-button");
 
-const fileButton = document.getElementById("file-submit-input");
-
-fileButton.addEventListener('change', function (e) {
-  console.log("File selected")
-  var file = e.target.files[0];
+submitButton.addEventListener('click', function (e) {
+  console.log("Submitting")
+  var file = fileInput.files[0];
   // 
-  const uploadRef = storage.ref().child('sp20/' + file.name);
+  const first_name = document.getElementById("first_name").value
+  const last_name = document.getElementById("last_name").value
+  const uploadRef = storage.ref().child('sp20/' + first_name + "_" + last_name + "localmax");
 
   var task = uploadRef.put(file)
 
@@ -20,8 +22,3 @@ fileButton.addEventListener('change', function (e) {
 
 }
 )
-
-// var file = ... // use the Blob or File API
-//   ref.put(file).then(function (snapshot) {
-//     console.log('Uploaded a blob or file!');
-//   });

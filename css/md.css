@@ -3,13 +3,6 @@
   --material-blue-highlight: rgb(17, 82, 147);
 }
 
-.btn, .btn:focus{
-  background-color: var(--material-blue);
-}
-
-.btn:hover{
-  background-color: var(--material-blue-highlight);
-}
 
 .right-aligned{
   float: right;

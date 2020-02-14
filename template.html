@@ -5,6 +5,11 @@
     <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
     <link rel="icon" href="images/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="css/global.css">
+    <link href="./materialize/css/materialize.css" rel="stylesheet"
+      type="text/css" />
+    <link href="./css/md.css" rel="stylesheet" type="text/css" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
     <!--  -->
     <!-- <link rel="stylesheet" href="css/page-specific-stylesheet"> -->
     <!--  -->
@@ -84,15 +89,27 @@
       <div class="page-content">
         <div class="heading"></div>
 
-        <link href="./css/materialize/materialize.min.css" rel="stylesheet"
-          type="text/css" />
-        <link href="./css/md.css" rel="stylesheet" type="text/css" />
-        <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
-          rel="stylesheet">
+
         <script language="JavaScript" type="text/javascript" src="js/md.js"></script>
+        <div class="row">
+          <form class="">
+            <div class="">
+              <div class="blue-text lighten input-field col s6">
+                <input placeholder="First Name" id="first_name" type="text"
+                  class="validate">
+                <label for="first_name"></label>
+              </div>
+              <div class="blue-text lighten input-field col s6">
+                <input placeholder="Last Name" id="last_name" type="text"
+                  class="validate">
+                <label for="last_name"></label>
+              </div>
+            </div>
+          </form>
+        </div>
         <form action="#">
           <div class="file-field input-field">
-            <div class="btn">
+            <div class="md-blue-button btn">
               <span>File</span>
               <input id="file-input" type="file">
             </div>
@@ -102,9 +119,10 @@
           </div>
         </form>
 
-        <button class="btn waves-effect waves-light centered"
+        <button class="btn md-blue-button waves-effect waves-light
+          right-aligned"
           type="submit"
-          onclick="submitInterviewFile()"
+          id="interview-file-submit-button"
           name="action">
           Submit
           <i class="material-icons right">send</i>
