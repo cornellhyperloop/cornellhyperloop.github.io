@@ -1,0 +1,200 @@
+<!DOCTYPE HTML>
+<head>
+  <title>Cornell Hyperloop</title>
+  <link href="https://fonts.googleapis.com/css?family=Quattrocento+Sans" rel="stylesheet">
+  <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+  <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="css/global.css">
+  <link rel="stylesheet" href="css/design2.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script language="JavaScript" type="text/javascript" script src="js/sponsors.js"></script>
+  <script language="JavaScript" type="text/javascript" script src="js/global.js"></script>
+</head>
+<body>
+
+  <div class="page">
+    <header>
+        <div class="navbar-container-computer">
+          <div class="navbar-logo">
+            <a href="https://hyperloop.cornell.edu"
+              ><img src="images/logotextthin.png" alt="Hyperloop Logo"
+            /></a>
+          </div>
+
+          <nav>
+            <ul>
+              <li><a class="nav-link" href="https://hyperloop.cornell.edu">Home</a></li>
+              <li><a class="nav-link" href="about">About</a></li>
+              <li><a class="nav-link" href="team">Team</a></li>
+              <li>
+                <a class="nav-link" href="design">Design</a>
+              </li>
+              <li>
+                <a class="nav-link" href="sponsors">Sponsors</a>
+              </li>
+              <li>
+                <a
+                  class="red-button"
+                  id="giving-day-link"
+                  href="https://givingday.cornell.edu/campaigns/cu-hyperloop"
+                  >Donate</a
+                >
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <div id="navbar-container-mobile">
+          <div class="navbar-logo">
+            <a id="desktop-logo" href="https://hyperloop.cornell.edu"
+              ><img src="images/logotextthin.png" alt="Hyperloop Logo"
+            /></a>
+
+            <a id="mobile-logo" href="https://hyperloop.cornell.edu"
+              ><img src="images/logo.png" alt="Hyperloop Logo"
+            /></a>
+          </div>
+
+          <button id="mobile-dropdown-button" onclick="handleMobileDropdownButtonClick()">
+            <div class="mobile-dropdown-button-bar" id="button-bar1"></div>
+            <div class="mobile-dropdown-button-bar" id="button-bar2"></div>
+            <div class="mobile-dropdown-button-bar" id="button-bar3"></div>
+
+            <div class="mobile-dropdown-container" id="mobile-dropdown-container-hidden">
+              <ul>
+                <li>
+                  <a class="mobile-link" href="https://hyperloop.cornell.edu">Home</a>
+                </li>
+                <li>
+                  <a class="mobile-link" href="about">About</a>
+                </li>
+                <li>
+                  <a class="mobile-link" href="team">Team</a>
+                </li>
+                <li>
+                  <a class="mobile-link" href="design">Design</a>
+                </li>
+                <li>
+                  <a class="mobile-link" href="sponsors">Sponsors</a>
+                </li>
+              </ul>
+            </div>
+          </button>
+        </div>
+      </header>
+
+    <div class="page-content">
+      <!-- <div class="mobile-only centered-text" id="hyperloop-mobile-title">
+        <h1 class="heading hovering">
+        Our Sponsors
+        </h1>
+      </div>
+      <div class="mobile-only blurb-container">
+        <p class="centered-text"> a very special thank-you to our generous sponsors, who allow us to dream big and explore innovative solutions to better our efforts on revolutionizing hyperloop technology. We wouldn't be where we are without your continued support.
+        </p>
+
+        <p class="centered-text">
+Sponsorship through tax-deductible donations comes with various benefits, including but not limited to brand visisbility at our world-class college campus, Cornell. For a fully detailed version of our sponsorship packages click <a href="/Sponsoship Packet 19-20.pdf">here</a> and contact us at <a href="mailto:cornellhyperloop@gmail.com">cornellhyperloop@gmail.com</a>.
+        </p> -->
+
+        
+      </div>
+      <hr class="mobile-only">
+      <div class="left-right-infocontainer-wrapper">
+        <div id="sidebar-list-container">
+          <ul>
+            <li class="sidebar-list-label" id="active-label">All</li>
+            <li class="sidebar-list-label" id="inactive-label">Propulsion</li>
+            <li class="sidebar-list-label" id="inactive-label">Breaking</li>
+            <li class="sidebar-list-label" id="inactive-label">Fuselage</li>
+            <li class="sidebar-list-label" id="inactive-label">Suspension</li>
+            
+        </div>
+
+        <div id="rightside-info-container">
+          <div class="rightside-info-subcontainer" id="all">
+            <img src="images/logo.png" />
+            <h2>Click on a subsystem to learn more about how the pod comes
+            together.
+            </h2>>
+          </div>
+
+          <hr class="mobile-only">
+          <div class="mobile-only heading centered-text" id="hyperloop-mobile-title">
+              <h2 class="hovering">Become a Sponsor</h2>
+            </div>
+          <div class="rightside-info-subcontainer" id="sponsor-packages">
+            
+            <div class="rightside-info-subcontainer-content"  id="sponsor-packages-content">
+              <div class="rightside-info-subcontainer-content-header">
+                <h1>Tier Packages</h1>
+              </div>
+              <div class="tier-packages-logos">
+                <div class="package" id="pioneer-logo">
+                  <img src="images/icons/pioneer.png" alt="">
+                  <h2>Pioneer</h2>
+                  <p> <$1000  </p>
+                </div>
+                <div class="package" id="disruptor-logo">
+                  <img src="images/icons/disruptor.png" alt="">
+                  <h2>Disruptor</h2>
+                  <p><$5000</p>
+                </div>
+                <div class="package" id="innovator-logo">
+                  <img src="images/icons/innovator.png" alt="">
+                  <h2>Innovator</h2>
+                  <p><$10,000</p>
+                </div>
+                <div class="package" id="visionary-logo">
+                  <img src="images/icons/visionary.png" alt="">
+                  <h2>Visionary</h2>
+                  <p>$10,000+</p>
+                </div>
+              </div>
+
+              <div id="package-descriptions-container">
+                <hr>
+                <div class="sponsorship-description-wrapper">
+                  <ul>
+                    <li class="pioneer-perk disruptor-perk innovator-perk visionary-perk">
+                      <span class="pioneer-perk">6" x 6"</span>
+                      <span class="disruptor-perk inactive"> 8" x 8"</span>
+                      <span class="innovator-perk inactive">10" x 10"</span>
+                      <span class="visionary-perk inactive">14" x 14"</span>
+                     square logo on Hyperloop Pod</li>
+                    <li class="pioneer-perk disruptor-perk innovator-perk visionary-perk">Featured on the Cornell Hyperloop website</li>
+                    <li class="pioneer-perk disruptor-perk innovator-perk visionary-perk">Placement of logo on pod and Cornell Hyperloop gear</li>
+                    <li class="disruptor-perk innovator-perk visionary-perk">A monthly newsletter with updates of our progress</li>
+                    <li class="disruptor-perk innovator-perk visionary-perk">Will receive Cornell Hyperloop merchandise</li>
+                    <li class="innovator-perk visionary-perk">Special mentions during competition</li>
+                    <li class="innovator-perk visionary-perk">Materials from competition weekend</li>
+                    <li class="visionary-perk">Quarterly calls with the team to discuss the pod's progress</li>
+                    <li class="visionary-perk">Additional benefits can be discussed</li>
+                  </ul>
+                </div>
+
+
+              </div>
+
+
+
+
+
+
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+
+    </div>
+
+
+  </div>
+
+
+
+
+</body>
+
+</html>
