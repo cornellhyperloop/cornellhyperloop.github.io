@@ -1,0 +1,117 @@
+.page-design {
+    background-image: url("../images/backgrounds/stars.jpg");
+}
+
+.heading {
+    height: 14%;
+}
+.page-content{
+    color: white;
+    align-items: center;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    width: 85%;
+    height: 63%;
+}
+
+.selectors {
+    width: 25%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.selector {
+    width: 100%;
+    text-align: center;
+    padding: 22px 0;
+    font-size: 2em;
+}
+
+.selector-text {
+    display: inline-block;
+    cursor: pointer;
+}
+
+.underline,
+.underline:hover,
+.underline:focus,
+.underline:active {
+  color: #fff;
+  text-decoration: none;
+}
+
+.active .selector-text .underline::after,
+.selector-text .underline::after {
+    height: 3px;
+    display: block;
+    position: relative;
+    margin: 0 auto;
+    margin-top: 3px;
+    background-color: #dd413c;
+    transition: 0.3s ease all;
+    width: 0%;
+    content: "";
+}
+
+.active .selector-text .underline::after,
+.selector-text:hover .underline::after {
+    width: 100%;
+    transition: 0.3s ease all;
+}
+
+.design-descriptions {
+    width: 30%;
+    font-size: 1.2em;
+    text-align: center;
+    height: 400px;
+    line-height: 30px;
+    display: table;
+    height: 100%;
+}
+
+.design-descriptions .active {
+    display: table-cell;
+    vertical-align: middle;
+    transition: all 1.7s;
+    position: static;
+    opacity: 1;
+}
+
+#all-desc img {
+    width: 100%;
+}
+
+.description {
+    position: absolute;
+    opacity: 0;
+}
+
+.description hr {
+    margin: 19px;
+    width: 50%;
+    margin-left: 25%;
+}
+
+.description span {
+    color: #dd413c;
+    font-size: 1.3em;
+    font-weight: bold;
+}
+
+.description h3 {
+    font-size: 1.5em;
+}
+
+.design-images {
+    width: 45%;
+}
+
+.design-images img {
+    position: absolute;
+    width: 38%;
+    opacity: 0.1;
+    transition: all 1s;
+}

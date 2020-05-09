@@ -1,25 +1,56 @@
-var active = "#all";
+var infoContainers;
+var infoContainerKeyInViewCache;
+var infoContainerKeyInViewCacheCenterX;
+var rightsideInfoContainer;
+var rightsideInfoContainerRect;
+var scrollInterval = 0;
 
-function update(e) {
-    $(active).removeClass("active");
-    $(active + "-desc").removeClass("active");
-    $(active + "-img").css("opacity", 0.1);
-    if (active == "#all") {
-        $("#fuselage-img").css("opacity", 0.1);
-        $("#all-desc img").css("display", "none")
-    }
-    active = e;
-    $(active).addClass("active");
-    $(active + "-desc").addClass("active");
-    $(active + "-img").css("opacity", 1);
-    if (active == "#all") {
-        $("#fuselage-img").css("opacity", 1);
-        $("#all-desc img").css("display", "inherit")
-    }
+function pageSpecificOnLoad() {
+  console.log("sponsors window.onload()...");
+  infoContainers = {
+    all: {
+      index: 0,
+      infoContainerID: "sponsors"
+    },
+    propulsion: {
+      index: 1,
+      infoContainerID: "sponsor-packages"
+    },
+    braking: {
+      index: 2,
+      infoContainerID: "sponsors"
+    },
+    suspension: {
+      index: 3,
+      infoContainerID: "sponsors"
+    },
+    
+  };
+
+  addEventListenersToLabels();
+  console.log("Adding event listeners to labels...");
+
+  infoContainerKeyInViewCache = "sponsors";
+  let infoContainerKeyInViewCacheRect = document
+    .getElementById(
+      infoContainers[infoContainerKeyInViewCache]["infoContainerID"]
+    )
+    .getBoundingClientRect();
+
+  rightsideInfoContainer = document.getElementById("rightside-info-container");
+  rightsideInfoContainer.addEventListener("wheel", updateLabelInView);
+
+  rightsideInfoContainerRect = rightsideInfoContainer.getBoundingClientRect();
+  // console.log("rightsideInfoContainerCenterX: " + String(rightsideInfoContainerRect.top + rightsideInfoContainerRect.height/2) )
+
+  infoContainerKeyInViewCacheCenterX =
+    infoContainerKeyInViewCacheRect.top +
+    infoContainerKeyInViewCacheRect.height / 2;
+  // console.log("infoContainerKeyInViewCacheCenterX: " + infoContainerKeyInViewCacheCenterX)
 }
 
-$(window).on("load", function(){
-    if (active == "#all") {
-        $("#fuselage-img").css("opacity", 1);
-    }
-});
+
+function getLabelElement(nameOfKey) {
+  labelIndex = infoContainers[nameOfKey]["index"];
+  return document.getElementsByClassName("sidebar-list-label")[labelIndex];
+}

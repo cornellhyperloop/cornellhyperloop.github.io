@@ -9,6 +9,25 @@
 }
 @media only screen and (max-width: 768px) {
 
+  .headshot h3 {
+    max-height: 15px;
+    font-size: 12px;
+  }
+
+  .profile-modal img {
+    min-width: 50%;
+  }
+
+  .profile-modal a .linkedin {
+    max-width: 30px;
+    max-height: 40px;
+  }
+  
+  .headshot img{
+    max-width: 110px;
+    max-height: 110px;
+  }
+
   .page-content{
     position: relative;
     margin: 0 auto 0 auto;
@@ -23,8 +42,15 @@
     max-height: 33%;
     text-align: center;
     margin: 10% 10px 0 0;
-    font-size: 120%;
+    font-size: 80%;
   }
+
+  .profile-modal {
+    left: 50px;
+    right: 50px;
+    top: 220px;
+  }
+
   .roster-info-container {
     text-align: center;
     color:white;
@@ -92,6 +118,13 @@
     margin: 10% 10px 0 0;
     font-size: 120%;
   }
+
+  .profile-modal {
+    left: 100px;
+    right: 100px;
+    top: 200px;
+  }
+
   .roster-info-container {
     text-align: center;
     color:white;
@@ -239,14 +272,20 @@
     font-size: 150%;
 }
 
-.headshot{
-
+.headshot h3 {
+  max-height: 26px;
 }
+
 .headshot img{
   opacity: 1;
   border-radius: 50%;
-  width: 90%;
+  width: 180px;
+  height: 180px;
   box-shadow: 0 0 4px 1px rgba(0, 0, 0, 0.01), 0 3px 24px rgba(0, 0, 0, 0.8);
+}
+
+.silhouette {
+  border-radius: 50%;
 }
 
 .subteam-info-container-heading{
@@ -266,3 +305,68 @@
 .team-divisions-info-container ul{
   list-style: none;
 }
+
+.profile-modal {
+  display: block;
+  width: 50%;
+  height: 50%;
+  background-color: rgba(255,255, 255, .8);
+  color: black;
+  border: 2px solid black;
+  border-radius: 10px;
+  position: fixed;
+  z-index: 1;
+  margin: auto;
+  text-align: center;
+  align-content: center;
+  overflow: auto;
+  font-size: 20px;
+}
+
+.profile-modal h3 {
+  font-size: 30px;
+}
+
+.profile-modal img {
+  width: 30%;
+  border: 2px solid black;
+  border-radius: 10px;
+  margin-top: 20px;
+}
+
+.profile-modal .x {
+  /* float: right; */
+  margin-top: 20px;
+  margin-left: 90%;
+  color: gray;
+  font-size: 20px;
+  background-color: rgba(255,255, 255, 0);
+  border: none;
+}
+
+.profile-modal .x:hover {
+  color: black;
+}
+
+.profile-modal a {
+  color: black;
+  text-decoration: none;
+}
+
+.profile img:hover {
+  border: 3px solid white;
+}
+
+.profile-modal .linkedin {
+  border: none;
+  min-width: 50px;
+  max-width: 50px;
+  margin: auto;
+  display: block;
+}
+
+.hidden {
+  display: none;
+}
+
+

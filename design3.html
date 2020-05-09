@@ -1,0 +1,171 @@
+<!DOCTYPE HTML>
+<head>
+  <title>Cornell Hyperloop</title>
+  <link href="https://fonts.googleapis.com/css?family=Quattrocento+Sans" rel="stylesheet">
+  <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+  <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="css/global.css">
+  <link rel="stylesheet" href="css/design4.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script language="JavaScript" type="text/javascript" script src="js/design4.js"></script>
+  <script language="JavaScript" type="text/javascript" script src="js/global.js"></script>
+</head>
+<body>
+
+  <div class="page">
+    <header>
+        <div class="navbar-container-computer">
+          <div class="navbar-logo">
+            <a href="https://hyperloop.cornell.edu"
+              ><img src="images/logotextthin.png" alt="Hyperloop Logo"
+            /></a>
+          </div>
+
+          <nav>
+            <ul>
+              <li><a class="nav-link" href="https://hyperloop.cornell.edu">Home</a></li>
+              <li><a class="nav-link" href="about">About</a></li>
+              <li><a class="nav-link" href="team">Team</a></li>
+              <li>
+                <a class="nav-link" href="design">Design</a>
+              </li>
+              <li>
+                <a class="nav-link" href="sponsors">Sponsors</a>
+              </li>
+              <li>
+                <a
+                  class="red-button"
+                  id="giving-day-link"
+                  href="https://givingday.cornell.edu/campaigns/cu-hyperloop"
+                  >Donate</a
+                >
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <div id="navbar-container-mobile">
+          <div class="navbar-logo">
+            <a id="desktop-logo" href="https://hyperloop.cornell.edu"
+              ><img src="images/logotextthin.png" alt="Hyperloop Logo"
+            /></a>
+
+            <a id="mobile-logo" href="https://hyperloop.cornell.edu"
+              ><img src="images/logo.png" alt="Hyperloop Logo"
+            /></a>
+          </div>
+
+          <button id="mobile-dropdown-button" onclick="handleMobileDropdownButtonClick()">
+            <div class="mobile-dropdown-button-bar" id="button-bar1"></div>
+            <div class="mobile-dropdown-button-bar" id="button-bar2"></div>
+            <div class="mobile-dropdown-button-bar" id="button-bar3"></div>
+
+            <div class="mobile-dropdown-container" id="mobile-dropdown-container-hidden">
+              <ul>
+                <li>
+                  <a class="mobile-link" href="https://hyperloop.cornell.edu">Home</a>
+                </li>
+                <li>
+                  <a class="mobile-link" href="about">About</a>
+                </li>
+                <li>
+                  <a class="mobile-link" href="team">Team</a>
+                </li>
+                <li>
+                  <a class="mobile-link" href="design">Design</a>
+                </li>
+                <li>
+                  <a class="mobile-link" href="sponsors">Sponsors</a>
+                </li>
+              </ul>
+            </div>
+          </button>
+        </div>
+      </header>
+
+    <div class="page-content">
+      <div class="mobile-only centered-text" id="hyperloop-mobile-title"><h1 class="heading hovering"> Our Design</h1></div>
+      <!-- <div class="mobile-only blurb-container">
+        <p class="centered-text"> a very special thank-you to our generous sponsors, who allow us to dream big and explore innovative solutions to better our efforts on revolutionizing hyperloop technology. We wouldn't be where we are without your continued support.</p>
+        <p class="centered-text"> Sponsorship through tax-deductible donations comes with various benefits, including but not limited to brand visisbility at our world-class college campus, Cornell. For a fully detailed version of our sponsorship packages click <a href="/Sponsoship Packet 19-20.pdf">here</a> and contact us at <a href="mailto:cornellhyperloop@gmail.com">cornellhyperloop@gmail.com</a>. </p>
+      </div> -->
+
+      <hr class="mobile-only">
+      <div class="left-right-infocontainer-wrapper">
+        <div id="sidebar-list-container">
+          <ul>
+            <li class="sidebar-list-label" id="active-label">All</li>
+            <li class="sidebar-list-label" id="inactive-label">Propulsion</li>
+            <li class="sidebar-list-label" id="inactive-label">Breaking</li>
+            <li class="sidebar-list-label" id="inactive-label">Suspension</li>
+          </ul>
+        </div>
+
+        <div id="rightside-info-container">
+          <div class="rightside-info-subcontainer" id="all">
+             
+              <img id="all-img" src="images/design/2019/PodShell.png"/>
+              <div class="rightside-info-subcontainer-content" id="all-desc">
+                <h2>Click on a subsystem to learn more about how the pod comes together.</h2>
+              </div>
+          </div>
+      
+          <div class="mobile-only centered-text"><h1 class="heading hovering">Propulsion</h1></div>
+          <div class="rightside-info-subcontainer" id="propulsion">
+              <!-- <div class="rightside-info-subcontainer-content-header"> -->
+              
+                <img id="propulsion-img" src="subteamdescriptions/Propulsion.png"/>
+                <div class="rightside-info-subcontainer-content" id="propulsion-desc">
+                  <h2>The Propulsion Subsystem propels the pod using two 
+                    large aluminum wheels, direct driven by Emrax 188 DC Motors. 
+                    Power is supplied to the motors by several high voltage battery packs,
+                     and regulated using the pod’s on board computer. The drag force on 
+                     the pod is reduced by a lightweight, aerodynamic shell, manufactured 
+                     in house from carbon fiber and kevlar.</h2>
+                </div>
+          </div>
+          
+
+          <div class="mobile-only centered-text"><h1 class="heading hovering">Breaking</h1></div>
+          <div class="rightside-info-subcontainer" id="breaking">
+              <!-- <div class="rightside-info-subcontainer-content-header"> -->
+              
+                <img id="breaking-img" src="subteamdescriptions/Breaking.png"/>
+                <div class="rightside-info-subcontainer-content" id="breaking-desc">
+                  <h2> Our braking system involves neodymium magnet arrays for inductive 
+                    braking as well as pads for frictional braking. This system creates 
+                    up to 1000N in braking force and can slow down the pod in under 10 seconds.</h2>
+                </div>
+          </div>
+        
+
+          <div class="mobile-only centered-text"><h1 class="heading hovering">Suspension</h1></div>
+          <div class="rightside-info-subcontainer" id="suspension">
+              <!-- <div class="rightside-info-subcontainer-content-header"> -->
+              
+                <img id="suspension-img" src="subteamdescriptions/Suspension1.png"/>
+                <div class="rightside-info-subcontainer-content" id="suspension-desc">
+                  <h2> The suspension subteam is responsible for crafting the chassis 
+                    the pod sits on and ensuring the pod is attached to the I-beam track.
+                    The suspension subteam also oversees the layout of the internal components
+                    of the pod. The design includes a sturdy aluminum chassis frame to
+                    provide structural stability, as well as support for critical pod 
+                    components. Lateral rail followers passively maintain the pod’s direction 
+                      as well as vertical clamp wheels which keep traction on the central I-beam track.</h2>
+                </div>
+          </div>
+          </div>
+
+        </div>
+        </div>
+ 
+
+    </div>
+
+  </div>
+
+
+
+
+</body>
+
+</html>
