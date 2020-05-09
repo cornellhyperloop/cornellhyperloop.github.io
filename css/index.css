@@ -64,6 +64,7 @@ html{
 
     .page{
         background-image: url("../images/backgrounds/stars.jpg");
+        min-height: 100vh;
     }
     .team-picture{
         border-bottom: 1px solid rgba(255,255, 255, .7);

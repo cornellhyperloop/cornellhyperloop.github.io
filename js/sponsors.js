@@ -60,117 +60,70 @@ function pageSpecificOnLoad() {
   // console.log("infoContainerKeyInViewCacheCenterX: " + infoContainerKeyInViewCacheCenterX)
 }
 
-function addEventListenersToLogos() {
-  console.log("Adding event listeners to logos...");
-  const tiers = ["pioneer", "disruptor", "innovator", "visionary"];
+function toggleLogoDescription(tierName, entering) {
+  listOfPerksElements = document.getElementsByClassName(
+    "sponsorship-description-wrapper"
+  )[0].firstElementChild.children;
+  // document.querySelector("span.pioneer-perk").classList.toggle("inactive");
+  // document.querySelector("span." + tierName + "-perk").classList.toggle("inactive");
 
-  tiers.forEach(tierName => {
-    const tierLogoElement = document.getElementById(tierName + "-logo");
-
-    tierLogoElement.addEventListener("mouseenter", function() {
-      if (window.innerWidth < tabletMaxWidth) {
-        return;
+  logoSizesSpanList = document.querySelectorAll("span");
+  for (let i = 0; i < logoSizesSpanList.length; i++) {
+    const element = logoSizesSpanList[i];
+    if (entering) {
+      if (element.classList.contains(tierName + "-perk")) {
+        element.classList.remove("inactive");
+      } 
+      else{
+        element.classList.add("inactive");
       }
-      // console.log("mouse entered " + tierName)
-      tierLogoElement.classList.add("active-package-logo");
-      toggleLogoDescription(tierName, true);
-    });
-
-    tierLogoElement.addEventListener("mouseleave", function() {
-      if (window.innerWidth < tabletMaxWidth) {
-        return;
-      }
-      // console.log("mouse entered " + tierName)
-      tierLogoElement.classList.remove("active-package-logo");
-      toggleLogoDescription(tierName, false);
-    });
-
-    // Same event handling, just for clicking when in mobile
-    tierLogoElement.addEventListener("click", function(event) {
-      tierName = this.id.substring(0, this.id.indexOf("-"));
-      if (window.innerWidth > tabletMaxWidth) {
-        return;
-      }
-      // Clicked on active logo, deactivate everything
-      if (this.classList.contains("active-package-logo")) {
-        this.classList.remove("active-package-logo");
-        toggleLogoDescription(tierName, false);
-      }
-      // Clicked on inactive logo, activate it and deactivate the old one
-      else {
-        this.classList.add("active-package-logo");
-        untoggleAllSponsorshipLabel(tierName);
-        toggleLogoDescription(tierName, true);
-      }
-      // console.log("mouse entered " + tierName)
-    });
-  });
-
-  function toggleLogoDescription(tierName, entering) {
-    listOfPerksElements = document.getElementsByClassName(
-      "sponsorship-description-wrapper"
-    )[0].firstElementChild.children;
-    // document.querySelector("span.pioneer-perk").classList.toggle("inactive");
-    // document.querySelector("span." + tierName + "-perk").classList.toggle("inactive");
-
-    logoSizesSpanList = document.querySelectorAll("span");
-    for (let i = 0; i < logoSizesSpanList.length; i++) {
-      const element = logoSizesSpanList[i];
-      if (entering) {
-        if (element.classList.contains(tierName + "-perk")) {
-          element.classList.remove("inactive");
-        } 
-        else{
-          element.classList.add("inactive");
-        }
+    }
+    else{
+      // Exiting, turn off all tags except for defaut pioneer one
+      if(!element.classList.contains("pioneer-perk")){
+        element.classList.add("inactive");
       }
       else{
-        // Exiting, turn off all tags except for defaut pioneer one
-        if(!element.classList.contains("pioneer-perk")){
-          element.classList.add("inactive");
-        }
-        else{
-          element.classList.remove("inactive");
-        }
+        element.classList.remove("inactive");
       }
     }
-
-    for (let index = 0; index < listOfPerksElements.length; index++) {
-      const element = listOfPerksElements[index];
-      if (entering) {
-        if (element.classList.contains(tierName + "-perk")) {
-          element.style.opacity = 1;
-        } else {
-          element.style.opacity = 0.23;
-        }
-      } else {
-        element.style.opacity = null;
-      }
-
-      // element.classList.toggle("opacity-25")
-    }
-
-    // tierDescriptionElement = document.getElementById(tierName + "-description")
-
-    // tierDescriptionElement.classList.toggle("active-tier-description")
   }
 
-  function untoggleAllSponsorshipLabel(tierToExclude) {
-    tiers.forEach(tierName => {
-      if (tierName != tierToExclude && tierToExclude != "pioneer") {
-        document
-          .querySelector("span." + tierName + "-perk")
-          .classList.toggle("inactive");
+  for (let index = 0; index < listOfPerksElements.length; index++) {
+    const element = listOfPerksElements[index];
+    if (entering) {
+      if (element.classList.contains(tierName + "-perk")) {
+        element.style.opacity = 1;
+      } else {
+        element.style.opacity = 0.23;
       }
-    });
+    } else {
+      element.style.opacity = null;
+    }
 
-    const tierLogos = document.getElementsByClassName("tier-packages-logos")[0]
-      .children;
-    for (let i = 0; i < tierLogos.length; i++) {
-      const element = tierLogos[i];
-      if (element.id != tierToExclude + "-logo") {
-        element.classList.remove("active-package-logo");
-      }
+    // element.classList.toggle("opacity-25")
+  }
+
+  // tierDescriptionElement = document.getElementById(tierName + "-description")
+
+  // tierDescriptionElement.classList.toggle("active-tier-description")
+}
+
+function untoggleAllSponsorshipLabel(tierToExclude) {
+  tiers.forEach(tierName => {
+    if (tierName != tierToExclude && tierToExclude != "pioneer") {
+      document
+        .querySelector("span." + tierName + "-perk")
+        .classList.toggle("inactive");
+    }
+  })
+
+  const tierLogos = document.getElementsByClassName("tier-packages-logos")[0]
+    .children;
+  for (let i = 0; i < tierLogos.length; i++) {
+    const element = tierLogos[i];
+    if (element.id != tierToExclude + "-logo") {
+      element.classList.remove("active-package-logo");
     }
   }
 }
@@ -188,7 +141,6 @@ function addEventListenersToLabels() {
 }
 
 function getLabelElement(nameOfKey) {
-  // console.log("getLabelElement: nameOfKey: " + nameOfKey)
   labelIndex = infoContainers[nameOfKey]["index"];
   return document.getElementsByClassName("sidebar-list-label")[labelIndex];
 }

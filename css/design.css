@@ -1,7 +1,8 @@
-.page {
+
+  .page {
     background-image: url("../images/backgrounds/stars.jpg");
     color: black;
-    height: 702px;
+    /* height: 702px; */
   }
   
   .page-content{
