@@ -8,6 +8,11 @@
   letter-spacing: -0.035em;
 }
 
+a{
+  text-decoration: none;
+  color: inherit;
+}
+
 /* Put all global vars here */
 :root {
   --HyperloopRed: #b41414;
@@ -73,12 +78,7 @@
     justify-content: center;
   }
 
-  .blurb-container {
-    width: 90%;
-    margin: 1.5em auto;
-    /* padding-bottom: 2em; */
-    line-height: 1.3em;
-  }
+
 
   #button-bar1-X {
     /* top: 12.5px; */
@@ -258,7 +258,7 @@
   }
 
   .heading {
-    font-size: 4em;
+    font-size: 72px;
     color: white;
     font-weight: bold;
     width: auto;
@@ -411,7 +411,7 @@
   }
 
   .heading {
-    font-size: 2.2em;
+    font-size: 3em;
     color: white;
     font-weight: bold;
     width: auto;
@@ -722,7 +722,7 @@
   font-size: 1.2em;
 }
 .blurb-container p {
-  margin-bottom: 1.5em;
+  /* margin-bottom: 1.5em; */
 }
 
 .hyperloop-red {
@@ -797,3 +797,17 @@ footer a{
   opacity: 1;
 }
 
+.red-text{
+   color: #ff4949;
+}
+
+.team-picture-container img{
+    width: 100%;
+}
+
+
+
+  .team-picture-container{
+    width: 90%;
+    margin: 0 auto;
+  }

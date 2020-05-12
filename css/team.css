@@ -121,10 +121,7 @@
   }
 
   .profile-modal {
-    left: 100px;
-    right: 100px;
-    top: 200px;
-    max-height: 50%;
+    max-height: 99%;
   }
 
   .roster-info-container {
@@ -255,6 +252,17 @@
   opacity: .4;
 }
 
+#alumni-label{
+  color: white;
+}
+
+#alumni-label a{
+  text-decoration: none;
+  color: inherit;
+}
+
+
+
 #inactive-label:hover {
   opacity: .8;
   transition: all 1s;
@@ -310,10 +318,8 @@
 
 .profile-modal {
   display: block;
-  width: 65%;
-  height: 72%;
-  top: 180px;
-  background-color: rgba(255,255, 255, .8);
+  width: 69%;
+  background-color: rgba(255,255, 255, .9);
   color: black;
   border: 2px solid var(--HyperloopRed);
   border-radius: 10px;
@@ -332,15 +338,15 @@
 
 .profile-modal img {
   width: 30%;
-  border: 2px solid black;
+  border: 1px solid black;
   border-radius: 10px;
   margin-top: 20px;
 }
 
 .profile-modal .x {
   /* float: right; */
-  margin-top: 20px;
-  margin-left: 90%;
+  margin-top: 3%;
+  margin-left: 92%;
   color: gray;
   font-size: 20px;
   background-color: rgba(255,255, 255, 0);
@@ -350,11 +356,20 @@
 
 .profile-modal .x:hover {
   color: black;
+  font-weight: bolder;
+  cursor: pointer;
+  border-radius: 50%;
+  /* border: 1px solid lightgray; */
 }
 
 .profile-modal a {
   color: black;
   text-decoration: none;
+}
+
+.profile-modal p{
+  width: 80%;
+  margin: 0 auto 12px auto;
 }
 
 .profile img:hover {
@@ -363,9 +378,9 @@
 
 .profile-modal .linkedin {
   border: none;
-  min-width: 50px;
-  max-width: 50px;
-  margin: auto;
+  min-width: 35px;
+  max-width: 35px;
+  margin: 0 auto 12px auto;
   display: block;
 }
 
@@ -373,4 +388,13 @@
   display: none;
 }
 
+.qa-box h5{
+  color: black;
+  font-size: 15px;
+}
+
+.qa-box p{
+  font-size: 20px;
+  color: #545454;
+}
 

@@ -1,4 +1,4 @@
-const spinspeed = .5
+const spinspeed = .09
 var header;
 var sticky;
 var logo_symbol;
