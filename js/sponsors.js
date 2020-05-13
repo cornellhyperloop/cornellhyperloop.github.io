@@ -4,6 +4,7 @@ var infoContainerKeyInViewCacheCenterX;
 var rightsideInfoContainer;
 var rightsideInfoContainerRect;
 var scrollInterval = 0;
+const tiers = ["pioneer", "disruptor", "innovator", "visionary"];
 
 // This function scrolls to the infoContainer by selecting the #ID of the infoContainer and scrolling it into view.
 // it then selects the li element with class "infoContainer-label-active" making it "infoContainer-label-inactive"
@@ -23,7 +24,7 @@ function scrollToContainer(infoContainerKey) {
 // This executes once the DOM has been loaded. This selects the buttons and adds a click event listener
 // to them once it's safe to manipulate them.
 function pageSpecificOnLoad() {
-  console.log("sponsors window.onload()...");
+  console.log("sponsors window.onload()...")
   infoContainers = {
     sponsors: {
       index: 0,
@@ -35,9 +36,11 @@ function pageSpecificOnLoad() {
       labelInnerText: "Become A Sponsor",
       infoContainerID: "sponsor-packages"
     }
-  };
+  }
+  console.log("here")
 
   addEventListenersToLabels();
+  console.log("labels")
   addEventListenersToLogos();
   console.log("Adding event listeners to labels...");
 
@@ -59,6 +62,53 @@ function pageSpecificOnLoad() {
     infoContainerKeyInViewCacheRect.height / 2;
   // console.log("infoContainerKeyInViewCacheCenterX: " + infoContainerKeyInViewCacheCenterX)
 }
+function addEventListenersToLogos() {
+  console.log("Adding event listeners to logos...");
+  
+
+  tiers.forEach(tierName => {
+    const tierLogoElement = document.getElementById(tierName + "-logo");
+
+    tierLogoElement.addEventListener("mouseenter", function() {
+      if (window.innerWidth < tabletMaxWidth) {
+        return;
+      }
+      // console.log("mouse entered " + tierName)
+      tierLogoElement.classList.add("active-package-logo");
+      toggleLogoDescription(tierName, true);
+    });
+
+    tierLogoElement.addEventListener("mouseleave", function() {
+      if (window.innerWidth < tabletMaxWidth) {
+        return;
+      }
+      // console.log("mouse entered " + tierName)
+      tierLogoElement.classList.remove("active-package-logo");
+      toggleLogoDescription(tierName, false);
+    });
+
+    // Same event handling, just for clicking when in mobile
+    tierLogoElement.addEventListener("click", function(event) {
+      tierName = this.id.substring(0, this.id.indexOf("-"));
+      if (window.innerWidth > tabletMaxWidth) {
+        return;
+      }
+      // Clicked on active logo, deactivate everything
+      if (this.classList.contains("active-package-logo")) {
+        this.classList.remove("active-package-logo");
+        toggleLogoDescription(tierName, false);
+      }
+      // Clicked on inactive logo, activate it and deactivate the old one
+      else {
+        this.classList.add("active-package-logo");
+        untoggleAllSponsorshipLabel(tierName);
+        toggleLogoDescription(tierName, true);
+      }
+      // console.log("mouse entered " + tierName)
+    });
+  });
+}
+
 
 function toggleLogoDescription(tierName, entering) {
   listOfPerksElements = document.getElementsByClassName(
@@ -129,6 +179,7 @@ function untoggleAllSponsorshipLabel(tierToExclude) {
 }
 
 function addEventListenersToLabels() {
+  
   for (const key in infoContainers) {
     console.log(key);
     if (infoContainers.hasOwnProperty(key)) {
@@ -199,3 +250,4 @@ function getinfoContainerKeyInView() {
     }
   }
 }
+
