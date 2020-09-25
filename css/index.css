@@ -46,27 +46,32 @@ html{
 
 /* mobile sizing */
 @media only screen and (max-width: 767px){
-    .recr-subdiv {
+    .info-session-div-container .recr-subdiv {
         display: block;
         padding: 5px;
     }
 
-    .recr-subdiv p {
+    .info-session-div-container .recr-subdiv p {
         margin: 10px 5px;
         min-width: 100%;
         color: black;
     }
 
-    .recr-subdiv p a {
+    .info-session-div-container .recr-subdiv p a {
         font-size: 18px;
         color: var(--HyperloopRed);
     }
+
+    /* .info-session-div-container h3 {
+        color: black;
+    } */
 
     .info-session-div-container h3 {
         color: black;
     }
 
-    .info-session-div-container{
+    .info-session-div-container {
+        margin-top: 400px;
         background-color: rgba(255,255, 255, .5);
         color: black;
         margin: 1.5em 0;
@@ -186,7 +191,7 @@ html{
     }
 
     .info-session-div-container h3 {
-        color: rgb(170, 170, 170);
+        color: black;
     }
 
     .team-picture-container{
@@ -363,7 +368,7 @@ html{
     text-decoration: underline;
 }
 
-.info-session-div-container h3 {
+/* .info-session-div-container h3 {
     color: rgb(170, 170, 170);
-}
+} */
   
