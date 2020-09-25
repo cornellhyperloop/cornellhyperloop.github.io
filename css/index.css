@@ -152,6 +152,43 @@ html{
     /* padding-bottom: 2em; */
     line-height: 1.3em;
   }
+
+  .recr-div {
+    background-color: rgba(255,255, 255, .5);
+}
+
+    .recr-subdiv {
+        display: flex;
+        justify-content: space-around;
+        padding: 5px;
+    }
+
+    .recr-subdiv p {
+        text-align: left;
+        margin: 10px 0;
+        min-width: 40%;
+        max-width: 40%;
+        font-size: 18px;
+        color: rgb(170, 170, 170);
+    }
+
+    .recr-subdiv .apply {
+        text-align: center;
+    }
+
+    .recr-subdiv p a {
+        font-size: 18px;
+        color: white;
+    }
+
+    .recr-subdiv p a:hover {
+        text-decoration: underline;
+    }
+
+    .info-session-div-container h3 {
+        color: rgb(170, 170, 170);
+    }
+
     .team-picture-container{
         width: 100%;
         margin: 0 auto;
@@ -292,3 +329,5 @@ html{
   #hyperloop-mobile-title{
       margin: 0 20px;
   }
+
+  
