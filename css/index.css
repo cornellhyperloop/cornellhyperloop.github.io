@@ -8,8 +8,64 @@ html{
     min-height: 100vh;
 }
 
+.recr-div {
+    background-color: rgba(255,255, 255, .5);
+}
+
+.recr-subdiv {
+    display: flex;
+    justify-content: space-around;
+    padding: 5px;
+}
+
+.recr-subdiv p {
+    text-align: left;
+    margin: 10px 0;
+    min-width: 40%;
+    max-width: 40%;
+    font-size: 18px;
+    color: rgb(170, 170, 170);
+}
+
+.recr-subdiv .apply {
+    text-align: center;
+}
+
+.recr-subdiv p a {
+    font-size: 18px;
+    color: white;
+}
+
+.recr-subdiv p a:hover {
+    text-decoration: underline;
+}
+
+.info-session-div-container h3 {
+    color: rgb(170, 170, 170);
+}
+
 /* mobile sizing */
 @media only screen and (max-width: 767px){
+    .recr-subdiv {
+        display: block;
+        padding: 5px;
+    }
+
+    .recr-subdiv p {
+        margin: 10px 5px;
+        min-width: 100%;
+        color: black;
+    }
+
+    .recr-subdiv p a {
+        font-size: 18px;
+        color: var(--HyperloopRed);
+    }
+
+    .info-session-div-container h3 {
+        color: black;
+    }
+
     .info-session-div-container{
         background-color: rgba(255,255, 255, .5);
         color: black;
