@@ -14,21 +14,17 @@ html{
 
 .recr-subdiv {
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     padding: 5px;
 }
 
 .recr-subdiv p {
-    text-align: left;
+    /* text-align: left; */
     margin: 10px 0;
     min-width: 40%;
     max-width: 40%;
     font-size: 18px;
     color: rgb(170, 170, 170);
-}
-
-.recr-subdiv .apply {
-    text-align: center;
 }
 
 .recr-subdiv p a {
@@ -164,21 +160,17 @@ html{
 
     .recr-subdiv {
         display: flex;
-        justify-content: space-around;
+        justify-content: center;
         padding: 5px;
     }
 
     .recr-subdiv p {
-        text-align: left;
+        /* text-align: left; */
         margin: 10px 0;
         min-width: 40%;
         max-width: 40%;
         font-size: 18px;
         color: rgb(170, 170, 170);
-    }
-
-    .recr-subdiv .apply {
-        text-align: center;
     }
 
     .recr-subdiv p a {
@@ -246,21 +238,17 @@ html{
     
     .recr-subdiv {
         display: flex;
-        justify-content: space-around;
+        justify-content: center;
         padding: 5px;
     }
     
     .recr-subdiv p {
-        text-align: left;
+        /* text-align: left; */
         margin: 10px 0;
         min-width: 40%;
         max-width: 40%;
         font-size: 18px;
         color: rgb(170, 170, 170);
-    }
-    
-    .recr-subdiv .apply {
-        text-align: center;
     }
     
     .recr-subdiv p a {
@@ -342,21 +330,17 @@ html{
 
 .recr-subdiv {
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     padding: 5px;
 }
 
 .recr-subdiv p {
-    text-align: left;
+    /* text-align: left; */
     margin: 10px 0;
     min-width: 40%;
     max-width: 40%;
     font-size: 18px;
     color: rgb(170, 170, 170);
-}
-
-.recr-subdiv .apply {
-    text-align: center;
 }
 
 .recr-subdiv p a {
