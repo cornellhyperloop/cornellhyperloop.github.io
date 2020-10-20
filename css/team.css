@@ -60,11 +60,11 @@
   }
 
   .profile-modal {
-    /* left: 50px;
-    right: 50px; */
+    margin: auto;
     top: 150px;
     max-height: 80%;
     min-width: 90%;
+    max-width: 90%;
   }
 
   .roster-info-container {
@@ -209,6 +209,10 @@
   .qa-box h5{
     color: black;
     font-size: 20px;
+  }
+  
+  .profile-modal {
+    width: 69%;
   }
 
   .profile-modal h3 {
@@ -361,7 +365,6 @@
 
 .profile-modal {
   display: block;
-  width: 69%;
   background-color: rgba(255,255, 255, .9);
   color: black;
   border: 2px solid var(--HyperloopRed);
