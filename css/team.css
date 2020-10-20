@@ -61,7 +61,9 @@
 
   .profile-modal {
     margin: auto;
-    top: 150px;
+    top: 100px;
+    left: 50px;
+    right: 50px;
     max-height: 80%;
     min-width: 90%;
     max-width: 90%;
