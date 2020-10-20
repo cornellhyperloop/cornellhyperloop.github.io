@@ -9,13 +9,27 @@
 }
 @media only screen and (max-width: 768px) {
 
+  .qa-box p{
+    font-size: 12px;
+    color: #545454;
+  }
+
+  .qa-box h5{
+    color: black;
+    font-size: 14px;
+  }
+
+  .profile-modal h3 {
+    font-size: 20px;
+  }
+
   .headshot h3 {
     max-height: 15px;
     font-size: 12px;
   }
 
   .profile-modal img {
-    min-width: 50%;
+    min-width: 30%;
   }
 
   .profile-modal a .linkedin {
@@ -24,8 +38,8 @@
   }
   
   .headshot img{
-    max-width: 110px;
-    max-height: 110px;
+    max-width: 80px;
+    max-height: 80px;
   }
 
   .page-content{
@@ -46,10 +60,11 @@
   }
 
   .profile-modal {
-    left: 50px;
-    right: 50px;
+    /* left: 50px;
+    right: 50px; */
     top: 240px;
-    max-height: 60%;
+    max-height: 80%;
+    min-width: 80%;
   }
 
   .roster-info-container {
@@ -103,6 +118,20 @@
 }
 /* Tablet Sizing */
 @media only screen and (min-width: 768px) and (max-width: 1023px){
+  .qa-box p{
+    font-size: 14px;
+    color: #545454;
+  }
+
+  .qa-box h5{
+    color: black;
+    font-size: 16px;
+  }
+
+  .profile-modal h3 {
+    font-size: 22px;
+  }
+
   .page-content{
     position: relative;
     margin: 0 auto 0 auto;
@@ -172,6 +201,20 @@
 
 /* Desktop Sizing */
 @media only screen and (min-width: 1024px){
+  .qa-box p{
+    font-size: 18px;
+    color: #545454;
+  }
+
+  .qa-box h5{
+    color: black;
+    font-size: 20px;
+  }
+
+  .profile-modal h3 {
+    font-size: 30px;
+  }
+
   .roster-subteam-info-container{
     position: relative;
     width: 100%;
@@ -332,9 +375,9 @@
   font-size: 20px;
 }
 
-.profile-modal h3 {
+/* .profile-modal h3 {
   font-size: 30px;
-}
+} */
 
 .profile-modal img {
   width: 30%;
@@ -388,13 +431,13 @@
   display: none;
 }
 
-.qa-box h5{
+/* .qa-box h5{
   color: black;
   font-size: 15px;
-}
+} */
 
-.qa-box p{
+/* .qa-box p{
   font-size: 20px;
   color: #545454;
-}
+} */
 
