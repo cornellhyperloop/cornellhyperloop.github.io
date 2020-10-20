@@ -61,6 +61,7 @@
 
   .profile-modal {
     top: 100px;
+    margin: 0;
     max-height: 80%;
     min-width: 100%;
     width: 100%;
@@ -148,9 +149,9 @@
     font-size: 120%;
   }
 
-  .profile-modal {
+  /* .profile-modal {
     max-height: 99%;
-  }
+  } */
 
   .roster-info-container {
     text-align: center;
@@ -210,8 +211,24 @@
     font-size: 20px;
   }
   
-  .profile-modal {
+  /* .profile-modal {
     width: 69%;
+  } */
+
+  .profile-modal {
+    display: block;
+    width: 69%;
+    background-color: rgba(255,255, 255, .9);
+    color: black;
+    border: 2px solid var(--HyperloopRed);
+    border-radius: 10px;
+    position: fixed;
+    z-index: 1;
+    margin: auto;
+    text-align: center;
+    align-content: center;
+    overflow: auto;
+    font-size: 20px;
   }
 
   .profile-modal h3 {
@@ -368,9 +385,7 @@
   color: black;
   border: 2px solid var(--HyperloopRed);
   border-radius: 10px;
-  position: fixed;
   z-index: 1;
-  margin: auto;
   text-align: center;
   align-content: center;
   overflow: auto;
