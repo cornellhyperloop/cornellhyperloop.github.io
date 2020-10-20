@@ -365,7 +365,6 @@
 
 .profile-modal {
   display: block;
-  width: 100%;
   background-color: rgba(255,255, 255, .9);
   color: black;
   border: 2px solid var(--HyperloopRed);
