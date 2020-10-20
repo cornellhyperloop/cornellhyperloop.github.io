@@ -62,9 +62,9 @@
   .profile-modal {
     /* left: 50px;
     right: 50px; */
-    top: 240px;
+    top: 150px;
     max-height: 80%;
-    min-width: 80%;
+    min-width: 90%;
   }
 
   .roster-info-container {
