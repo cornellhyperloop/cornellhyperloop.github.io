@@ -60,10 +60,10 @@
   }
 
   .profile-modal {
-    margin: auto;
     top: 100px;
     max-height: 80%;
     min-width: 100%;
+    width: 100%;
   }
 
   .roster-info-container {
