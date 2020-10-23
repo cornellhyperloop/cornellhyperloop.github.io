@@ -177,6 +177,8 @@ window.onload = function () {
     // document.getElementById(key).onclick = createModal(key, value);
     document.getElementById(key).addEventListener("click", function() {
       createModal(key);
+      document.body.classList.add("stop-scrolling");
+      console.log("don't scroll");
     });
 
   });
@@ -184,6 +186,12 @@ window.onload = function () {
 }
 
 function createModal(key) {
+  // if (document.body.classList.contains("stop-scrolling")) {
+  //   document.body.classList.remove("stop-scrolling");
+  // } else {
+  //   document.body.classList.add("stop-scrolling");
+  // }
+
   var div = document.createElement("dialog");
   document.body.appendChild(div);
 
@@ -198,6 +206,7 @@ function createModal(key) {
 
   x.addEventListener("click", function() {
     div.parentNode.removeChild(div)
+    document.body.classList.remove("stop-scrolling");
   });
   
   var existingImg = document.getElementById(key).childNodes[3];
@@ -238,8 +247,13 @@ function createModal(key) {
 
   div.appendChild(newLink);
 
+  // document.body.classList.add("stop-scrolling");
+
   div.showModal();
+
 }
+
+// function closeModal
 
 function addEventListenersToLabels(){
   for (let index = 0; index < subteams.length; index++) {
