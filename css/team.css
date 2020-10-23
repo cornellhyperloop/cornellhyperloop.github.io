@@ -7,7 +7,18 @@
 .page{
   background-image: url("../images/backgrounds/stars.jpg");
 }
+
+.stop-scrolling {
+  height: 100%;
+  overflow: hidden;
+}
+
 @media only screen and (max-width: 768px) {
+
+  .stop-scrolling {
+    height: 100%;
+    overflow: hidden;
+  }  
 
   .qa-box p{
     font-size: 12px;
@@ -118,6 +129,11 @@
 }
 /* Tablet Sizing */
 @media only screen and (min-width: 768px) and (max-width: 1023px){
+  .stop-scrolling {
+    height: 100%;
+    overflow: hidden;
+  }
+
   .qa-box p{
     font-size: 14px;
     color: #545454;
@@ -201,6 +217,11 @@
 
 /* Desktop Sizing */
 @media only screen and (min-width: 1024px){
+  .stop-scrolling {
+    height: 100%;
+    overflow: hidden;
+  }
+
   .qa-box p{
     font-size: 18px;
     color: #545454;
@@ -432,6 +453,11 @@
 
 .hidden {
   display: none;
+}
+
+.stop-scrolling {
+  height: 100%;
+  overflow: hidden;
 }
 
 /* .qa-box h5{
