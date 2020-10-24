@@ -8,18 +8,17 @@
   background-image: url("../images/backgrounds/stars.jpg");
 }
 
-#header-line{
-  width: 85%;
-  margin-left: 7.5%;
-  margin-right: 7.5%;
+.stop-scrolling {
+  height: 100%;
+  overflow: hidden;
 }
+
 @media only screen and (max-width: 768px) {
 
-  #header-line{
-    width: 85%;
-    margin-left: 7.5%;
-    margin-right: 7.5%;
-  }
+  .stop-scrolling {
+    height: 100%;
+    overflow: hidden;
+  }  
 
   .qa-box p{
     font-size: 12px;
@@ -98,12 +97,7 @@
     display: block;
   }
 
-  #alumni-inner-wrapper{
-    display: flex;
-    flex-wrap: wrap;
-    font-size: 50%;
-    margin: 1em 0 2.5em 0;
-  }
+  
 
   .team-divisions-info-container {
     display: inline;
@@ -135,6 +129,11 @@
 }
 /* Tablet Sizing */
 @media only screen and (min-width: 768px) and (max-width: 1023px){
+  .stop-scrolling {
+    height: 100%;
+    overflow: hidden;
+  }
+
   .qa-box p{
     font-size: 14px;
     color: #545454;
@@ -189,12 +188,6 @@
     display: block;
   }
 
-  #alumni-inner-wrapper{
-    display: flex;
-    flex-wrap: wrap;
-    font-size: 50%;
-    margin: 1em 0 2.5em 0;
-  }
   
 
   .team-divisions-info-container {
@@ -218,12 +211,17 @@
     width: 30%;
     max-height: 33%;
     text-align: center;
-    margin: .5em auto 1.25em auto;
+    margin: 1em auto 1em auto;
   }
 }
 
 /* Desktop Sizing */
 @media only screen and (min-width: 1024px){
+  .stop-scrolling {
+    height: 100%;
+    overflow: hidden;
+  }
+
   .qa-box p{
     font-size: 18px;
     color: #545454;
@@ -299,16 +297,7 @@
     width: 23%;
     max-height: 33%;
     text-align: center;
-    margin: 1.15em auto 1.15em auto;
-  }
-  #alumni-inner-wrapper h3{
-    max-height: 2em;
-   }
-
-  #alumni-inner-wrapper{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
+    margin: 8px 4px;
   }
 }
 .page-content{
@@ -408,7 +397,6 @@
   align-content: center;
   overflow: auto;
   font-size: 20px;
-  height: 90%;
 }
 
 /* .profile-modal h3 {
@@ -419,7 +407,7 @@
   width: 30%;
   border: 1px solid black;
   border-radius: 10px;
-  /* margin-top: 20px; */
+  margin-top: 20px;
 }
 
 .profile-modal .x {
@@ -467,6 +455,11 @@
   display: none;
 }
 
+.stop-scrolling {
+  height: 100%;
+  overflow: hidden;
+}
+
 /* .qa-box h5{
   color: black;
   font-size: 15px;
@@ -477,14 +470,3 @@
   color: #545454;
 } */
 
-.alumni-container{
-  overflow-y: auto;
-  width: 80%;
-  margin: auto 10% auto 10%;
-}
-
-#alumni-inner-wrapper{
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-}
