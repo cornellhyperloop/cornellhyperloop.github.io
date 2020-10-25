@@ -1,4 +1,5 @@
 <!DOCTYPE HTML>
+
 <head>
   <title>Cornell Hyperloop</title>
   <link href="https://fonts.googleapis.com/css?family=Quattrocento+Sans" rel="stylesheet">
@@ -14,93 +15,86 @@
 <body>
   <div class="page">
     <header>
-        <div class="navbar-container-computer">
-          <div class="navbar-logo">
-            <a href="https://hyperloop.cornell.edu">
-            <img class= "logo-symbol" src="images/logo_symbol.png" alt="Hyperloop Logo"/>
-            <img class= "logo-text" src="images/cornell_hyperloop_text.png" alt="Hyperloop Text Logo"/>
-            </a>
-          </div>
+      <div class="navbar-container-computer">
+        <div class="navbar-logo">
+          <a href="https://hyperloop.cornell.edu">
+            <img class="logo-symbol" src="images/logo_symbol.png" alt="Hyperloop Logo" />
+            <img class="logo-text" src="images/cornell_hyperloop_text.png" alt="Hyperloop Text Logo" />
+          </a>
+        </div>
 
-          <nav>
+        <nav>
+          <ul>
+            <li><a class="nav-link" href="https://hyperloop.cornell.edu">Home</a></li>
+            <li><a class="nav-link" href="about">About</a></li>
+            <li><a class="nav-link" href="team">Team</a></li>
+            <li>
+              <a class="nav-link" href="design">Design</a>
+            </li>
+            <li>
+              <a class="nav-link" href="sponsors">Sponsors</a>
+            </li>
+            <li>
+              <a class="red-button" id="giving-day-link"
+                href="https://givingday.cornell.edu/campaigns/cu-hyperloop">Donate</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <div id="navbar-container-mobile">
+        <div class="navbar-logo">
+          <a id="desktop-logo" href="https://hyperloop.cornell.edu"><img src="images/logotextthin.png"
+              alt="Hyperloop Logo" /></a>
+
+          <a id="mobile-logo" href="https://hyperloop.cornell.edu"><img src="images/logo.png"
+              alt="Hyperloop Logo" /></a>
+        </div>
+
+        <button id="mobile-dropdown-button" onclick="handleMobileDropdownButtonClick()">
+          <div class="mobile-dropdown-button-bar" id="button-bar1"></div>
+          <div class="mobile-dropdown-button-bar" id="button-bar2"></div>
+          <div class="mobile-dropdown-button-bar" id="button-bar3"></div>
+
+          <div class="mobile-dropdown-container" id="mobile-dropdown-container-hidden">
             <ul>
-              <li><a class="nav-link" href="https://hyperloop.cornell.edu">Home</a></li>
-              <li><a class="nav-link" href="about">About</a></li>
-              <li><a class="nav-link" href="team">Team</a></li>
               <li>
-                <a class="nav-link" href="design">Design</a>
+                <a class="mobile-link" href="https://hyperloop.cornell.edu">Home</a>
               </li>
               <li>
-                <a class="nav-link" href="sponsors">Sponsors</a>
+                <a class="mobile-link" href="about">About</a>
               </li>
               <li>
-                <a
-                  class="red-button"
-                  id="giving-day-link"
-                  href="https://givingday.cornell.edu/campaigns/cu-hyperloop">Donate</a>
+                <a class="mobile-link" href="team">Team</a>
+              </li>
+              <li>
+                <a class="mobile-link" href="design">Design</a>
+              </li>
+              <li>
+                <a class="mobile-link" href="sponsors">Sponsors</a>
               </li>
             </ul>
-          </nav>
-        </div>
-        <div id="navbar-container-mobile">
-          <div class="navbar-logo">
-            <a id="desktop-logo" href="https://hyperloop.cornell.edu"><img
-                src="images/logotextthin.png" alt="Hyperloop Logo"
-                /></a>
-
-            <a id="mobile-logo" href="https://hyperloop.cornell.edu"><img
-                src="images/logo.png" alt="Hyperloop Logo"
-                /></a>
           </div>
-
-          <button id="mobile-dropdown-button"
-            onclick="handleMobileDropdownButtonClick()">
-            <div class="mobile-dropdown-button-bar" id="button-bar1"></div>
-            <div class="mobile-dropdown-button-bar" id="button-bar2"></div>
-            <div class="mobile-dropdown-button-bar" id="button-bar3"></div>
-
-            <div class="mobile-dropdown-container"
-              id="mobile-dropdown-container-hidden">
-              <ul>
-                <li>
-                  <a class="mobile-link" href="https://hyperloop.cornell.edu">Home</a>
-                </li>
-                <li>
-                  <a class="mobile-link" href="about">About</a>
-                </li>
-                <li>
-                  <a class="mobile-link" href="team">Team</a>
-                </li>
-                <li>
-                  <a class="mobile-link" href="design">Design</a>
-                </li>
-                <li>
-                  <a class="mobile-link" href="sponsors">Sponsors</a>
-                </li>
-              </ul>
-            </div>
-          </button>
-        </div>
-      </header>
+        </button>
+      </div>
+    </header>
 
     <div class="page-content">
-      <div class="cellular-only centered-text" 
-      id="hyperloop-mobile-title">
+      <div class="cellular-only centered-text" id="hyperloop-mobile-title">
         <h1 class="heading hovering">
-        Our Team
+          Our Team
         </h1>
       </div>
       <div class="team-info-container-wrapper">
         <div class="team-divisions-info-container">
           <ul>
-            <li class="sidebar-list-label" id="active-label">    Team Leads</li>
-            <li class="sidebar-list-label" id="inactive-label">  WebDev  </li>
-            <li class="sidebar-list-label" id="inactive-label">  Business  </li>
-            <li class="sidebar-list-label" id="inactive-label">  Suspension</li>
-            <li class="sidebar-list-label" id="inactive-label">  Software</li>
-            <li class="sidebar-list-label" id="inactive-label">  Hardware</li>
-            <li class="sidebar-list-label" id="inactive-label">  Braking  </li>
-            <li class="sidebar-list-label" id="inactive-label">  Propulsion  </li>
+            <li class="sidebar-list-label" id="active-label"> Team Leads</li>
+            <li class="sidebar-list-label" id="inactive-label"> WebDev </li>
+            <li class="sidebar-list-label" id="inactive-label"> Business </li>
+            <li class="sidebar-list-label" id="inactive-label"> Suspension</li>
+            <li class="sidebar-list-label" id="inactive-label"> Software</li>
+            <li class="sidebar-list-label" id="inactive-label"> Hardware</li>
+            <li class="sidebar-list-label" id="inactive-label"> Braking </li>
+            <li class="sidebar-list-label" id="inactive-label"> Propulsion </li>
             <li class="sidebar-list-label" id="alumni-label"> <a href="./alumni.html">Alumni</a></li>
           </ul>
         </div>
@@ -114,18 +108,19 @@
             <div class="profile">
               <div class="headshot" id="GeddesRick">
                 <a href="https://www.human.cornell.edu/people/rrg24"><img src="images/team2018/GeddesRick.jpg"></a>
-              
-              <h3>Rick Geddes</h3>
-              <p>Faculty Co-Advisor</p>
+
+                <h3>Rick Geddes</h3>
+                <p>Faculty Co-Advisor</p>
               </div>
             </div>
 
             <div class="profile">
               <div class="headshot" id="TianZhiting">
-                <a href="https://www.engineering.cornell.edu/faculty-directory/zhiting-tian"><img src="images/team2018/TianZhiting.jpg"></a>
-              
-              <h3>Zhiting Tian</h3>
-              <p>Faculty Co-Advisor</p>
+                <a href="https://www.engineering.cornell.edu/faculty-directory/zhiting-tian"><img
+                    src="images/team2018/TianZhiting.jpg"></a>
+
+                <h3>Zhiting Tian</h3>
+                <p>Faculty Co-Advisor</p>
               </div>
             </div>
 
@@ -134,8 +129,8 @@
               <div class="headshot" id="MaxGreenberg">
                 <a href="https://www.linkedin.com/in/max-h-greenberg/" disabled></a>
                 <img src="images/team2019/Max_Greenberg.jpg">
-              <h3>Max Greenberg</h3>
-              <p>Team Manager</p>
+                <h3>Max Greenberg</h3>
+                <p>Team Manager</p>
               </div>
             </div>
 
@@ -144,8 +139,8 @@
               <div class="headshot" id="DeeptiTalesra">
                 <a href="https://www.linkedin.com/in/deepti-talesra-888948151/" disabled></a>
                 <img src="images/team2019/Deepti_Talesra.jpg">
-              <h3>Deepti Talesra</h3>
-              <p>Mechanical Team Lead</p>
+                <h3>Deepti Talesra</h3>
+                <p>Mechanical Team Lead</p>
               </div>
             </div>
 
@@ -153,8 +148,8 @@
               <div class="headshot" id="AlecWyatt">
                 <a href="" disabled></a>
                 <img src="images/team2019/Alec_Wyatt.jpg">
-              <h3>Alec Wyatt</h3>
-              <p>Electrical Team Lead</p>
+                <h3>Alec Wyatt</h3>
+                <p>Electrical Team Lead</p>
               </div>
             </div>
 
@@ -163,9 +158,9 @@
               <div class="headshot" id="JeremyClerc">
                 <a href="https://www.linkedin.com/in/jeremy-clerc-0b3310164/" disabled></a>
                 <img src="images/team2019/Jeremy_Clerc.jpg">
-              
-              <h3>Jeremy Clerc</h3>
-              <p>Business Team Lead</p>
+
+                <h3>Jeremy Clerc</h3>
+                <p>Business Team Lead</p>
               </div>
             </div>
 
@@ -197,9 +192,9 @@
               <div class="headshot" id="WiseJacob">
                 <a href=""></a>
                 <img src="images/icons/headshot.jpg" class="silhouette">
-              
-              <h3>Jacob Wise</h3>
-              <p></p>
+
+                <h3>Jacob Wise</h3>
+                <p></p>
               </div>
             </div>
 
@@ -208,9 +203,9 @@
               <div class="headshot" id="JiangKaren">
                 <a href="" disabled></a>
                 <img src="images/icons/headshot.jpg" class="silhouette">
-              
-              <h3>Karen Jiang</h3>
-              <p></p>
+
+                <h3>Karen Jiang</h3>
+                <p></p>
               </div>
             </div>
 
@@ -218,9 +213,9 @@
               <div class="headshot" id="PsarasMelissa">
                 <a href=""></a>
                 <img src="images/icons/headshot.jpg" class="silhouette">
-              
-              <h3>Melissa Psaras</h3>
-              <p></p>
+
+                <h3>Melissa Psaras</h3>
+                <p></p>
               </div>
             </div>
 
@@ -228,9 +223,9 @@
               <div class="headshot" id="ChasanRonin">
                 <a href="" disabled></a>
                 <img src="images/icons/headshot.jpg" class="silhouette">
-              
-              <h3>Ronin Chasan</h3>
-              <p></p>
+
+                <h3>Ronin Chasan</h3>
+                <p></p>
               </div>
             </div>
           </div>
@@ -240,7 +235,7 @@
               <h1>Business</h1>
               <hr>
             </div>
-             <div class="profile">
+            <div class="profile">
               <div class="headshot" id="JacobJohansen">
                 <a href="https://www.linkedin.com/in/jacob-johansen-84a3a1156" disabled></a>
                 <img src="images/team2019/Jacob_Johansen.jpg">
@@ -249,14 +244,14 @@
               </div>
             </div>
 
-            
+
             <div class="profile">
               <div class="headshot" id="TabuforTabufor">
                 <a href="" disabled></a>
                 <img src="images/icons/headshot.jpg" class="silhouette">
-              
-              <h3>Tabufor Junior Tabufor</h3>
-              <p></p>
+
+                <h3>Tabufor Junior Tabufor</h3>
+                <p></p>
               </div>
             </div>
 
@@ -264,9 +259,9 @@
               <div class="headshot" id="NutleyAlexander">
                 <a href="" disabled></a>
                 <img src="images/icons/headshot.jpg" class="silhouette">
-              
-              <h3>Alexander Mustafich-Nutley</h3>
-              <p></p>
+
+                <h3>Alexander Mustafich-Nutley</h3>
+                <p></p>
               </div>
             </div>
 
@@ -274,9 +269,9 @@
               <div class="headshot" id="BrickmanSam">
                 <a href="" disabled></a>
                 <img src="images/icons/headshot.jpg" class="silhouette">
-              
-              <h3>Sam Brickman</h3>
-              <p></p>
+
+                <h3>Sam Brickman</h3>
+                <p></p>
               </div>
             </div>
 
@@ -284,9 +279,9 @@
               <div class="headshot" id="FarrowTimothy">
                 <a href=""></a>
                 <img src="images/icons/headshot.jpg" class="silhouette">
-              
-              <h3>Timothy Farrow</h3>
-              <p></p>
+
+                <h3>Timothy Farrow</h3>
+                <p></p>
               </div>
             </div>
 
@@ -294,19 +289,19 @@
               <div class="headshot" id="WillebeekJacob">
                 <a href="" disabled></a>
                 <img src="images/icons/headshot.jpg" class="silhouette">
-              
-              <h3>Jacob Willebeek-LeMair</h3>
-              <p></p>
+
+                <h3>Jacob Willebeek-LeMair</h3>
+                <p></p>
               </div>
             </div>
-            
+
             <div class="profile">
               <div class="headshot" id="StrouseDanny">
                 <a href=""></a>
                 <img src="images/icons/headshot.jpg" class="silhouette">
-              
-              <h3>Danny Strouse</h3>
-              <p></p>
+
+                <h3>Danny Strouse</h3>
+                <p></p>
               </div>
             </div>
 
@@ -315,19 +310,19 @@
           </div>
 
           <div class="roster-subteam-info-container" id="suspension">
-              <div class="mobile-only subteam-info-container-heading">
-                  <h1>Suspension</h1>
-                  <hr>
-                </div>
+            <div class="mobile-only subteam-info-container-heading">
+              <h1>Suspension</h1>
+              <hr>
+            </div>
 
 
             <div class="profile">
               <div class="headshot" id="MatthewCreighton">
                 <a href="https://www.linkedin.com/in/matthewcreighton518/" disabled></a>
                 <img src="images/team2019/Matthew_Creighton.jpg">
-              
-              <h3>Matthew Creighton</h3>
-              <p>Suspension Lead</p>
+
+                <h3>Matthew Creighton</h3>
+                <p>Suspension Lead</p>
               </div>
             </div>
 
@@ -340,43 +335,52 @@
               </div>
             </div>
 
-          <div class="profile">
-            <div class="headshot" id="KaraWang">
-              <a href="https://www.linkedin.com/in/kara-w/" disabled></a>
-              <img src="images/team2019/Kara_Wang.jpg">
-            
-            <h3>Kara Wang</h3>
-            <p></p>
-            </div>
-          </div>
+            <div class="profile">
+              <div class="headshot" id="KaraWang">
+                <a href="https://www.linkedin.com/in/kara-w/" disabled></a>
+                <img src="images/team2019/Kara_Wang.jpg">
 
-          <div class="profile">
-            <div class="headshot" id="LauraNawrocki">
-              <a href=""></a>
-              <img src="images/icons/headshot.jpg" class="silhouette">
-            <h3>Laura Nawrocki</h3>
-            <p></p>
-            </div>
-          </div>
-
-          <div class="profile">
-            <div class="headshot" id="ChelseaFrisch">
-              <a href=""></a>
-              <img src="images/icons/headshot.jpg" class="silhouette">
-            <h3>Chelsea Frisch</h3>
-            <p></p>
-            </div>
-          </div>
-
-
-
-        </div>
-
-        <div class="roster-subteam-info-container" id="software">
-            <div class="mobile-only subteam-info-container-heading">
-                <h1>Software</h1>
-                <hr>
+                <h3>Kara Wang</h3>
+                <p></p>
               </div>
+            </div>
+
+            <div class="profile">
+              <div class="headshot" id="LauraNawrocki">
+                <a href=""></a>
+                <img src="images/icons/headshot.jpg" class="silhouette">
+                <h3>Laura Nawrocki</h3>
+                <p></p>
+              </div>
+            </div>
+
+            <div class="profile">
+              <div class="headshot" id="ChelseaFrisch">
+                <a href=""></a>
+                <img src="images/icons/headshot.jpg" class="silhouette">
+                <h3>Chelsea Frisch</h3>
+                <p></p>
+              </div>
+            </div>
+
+            <div class="profile">
+              <div class="headshot" id="DanielleFulep">
+                <a href=""></a>
+                <img src="images/icons/headshot.jpg" class="silhouette">
+                <h3>Danielle Fulep</h3>
+                <p></p>
+              </div>
+            </div>
+
+
+
+          </div>
+
+          <div class="roster-subteam-info-container" id="software">
+            <div class="mobile-only subteam-info-container-heading">
+              <h1>Software</h1>
+              <hr>
+            </div>
             <div class="profile">
               <div class="headshot" id="DanaOwens">
                 <a href="https://www.linkedin.com/in/dana-owens-570606164/" disabled></a>
@@ -390,9 +394,9 @@
               <div class="headshot" id="ViancaHurtado">
                 <a href="https://www.linkedin.com/in/vianca-hurtado-2a0913a8/" disabled></a>
                 <img src="images/team2019/Vianca_Hurtado.jpg">
-              
-              <h3>Vianca Hurtado</h3>
-              <p></p>
+
+                <h3>Vianca Hurtado</h3>
+                <p></p>
               </div>
             </div>
 
@@ -400,28 +404,28 @@
               <div class="headshot" id="ParkerJames">
                 <a href="" disabled></a>
                 <img src="images/icons/headshot.jpg" class="silhouette">
-              
-              <h3>James Parker</h3>
-              <p></p>
+
+                <h3>James Parker</h3>
+                <p></p>
               </div>
             </div>
-            
+
             <div class="profile">
               <div class="headshot" id="GeeGoayWei">
                 <a href="" disabled></a>
                 <img src="images/icons/headshot.jpg" class="silhouette">
-              
-              <h3>Wei Gee Goay</h3>
-              <p></p>
+
+                <h3>Wei Gee Goay</h3>
+                <p></p>
               </div>
             </div>
-            
+
             <div class="profile">
               <div class="headshot" id="WangAdeline">
-              <a href="" disabled></a>
-              <img src="images/icons/headshot.jpg" class="silhouette">
-              <h3>Adeline Wang</h3>
-              <p></p>
+                <a href="" disabled></a>
+                <img src="images/icons/headshot.jpg" class="silhouette">
+                <h3>Adeline Wang</h3>
+                <p></p>
               </div>
             </div>
 
@@ -446,153 +450,161 @@
             </div>
 
             <div class="profile">
-                <div class="headshot" id="ChristopherYuan">
+              <div class="headshot" id="ChristopherYuan">
                 <a href="https://www.linkedin.com/in/christopher-yuan-879895158/" disabled></a>
                 <img src="images/team2019/Christopher_Yuan.jpg">
                 <h3>Christopher Yuan</h3>
                 <p></p>
-                </div>
+              </div>
             </div>
 
             <div class="profile">
-                <div class="headshot" id="MichaelGuan">
-                  <a href="https://www.linkedin.com/in/mikeguan1999/" disabled></a>
-                  <img src="images/team2019/Michael_Guan.jpg">
-                
+              <div class="headshot" id="MichaelGuan">
+                <a href="https://www.linkedin.com/in/mikeguan1999/" disabled></a>
+                <img src="images/team2019/Michael_Guan.jpg">
+
                 <h3>Michael Guan</h3>
                 <p></p>
-                </div>
+              </div>
             </div>
 
             <div class="profile">
-                <div class="headshot" id="LevyJacob">
-                  <a href=""></a>
-                  <img src="images/icons/headshot.jpg" class="silhouette">
+              <div class="headshot" id="LevyJacob">
+                <a href=""></a>
+                <img src="images/icons/headshot.jpg" class="silhouette">
                 <h3>Jacob Levy</h3>
                 <p></p>
-                </div>
+              </div>
             </div>
 
 
             <div class="profile">
-                <div class="headshot" id="KalpatNithish">
-                  <a href="" disabled></a>
-                  <img src="images/team2019/Nithish_Kalpat.jpg">
-                
+              <div class="headshot" id="KalpatNithish">
+                <a href="" disabled></a>
+                <img src="images/team2019/Nithish_Kalpat.jpg">
+
                 <h3>Nithish Kalpat</h3>
                 <p></p>
-                </div>
+              </div>
             </div>
 
           </div>
 
           <div class="roster-subteam-info-container" id="hardware">
-              <div class="mobile-only subteam-info-container-heading">
-                  <h1>Hardware</h1>
-                  <hr>
-                </div>
-
-              <div class="profile">
-                  <div class="headshot" id="TimTran">
-                    <a href="https://www.linkedin.com/in/timtran2018/" disabled></a>
-                    <img src="images/team2019/Tim_Tran.jpg">
-                  <h3>Tim Tran</h3>
-                  <p>Hardware Lead</p>
-                  </div>
-              </div>
-
-              <div class="profile">
-                  <div class="headshot" id="GoldenCourtney">
-                    <a href="" disabled></a>
-                    <img src="images/icons/headshot.jpg" class="silhouette">
-                  </div>
-                  <h3>Courtney Golden</h3>
-                  <p></p>
-              </div>
-
-              <div class="profile">
-                  <div class="headshot" id="YuanJessica">
-                    <a href="" disabled></a>
-                    <img src="images/icons/headshot.jpg" class="silhouette">
-                  <h3>Jessica Yuan</h3>
-                  <p></p>
-                  </div>
-              </div>
-
-              <div class="profile">
-                  <div class="headshot" id="WolszaAnna">
-                    <a href="" disabled></a>
-                    <img src="images/icons/headshot.jpg" class="silhouette">
-                  
-                  <h3>Anna Wolsza</h3>
-                  <p></p>
-                  </div>
-              </div>
-
-
-              <div class="profile">
-                  <div class="headshot" id="Juliet_DeNapoli">
-                    <a href="" disabled></a>
-                    <img src="images/team2019/Juliet_DeNapoli.jpg">
-                  <h3>Juliet DeNapoli</h3>
-                  <p></p>
-                  </div>
-              </div>
-  
-                <div class="profile">
-                    <div class="headshot" id="RobertFleming">
-                      <a href="" disabled></a>
-                      <img src="images/team2019/Robert_Fleming.jpg">
-                    <h3>Robert Fleming</h3>
-                    <p></p>
-                    </div>
-                </div>
-  
-                <div class="profile">
-                    <div class="headshot" id="YoungSeokNa">
-                      <a href="https://www.linkedin.com/in/youngseok-na-a1346517a/" disabled></a>
-                      <img src="images/team2019/YoungSeok_Na.jpg">
-                    <h3>YoungSeok Na</h3>
-                    <p></p>
-                    </div>
-                </div>
-  
-                <div class="profile">
-                    <div class="headshot" id="Reid-VicarsNia">
-                      <a href="" disabled></a>
-                      <img src="images/icons/headshot.jpg" class="silhouette">
-                    </div>
-                    <h3>Nia Reid-Vicars</h3>
-                    <p></p>
-                </div>
-  
-                <div class="profile">
-                    <div class="headshot" id="RoninSharma">
-                    <a href="linkedin.com/in/ronin-sharma-8214b7146" disabled></a>
-                    <img src="images/team2019/Ronin_Sharma.jpg">
-                    
-                    <h3>Ronin Sharma</h3>
-                    <p></p>
-                    </div>
-                </div>
-
-
-
+            <div class="mobile-only subteam-info-container-heading">
+              <h1>Hardware</h1>
+              <hr>
             </div>
 
+            <div class="profile">
+              <div class="headshot" id="TimTran">
+                <a href="https://www.linkedin.com/in/timtran2018/" disabled></a>
+                <img src="images/team2019/Tim_Tran.jpg">
+                <h3>Tim Tran</h3>
+                <p>Hardware Lead</p>
+              </div>
+            </div>
+
+            <div class="profile">
+              <div class="headshot" id="GoldenCourtney">
+                <a href="" disabled></a>
+                <img src="images/icons/headshot.jpg" class="silhouette">
+              </div>
+              <h3>Courtney Golden</h3>
+              <p></p>
+            </div>
+
+            <div class="profile">
+              <div class="headshot" id="LiuWinston">
+                <a href="" disabled></a>
+                <img src="images/icons/headshot.jpg" class="silhouette">
+              </div>
+              <h3>Winston Liu</h3>
+              <p></p>
+            </div>
+
+            <div class="profile">
+              <div class="headshot" id="YuanJessica">
+                <a href="" disabled></a>
+                <img src="images/icons/headshot.jpg" class="silhouette">
+                <h3>Jessica Yuan</h3>
+                <p></p>
+              </div>
+            </div>
+
+            <div class="profile">
+              <div class="headshot" id="WolszaAnna">
+                <a href="" disabled></a>
+                <img src="images/icons/headshot.jpg" class="silhouette">
+
+                <h3>Anna Wolsza</h3>
+                <p></p>
+              </div>
+            </div>
+
+
+            <div class="profile">
+              <div class="headshot" id="Juliet_DeNapoli">
+                <a href="" disabled></a>
+                <img src="images/team2019/Juliet_DeNapoli.jpg">
+                <h3>Juliet DeNapoli</h3>
+                <p></p>
+              </div>
+            </div>
+
+            <div class="profile">
+              <div class="headshot" id="RobertFleming">
+                <a href="" disabled></a>
+                <img src="images/team2019/Robert_Fleming.jpg">
+                <h3>Robert Fleming</h3>
+                <p></p>
+              </div>
+            </div>
+
+            <div class="profile">
+              <div class="headshot" id="YoungSeokNa">
+                <a href="https://www.linkedin.com/in/youngseok-na-a1346517a/" disabled></a>
+                <img src="images/team2019/YoungSeok_Na.jpg">
+                <h3>YoungSeok Na</h3>
+                <p></p>
+              </div>
+            </div>
+
+            <div class="profile">
+              <div class="headshot" id="Reid-VicarsNia">
+                <a href="" disabled></a>
+                <img src="images/icons/headshot.jpg" class="silhouette">
+              </div>
+              <h3>Nia Reid-Vicars</h3>
+              <p></p>
+            </div>
+
+            <div class="profile">
+              <div class="headshot" id="RoninSharma">
+                <a href="linkedin.com/in/ronin-sharma-8214b7146" disabled></a>
+                <img src="images/team2019/Ronin_Sharma.jpg">
+
+                <h3>Ronin Sharma</h3>
+                <p></p>
+              </div>
+            </div>
+
+
+          </div>
+
           <div class="roster-subteam-info-container" id="braking">
-              <div class="mobile-only subteam-info-container-heading">
-                  <h1>Braking</h1>
-                  <hr>
-                </div>
+            <div class="mobile-only subteam-info-container-heading">
+              <h1>Braking</h1>
+              <hr>
+            </div>
 
 
             <div class="profile">
               <div class="headshot" id="RaghavInder">
                 <a href="" disabled></a>
                 <img src="images/icons/headshot.jpg" class="silhouette">
-              <h3>Raghav Inder</h3>
-              <p>Braking Lead</p>
+                <h3>Raghav Inder</h3>
+                <p>Braking Lead</p>
               </div>
             </div>
 
@@ -602,6 +614,15 @@
                 <img src="images/icons/headshot.jpg" class="silhouette">
               </div>
               <h3>Christelle Chemaly</h3>
+              <p></p>
+            </div>
+
+            <div class="profile">
+              <div class="headshot" id="CoombsJoshua">
+                <a href="" disabled></a>
+                <img src="images/icons/headshot.jpg" class="silhouette">
+              </div>
+              <h3>Joshua Coombs</h3>
               <p></p>
             </div>
 
@@ -626,17 +647,17 @@
 
           </div>
           <div class="roster-subteam-info-container" id="propulsion">
-              <div class="mobile-only subteam-info-container-heading">
-                  <h1>Propulsion</h1>
-                  <hr>
-                </div>
-            
+            <div class="mobile-only subteam-info-container-heading">
+              <h1>Propulsion</h1>
+              <hr>
+            </div>
+
             <div class="profile">
               <div class="headshot" id="GausEdward">
                 <a href="" disabled></a>
                 <img src="images/team2019/Edward_Gaus.jpg">
-              <h3>Edward Gaus</h3>
-              <p>Propulsion Lead</p>
+                <h3>Edward Gaus</h3>
+                <p>Propulsion Lead</p>
               </div>
             </div>
 
@@ -644,7 +665,8 @@
 
             <div class="profile">
               <div class="headshot" id="KartawiraChris">
-                <a href="https://www.linkedin.com/in/christopher-kartawira-18037214a/"><img src="images/team2018/KartawiraChris.jpg"></a>
+                <a href="https://www.linkedin.com/in/christopher-kartawira-18037214a/"><img
+                    src="images/team2018/KartawiraChris.jpg"></a>
               </div>
               <h3>Chris Kartawira</h3>
               <p></p>
@@ -662,21 +684,31 @@
             </div>
 
             <div class="profile">
-                <div class="headshot" id="HanuchFelipe">
-                  <a href="" disabled></a>
-                  <img src="images/icons/headshot.jpg" class="silhouette">
+              <div class="headshot" id="HanuchFelipe">
+                <a href="" disabled></a>
+                <img src="images/icons/headshot.jpg" class="silhouette">
                 <h3>Felipe Hanuch</h3>
                 <p></p>
-                </div>
+              </div>
             </div>
             <div class="profile">
-                <div class="headshot" id="SlatteryCamille">
-                  <a href="" disabled></a>
-                  <img src="images/icons/headshot.jpg" class="silhouette">
-                
+              <div class="headshot" id="SlatteryCamille">
+                <a href="" disabled></a>
+                <img src="images/icons/headshot.jpg" class="silhouette">
+
                 <h3>Camille Slattery</h3>
                 <p></p>
-                </div>
+              </div>
+            </div>
+
+            <div class="profile">
+              <div class="headshot" id="TorresSebastian">
+                <a href="" disabled></a>
+                <img src="images/icons/headshot.jpg" class="silhouette">
+
+                <h3>Sebastian Torres</h3>
+                <p></p>
+              </div>
             </div>
 
 
@@ -688,4 +720,5 @@
     </div>
   </div>
 </body>
+
 </html>
