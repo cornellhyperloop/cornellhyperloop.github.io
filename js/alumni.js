@@ -1,4 +1,4 @@
-// years = []
+years = []
 var yearInViewCache;
 var yearInViewCacheCenterX;
 var yearInfoContainer;
@@ -91,35 +91,35 @@ var modalDict = {
 // This function scrolls to the year by selecting the #ID of the year and scrolling it into view.
 // it then selects the li element with class "year-label-active" making it "year-label-inactive"
 // it then selects the li element corresponding to the year and making its classname "year-label-active"
-// function scrollToyear(yearIndex) {
-//   year = years[yearIndex]
+function scrollToyear(yearIndex) {
+  year = years[yearIndex]
 
-//   document.getElementById(year).scrollIntoView({behavior: 'smooth'});
+  document.getElementById(year).scrollIntoView({behavior: 'smooth'});
 
-//   document.getElementById('active-label').id = "inactive-label"
+  document.getElementById('active-label').id = "inactive-label"
 
-//   getLabelElement(year).id = "active-label"
-// }
+  getLabelElement(year).id = "active-label"
+}
 
 
 // This executes once the DOM has been loaded. This selects the buttons and adds a click event listener
 // to them once it's safe to manipulate them.
 window.onload = function () {
-  // years = ['2018','2017'];
-  // addEventListenersToLabels()
+  years = ['2018','2017'];
+  addEventListenersToLabels()
 
-  // yearInViewCache = 'teamLeads';
-  // let yearInViewCacheRect = document.getElementById('teamLeads').getBoundingClientRect()
+  yearInViewCache = '2018';
+  let yearInViewCacheRect = document.getElementById('2018').getBoundingClientRect()
 
-  // yearInfoContainer = document.getElementsByClassName('roster-info-container')[0]
-  // yearInfoContainer.addEventListener('wheel',updateLabelforyearInView)
+  yearInfoContainer = document.getElementsByClassName('roster-info-container')[0]
+  yearInfoContainer.addEventListener('wheel',updateLabelforyearInView)
 
-  // yearInfoContainerRect = yearInfoContainer.getBoundingClientRect()
-  // console.log("yearInfoContainerCenterX: " + String(yearInfoContainerRect.top + yearInfoContainerRect.height/2) )
+  yearInfoContainerRect = yearInfoContainer.getBoundingClientRect()
+  console.log("yearInfoContainerCenterX: " + String(yearInfoContainerRect.top + yearInfoContainerRect.height/2) )
 
 
-  // yearInViewCacheCenterX = yearInViewCacheRect.top + (yearInViewCacheRect.height/2)
-  // console.log("yearInViewCacheCenterX: " + yearInViewCacheCenterX)
+  yearInViewCacheCenterX = yearInViewCacheRect.top + (yearInViewCacheRect.height/2)
+  console.log("yearInViewCacheCenterX: " + yearInViewCacheCenterX)
 
   Object.keys(modalDict).forEach(function(key) {
     console.log(key);
@@ -193,12 +193,12 @@ function createModal(key) {
   div.showModal();
 }
 
-// function addEventListenersToLabels(){
-//   for (let index = 0; index < years.length; index++) {
-//     let label = getLabelElement(years[index]);
-//     label.addEventListener('click', function () { scrollToyear(index); } )
-//   }
-// }
+function addEventListenersToLabels(){
+  for (let index = 0; index < years.length; index++) {
+    let label = getLabelElement(years[index]);
+    label.addEventListener('click', function () { scrollToyear(index); } )
+  }
+}
 
 function getLabelElement(yearString){
   return document.getElementsByClassName('sidebar-list-label')[years.indexOf(yearString)]

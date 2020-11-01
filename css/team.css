@@ -50,8 +50,8 @@
   }
   
   .headshot img{
-    max-width: 80px;
-    max-height: 80px;
+    max-width: 40vw;
+    max-height: 40vw;
   }
 
   .page-content{
@@ -64,10 +64,10 @@
     border-radius: 15px;
     color: white;
     position: relative;
-    width: 110%;
+    width: 40%;
     max-height: 33%;
     text-align: center;
-    margin: 10% 10px 0 0;
+    margin: 10% 5% 0 5%;
     font-size: 80%;
   }
 
@@ -94,6 +94,14 @@
     font-size: 50%;
     margin: 1em 0 2.5em 0;
   }
+
+  .alumni-year-info-container {
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 100%;
+    margin: 1em 0 2.5em 0;
+  }
+
   .mobile-only{
     display: block;
   }
@@ -123,15 +131,7 @@
     text-align: center;
     /* text-transform: uppercase; */
   }
-  .profile{
-    border-radius: 15px;
-    color: white;
-    position: relative;
-    width: 30%;
-    max-height: 33%;
-    text-align: center;
-    margin: 1em auto 1em auto;
-  }
+  
 }
 /* Tablet Sizing */
 @media only screen and (min-width: 768px) and (max-width: 1023px){
@@ -189,11 +189,20 @@
     display: block;
   }
 
+  .alumni-year-info-container {
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 70%;
+    margin: 1em 0 2.5em 0;
+    justify-content: center;
+  }
+
   #alumni-inner-wrapper{
     display: flex;
     flex-wrap: wrap;
     font-size: 50%;
     margin: 1em 0 2.5em 0;
+    width: 100%;
   }
   
 
@@ -264,6 +273,19 @@
     overflow-y: scroll;
     scroll-snap-type: y mandatory;
   }
+
+  .alumni-year-info-container{
+    position: relative;
+    width: 100%;
+    /* max-height: 100%; */
+    height: 100%;
+    /* display: flex;
+    flex-flow: wrap; */
+    scroll-snap-align: start;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+  }
   
   .team-divisions-info-container{
     padding: 0 1em 0 2em;
@@ -299,8 +321,15 @@
     width: 23%;
     max-height: 33%;
     text-align: center;
-    margin: 1.15em auto 1.15em auto;
+    margin: 1em auto 1em auto;
   }
+
+  .alumni-container{
+    overflow-y: auto;
+    width: 80%;
+    margin: auto auto 3em 2%;
+  }
+
   #alumni-inner-wrapper h3{
     max-height: 2em;
    }
@@ -316,9 +345,6 @@
   position: relative;
   margin: 0 auto 0 auto;
 }
-
-
-
 
 .sidebar-list-label{
   /* text-transform: uppercase; */
@@ -379,6 +405,7 @@
 
 .subteam-info-container-heading{
   width: 100%;
+  font-size: 2em;
 }
 
 .subteam-info-container-heading hr{
@@ -387,7 +414,7 @@
   background-color: var(--HyperloopRed);
   border: 2px solid white;
   border-radius: 15px;
-  margin: 2px auto 4px auto;
+  margin: 2px auto 5px auto;
 }
 
 
@@ -477,14 +504,15 @@
   color: #545454;
 } */
 
-.alumni-container{
-  overflow-y: auto;
-  width: 80%;
-  margin: auto 10% auto 10%;
-}
+
 
 #alumni-inner-wrapper{
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  height: 110%;
 }
