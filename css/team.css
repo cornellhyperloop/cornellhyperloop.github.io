@@ -13,7 +13,17 @@
   margin-left: 7.5%;
   margin-right: 7.5%;
 }
+
+.stop-scrolling {
+  height: 100%;
+  overflow: hidden;
+}
+
 @media only screen and (max-width: 768px) {
+  .stop-scrolling {
+    height: 100%;
+    overflow: hidden;
+  }
 
   #header-line{
     width: 85%;
@@ -73,10 +83,9 @@
 
   .profile-modal {
     display: block;
-    top: 100px;
+    top: 150px;
+    min-width: 90%;
     max-height: 80%;
-    min-width: 100%;
-    width: 100%;
   }
 
   .roster-info-container {
@@ -135,6 +144,11 @@
 }
 /* Tablet Sizing */
 @media only screen and (min-width: 768px) and (max-width: 1023px){
+  .stop-scrolling {
+    height: 100%;
+    overflow: hidden;
+  }
+
   .qa-box p{
     font-size: 14px;
     color: #545454;
@@ -167,7 +181,9 @@
   }
 
   .profile-modal {
-    max-height: 99%;
+    top: 150px;
+    width: 70%;
+    max-height: 70%;
   }
 
   .roster-info-container {
@@ -233,6 +249,11 @@
 
 /* Desktop Sizing */
 @media only screen and (min-width: 1024px){
+  .stop-scrolling {
+    height: 100%;
+    overflow: hidden;
+  }
+
   .qa-box p{
     font-size: 18px;
     color: #545454;
@@ -244,7 +265,9 @@
   }
   
   .profile-modal {
-    width: 69%;
+    top: 150px;
+    width: 50%;
+    max-height: 70%;
   }
 
   .profile-modal h3 {
@@ -346,9 +369,9 @@
   margin: 0 auto 0 auto;
 }
 
-.sidebar-list-label{
+/* .sidebar-list-label{ */
   /* text-transform: uppercase; */
-}
+/* } */
 
 #inactive-label{
   cursor: pointer;
@@ -423,6 +446,8 @@
 }
 
 .profile-modal {
+  width: 50%;
+  height: 70%;
   display: block;
   background-color: rgba(255,255, 255, .9);
   color: black;
@@ -435,7 +460,6 @@
   align-content: center;
   overflow: auto;
   font-size: 20px;
-  height: 90%;
 }
 
 /* .profile-modal h3 {
@@ -482,6 +506,10 @@
   border: 3px solid white;
 }
 
+.profile-modal a {
+  display: inline-block;
+}
+
 .profile-modal .linkedin {
   border: none;
   min-width: 35px;
@@ -492,6 +520,11 @@
 
 .hidden {
   display: none;
+}
+
+.stop-scrolling {
+  height: 100%;
+  overflow: hidden;
 }
 
 /* .qa-box h5{
