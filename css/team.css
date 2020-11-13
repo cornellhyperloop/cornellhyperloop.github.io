@@ -83,6 +83,7 @@
 
   .profile-modal {
     display: block;
+    margin: auto;
     top: 150px;
     min-width: 90%;
     max-height: 80%;
