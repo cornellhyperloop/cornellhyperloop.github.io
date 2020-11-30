@@ -30,14 +30,6 @@ var modalDict = {
     "I love collaborating with my teammates.",
     "I love hanging out with my friends, watching sports, and listening to music.",
     "I can say the alphabet backwards."],
-  "AlecWyatt": [
-    "N/A",
-    "N/A",
-    "Hyperloop is a young team working to do something that’s never been done before. This team represents perhaps the greatest opportunity to do truly innovative work.",
-    "Everyone on this team is dedicated to the same goal: produce a pod that’s good enough to compete. It’s rare to be a part of such a dedicated, focused team.",
-    "I’m a junior in ECE with interests in aerospace and renewable energy. I enjoy debugging, troubleshooting, testing, and finding out why everything’s broken.",
-    "I’m a two-time transfer student. This is my first semester at Cornell and I’m eager to take advantage of all that this place has to offer.",
-    ],
   "DeeptiTalesra": [
     "Edison, NJ",
     "Computer Science 2021",
@@ -78,14 +70,6 @@ var modalDict = {
     "Outside of Hyperloop I enjoy skiing, swimming, programming, solving puzzles, playing video games, and watching movies, TV shows, and anime.",
     "I once swam in Cayuga Lake on New Years Day (There were chunks of ice in the water).",
     ],
-  "YoungSeokNa": [
-    "N/A",
-    "N/A",
-    "I have chosen Hyperloop since its vision of improving the quality of others' lives through innovation resonated with that of mine.",
-    "Hyperloop gives me a freedom to explore and learn about different compartments that composes not only the electrical portion of the pod but also the mechanical aspects of the pod through the dynamic nature of different subteams.",
-    "I am currently a sophomore pursuing a degree in ECE, hopefully double-major with CS. Outside of my academic curriculum, I like to explore different subject areas such as chemistry and music. With my interest in music, I play acoustic guitar in my free time. I am also looking into electronic guitars, though it may be similar to acoustics. Additionally, I like reading fictions in quiet surroundings.",
-    "I also go by Alex, which was given by my Canadian cousin.",
-    ],
   "DanaOwens": [
     "Rochester, NY",
     "Computer Science, 2021",
@@ -117,22 +101,6 @@ var modalDict = {
     "Honestly, being able to work on such a cool project",
     "Jacob is a Policy Analysis & Management Major with a Minor in Information Sciences. His main research is focused on Private-Public-Partnerships and infrastructure development for outer space and its impact on Aerospace and Defense markets. Outside of Hyperloop and classes, Jacob is the President of the Global Economic & Finance Society (GEFS) and plays intramural soccer.",
     "Space Nerd",
-    ],
-  "KaraWang": [
-    "N/A",
-    "N/A",
-    "I chose Hyperloop because of the chance to work on such a challenging and unique competition goal.",
-    "the people :-)",
-    "I'm a sophomore studying Mechanical Engineering. I enjoy cooking, photography, hiking, and playing tennis! ",
-    "I love love LOVE sushi",
-    ],
-  "ChristopherYuan": [
-    "N/A",
-    "N/A",
-    "It captured my imagination more than any of the other ones.",
-    "Working on something I've been reading about in science magazines since middle school! ",
-    "In my free time, I enjoy listening to hip hop, rnb, and jazz music, reading science fiction books, and spending time in the outdoors. Academically, I'm interested in theoretical cs and artificial intelligence, as well as linguistics and economics.",
-    "I can play 5 instruments, the favorite of which is the drums!",
     ],
   "SohniUthra": [
     "Winston-Salem, NC",
@@ -363,8 +331,8 @@ window.onload = function () {
   console.log("subteamInViewCacheCenterX: " + subteamInViewCacheCenterX)
 
   Object.keys(modalDict).forEach(function(key) {
-    // console.log(key);
-    var value = modalDict[key];
+    console.log(key);
+    // var value = modalDict[key];
     // console.log(value);
     // createModal(key, value);
     // document.getElementById(key).onclick = createModal(key, value);
@@ -475,7 +443,9 @@ function updateLabelforSubteamInView(){
     // console.log("Movement > .45 detected")
     subteamInViewport = getSubteamInView()
     subteamChanged = (subteamInViewCache != subteamInViewport)
+    console.log(subteamChanged)
     
+    // PROBLEM!!!!! - changes to true and back to false
     if (subteamChanged){
       subteamInViewCache = subteamInViewport
       console.log("Subteam in viewport changed to: " + subteamInViewport)
