@@ -538,8 +538,6 @@
   color: #545454;
 } */
 
-
-
 #alumni-inner-wrapper{
   display: flex;
   flex-direction: row;
@@ -549,4 +547,9 @@
   align-items: center;
   align-content: center;
   height: 110%;
+}
+
+dialog::backdrop{
+  background-color: black;
+  opacity: 50%;
 }

@@ -344,6 +344,7 @@ window.onload = function () {
 
   });
 
+  
 }
 
 function createModal(key) {
@@ -369,7 +370,7 @@ function createModal(key) {
     div.parentNode.removeChild(div)
     document.body.classList.remove("stop-scrolling");
   });
-  
+
   var existingImg = document.getElementById(key).childNodes[3];
   var cloneImg = existingImg.cloneNode(true);
   div.appendChild(cloneImg);
@@ -384,7 +385,7 @@ function createModal(key) {
   var newLink = document.createElement("a");
   newLink.href = cloneA.href;
   
-  console.log(newLink);
+  //console.log(newLink);
 
   var linked = document.createElement("img");
   linked.setAttribute('src', "images/icons/linkedin.png");
@@ -406,10 +407,17 @@ function createModal(key) {
   }
 
   div.showModal();
-
+  
+  //Closing modal with click outside of dialog box
+  var modal = document.getElementById(id);
+  // When the user clicks anywhere outside of the modal, close it
+  window.onclick = function(event) {
+    if (event.target == modal) {
+      div.parentNode.removeChild(div)
+      document.body.classList.remove("stop-scrolling");
+    }
+  }
 }
-
-// function closeModal
 
 function addEventListenersToLabels(){
   for (let index = 0; index < subteams.length; index++) {

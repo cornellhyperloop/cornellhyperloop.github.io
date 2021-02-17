@@ -160,6 +160,21 @@ function createModal(key) {
   var cloneName = existingName.cloneNode(true);
   div.appendChild(cloneName);
 
+  var a = document.getElementById(key).childNodes[1];
+  var cloneA = a.cloneNode(true);
+  // console.log(cloneA.href);
+
+  var newLink = document.createElement("a");
+  newLink.href = cloneA.href;
+  //console.log(newLink);
+
+  var linked = document.createElement("img");
+  linked.setAttribute('src', "images/icons/linkedin.png");
+  linked.classList.add("linkedin");
+  newLink.appendChild(linked);
+
+  div.appendChild(newLink);
+
   // var p = document.createTextNode(value);
   for (let qIndex = 0; qIndex < alumQuestions.length; qIndex++) {
     const QAdiv = document.createElement("div")
@@ -173,24 +188,17 @@ function createModal(key) {
     div.appendChild(QAdiv);
   }
 
-
-  var a = document.getElementById(key).childNodes[1];
-  var cloneA = a.cloneNode(true);
-  // console.log(cloneA.href);
-
-  var newLink = document.createElement("a");
-  newLink.href = cloneA.href;
-  
-  console.log(newLink);
-
-  var linked = document.createElement("img");
-  linked.setAttribute('src', "images/icons/linkedin.png");
-  linked.classList.add("linkedin");
-  newLink.appendChild(linked);
-
-  div.appendChild(newLink);
-
   div.showModal();
+
+  //Closing modal with click outside of dialog box
+  var modal = document.getElementById(id);
+  // When the user clicks anywhere outside of the modal, close it
+  window.onclick = function(event) {
+    if (event.target == modal) {
+      div.parentNode.removeChild(div)
+      document.body.classList.remove("stop-scrolling");
+    }
+  }
 }
 
 function addEventListenersToLabels(){
