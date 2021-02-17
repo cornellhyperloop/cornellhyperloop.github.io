@@ -40,6 +40,10 @@ html{
     color: rgb(170, 170, 170);
 }
 
+.info-session-div-container {
+    margin-top: 0;
+}
+
 /* mobile sizing */
 @media only screen and (max-width: 767px){
     .info-session-div-container .recr-subdiv {
@@ -183,7 +187,7 @@ html{
     }
 
     .info-session-div-container h3 {
-        color: black;
+        color: rgb(170, 170, 170);
     }
 
     .team-picture-container{
