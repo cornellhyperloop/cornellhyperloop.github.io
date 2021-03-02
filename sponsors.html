@@ -1,4 +1,5 @@
 <!DOCTYPE HTML>
+
 <head>
   <title>Cornell Hyperloop</title>
   <link href="https://fonts.googleapis.com/css?family=Quattrocento+Sans" rel="stylesheet">
@@ -10,84 +11,86 @@
   <script language="JavaScript" type="text/javascript" script src="js/sponsors.js"></script>
   <script language="JavaScript" type="text/javascript" script src="js/global.js"></script>
 </head>
+
 <body>
 
   <div class="page">
     <header>
-        <div class="navbar-container-computer">
-          <div class="navbar-logo">
-            <a href="https://hyperloop.cornell.edu">
-            <img class= "logo-symbol" src="images/logo_symbol.png" alt="Hyperloop Logo"/>
-            <img class= "logo-text" src="images/cornell_hyperloop_text.png" alt="Hyperloop Text Logo"/>
-            </a>
-          </div>
+      <div class="navbar-container-computer">
+        <div class="navbar-logo">
+          <a href="https://hyperloop.cornell.edu">
+            <img class="logo-symbol" src="images/logo_symbol.png" alt="Hyperloop Logo" />
+            <img class="logo-text" src="images/cornell_hyperloop_text.png" alt="Hyperloop Text Logo" />
+          </a>
+        </div>
 
-          <nav>
+        <nav>
+          <ul>
+            <li><a class="nav-link" href="https://hyperloop.cornell.edu">Home</a></li>
+            <li><a class="nav-link" href="about">About</a></li>
+            <li><a class="nav-link" href="team">Team</a></li>
+            <li>
+              <a class="nav-link" href="design">Design</a>
+            </li>
+            <li>
+              <a class="nav-link" href="sponsors">Sponsors</a>
+            </li>
+            <li>
+              <a class="red-button" id="giving-day-link"
+                href="https://givingday.cornell.edu/campaigns/cu-hyperloop">Donate</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <div id="navbar-container-mobile">
+        <div class="navbar-logo">
+          <a id="desktop-logo" href="https://hyperloop.cornell.edu"><img src="images/logotextthin.png"
+              alt="Hyperloop Logo" /></a>
+
+          <a id="mobile-logo" href="https://hyperloop.cornell.edu"><img src="images/logo.png"
+              alt="Hyperloop Logo" /></a>
+        </div>
+
+        <button id="mobile-dropdown-button" onclick="handleMobileDropdownButtonClick()">
+          <div class="mobile-dropdown-button-bar" id="button-bar1"></div>
+          <div class="mobile-dropdown-button-bar" id="button-bar2"></div>
+          <div class="mobile-dropdown-button-bar" id="button-bar3"></div>
+
+          <div class="mobile-dropdown-container" id="mobile-dropdown-container-hidden">
             <ul>
-              <li><a class="nav-link" href="https://hyperloop.cornell.edu">Home</a></li>
-              <li><a class="nav-link" href="about">About</a></li>
-              <li><a class="nav-link" href="team">Team</a></li>
               <li>
-                <a class="nav-link" href="design">Design</a>
+                <a class="mobile-link" href="https://hyperloop.cornell.edu">Home</a>
               </li>
               <li>
-                <a class="nav-link" href="sponsors">Sponsors</a>
+                <a class="mobile-link" href="about">About</a>
               </li>
               <li>
-                <a
-                  class="red-button"
-                  id="giving-day-link"
-                  href="https://givingday.cornell.edu/campaigns/cu-hyperloop">Donate</a>
+                <a class="mobile-link" href="team">Team</a>
+              </li>
+              <li>
+                <a class="mobile-link" href="design">Design</a>
+              </li>
+              <li>
+                <a class="mobile-link" href="sponsors">Sponsors</a>
               </li>
             </ul>
-          </nav>
-        </div>
-        <div id="navbar-container-mobile">
-          <div class="navbar-logo">
-            <a id="desktop-logo" href="https://hyperloop.cornell.edu"><img
-                src="images/logotextthin.png" alt="Hyperloop Logo"
-                /></a>
-
-            <a id="mobile-logo" href="https://hyperloop.cornell.edu"><img
-                src="images/logo.png" alt="Hyperloop Logo"
-                /></a>
           </div>
-
-          <button id="mobile-dropdown-button"
-            onclick="handleMobileDropdownButtonClick()">
-            <div class="mobile-dropdown-button-bar" id="button-bar1"></div>
-            <div class="mobile-dropdown-button-bar" id="button-bar2"></div>
-            <div class="mobile-dropdown-button-bar" id="button-bar3"></div>
-
-            <div class="mobile-dropdown-container"
-              id="mobile-dropdown-container-hidden">
-              <ul>
-                <li>
-                  <a class="mobile-link" href="https://hyperloop.cornell.edu">Home</a>
-                </li>
-                <li>
-                  <a class="mobile-link" href="about">About</a>
-                </li>
-                <li>
-                  <a class="mobile-link" href="team">Team</a>
-                </li>
-                <li>
-                  <a class="mobile-link" href="design">Design</a>
-                </li>
-                <li>
-                  <a class="mobile-link" href="sponsors">Sponsors</a>
-                </li>
-              </ul>
-            </div>
-          </button>
-        </div>
-      </header>
+        </button>
+      </div>
+    </header>
 
     <div class="page-content">
-      <div class="mobile-only centered-text" id="hyperloop-mobile-title"><h1 class="heading hovering"> Our Sponsors</h1></div>
+      <div class="mobile-only centered-text" id="hyperloop-mobile-title">
+        <h1 class="heading hovering"> Our Sponsors</h1>
+      </div>
       <div class="mobile-only blurb-container">
-        <p class="centered-text"> a very special thank-you to our generous sponsors, who allow us to dream big and explore innovative solutions to better our efforts on revolutionizing hyperloop technology. We wouldn't be where we are without your continued support.</p>
-        <p class="centered-text"> Sponsorship through tax-deductible donations comes with various benefits, including but not limited to brand visisbility at our world-class college campus, Cornell. For a fully detailed version of our sponsorship packages click <a href="/Sponsoship Packet 19-20.pdf">here</a> and contact us at <a href="mailto:cornellhyperloop@gmail.com">cornellhyperloop@gmail.com</a>. </p>
+        <p class="centered-text"> a very special thank-you to our generous sponsors, who allow us to dream big and
+          explore innovative solutions to better our efforts on revolutionizing hyperloop technology. We wouldn't be
+          where we are without your continued support.</p>
+        <p class="centered-text"> Sponsorship through tax-deductible donations comes with various benefits, including
+          but not limited to brand visisbility at our world-class college campus, Cornell. For a fully detailed version
+          of our sponsorship packages click <a href="/Sponsoship Packet 19-20.pdf">here</a> and contact us at <a
+            href="mailto:cornellhyperloop@gmail.com">cornellhyperloop@gmail.com</a>. </p>
       </div>
       <hr class="mobile-only">
       <div class="left-right-infocontainer-wrapper">
@@ -95,26 +98,29 @@
           <ul>
             <li class="sidebar-list-label" id="active-label">Sponsors</li>
             <li class="sidebar-list-label" id="inactive-label">Become A Sponsor</li>
-            <li class="sidebar-list-label" id="sponsorship-packet-label"><a href="./Sponsoship Packet 19-20.pdf">Sponsorship Packet</a></li>
+            <li class="sidebar-list-label" id="sponsorship-packet-label"><a href="./Sponsoship Packet 19-20.pdf"
+                target="_blank" rel="noopener noreferrer">Sponsorship Packet</a></li>
           </ul>
         </div>
 
         <div id="rightside-info-container">
           <div class="rightside-info-subcontainer" id="sponsors">
-            <div class="rightside-info-subcontainer-content"  id="sponsors-content">
-              <img src="images/Sponsors/autodesk.png"       alt="autodesk"        id="autodesk">
-              <img src="images/Sponsors/teconn.png"         alt="teconn"          id="teconn">
-              <img src="images/Sponsors/tekton.png"         alt="tekton"          id="tekton">
-              <img src="images/Sponsors/maxamps.png"        alt="maxamps"         id="maxamps">
-              <img src="images/Sponsors/bonesBearings.png"  alt="bonesBearings"   id="bonesBearings">
-              <img src="images/Sponsors/orangatang.png"     alt="orangatang"      id="orangatang">
+            <div class="rightside-info-subcontainer-content" id="sponsors-content">
+              <img src="images/Sponsors/autodesk.png" alt="autodesk" id="autodesk">
+              <img src="images/Sponsors/teconn.png" alt="teconn" id="teconn">
+              <img src="images/Sponsors/tekton.png" alt="tekton" id="tekton">
+              <img src="images/Sponsors/maxamps.png" alt="maxamps" id="maxamps">
+              <img src="images/Sponsors/bonesBearings.png" alt="bonesBearings" id="bonesBearings">
+              <img src="images/Sponsors/orangatang.png" alt="orangatang" id="orangatang">
             </div>
           </div>
           <hr class="mobile-only">
-          <div class="mobile-only centered-text"><h1 class="heading hovering">Become a Sponsor</h1></div>
+          <div class="mobile-only centered-text">
+            <h1 class="heading hovering">Become a Sponsor</h1>
+          </div>
           <div class="rightside-info-subcontainer" id="sponsor-packages">
-            
-            <div class="rightside-info-subcontainer-content"  id="sponsor-packages-content">
+
+            <div class="rightside-info-subcontainer-content" id="sponsor-packages-content">
               <div class="rightside-info-subcontainer-content-header">
                 <h1>Tier Packages</h1>
               </div>
@@ -122,17 +128,20 @@
                 <div class="package" id="pioneer-logo">
                   <img src="images/icons/pioneer.png" alt="">
                   <h2>Pioneer</h2>
-                  <p> <$1000  </p>
+                  <p>
+                    <$1000 </p>
                 </div>
                 <div class="package" id="disruptor-logo">
                   <img src="images/icons/disruptor.png" alt="">
                   <h2>Disruptor</h2>
-                  <p><$5000</p>
+                  <p>
+                    <$5000< /p>
                 </div>
                 <div class="package" id="innovator-logo">
                   <img src="images/icons/innovator.png" alt="">
                   <h2>Innovator</h2>
-                  <p><$10,000</p>
+                  <p>
+                    <$10,000< /p>
                 </div>
                 <div class="package" id="visionary-logo">
                   <img src="images/icons/visionary.png" alt="">
@@ -150,11 +159,16 @@
                       <span class="disruptor-perk inactive"> 8" x 8"</span>
                       <span class="innovator-perk inactive">10" x 10"</span>
                       <span class="visionary-perk inactive">14" x 14"</span>
-                     square logo on Hyperloop Pod</li>
-                    <li class="pioneer-perk disruptor-perk innovator-perk visionary-perk">Featured on the Cornell Hyperloop website</li>
-                    <li class="pioneer-perk disruptor-perk innovator-perk visionary-perk">Placement of logo on pod and Cornell Hyperloop gear</li>
-                    <li class="disruptor-perk innovator-perk visionary-perk">A monthly newsletter with updates of our progress</li>
-                    <li class="disruptor-perk innovator-perk visionary-perk">Will receive Cornell Hyperloop merchandise</li>
+                      square logo on Hyperloop Pod
+                    </li>
+                    <li class="pioneer-perk disruptor-perk innovator-perk visionary-perk">Featured on the Cornell
+                      Hyperloop website</li>
+                    <li class="pioneer-perk disruptor-perk innovator-perk visionary-perk">Placement of logo on pod and
+                      Cornell Hyperloop gear</li>
+                    <li class="disruptor-perk innovator-perk visionary-perk">A monthly newsletter with updates of our
+                      progress</li>
+                    <li class="disruptor-perk innovator-perk visionary-perk">Will receive Cornell Hyperloop merchandise
+                    </li>
                     <li class="innovator-perk visionary-perk">Special mentions during competition</li>
                     <li class="innovator-perk visionary-perk">Materials from competition weekend</li>
                     <li class="visionary-perk">Quarterly calls with the team to discuss the pod's progress</li>

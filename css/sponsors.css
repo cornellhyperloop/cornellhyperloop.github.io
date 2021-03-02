@@ -251,6 +251,9 @@
   color: white;
   opacity: 0.4;
   transition: 0.3s;
+  bottom:2px;
+  position: absolute;
+  left: -25px;
 }
 
 #sponsorship-packet-label a:hover {
