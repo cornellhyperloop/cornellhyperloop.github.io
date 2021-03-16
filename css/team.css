@@ -363,6 +363,10 @@
     flex-direction: row;
     flex-wrap: wrap;
   }
+
+  .member-name{
+    height: 4em;
+  }
 }
 .page-content{
   display: inline-flex;
@@ -412,7 +416,7 @@
 }
 
 .headshot h3 {
-  max-height: 26px;
+  max-height: 2em;
 }
 
 .headshot img{
@@ -553,3 +557,4 @@ dialog::backdrop{
   background-color: black;
   opacity: 50%;
 }
+
