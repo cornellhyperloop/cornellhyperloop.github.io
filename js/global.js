@@ -173,7 +173,7 @@ function resizeLandingVideo() {
     const offsetDivElement = document.getElementsByClassName(
       "landing-page-video-offset-div"
     )[0];
-    if (getComputedStyle(landingVideo).position == "absolute") {
+    if (getComputedStyle(landingVideo).position == "static") {
       const headerHeight = getHeaderHeight()
       const marginNeeded = Math.round(
         landingVideo.getBoundingClientRect().bottom - headerHeight
@@ -204,7 +204,7 @@ function resizeLandingVideo() {
 
   // if (windowAspectRatio < landingVideoAspectRatio) {
   if (landingVideo.getBoundingClientRect().height + getHeaderHeight() >= window.innerHeight) {
-    landingVideo.style.position = "absolute";
+    landingVideo.style.position = "static";
     landingVideo.style.top = "0px";
   } else {
     // console.log("Width is too small for video");
