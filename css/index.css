@@ -9,7 +9,7 @@ html{
 }
 
 .recr-div {
-    background-color: rgba(255,255, 255, .5);
+    background-color: rgba(255, 255, 255, .5)
 }
 
 .recr-subdiv {
@@ -277,6 +277,11 @@ html{
     .recr-subdiv p a {
         font-size: 18px;
         color: white;
+    }
+
+    .twitter-container{
+        margin: auto;
+        background-color:
     }
     
     .recr-subdiv p a:hover {
