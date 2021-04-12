@@ -1,4 +1,5 @@
 <!DOCTYPE HTML>
+
 <head>
   <title>Cornell Hyperloop</title>
   <link href="https://fonts.googleapis.com/css?family=Quattrocento+Sans" rel="stylesheet">
@@ -16,74 +17,68 @@
 <body>
   <div class="page">
     <header>
-        <div class="navbar-container-computer">
-          <div class="navbar-logo">
-            <a href="https://hyperloop.cornell.edu">
-            <img class= "logo-symbol" src="images/logo_symbol.png" alt="Hyperloop Logo"/>
-            <img class= "logo-text" src="images/cornell_hyperloop_text.png" alt="Hyperloop Text Logo"/>
-            </a>
-          </div>
+      <div class="navbar-container-computer">
+        <div class="navbar-logo">
+          <a href="https://hyperloop.cornell.edu">
+            <img class="logo-symbol" src="images/logo_symbol.png" alt="Hyperloop Logo" />
+            <img class="logo-text" src="images/cornell_hyperloop_text.png" alt="Hyperloop Text Logo" />
+          </a>
+        </div>
 
-          <nav>
+        <nav>
+          <ul>
+            <li><a class="nav-link" href="https://hyperloop.cornell.edu">Home</a></li>
+            <li><a class="nav-link" href="about">About</a></li>
+            <li><a class="nav-link" href="team">Team</a></li>
+            <li>
+              <a class="nav-link" href="design">Design</a>
+            </li>
+            <li>
+              <a class="nav-link" href="sponsors">Sponsors</a>
+            </li>
+            <li>
+              <a class="red-button" id="giving-day-link"
+                href="https://securelb.imodules.com/s/1717/giving/interior.aspx?sid=1717&gid=2&pgid=16421&cid=27217&dids=2235&bledit=1">Donate</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <div id="navbar-container-mobile">
+        <div class="navbar-logo">
+          <a id="desktop-logo" href="https://hyperloop.cornell.edu"><img src="images/logotextthin.png"
+              alt="Hyperloop Logo" /></a>
+
+          <a id="mobile-logo" href="https://hyperloop.cornell.edu"><img src="images/logo.png"
+              alt="Hyperloop Logo" /></a>
+        </div>
+
+        <button id="mobile-dropdown-button" onclick="handleMobileDropdownButtonClick()">
+          <div class="mobile-dropdown-button-bar" id="button-bar1"></div>
+          <div class="mobile-dropdown-button-bar" id="button-bar2"></div>
+          <div class="mobile-dropdown-button-bar" id="button-bar3"></div>
+
+          <div class="mobile-dropdown-container" id="mobile-dropdown-container-hidden">
             <ul>
-              <li><a class="nav-link" href="https://hyperloop.cornell.edu">Home</a></li>
-              <li><a class="nav-link" href="about">About</a></li>
-              <li><a class="nav-link" href="team">Team</a></li>
               <li>
-                <a class="nav-link" href="design">Design</a>
+                <a class="mobile-link" href="https://hyperloop.cornell.edu">Home</a>
               </li>
               <li>
-                <a class="nav-link" href="sponsors">Sponsors</a>
+                <a class="mobile-link" href="about.html">About</a>
               </li>
               <li>
-                <a
-                  class="red-button"
-                  id="giving-day-link"
-                  href="https://securelb.imodules.com/s/1717/giving/interior.aspx?sid=1717&gid=2&pgid=16421&cid=27217&dids=2235&bledit=1">Donate</a>
+                <a class="mobile-link" href="team.html">Team</a>
+              </li>
+              <li>
+                <a class="mobile-link" href="design.html">Design</a>
+              </li>
+              <li>
+                <a class="mobile-link" href="sponsors.html">Sponsors</a>
               </li>
             </ul>
-          </nav>
-        </div>
-        <div id="navbar-container-mobile">
-          <div class="navbar-logo">
-            <a id="desktop-logo" href="https://hyperloop.cornell.edu"><img
-                src="images/logotextthin.png" alt="Hyperloop Logo"
-                /></a>
-
-            <a id="mobile-logo" href="https://hyperloop.cornell.edu"><img
-                src="images/logo.png" alt="Hyperloop Logo"
-                /></a>
           </div>
-
-          <button id="mobile-dropdown-button"
-            onclick="handleMobileDropdownButtonClick()">
-            <div class="mobile-dropdown-button-bar" id="button-bar1"></div>
-            <div class="mobile-dropdown-button-bar" id="button-bar2"></div>
-            <div class="mobile-dropdown-button-bar" id="button-bar3"></div>
-
-            <div class="mobile-dropdown-container"
-              id="mobile-dropdown-container-hidden">
-              <ul>
-                <li>
-                  <a class="mobile-link" href="https://hyperloop.cornell.edu">Home</a>
-                </li>
-                <li>
-                  <a class="mobile-link" href="about.html">About</a>
-                </li>
-                <li>
-                  <a class="mobile-link" href="team.html">Team</a>
-                </li>
-                <li>
-                  <a class="mobile-link" href="design.html">Design</a>
-                </li>
-                <li>
-                  <a class="mobile-link" href="sponsors.html">Sponsors</a>
-                </li>
-              </ul>
-            </div>
-          </button>
-        </div>
-      </header>
+        </button>
+      </div>
+    </header>
 
     <div class="page-content">
       <div class="centered-text" id="hyperloop-mobile-title">
@@ -100,118 +95,118 @@
             <li class="sidebar-list-label" id="inactive-label">2017</li>
           </ul>
         </div>
-        
+
         <div class="roster-info-container alumni-container">
           <div class="alumni-year-info-container" id="2018">
-          <div id="alumni-inner-wrapper">
+            <div id="alumni-inner-wrapper">
 
-            <div class="mobile-only subteam-info-container-heading">
-              <h1>2018</h1>
-            <hr>
-            </div>
+              <div class="mobile-only subteam-info-container-heading">
+                <h1>2018</h1>
+                <hr>
+              </div>
 
-            <div class="profile">
+              <div class="profile">
                 <div class="headshot" id="BoehringerGillian">
                   <a href="https://www.linkedin.com/in/gillian-boehringer-9255b3108" disabled></a>
                   <img src="images/icons/headshot.jpg" class="silhouette">
                   <h3>Gillian Boehringer</h3>
                   <p>Business Development Lead</p>
+                </div>
               </div>
-            </div>
 
-            <div class="profile">
-              <div class="headshot" id="FayadDaniel">
-                <a href="https://www.linkedin.com/in/daniel-fayad-62465ba2" disabled></a>
-                <img src="images/icons/headshot.jpg" class="silhouette">
-                <h3>Daniel Fayad</h3>
-                <p>Electrical Team Lead
+              <div class="profile">
+                <div class="headshot" id="FayadDaniel">
+                  <a href="https://www.linkedin.com/in/daniel-fayad-62465ba2" disabled></a>
+                  <img src="images/icons/headshot.jpg" class="silhouette">
+                  <h3>Daniel Fayad</h3>
+                  <p>Electrical Team Lead
                   </p>
+                </div>
               </div>
-            </div>
 
-            <div class="profile">
+              <div class="profile">
                 <div class="headshot" id="AlonsoCristian">
                   <a href="https://www.linkedin.com/in/cristian-alonso" disabled></a>
                   <img src="images/icons/headshot.jpg" class="silhouette">
                   <h3>Cristian Alonso</h3>
                   <p>Mechanical Team Lead
-                    
+
                   </p>
+                </div>
               </div>
-            </div>
 
-            <div class="profile">
-              <div class="headshot" id="VetterKenny">
-                <a href="https://www.linkedin.com/in/kenneth-vetter-baa720120" disabled></a>
-                <img src="images/icons/headshot.jpg" class="silhouette">
-                <h3>Kenny Vetter</h3>
-                <p>Maglev Subteam Lead
-                  
-                </p>
+              <div class="profile">
+                <div class="headshot" id="VetterKenny">
+                  <a href="https://www.linkedin.com/in/kenneth-vetter-baa720120" disabled></a>
+                  <img src="images/icons/headshot.jpg" class="silhouette">
+                  <h3>Kenny Vetter</h3>
+                  <p>Maglev Subteam Lead
+
+                  </p>
+                </div>
               </div>
-            </div>
 
-            <div class="profile">
-              <div class="headshot" id="KirchhoffTodd">
-                <a href="https://www.linkedin.com/in/toddrkirchhoff" disabled></a>
-                <img src="images/icons/headshot.jpg" class="silhouette">
-                <h3>Todd Kirchhoff</h3>
-                <p>Fuselage Subteam Lead
-                  
-                </p>
+              <div class="profile">
+                <div class="headshot" id="KirchhoffTodd">
+                  <a href="https://www.linkedin.com/in/toddrkirchhoff" disabled></a>
+                  <img src="images/icons/headshot.jpg" class="silhouette">
+                  <h3>Todd Kirchhoff</h3>
+                  <p>Fuselage Subteam Lead
+
+                  </p>
+                </div>
               </div>
-            </div>
 
-            <div class="profile">
-              <div class="headshot" id="MaskerAlyse">
-                <a href="https://www.linkedin.com/in/alyse-masker-28a395149" disabled></a>
-                <img src="images/icons/headshot.jpg" class="silhouette">
-                <h3>Alyse Masker</h3>
-                <p>Suspension Subteam Lead
-                  
-                </p>
+              <div class="profile">
+                <div class="headshot" id="MaskerAlyse">
+                  <a href="https://www.linkedin.com/in/alyse-masker-28a395149" disabled></a>
+                  <img src="images/icons/headshot.jpg" class="silhouette">
+                  <h3>Alyse Masker</h3>
+                  <p>Suspension Subteam Lead
+
+                  </p>
+                </div>
               </div>
-            </div>
-         
 
-            <div class="profile">
-              <div class="headshot" id="NarahariManvith">
-                <a href="https://www.linkedin.com/in/manvith-narahari-3a9412119" disabled></a>
-                <img src="images/icons/headshot.jpg" class="silhouette">
-                <h3>Manvith Narahari</h3>
-                <p></p>
+
+              <div class="profile">
+                <div class="headshot" id="NarahariManvith">
+                  <a href="https://www.linkedin.com/in/manvith-narahari-3a9412119" disabled></a>
+                  <img src="images/icons/headshot.jpg" class="silhouette">
+                  <h3>Manvith Narahari</h3>
+                  <p></p>
+                </div>
               </div>
-            </div>
-           
 
-            <div class="profile">
-              <div class="headshot" id="LuQuanxing">
-                <a href="" disabled></a>
-                <img src="images/icons/headshot.jpg" class="silhouette">
-                <h3>Quanxing Lu</h3>
-                <p></p>
+
+              <div class="profile">
+                <div class="headshot" id="LuQuanxing">
+                  <a href="" disabled></a>
+                  <img src="images/icons/headshot.jpg" class="silhouette">
+                  <h3>Quanxing Lu</h3>
+                  <p></p>
+                </div>
               </div>
-            </div>
 
-            <div class="profile">
-              <div class="headshot" id="IyerKeshav">
-                <a href="https://www.linkedin.com/in/keshav-iyer-859059a0" disabled></a>
-                <img src="images/icons/headshot.jpg" class="silhouette">
-                <h3>Keshav Iyer</h3>
-                <p></p>
+              <div class="profile">
+                <div class="headshot" id="IyerKeshav">
+                  <a href="https://www.linkedin.com/in/keshav-iyer-859059a0" disabled></a>
+                  <img src="images/icons/headshot.jpg" class="silhouette">
+                  <h3>Keshav Iyer</h3>
+                  <p></p>
+                </div>
               </div>
-            </div>
 
-            <div class="profile">
-              <div class="headshot" id="DasAnshuman">
-                <a href="https://www.linkedin.com/in/anshumandas19971" disabled></a>
-                <img src="images/icons/headshot.jpg" class="silhouette">
-                <h3>Anshuman Das</h3>
-                <p></p>
+              <div class="profile">
+                <div class="headshot" id="DasAnshuman">
+                  <a href="https://www.linkedin.com/in/anshumandas19971" disabled></a>
+                  <img src="images/icons/headshot.jpg" class="silhouette">
+                  <h3>Anshuman Das</h3>
+                  <p></p>
+                </div>
               </div>
-            </div>
 
-          </div>
+            </div>
           </div>
 
           <div class="alumni-year-info-container" id="2017">
@@ -228,7 +223,7 @@
                   <p></p>
                 </div>
               </div>
-  
+
               <div class="profile">
                 <div class="headshot" id="SeongKimJu">
                   <a href="" disabled></a>
@@ -237,12 +232,256 @@
                   <p></p>
                 </div>
               </div>
-  
+
             </div>
           </div>
+
+          <div class="alumni-year-info-container" id="2020">
+            <div id="alumni-inner-wrapper">
+              <div class="mobile-only subteam-info-container-heading">
+                <h1>2020</h1>
+                <hr>
+              </div>
+              <div class="profile">
+                <div class="headshot" id="AlecWyatt">
+                  <a href="" disabled></a>
+                  <img src="images/team2019/Alec_Wyatt.jpg">
+                  <h3>Alec Wyatt</h3>
+                  <p>Electrical Team Lead</p>
+                </div>
+              </div>
+
+              <div class="profile" id="modal-btn">
+                <div class="headshot" id="JeremyClerc">
+                  <a href="https://www.linkedin.com/in/jeremy-clerc-0b3310164/" disabled></a>
+                  <img src="images/team2019/Jeremy_Clerc.jpg">
+
+                  <h3>Jeremy Clerc</h3>
+                  <p>Business Team Lead</p>
+                </div>
+              </div>
+
+              <div class="profile">
+                <div class="headshot" id="LuisLondono">
+                  <a href="https://www.linkedin.com/in/luislondonoramos/"><img
+                      src="images/team2019/Luis_Londono.jpg"></a>
+                </div>
+                <h3>Luis Londono</h3>
+                <p>Web Development Lead</p>
+              </div>
+
+
+              <div class="profile">
+                <div class="headshot" id="BrickmanSam">
+                  <a href="" disabled></a>
+                  <img src="images/icons/headshot.jpg" class="silhouette">
+
+                  <h3>Sam Brickman</h3>
+                  <p></p>
+                </div>
+              </div>
+
+              <div class="profile">
+                <div class="headshot" id="FarrowTimothy">
+                  <a href=""></a>
+                  <img src="images/icons/headshot.jpg" class="silhouette">
+
+                  <h3>Timothy Farrow</h3>
+                  <p></p>
+                </div>
+              </div>
+
+              <div class="profile">
+                <div class="headshot" id="CarleighRoche">
+                  <a href="https://www.linkedin.com/in/carleigh-roche-1493a21a1/" disabled></a>
+                  <img src="images/team2019/Carleigh_Roche.jpg">
+                  <h3>Carleigh Roche</h3>
+                  <p></p>
+                </div>
+              </div>
+
+              <div class="profile">
+                <div class="headshot" id="KaraWang">
+                  <a href="https://www.linkedin.com/in/kara-w/" disabled></a>
+                  <img src="images/team2019/Kara_Wang.jpg">
+
+                  <h3>Kara Wang</h3>
+                  <p></p>
+                </div>
+              </div>
+
+              <div class="profile">
+                <div class="headshot" id="ViancaHurtado">
+                  <a href="https://www.linkedin.com/in/vianca-hurtado-2a0913a8/" disabled></a>
+                  <img src="images/team2019/Vianca_Hurtado.jpg">
+
+                  <h3>Vianca Hurtado</h3>
+                  <p></p>
+                </div>
+              </div>
+
+              <div class="profile">
+                <div class="headshot" id="JamesParker">
+                  <a href="" disabled></a>
+                  <img src="images/icons/headshot.jpg" class="silhouette">
+
+                  <h3>James Parker</h3>
+                  <p></p>
+                </div>
+              </div>
+
+              <div class="profile">
+                <div class="headshot" id="WeiGeeGoay">
+                  <a href="" disabled></a>
+                  <img src="images/icons/headshot.jpg" class="silhouette">
+
+                  <h3>Miyuki Goay</h3>
+                  <p></p>
+                </div>
+              </div>
+
+
+              <div class="profile">
+                <div class="headshot" id="MaxGarvel">
+                  <a href="" disabled></a>
+                  <img src="images/icons/headshot.jpg" class="silhouette">
+                  <h3>Max Garvel</h3>
+                  <p></p>
+                </div>
+              </div>
+
+              <div class="profile">
+                <div class="headshot" id="WangAdeline">
+                  <a href="" disabled></a>
+                  <img src="images/icons/headshot.jpg" class="silhouette">
+                  <h3>Adeline Wang</h3>
+                  <p></p>
+                </div>
+              </div>
+
+              <div class="profile">
+                <div class="headshot" id="StettnerJack">
+                  <a href="" disabled></a>
+                  <img src="images/icons/headshot.jpg" class="silhouette">
+                </div>
+                <h3>Jack Stettner</h3>
+                <p></p>
+              </div>
+
+              <div class="profile">
+                <div class="headshot" id="ChristopherYuan">
+                  <a href="https://www.linkedin.com/in/christopher-yuan-879895158/" disabled></a>
+                  <img src="images/team2019/Christopher_Yuan.jpg">
+                  <h3>Christopher Yuan</h3>
+                  <p></p>
+                </div>
+              </div>
+
+
+              <div class="profile">
+                <div class="headshot" id="LevyJacob">
+                  <a href=""></a>
+                  <img src="images/icons/headshot.jpg" class="silhouette">
+                  <h3>Jacob Levy</h3>
+                  <p></p>
+                </div>
+              </div>
+
+
+              <div class="profile">
+                <div class="headshot" id="KalpatNithish">
+                  <a href="" disabled></a>
+                  <img src="images/team2019/Nithish_Kalpat.jpg">
+
+                  <h3>Nithish Kalpat</h3>
+                  <p></p>
+                </div>
+              </div>
+
+              <div class="profile">
+                <div class="headshot" id="CourtneyGolden">
+                  <a href="" disabled></a>
+                  <img src="images/icons/headshot.jpg" class="silhouette">
+                  <h3>Courtney Golden</h3>
+                  <p></p>
+                </div>
+              </div>
+
+              <div class="profile">
+                <div class="headshot" id="YuanJessica">
+                  <a href="" disabled></a>
+                  <img src="images/icons/headshot.jpg" class="silhouette">
+                  <h3>Jessica Yuan</h3>
+                  <p></p>
+                </div>
+              </div>
+
+              <div class="profile">
+                <div class="headshot" id="WolszaAnna">
+                  <a href="" disabled></a>
+                  <img src="images/icons/headshot.jpg" class="silhouette">
+                  <h3>Anna Wolsza</h3>
+                  <p></p>
+                </div>
+              </div>
+
+
+              <div class="profile">
+                <div class="headshot" id="Juliet_DeNapoli">
+                  <a href="" disabled></a>
+                  <img src="images/team2019/Juliet_DeNapoli.jpg">
+                  <h3>Juliet DeNapoli</h3>
+                  <p></p>
+                </div>
+              </div>
+
+              <div class="profile">
+                <div class="headshot" id="YoungSeokNa">
+                  <a href="https://www.linkedin.com/in/youngseok-na-a1346517a/" disabled></a>
+                  <img src="images/team2019/YoungSeok_Na.jpg">
+                  <h3>YoungSeok Na</h3>
+                  <p></p>
+                </div>
+              </div> -->
+
+              <div class="profile">
+                <div class="headshot" id="NiaReid-Vicars">
+                  <a href="" disabled></a>
+                  <img src="images/icons/headshot.jpg" class="silhouette">
+                </div>
+                <h3>Nia Reid-Vicars</h3>
+                <p></p>
+              </div>
+
+
+
+              <div class="profile">
+                <div class="headshot" id="KartawiraChris">
+                  <a href="https://www.linkedin.com/in/christopher-kartawira-18037214a/"><img
+                      src="images/team2018/KartawiraChris.jpg"></a>
+                  <h3>Chris Kartawira</h3>
+                  <p></p>
+                </div>
+              </div>
+
+              <div class="profile">
+                <div class="headshot" id="SlatteryCamille">
+                  <a href="" disabled></a>
+                  <img src="images/icons/headshot.jpg" class="silhouette">
+
+                  <h3>Camille Slattery</h3>
+                  <p></p>
+                </div>
+              </div>
+
+
+
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </div>
-  </div>
 </body>
+
 </html>

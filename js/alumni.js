@@ -19,43 +19,43 @@ var modalDict = {
     "Business Development Lead",
     "Working at N/A",
     "N/A."],
-  
+
   "FayadDaniel": [
     "N/A, graduated in 2018",
     "Electrical Team Lead",
     "Working at N/A",
     "N/A."],
-  
+
   "AlonsoCristian": [
     "N/A, graduated in 2018",
     "Mechanical Team Lead",
     "Working at N/A",
     "N/A."],
-  
+
   "VetterKenny": [
     "N/A, graduated in 2018",
     "MagLev Team Lead",
     "Working at N/A",
     "N/A."],
-  
+
   "KirchhoffTodd": [
     "N/A, graduated in 2018",
     "Fuselage Subteam Lead",
     "Working at N/A",
     "N/A."],
-       
+
   "MaskerAlyse": [
     "N/A, graduated in 2018",
     "Suspension Subteam Lead",
     "Working at N/A",
     "N/A."],
-            
+
   "BigenwaldJacob": [
     "N/A, graduated in 2017",
     "N/A",
     "Working at N/A",
     "N/A."],
-            
+
   "SeongKimJu": [
     "N/A, graduated in 2017",
     "N/A",
@@ -94,7 +94,7 @@ var modalDict = {
 function scrollToyear(yearIndex) {
   year = years[yearIndex]
 
-  document.getElementById(year).scrollIntoView({behavior: 'smooth'});
+  document.getElementById(year).scrollIntoView({ behavior: 'smooth' });
 
   document.getElementById('active-label').id = "inactive-label"
 
@@ -105,29 +105,29 @@ function scrollToyear(yearIndex) {
 // This executes once the DOM has been loaded. This selects the buttons and adds a click event listener
 // to them once it's safe to manipulate them.
 window.onload = function () {
-  years = ['2018','2017'];
+  years = ['2018', '2017', '2020'];
   addEventListenersToLabels()
 
   yearInViewCache = '2018';
   let yearInViewCacheRect = document.getElementById('2018').getBoundingClientRect()
 
   yearInfoContainer = document.getElementsByClassName('roster-info-container')[0]
-  yearInfoContainer.addEventListener('wheel',updateLabelforyearInView)
+  yearInfoContainer.addEventListener('wheel', updateLabelforyearInView)
 
   yearInfoContainerRect = yearInfoContainer.getBoundingClientRect()
-  console.log("yearInfoContainerCenterX: " + String(yearInfoContainerRect.top + yearInfoContainerRect.height/2) )
+  console.log("yearInfoContainerCenterX: " + String(yearInfoContainerRect.top + yearInfoContainerRect.height / 2))
 
 
-  yearInViewCacheCenterX = yearInViewCacheRect.top + (yearInViewCacheRect.height/2)
+  yearInViewCacheCenterX = yearInViewCacheRect.top + (yearInViewCacheRect.height / 2)
   console.log("yearInViewCacheCenterX: " + yearInViewCacheCenterX)
 
-  Object.keys(modalDict).forEach(function(key) {
+  Object.keys(modalDict).forEach(function (key) {
     console.log(key);
     var value = modalDict[key];
     console.log(value);
     // createModal(key, value);
     // document.getElementById(key).onclick = createModal(key, value);
-    document.getElementById(key).addEventListener("click", function() {
+    document.getElementById(key).addEventListener("click", function () {
       createModal(key);
     });
 
@@ -148,10 +148,10 @@ function createModal(key) {
   var id = key.concat("profile-modal");
   div.setAttribute('id', id)
 
-  x.addEventListener("click", function() {
+  x.addEventListener("click", function () {
     div.parentNode.removeChild(div)
   });
-  
+
   var existingImg = document.getElementById(key).childNodes[3];
   var cloneImg = existingImg.cloneNode(true);
   div.appendChild(cloneImg);
@@ -193,7 +193,7 @@ function createModal(key) {
   //Closing modal with click outside of dialog box
   var modal = document.getElementById(id);
   // When the user clicks anywhere outside of the modal, close it
-  window.onclick = function(event) {
+  window.onclick = function (event) {
     if (event.target == modal) {
       div.parentNode.removeChild(div)
       document.body.classList.remove("stop-scrolling");
@@ -201,32 +201,32 @@ function createModal(key) {
   }
 }
 
-function addEventListenersToLabels(){
+function addEventListenersToLabels() {
   for (let index = 0; index < years.length; index++) {
     let label = getLabelElement(years[index]);
-    label.addEventListener('click', function () { scrollToyear(index); } )
+    label.addEventListener('click', function () { scrollToyear(index); })
   }
 }
 
-function getLabelElement(yearString){
+function getLabelElement(yearString) {
   return document.getElementsByClassName('sidebar-list-label')[years.indexOf(yearString)]
 }
 
 
-function updateLabelforyearInView(){
+function updateLabelforyearInView() {
   yearInViewCacheRect = document.getElementById(yearInViewCache).getBoundingClientRect()
-  yearInViewCenterX = yearInViewCacheRect.top + yearInViewCacheRect.height/2
+  yearInViewCenterX = yearInViewCacheRect.top + yearInViewCacheRect.height / 2
   // console.log("yearInViewCacheCenterX: " + yearInViewCacheCenterX)
   // console.log("yearInViewCenterX: " + yearInViewCenterX)
   delta = Math.abs(yearInViewCenterX - yearInViewCacheCenterX)
   // console.log("Delta: " + delta)
-  
-  if (delta > yearInViewCacheRect.height * .3){
+
+  if (delta > yearInViewCacheRect.height * .3) {
     // console.log("Movement > .45 detected")
     yearInViewport = getyearInView()
     yearChanged = (yearInViewCache != yearInViewport)
-    
-    if (yearChanged){
+
+    if (yearChanged) {
       yearInViewCache = yearInViewport
       console.log("year in viewport changed to: " + yearInViewport)
       document.getElementById("active-label").id = "inactive-label";
@@ -235,19 +235,19 @@ function updateLabelforyearInView(){
   }
 }
 
-function getyearInView(){
+function getyearInView() {
 
-  yearInfoContainerCenterX = yearInfoContainerRect.top + (yearInfoContainerRect.height/2)
+  yearInfoContainerCenterX = yearInfoContainerRect.top + (yearInfoContainerRect.height / 2)
 
   startIndex = years.length + years.indexOf(yearInViewCache) - 1
 
-  
-  for (let i = startIndex ; i < i + years.length; i++) {
-    let index = i%years.length;
+
+  for (let i = startIndex; i < i + years.length; i++) {
+    let index = i % years.length;
     // console.log("Start Index: " +startIndex % years.length )
     let yearContainerRect = document.getElementById(years[index]).getBoundingClientRect()
-    yearContainerCenterX = yearContainerRect.top + yearContainerRect.height/2
-    if ( (yearInfoContainerRect.top < yearContainerCenterX) && (yearContainerCenterX < yearInfoContainerRect.bottom)) {
+    yearContainerCenterX = yearContainerRect.top + yearContainerRect.height / 2
+    if ((yearInfoContainerRect.top < yearContainerCenterX) && (yearContainerCenterX < yearInfoContainerRect.bottom)) {
       // console.log("year in View: " + years[index] + " with center: " + yearContainerCenterX)
       // console.log("year in View: " + years[index] + " , return after iterations: " + String(i- startIndex + 1))
       // console.log("year in View: " + years[index] )
