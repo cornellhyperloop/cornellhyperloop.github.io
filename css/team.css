@@ -83,10 +83,10 @@
 
   .profile-modal {
     display: block;
-    top: 150px;
-    width: 100%;
-    min-width: 100%;
-    max-height: 80%;
+    top: 50px;
+    width: 95%;
+    min-width: 95%;
+    max-height: 90%;
   }
 
   .roster-info-container {
@@ -182,9 +182,9 @@
   }
 
   .profile-modal {
-    top: 150px;
-    width: 70%;
-    max-height: 70%;
+    top: 50px;
+    width: 75%;
+    max-height: 75%;
   }
 
   .roster-info-container {
@@ -266,9 +266,9 @@
   }
   
   .profile-modal {
-    top: 150px;
-    width: 50%;
-    max-height: 70%;
+    top: 50px;
+    width: 60%;
+    max-height: 75%;
   }
 
   .profile-modal h3 {
@@ -452,7 +452,7 @@
 
 .profile-modal {
   width: 50%;
-  height: 70%;
+  height: 75%;
   display: block;
   background-color: rgba(255,255, 255, .9);
   color: black;

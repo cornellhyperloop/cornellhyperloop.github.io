@@ -382,6 +382,51 @@ var modalDict = {
     "Im a guitarist and i enjoy working with electronics.",
     "I lived overseas."
   ],
+
+  "MaxGarval": [
+    "Fair Lawn, NJ",
+    "Electrical and Computer Engineering, 2024",
+    "I wanted to be a part of the development of the fifth mode of transportation!",
+    "Access to a lot of really cool equipment and people who know how to use it.",
+    "I study, I play video games, and sometimes, I write music.",
+    "I am an avid enjoyer of peanut butter straight out of the jar."
+  ],
+
+  "JaniceLee": [
+    "Whippany, NJ",
+    "Computer Science, 2024",
+    "Hyperloop's revolutionary technology pushes boundaries of innovation in transportation. Being a part of that ambitious team will allow me to grow and think outside the box while also giving me opportunities to bond with people of similar passions.",
+    "Learning new things and applying them to real world applications!",
+    "I love playing guitar & singing, trying new cooking recipes, and painting with acrylics.",
+    "I collect gum wrappers (my own of course) in a glass jar and write down my memories and thoughts in each."
+  ],
+
+  "JackRebillard": [
+    "Media, PA",
+    "Policy Analysis & Management",
+    "I wanted to be a part of something that I believe will significantly shape our future lives.",
+    "I have enjoyed meeting my team members and look forward to working with all them",
+    "Cornell Equity Research, Global Market Analysts Cornell, Global Economics and Finance Society, Paintball",
+    "I was once stung by four bees in one day."
+  ],
+
+  "SamanthaNa": [
+    "Seattle, WA",
+    "ILR, 2023",
+    "I chose to join Hyperloop because of the recent attention it has been getting in the media and its potential for high-speed, energy efficient travel. Hyperloop is the future!",
+    "Even though I am an ILR major and pre law I have always had a passion for STEM. I love being able to combine my interests to bring an ILR perspective in terms of how work is broken down so that we can be more efficient as a team. Hyperloop gives me an opportunity to work with others to develop products and solve problems both within my subteam and across other teams.",
+    "I am in the Kappa Delta Sorority, and am probably listening to either T-swift, Pop Smoke, or Polo G. You will most likely catch me on route to study at Duffield Hall with an ice vanilla latte in hand. Please help me fuel my coffee addiction by grabbing Gimme Coffee or Dunkin with me!",
+    "I was named after a cat"
+  ],
+
+  "FredericMinzberg": [
+    "New York, NY",
+    "AEM, 2023",
+    "I wanted to have a window into the world of tomorrow. My aspirations are being a PM in the tech industry and being on the bizdev team can give me a powerful foundation in supply chain, promotion of new tech, and the establishment of strong relationships for a company",
+    "I enjoy working on the promotion of a cutting edge technological initiative with a multi-faceted collection of my peers with a diversity of majors. ",
+    "I am a new member of a professional business fraternity, as well as a team member on Cornell University Sustainable Design, Cornell Tech Consulting, and Cornell Blockchain- Advisory.",
+    "I am 6'8\". I know you can't see that on zoom. Also, I play the piano and the base guitar."
+  ]
 };
 
 
