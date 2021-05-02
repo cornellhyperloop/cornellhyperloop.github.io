@@ -392,6 +392,15 @@ var modalDict = {
     "I am an avid enjoyer of peanut butter straight out of the jar."
   ],
 
+  "AdityaDeshpande": [
+      "Pune, India",
+      "Computer Science and Music, 2022",
+      "I wanted to be part of a team whose mission is based around developing a project that looks towards the future",
+      "I like how everyone has an equal opportunity to play an active role in the team",
+      "I love playing and improvising at the piano, as well reading about history.",
+      "I used to write my own rap lyrics in middle school."
+  ],
+
   "JaniceLee": [
     "Whippany, NJ",
     "Computer Science, 2024",
