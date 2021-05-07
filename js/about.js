@@ -2,6 +2,7 @@ const spinspeed = .09
 var header;
 var sticky;
 var logo_symbol;
+var slideIndex = 1; //Slideshow addition
 
 function pageSpecificOnLoad(){
   console.log("Loading about")
