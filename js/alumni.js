@@ -105,11 +105,11 @@ function scrollToyear(yearIndex) {
 // This executes once the DOM has been loaded. This selects the buttons and adds a click event listener
 // to them once it's safe to manipulate them.
 window.onload = function () {
-  years = ['2018', '2017', '2020'];
+  years = ['2020', '2018', '2017'];
   addEventListenersToLabels()
 
-  yearInViewCache = '2018';
-  let yearInViewCacheRect = document.getElementById('2018').getBoundingClientRect()
+  yearInViewCache = '2020';
+  let yearInViewCacheRect = document.getElementById('2020').getBoundingClientRect()
 
   yearInfoContainer = document.getElementsByClassName('roster-info-container')[0]
   yearInfoContainer.addEventListener('wheel', updateLabelforyearInView)
