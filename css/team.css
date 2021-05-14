@@ -74,7 +74,7 @@
     border-radius: 15px;
     color: white;
     position: relative;
-    width: 20%;
+    width: 40%;
     max-height: 40%;
     text-align: center;
     margin: 10% 5% 0 5%;
@@ -103,6 +103,7 @@
     flex-wrap: wrap;
     font-size: 50%;
     margin: 1em 0 2.5em 0;
+    justify-content: center;
   }
 
   .alumni-year-info-container {
@@ -140,6 +141,10 @@
     width: 50%;
     text-align: center;
     /* text-transform: uppercase; */
+  }
+
+  .team-descriptions{
+    font-size: 1.5em;
   }
   
 }
@@ -221,7 +226,6 @@
     margin: 1em 0 2.5em 0;
     width: 100%;
   }
-  
 
   .team-divisions-info-container {
     display: none;
@@ -245,6 +249,11 @@
     max-height: 33%;
     text-align: center;
     margin: .5em auto 1.25em auto;
+  }
+
+  .team-descriptions{
+    font-size: 1.3em;
+    padding-bottom: 1em;
   }
 }
 
@@ -367,6 +376,11 @@
   .member-name{
     height: 4em;
   }
+
+  .team-descriptions{
+    font-size: 1.2em;
+  }
+
 }
 .page-content{
   display: inline-flex;
@@ -556,5 +570,11 @@
 dialog::backdrop{
   background-color: black;
   opacity: 50%;
+}
+
+.team-descriptions{
+  padding: 0 2em 0 2em;
+  color: white;
+  text-align: center;
 }
 
