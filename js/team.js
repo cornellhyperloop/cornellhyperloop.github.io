@@ -166,14 +166,14 @@ var modalDict = {
   //   "I love swimming, baking, and painting!",
   //   "I almost drowned in a pool once so I decided to pick up swimming. Since then, I have been obsessed with swimming - it is so relaxing!",
   // ],
-  "MelissaPsaras": [
-    "Monroe, Connecticut",
-    "Computer Science, 2023",
-    "I chose to join Hyperloop because I wanted to be a part of a project team that would teach me a lot of new things outside of class. Hyperloop does that!",
-    "Working with my best friend Sohni on the Web Development team. We are a good team and we learn off each other constantly!",
-    "Read, bike, hike, drive around with my older brothers.",
-    "Cornell is the seventh school I have gone to in my 14 years of schooling",
-  ],
+  // "MelissaPsaras": [
+  //   "Monroe, Connecticut",
+  //   "Computer Science, 2023",
+  //   "I chose to join Hyperloop because I wanted to be a part of a project team that would teach me a lot of new things outside of class. Hyperloop does that!",
+  //   "Working with my best friend Sohni on the Web Development team. We are a good team and we learn off each other constantly!",
+  //   "Read, bike, hike, drive around with my older brothers.",
+  //   "Cornell is the seventh school I have gone to in my 14 years of schooling",
+  // ],
   "AlexanderNutley": [
     "Smithtown, NY",
     "Operations Research, 2022",
