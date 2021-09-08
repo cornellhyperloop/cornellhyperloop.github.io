@@ -80,7 +80,7 @@ var modalDict = {
   //   ],
   "RoninSharma": [
     "Ardsley, NY",
-    "Electrical & Computer Engineering '21",
+    "Electrical & Computer Engineering '22",
     "I became interested in Cornell Hyperloop when I learned that this technology can be applied to help improve the efficiency of transportation as well as reduce the time spent in travel. I joined the team to contribute to the development of this innovative technology.",
     "I really enjoy working with the members on the team as I've learned so much as everyone has such a diverse background and skillset.",
     "I am a machine learning researcher in the Messer Lab. I also am a TA for ECE 2300 and CS 2110.",
