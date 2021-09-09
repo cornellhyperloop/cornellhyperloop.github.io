@@ -18,7 +18,7 @@
       type="text/javascript"
       script
       src="js/about.js"></script>
-
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <style>
         #recruitment-photo{
@@ -228,45 +228,36 @@
 
             <div id="desktop-timeline">
 
-              <ul class="timeline" id="timeline">
-                <li class="li complete">
-                  <div class="timestamp">
-                    <span class="date">9/21<span>
-                  </div>
-                  <div class="status">
-                    <h4>ClubFest</h4>
-                  </div>
-                </li>
-                <li class="li complete">
-                  <div class="timestamp">
-                    <span class="date">9/24<span>
-                  </div>
-                  <div class="status">
-                    <h4>Info Session #1</h4>
-                    <p>Location TBD</p>
-                  </div>
-                </li>
-                <li class="li complete">
-                  <div class="timestamp">
-                    <span class="date">9/28<span>
-                  </div>
-                  <div class="status">
-                    <h4>Info Session #2</h4>
-                    <p>Location TBD</p>
-                  </div>
-                </li>
-                <li class="li">
-                  <div class="timestamp">
-                    <span class="date">10/1<span>
-                  </div>
-                  <div class="status">
-                    <h4>Upperclassman Applications Due</h4>
-                  </div>
-                </li>
-              </ul>      
+              <div class="dates">
 
+              </div>
+              <div class="graphic">
+                <div class="line">
+                </div>
+                <div class="dots">
+                  
+                </div>
+              </div>
+              <div class="events">
+
+              </div>
             </div>
 
+            <script>
+              function populateTimeline(){
+                var dates = ['9/21', '9/24', '9/28', '10/1'];
+                var events = ['ClubFest', 'Info Session #1', 'Info Session #2', 'Upperclassmen Applications Due'];
+
+                for (i=0; i < len(events); i++){
+                  $(".dates").append(`<p class="date">${dates[i]}</p>`);
+                  $(".events").append(`<p class="event">${events[i]}</p>`);
+                  $(".dots").append('<div class="dot"></div>')
+                }
+
+              }
+
+              populateTimeline();
+            </script>
 
             <p><strong>Applications are currently OPEN for freshmen until October 1st. The deadline for sophomores, juniors, and seniors has already passed.</strong></p>
             <a href="https://docs.google.com/forms/d/e/1FAIpQLScXVH6glut3BQJ5ePksJ5MQrI5YhDsQRcRS2Xotipk_VC50ww/viewform?usp=sf_link
