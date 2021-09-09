@@ -241,16 +241,21 @@
               <div class="events">
 
               </div>
+              <div class="details">
+
+              </div>
             </div>
 
             <script>
               function populateTimeline(){
                 var dates = ['9/21', '9/24', '9/28', '10/1'];
                 var events = ['ClubFest', 'Info Session #1', 'Info Session #2', 'Upperclassmen Applications Due'];
+                var details = ['', 'Location TBD', 'Location TBD', '']
 
-                for (i=0; i < len(events); i++){
+                for (i=0; i < events.length; i++){
                   $(".dates").append(`<p class="date">${dates[i]}</p>`);
                   $(".events").append(`<p class="event">${events[i]}</p>`);
+                  $(".detail").append(`<p class="detail">${details[i]}</p>`);
                   $(".dots").append('<div class="dot"></div>')
                 }
 
