@@ -56,86 +56,29 @@
 
         /* timeline */
 
-        .timeline{
-          list-style-type: none;
+        .dates, .events, .details, .dots{
           display: flex;
-          align-items: center;
-          justify-content: center;
+          flex-direction: row;
+          width: 100%;
         }
 
-        .li{
-          transition: all 200ms ease-in;
+        .line{
+          margin: 0;
+          height: 1px;
+          width: 100%;
+          background-color: var(--HyperloopRed);
         }
 
-        .timestamp{
-          margin-bottom: 20px;
-          padding: 0px 40px;
-          display: flex;
-          flex-direction: column;
-          align-items: center;
-          font-weight: 100;
+        .dot{
+          background-color: var(--HyperloopRed);
+          height:6px;
+          width: 6px;
+          border-radius: 50%;
+          margin-top:-3px;
         }
 
-        .status{
-          padding: 0px 40px;
-          display: flex;
-          justify-content: center;
-          border-top: 2px solid #D6DCE0;
-          position: relative;
-          transition: all 200ms ease-in;
-        }
 
-          .timeline h4{
-            font-weight: 600;
-          }
 
-          &:before{
-            content: '';
-            width: 25px;
-            height: 25px;
-            background-color: white;
-            border-radius: 25px;
-            border: 1px solid #ddd;
-            position: absolute;
-            top: -15px;
-            left: 42%;
-            transition: all 200ms ease-in ;
-          }
-
-        .li.complete
-          .status{
-            border-top: 2px solid 'HyperloopRed';
-            &:before{
-              background-color: #66DC71;
-              border: none;
-              transition: all 200ms ease-in ;
-            h4{
-              color: 'HyperloopRed';
-            }
-          }
-        }
-        @media (max-device-width: 767px){
-          .timeline{
-            list-style-type: none;
-            display: block;
-          }
-
-          .li{
-            transition: all 200ms ease-in;
-            display: flex;
-            width: inherit;
-          }
-
-          .timestamp{
-            width: 100px;
-          }
-          /* .status
-            &:before
-              left: -8%
-              top: 30%
-              transition: all 200ms ease-in  */
-        }
-      }
     </style>
   </head>
 
@@ -252,11 +195,12 @@
                 var events = ['ClubFest', 'Info Session #1', 'Info Session #2', 'Upperclassmen Applications Due'];
                 var details = ['', 'Location TBD', 'Location TBD', '']
 
+                var width = (100 - events.length) - 1;
                 for (i=0; i < events.length; i++){
-                  $(".dates").append(`<p class="date">${dates[i]}</p>`);
-                  $(".events").append(`<p class="event">${events[i]}</p>`);
-                  $(".detail").append(`<p class="detail">${details[i]}</p>`);
-                  $(".dots").append('<div class="dot"></div>')
+                  $(".dates").append(`<p class="date" style="width: ${width}%;">${dates[i]}</p>`);
+                  $(".events").append(`<p class="event" style="width: ${width}%;">${events[i]}</p>`);
+                  $(".details").append(`<p class="detail" style="width: ${width}%;">${details[i]}</p>`);
+                  $(".dots").append('<div class="dot" style="width: ${width}%;"></div>')
                 }
 
               }
