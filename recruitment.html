@@ -56,8 +56,9 @@
 
         /* timeline */
 
-        .desktop-timeline{
-          margin-bottom: 20px;
+        #desktop-timeline{
+          margin-top: 10px;
+          margin-bottom: 35px;
         }
 
         .dates, .events, .details, .dots{
@@ -97,7 +98,38 @@
           color: darkgrey;
         }
 
+        @media (max-width: 767px){
+          #desktop-timeline{
+            margin-top: 25px;
+          }
 
+            .dots{
+              margin-top: -155px;
+              width: 310px;
+              transform: rotate(90deg);
+              height: 10px;
+              flex-direction: row;
+              justify-content: space-between;
+              margin-left: -160px;
+            }
+
+            .line {
+              width: 2px;
+              height: 300px;
+            }
+
+            .dates, .events, .details{
+              flex-direction: column;
+              width: 100%;
+              justify-content: space-between;
+              height: 325px;
+            }
+
+            .graphic{
+              width:10px;
+              height: 300px;
+            }
+      }
 
     </style>
   </head>
@@ -220,7 +252,7 @@
                 for (i=0; i < events.length; i++){
                   $(".dates").append(`<p class="date" style="width: ${width}%;">${dates[i]}</p>`);
                   $(".events").append(`<div style="width: ${width}%;"><p class="event" >${events[i]}</p><p class="detail" style="width: ${width}%;">${details[i]}</p><div>`);
-                  $(".dots").append('<div class="dot" style="width: ${width}%;"></div>')
+                  $(".dots").append('<div class="dot"></div>')
                 }
 
               }
