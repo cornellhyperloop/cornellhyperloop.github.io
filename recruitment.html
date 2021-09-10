@@ -100,6 +100,8 @@
 
         @media (max-width: 767px){
           #desktop-timeline{
+            display: flex;
+            flex-direction: row;
             margin-top: 25px;
           }
 
@@ -128,6 +130,14 @@
             .graphic{
               width:10px;
               height: 300px;
+            }
+
+            .date{
+              text-align: right;
+            }
+
+            .event, .detail{
+              text-align: left;
             }
       }
 
@@ -251,9 +261,28 @@
                 var width = (100 - events.length) - 1;
                 for (i=0; i < events.length; i++){
                   $(".dates").append(`<p class="date" style="width: ${width}%;">${dates[i]}</p>`);
-                  $(".events").append(`<div style="width: ${width}%;"><p class="event" >${events[i]}</p><p class="detail" style="width: ${width}%;">${details[i]}</p><div>`);
+                  $(".events").append(`<div class="eventContainer" style=""><p class="event" >${events[i]}</p><p class="detail" style="width: ${width}%;">${details[i]}</p><div>`);
                   $(".dots").append('<div class="dot"></div>')
                 }
+
+                var styles = `
+                    .eventContainer { 
+                        width: ${width}%;
+                    }
+
+                    @media(max-width: 767px){
+                      .eventContainer { 
+                        width: 170px;
+                    }
+
+                    }
+                    
+                `
+
+                var styleSheet = document.createElement("style")
+                styleSheet.type = "text/css"
+                styleSheet.innerText = styles
+                document.head.appendChild(styleSheet)
 
               }
 
