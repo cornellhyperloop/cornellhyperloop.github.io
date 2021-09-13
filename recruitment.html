@@ -98,6 +98,26 @@
           color: darkgrey;
         }
 
+        .inner-team-container{
+          display: flex;
+          justify-content: space-between;
+        }
+
+        .teamColumn{
+          width: 30%;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+        }
+
+        .teamColumn img{
+          width: 95%;
+        }
+
+        .teamColumn h4, .teamColumn p{
+          text-align: center;
+        }
+
         @media (max-width: 767px){
           #desktop-timeline{
             display: flex;
@@ -139,6 +159,10 @@
             .event, .detail{
               text-align: left;
             }
+
+          .teamColumn{
+            width: 100%;
+          }
       }
 
     </style>
@@ -304,12 +328,32 @@
             <h2>Who We Look For</h2>
             <hr />
             <p>
-              Cornell Hyperloop has a position for everyone! We are broken down into <strong>mechanical engineering, electrical/software engineering, and business/web development teams</strong>, which are then further divided into a total of seven "sub-teams," each focusing on a specific component of our work. Each team recruits undergraduate students of all years from any major that can demonstrate the skills needed to succeed on that team. To learn more about what each sub-team focuses on, visit our <a class="red-text" href="team.html">team page</a>.
+              Cornell Hyperloop has a position for everyone! We are broken down into three teams, including a total of seven "sub-teams," each focusing on a specific component of our work. Each team recruits undergraduate students of all years from any major that can demonstrate the skills needed to succeed on that team.
             </p>
           </div>
         </div>
-         <div class="team-picture-container">
-          <!-- <img src="./images/team_shots/teamfa2019_compressed.jpg" alt="" /> -->
+         <div class="team-breakdown-container">
+          <h3>Our Teams</h3>
+          <div class="innerTeamContainer">
+            <div class="teamColumn">
+              <img src="images/icons/mechanical_icon.png" alt="Mechanical Icon">
+              <h4>Mechanical</h4>
+              <p>The mechanical team focuses on the actual design and creation of the physical pod. This team is home to lots of Mechanical Engineering students.</p>
+            </div>
+
+            <div class="teamColumn">
+              <img src="images/icons/electrical_icon.png" alt="Electrical Icon">
+              <h4>Electrical</h4>
+              <p>The electrical team works with microcontrollers, sensors, computer applications, and physical electrical components to power and communicate with the pod. Electrical is popular with CS and ECE majors.</p>
+            </div>
+
+            <div class="teamColumn">
+              <img src="images/icons/business_icon.png" alt="Business Icon">
+              <h4>Business</h4>
+              <p>The business team is responsible for managing the team brand both on campus and to potential and existing sponsors, including managing the website. This team includes many AEM and Information Science students.</p>
+            </div>
+            
+          </div>
         </div>
    
       </div>
