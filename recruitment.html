@@ -107,15 +107,25 @@
           width: 30%;
           display: flex;
           flex-direction: column;
-          justify-content: center;
+          align-items: center;
         }
 
         .teamColumn img{
-          width: 95%;
+          width: 55%;
+          filter: invert(100%) sepia(100%) saturate(1%) hue-rotate(206deg) brightness(106%) contrast(101%);
         }
 
-        .teamColumn h4, .teamColumn p{
+        .teamColumn h3, .teamColumn p{
           text-align: center;
+          margin-top: 12px;
+        }
+
+        .teamColumn h3{
+          font-size: 1.4em;
+        }
+
+        .teamColumn p{
+          font-size: 1.05em;
         }
 
         @media (max-width: 767px){
@@ -335,22 +345,26 @@
         <div class="blurb-container centered-text about-us">
          <div class="team-breakdown-container">
           <h3>Our Teams</h3>
+          <hr />
           <div class="innerTeamContainer">
             <div class="teamColumn">
               <img src="images/icons/mechanical_icon.png" alt="Mechanical Icon">
-              <h4>Mechanical</h4>
+              <h3>Mechanical</h3>
+              <hr />
               <p>The mechanical team focuses on the actual design and creation of the physical pod. This team is home to lots of Mechanical Engineering students.</p>
             </div>
 
             <div class="teamColumn">
               <img src="images/icons/electrical_icon.png" alt="Electrical Icon">
-              <h4>Electrical</h4>
+              <h3>Electrical</h3>
+              <hr />
               <p>The electrical team works with microcontrollers, sensors, computer applications, and physical electrical components to power and communicate with the pod. Electrical is popular with CS and ECE majors.</p>
             </div>
 
             <div class="teamColumn">
               <img src="images/icons/business_icon.png" alt="Business Icon">
-              <h4>Business</h4>
+              <h3>Business</h3>
+              <hr />
               <p>The business team is responsible for managing the team brand both on campus and to potential and existing sponsors, including managing the website. This team includes many AEM and Information Science students.</p>
             </div>
             
