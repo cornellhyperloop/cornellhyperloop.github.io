@@ -590,12 +590,12 @@ a{
   }
 
   .heading {
-    font-size: 4em;
+    font-size: 3.5em;
     color: white;
     font-weight: bold;
     display: inline-block;
     width: auto;
-    margin: 0.5em auto 0.5em auto;
+    margin: 0.15em auto 0.15em auto;
     position: relative;
   }
 
