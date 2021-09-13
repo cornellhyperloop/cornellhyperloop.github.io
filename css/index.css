@@ -4,6 +4,7 @@ html{
 
 .page{
     background-image: url("../images/backgrounds/stars.jpg"); 
+    background-attachment: fixed;
     position: relative;
     min-height: 100vh;
 }

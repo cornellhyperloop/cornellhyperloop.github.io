@@ -6,6 +6,7 @@
 
 .page{
   background-image: url("../images/backgrounds/stars.jpg");
+  background-attachment: fixed;
 }
 
 #header-line{
