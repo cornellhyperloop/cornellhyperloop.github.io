@@ -314,8 +314,8 @@
 
                 var width = (100 - events.length) - 1;
                 for (i=0; i < events.length; i++){
-                  $(".dates").append(`<p class="date" style="width: ${width}%;">${dates[i]}</p>`);
-                  $(".events").append(`<div class="eventContainer" style=""><p class="event" >${events[i]}</p><p class="detail" style="width: ${width}%;">${details[i]}</p><div>`);
+                  $(".dates").append(`<p class="date">${dates[i]}</p>`);
+                  $(".events").append(`<div class="eventContainer"><p class="event" >${events[i]}</p><p class="detail" style="width: ${width}%;">${details[i]}</p><div>`);
                   $(".dots").append('<div class="dot"></div>')
                 }
 
@@ -324,10 +324,18 @@
                         width: ${width}%;
                     }
 
+                    .date{
+                      width: ${width}%;
+                    }
+
                     @media(max-width: 767px){
                       .eventContainer { 
                         width: 170px;
-                    }
+                      }
+
+                      .date{
+                        width: auto;
+                      }
 
                     }
                     
