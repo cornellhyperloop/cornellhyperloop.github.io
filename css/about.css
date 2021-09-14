@@ -1,5 +1,6 @@
 .page{
     background-image: url("../images/backgrounds/stars.jpg");
+    background-attachment: fixed;
 }
 .page-content{
     height: unset;
@@ -19,7 +20,7 @@
 
     .blurb-container p {
         font-size: 1em;
-        text-indent: 1.6em;
+        /* text-indent: 1.6em; */
         line-height: 1.2em;
         text-align: center;
     }
@@ -53,7 +54,7 @@
 @media only screen and (min-width: 1024px){
     .blurb-container p {
         font-size: 1.3em;
-        text-indent: 2.6em;
+        /* text-indent: 2.6em; */
         line-height: 1.3em;
     }
     .values-container{

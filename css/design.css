@@ -1,6 +1,7 @@
 
 .page {
   background-image: url("../images/backgrounds/stars.jpg");
+  background-attachment: fixed;
   color: black;
   /* height: 702px; */
 }

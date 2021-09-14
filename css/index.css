@@ -3,7 +3,8 @@ html{
 }
 
 .page{
-    background-image: url("../images/backgrounds/stars.jpg");
+    background-image: url("../images/backgrounds/stars.jpg"); 
+    background-attachment: fixed;
     position: relative;
     min-height: 100vh;
 }
@@ -21,8 +22,8 @@ html{
 .recr-subdiv p {
     /* text-align: left; */
     margin: 10px 0;
-    min-width: 40%;
-    max-width: 40%;
+    min-width: 550px;
+    width: 70%;
     font-size: 18px;
     color: rgb(170, 170, 170);
 }
@@ -197,8 +198,8 @@ html{
     .recr-subdiv p {
         /* text-align: left; */
         margin: 10px 0;
-        min-width: 40%;
-        max-width: 40%;
+        min-width: 550px;
+        width: 70%;
         font-size: 18px;
         color: rgb(170, 170, 170);
     }
@@ -292,8 +293,8 @@ html{
     .recr-subdiv p {
         /* text-align: left; */
         margin: 10px 0;
-        min-width: 40%;
-        max-width: 40%;
+        min-width: 550px;
+        max-width: 70%;
         font-size: 18px;
         color: rgb(170, 170, 170);
     }
@@ -424,14 +425,7 @@ html{
     padding: 5px;
 }
 
-.recr-subdiv p {
-    /* text-align: left; */
-    margin: 10px 0;
-    min-width: 40%;
-    max-width: 40%;
-    font-size: 18px;
-    color: rgb(170, 170, 170);
-}
+
 
 .recr-subdiv p a {
     font-size: 18px;

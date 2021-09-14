@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Cornell Hyperloop - Recruitment</title>
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="css/global.css" />
+    <!--  -->
+    <link rel="stylesheet" href="css/about.css" />
+    <!--  -->
+    <script
+      language="JavaScript"
+      type="text/javascript"
+      script
+      src="js/global.js"></script>
+      <script
+      language="JavaScript"
+      type="text/javascript"
+      script
+      src="js/about.js"></script>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <style>
+        #recruitment-photo{
+            width: 90%;
+            height: auto;
+            box-shadow: 5px 2px 15px grey;
+            border-radius: 5px;
+            margin-top: 40px;
+        }
+
+        .apply-button {
+            width: 250px; 
+            height: 50px; 
+            padding: 15px;
+            background-color: var(--HyperloopRed);
+            color: white;
+            border-radius: 3px;
+            text-transform: uppercase;
+            transition-duration: 1s;
+            box-shadow: 0px 0px 13px white;
+        }
+
+        @media (max-width: 767px){
+            #recruitment-photo{
+                width: 100%;
+                height: auto;
+                margin-top: 0px;
+                padding-bottom: 0 !important;
+            }
+
+            h1 {
+                font-size: 2.75em !important;
+            }
+        }
+
+        /* timeline */
+
+        #desktop-timeline{
+          margin-top: 10px;
+          margin-bottom: 35px;
+        }
+
+        .dates, .events, .details, .dots{
+          display: flex;
+          flex-direction: row;
+          width: 100%;
+          justify-content: space-between;
+        }
+
+        .graphic{
+          width: 75%;
+          margin-left: 12.5%
+        }
+
+        .line{
+          margin: 0;
+          height: 2px;
+          width: 100%;
+          background-color: var(--HyperloopRed);
+        }
+
+        .dot{
+          background-color: var(--HyperloopRed);
+          height: 10px;
+          width: 10px;
+          border-radius: 50%;
+          margin-top:-6px;
+        }
+
+        .event{
+          font-size: 1.2em;
+
+        }
+
+        .detail{
+          font-size: 1em;
+          color: darkgrey;
+        }
+
+        .innerTeamContainer{
+          display: flex;
+          justify-content: space-between;
+        }
+
+        .teamColumn{
+          width: 30%;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          margin-top: 15px;
+        }
+
+        .teamColumn img{
+          width: 50%;
+          filter: invert(100%) sepia(100%) saturate(1%) hue-rotate(206deg) brightness(106%) contrast(101%);
+        }
+
+        .teamColumn h3, .teamColumn p{
+          text-align: center;
+          margin-top: 12px;
+        }
+
+        .teamColumn h3{
+          font-size: 1.4em;
+        }
+
+        .teamColumn p{
+          font-size: 1.05em;
+        }
+
+        @media (max-width: 767px){
+          #desktop-timeline{
+            display: flex;
+            flex-direction: row;
+            margin-top: 25px;
+          }
+
+            .dots{
+              margin-top: -155px;
+              width: 310px;
+              transform: rotate(90deg);
+              height: 10px;
+              flex-direction: row;
+              justify-content: space-between;
+              margin-left: -160px;
+            }
+
+            .line {
+              width: 2px;
+              height: 300px;
+            }
+
+            .dates, .events, .details{
+              flex-direction: column;
+              width: 100%;
+              justify-content: space-between;
+              height: 325px;
+            }
+
+            .graphic{
+              width:10px;
+              height: 300px;
+            }
+
+            .date{
+              text-align: right;
+            }
+
+            .event, .detail{
+              text-align: left;
+            }
+
+            .innerTeamContainer{
+              display: block;
+            }
+
+          .teamColumn{
+            width: 100%;
+          }
+      }
+
+    </style>
+  </head>
+
+  <body>
+    <div class="page">
+      <header>
+        <div class="navbar-container-computer">
+          <div class="navbar-logo">
+            <a href="https://hyperloop.cornell.edu">
+            <img class= "logo-symbol" src="images/logo_symbol.png" alt="Hyperloop Logo"/>
+            <img class= "logo-text" src="images/cornell_hyperloop_text.png" alt="Hyperloop Text Logo"/>
+            </a>
+          </div>
+
+          <nav>
+            <ul>
+              <li><a class="nav-link" href="https://hyperloop.cornell.edu">Home</a></li>
+              <li><a class="nav-link" href="about">About</a></li>
+              <li><a class="nav-link" href="team">Team</a></li>
+              <li>
+                <a class="nav-link" href="design">Design</a>
+              </li>
+              <li>
+                <a class="nav-link" href="sponsors">Sponsors</a>
+              </li>
+              <li>
+                <a
+                  class="red-button"
+                  id="giving-day-link"
+                  href="https://securelb.imodules.com/s/1717/giving/interior.aspx?sid=1717&gid=2&pgid=16421&cid=27217&dids=2235&bledit=1">Donate</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <div id="navbar-container-mobile">
+          <div class="navbar-logo">
+            <a id="desktop-logo" href="https://hyperloop.cornell.edu"><img
+                src="images/logotextthin.png" alt="Hyperloop Logo"
+                /></a>
+
+            <a id="mobile-logo" href="https://hyperloop.cornell.edu"><img
+                src="images/logo.png" alt="Hyperloop Logo"
+                /></a>
+          </div>
+
+          <button id="mobile-dropdown-button"
+            onclick="handleMobileDropdownButtonClick()">
+            <div class="mobile-dropdown-button-bar" id="button-bar1"></div>
+            <div class="mobile-dropdown-button-bar" id="button-bar2"></div>
+            <div class="mobile-dropdown-button-bar" id="button-bar3"></div>
+
+            <div class="mobile-dropdown-container"
+              id="mobile-dropdown-container-hidden">
+              <ul>
+                <li>
+                  <a class="mobile-link" href="https://hyperloop.cornell.edu">Home</a>
+                </li>
+                <li>
+                  <a class="mobile-link" href="about">About</a>
+                </li>
+                <li>
+                  <a class="mobile-link" href="team">Team</a>
+                </li>
+                <li>
+                  <a class="mobile-link" href="design">Design</a>
+                </li>
+                <li>
+                  <a class="mobile-link" href="sponsors">Sponsors</a>
+                </li>
+              </ul>
+            </div>
+          </button>
+        </div>
+      </header>
+
+      <div class="page-content">
+        <!-- <div class="cellular-only centered-text" id="hyperloop-mobile-title">
+          <h1 class="heading hovering">
+            About Us
+          </h1>
+        </div> -->
+
+        <!-- About Us -->
+        <div class="blurb-container centered-text about-us">
+          <h1 class="heading hovering">Recruitment</h1>
+          <hr style="margin-bottom: 35px;" />
+            <p>Cornell Hyperloop is an <a class="red-text" href="https://www.engineering.cornell.edu/students/undergraduate-students/special-programs/project-teams">Engineering Project Team</a> and our mission is to contribute to the development of Hyperloop technology. Every semester, we look to recruit talented and ambitious students to help us build the future of transportation.
+            </p>
+            </br>
+
+            <h2>Recruitment Timeline</h2>
+            <div id="desktop-timeline">
+
+              <div class="dates">
+
+              </div>
+              <div class="graphic">
+                <div class="line">
+                </div>
+                <div class="dots">
+                  
+                </div>
+              </div>
+              <div class="events">
+
+              </div>
+              <div class="details">
+
+              </div>
+            </div>
+
+            <script>
+              function populateTimeline(){
+                var dates = ['9/21', '9/24', '9/28', '10/1'];
+                var events = ['ClubFest', 'Info Session #1', 'Info Session #2', 'Freshman Applications Due'];
+                var details = ['', 'Location TBD', 'Location TBD', '']
+
+                var width = (100 - events.length) - 1;
+                for (i=0; i < events.length; i++){
+                  $(".dates").append(`<p class="date" style="width: ${width}%;">${dates[i]}</p>`);
+                  $(".events").append(`<div class="eventContainer" style=""><p class="event" >${events[i]}</p><p class="detail" style="width: ${width}%;">${details[i]}</p><div>`);
+                  $(".dots").append('<div class="dot"></div>')
+                }
+
+                var styles = `
+                    .eventContainer { 
+                        width: ${width}%;
+                    }
+
+                    @media(max-width: 767px){
+                      .eventContainer { 
+                        width: 170px;
+                    }
+
+                    }
+                    
+                `
+
+                var styleSheet = document.createElement("style")
+                styleSheet.type = "text/css"
+                styleSheet.innerText = styles
+                document.head.appendChild(styleSheet)
+
+              }
+
+              populateTimeline();
+            </script>
+
+            <p><strong>Applications are currently OPEN for freshmen until October 1st. The deadline for sophomores, juniors, and seniors has already passed.</strong></p>
+            <a href="https://docs.google.com/forms/d/e/1FAIpQLScXVH6glut3BQJ5ePksJ5MQrI5YhDsQRcRS2Xotipk_VC50ww/viewform?usp=sf_link
+            https://docs.google.com/forms/d/e/1FAIpQLScXVH6glut3BQJ5ePksJ5MQrI5YhDsQRcRS2Xotipk_VC50ww/viewform?usp=sf_link" target="_blank" style="margin: 25px auto;"><div class="apply-button">Apply Now</div></a>
+        </div>
+
+        <div class="blurb-container centered-text bottom-blurbs">
+          <div class="value">
+            <img src="../images/team_shots/teamfa2019_compressed.jpg" id="recruitment-photo" alt="Team photo" />
+          </div>
+
+          <div class="value">
+            <!-- <img src="images/icons/train.svg" alt="" /> -->
+            <h2>Who We Look For</h2>
+            <hr />
+            <p>
+              Cornell Hyperloop has a position for everyone! We are broken down into three teams, including a total of seven "sub-teams," each focusing on a specific component of our work. Each team recruits undergraduate students of all years from any major that can demonstrate the skills needed to succeed on that team.
+            </p>
+          </div>
+        </div>
+        <div class="blurb-container centered-text about-us">
+         <div class="team-breakdown-container">
+          <h2>Our Teams</h2>
+          <hr />
+          <div class="innerTeamContainer">
+            <div class="teamColumn">
+              <img src="images/icons/mechanical_icon.png" alt="Mechanical Icon">
+              <h3>Mechanical</h3>
+              <hr />
+              <p>The mechanical team focuses on the actual design and creation of the physical pod. This team is home to lots of Mechanical Engineering students.</p>
+            </div>
+
+            <div class="teamColumn">
+              <img src="images/icons/electrical_icon.png" alt="Electrical Icon">
+              <h3>Electrical</h3>
+              <hr />
+              <p>The electrical team works with microcontrollers, sensors, computer applications, and physical electrical components to power and communicate with the pod. Electrical is popular with CS and ECE majors.</p>
+            </div>
+
+            <div class="teamColumn">
+              <img src="images/icons/business_icon.png" alt="Business Icon">
+              <h3>Business</h3>
+              <hr />
+              <p>The business team is responsible for managing the team brand both on campus and to potential and existing sponsors, including managing the website. This team includes many AEM and Information Science students.</p>
+            </div>
+            
+          </div>
+        </div>
+      </div>
+   
+      </div>
+    </div>
+  </body>
+</html>
