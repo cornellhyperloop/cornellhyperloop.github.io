@@ -105,11 +105,11 @@ function scrollToyear(yearIndex) {
 // This executes once the DOM has been loaded. This selects the buttons and adds a click event listener
 // to them once it's safe to manipulate them.
 window.onload = function () {
-  years = ['2020', '2018', '2017'];
+  years = ['2021', '2020', '2018', '2017'];
   addEventListenersToLabels()
 
-  yearInViewCache = '2020';
-  let yearInViewCacheRect = document.getElementById('2020').getBoundingClientRect()
+  yearInViewCache = '2021';
+  let yearInViewCacheRect = document.getElementById('2021').getBoundingClientRect()
 
   yearInfoContainer = document.getElementsByClassName('roster-info-container')[0]
   yearInfoContainer.addEventListener('wheel', updateLabelforyearInView)
@@ -127,9 +127,9 @@ window.onload = function () {
     console.log(value);
     // createModal(key, value);
     // document.getElementById(key).onclick = createModal(key, value);
-    document.getElementById(key).addEventListener("click", function () {
-      createModal(key);
-    });
+    // document.getElementById(key).addEventListener("click", function () {
+    //   createModal(key);
+    // });
 
   });
 
