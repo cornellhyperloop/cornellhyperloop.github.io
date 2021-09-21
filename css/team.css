@@ -108,7 +108,7 @@
 
     #teamLeads.roster-subteam-info-container {
       display: flex;
-      flex-wrap: nowrap;
+      /* flex-wrap: nowrap; */
       float: left;
       overflow-x: scroll;
       }
@@ -219,7 +219,7 @@
 
     #teamLeads.roster-subteam-info-container {
       display: flex;
-      flex-wrap: nowrap;
+      /* flex-wrap: nowrap; */
       float: left;
       }
     
@@ -317,7 +317,7 @@
 
     #teamLeads.roster-subteam-info-container {
       display: flex;
-      flex-wrap: nowrap;
+      /* flex-wrap: nowrap; */
       float: left;
       overflow-x: scroll;
       }
