@@ -318,14 +318,14 @@ var modalDict = {
   //   "Outside of Hyperloop, I am a member of the men's club soccer team and a professional business fraternity, Pi Sigma Epsilon.",
   //   "I got punched by a Monkey in Bali two summers ago.",
   // ],
-  "StrouseDanny": [
-    "Miami, FL",
-    "June 2022",
-    "Elon Musk's white pages and the possibility of contributing to the future.",
-    "The group comradely and interdisciplinary function.",
-    "Research reparations for disadvantaged minorities and innovative business strategies.",
-    "I grew up in Ecuador.",
-  ],
+  // "StrouseDanny": [
+  //   "Miami, FL",
+  //   "June 2022",
+  //   "Elon Musk's white pages and the possibility of contributing to the future.",
+  //   "The group comradely and interdisciplinary function.",
+  //   "Research reparations for disadvantaged minorities and innovative business strategies.",
+  //   "I grew up in Ecuador.",
+  // ],
   "BenRotstein": [
     "Reading, Massachusetts ",
     "Mechanical Engineering, 2024",
