@@ -1,612 +1,614 @@
-
-::-webkit-scrollbar {
-  width: 0px;  /* remove scrollbar space */
-  background: transparent;  /* optional: just make scrollbar invisible */
-}
-
-.page{
-  background-image: url("../images/backgrounds/stars.jpg");
-  background-attachment: fixed;
-}
-
-#header-line{
-  width: 85%;
-  margin-left: 7.5%;
-  margin-right: 7.5%;
-}
-
-.stop-scrolling {
-  height: 100%;
-  overflow: hidden;
-}
-
-@media only screen and (max-width: 768px) {
-  .stop-scrolling {
-    height: 100%;
-    overflow: hidden;
+  ::-webkit-scrollbar {
+    width: 0px;  /* remove scrollbar space */
+    background: transparent;  /* optional: just make scrollbar invisible */
   }
-
+  
+  .page{
+    background-image: url("../images/backgrounds/stars.jpg");
+    background-attachment: fixed;
+  }
+  
   #header-line{
     width: 85%;
     margin-left: 7.5%;
     margin-right: 7.5%;
   }
-
-  .qa-box p{
-    font-size: 12px;
-    color: #545454;
+  
+  .stop-scrolling {
+    height: 100%;
+    overflow: hidden;
   }
-
-  .qa-box h5{
-    color: black;
-    font-size: 14px;
-  }
-
-  .profile-modal h3 {
-    font-size: 20px;
-  }
-
-  .headshot h3 {
-    max-height: 15px;
-    font-size: 12px;
-  }
-
-  .profile-modal img {
-    min-width: 30%;
-  }
-
-  .profile-modal a .linkedin {
-    max-width: 30px;
-    max-height: 50px;
-  }
-
-  .headshot img{
-    max-width: 40vw;
-    max-height: 40vw;
-  }
-
-  .page-content{
-    position: relative;
-    margin: 0 auto 0 auto;
-    background-repeat: repeat-y;
-  }
-  .profile {
-    /* background-color: lightgray; */
-    border-radius: 15px;
-    color: white;
-    position: relative;
-    width: 40%;
-    max-height: 40%;
-    text-align: center;
-    margin: 10% 5% 0 5%;
-    font-size: 80%;
-  }
-
-  .profile-modal {
-    display: block;
-    top: 75px;
-    width: 95%;
-    min-width: 95%;
-    max-height: 90%;
-  }
-
-  .roster-info-container {
-    text-align: center;
-    color:white;
-    overflow: auto;
-    display: flex;
-    flex-direction: column;
-    font-size: 135%;
-  }
-
-  .roster-subteam-info-container {
-    display: flex;
-    flex-wrap: wrap;
-    font-size: 50%;
-    margin: 1em 0 2.5em 0;
-    justify-content: center;
-  }
-
-  #teamLeads.roster-subteam-info-container {
-    display: flex;
-    flex-wrap: nowrap;
-    float: left;
+  
+  @media only screen and (max-width: 768px) {
+    .stop-scrolling {
+      height: 100%;
+      overflow: hidden;
+    }
+  
+    #header-line{
+      width: 85%;
+      margin-left: 7.5%;
+      margin-right: 7.5%;
+    }
+  
+    .qa-box p{
+      font-size: 12px;
+      color: #545454;
+    }
+  
+    .qa-box h5{
+      color: black;
+      font-size: 14px;
+    }
+  
+    .profile-modal h3 {
+      font-size: 20px;
+    }
+  
+    .headshot h3 {
+      max-height: 15px;
+      font-size: 12px;
+    }
+  
+    .profile-modal img {
+      min-width: 30%;
+    }
+  
+    .profile-modal a .linkedin {
+      max-width: 30px;
+      max-height: 50px;
+    }
+    
+    .headshot img{
+      max-width: 40vw;
+      max-height: 40vw;
+    }
+  
+    .page-content{
+      position: relative;
+      margin: 0 auto 0 auto;
+      background-repeat: repeat-y;
+    }
+    .profile {
+      /* background-color: lightgray; */
+      border-radius: 15px;
+      color: white;
+      position: relative;
+      width: 40%;
+      max-height: 40%;
+      text-align: center;
+      margin: 10% 5% 0 5%;
+      font-size: 80%;
+    }
+  
+    .profile-modal {
+      display: block;
+      top: 75px;
+      width: 95%;
+      min-width: 95%;
+      max-height: 90%;
+    }
+  
+    .roster-info-container {
+      text-align: center;
+      color:white;
+      overflow: auto;
+      display: flex;
+      flex-direction: column;
+      font-size: 135%;
+    }
+  
+    .roster-subteam-info-container {
+      display: flex;
+      flex-wrap: wrap;
+      font-size: 50%;
+      margin: 1em 0 2.5em 0;
+      justify-content: center;
     }
 
-  .alumni-year-info-container {
-    display: flex;
-    flex-wrap: wrap;
-    font-size: 100%;
-    margin: 1em 0 2.5em 0;
+    #teamLeads.roster-subteam-info-container {
+      display: flex;
+      flex-wrap: nowrap;
+      float: left;
+      overflow-x: scroll;
+      }
+    
+  
+    .alumni-year-info-container {
+      display: flex;
+      flex-wrap: wrap;
+      font-size: 100%;
+      margin: 1em 0 2.5em 0;
+    }
+  
+    .mobile-only{
+      display: block;
+    }
+  
+    #alumni-inner-wrapper{
+      display: flex;
+      flex-wrap: wrap;
+      font-size: 50%;
+      margin: 1em 0 2.5em 0;
+    }
+  
+    .team-divisions-info-container {
+      display: inline;
+      display: none;
+      float: left;
+      border-bottom: solid 1px lightgray;
+      border-right: solid 0px deeppink;
+      width:100%;
+    }
+  
+    .sidebar-list-label {
+      border-bottom: solid 1px lightgray;
+      border-right: solid 1px lightgray;
+      float: left;
+      display: inline;
+      width: 50%;
+      text-align: center;
+      /* text-transform: uppercase; */
+    }
+  
+    .team-descriptions{
+      font-size: 1.5em;
+    }
+    
   }
+  /* Tablet Sizing */
+  @media only screen and (min-width: 768px) and (max-width: 1023px){
+    .stop-scrolling {
+      height: 100%;
+      overflow: hidden;
+    }
+  
+    .qa-box p{
+      font-size: 14px;
+      color: #545454;
+    }
+  
+    .qa-box h5{
+      color: black;
+      font-size: 16px;
+    }
+  
+    .profile-modal h3 {
+      font-size: 22px;
+    }
+  
+    .page-content{
+      position: relative;
+      margin: 0 auto 0 auto;
+      background-repeat: repeat-y;
+    }
+    .profile {
+      /* background-color: lightgray; */
+      border-radius: 15px;
+      color: white;
+      position: relative;
+      width: 110%;
+      max-height: 33%;
+      text-align: center;
+      margin: 10% 10px 0 0;
+      font-size: 120%;
+    }
+  
+    .profile-modal {
+      top: 50px;
+      width: 75%;
+      max-height: 75%;
+    }
+  
+    .roster-info-container {
+      text-align: center;
+      color:white;
+      overflow: auto;
+      display: flex;
+      flex-direction: column;
+      font-size: 175%;
+    }
+  
+    .roster-subteam-info-container {
+      display: flex;
+      flex-wrap: wrap;
+      font-size: 50%;
+      margin: 1em 0 2.5em 0;
+    }
 
-  .mobile-only{
-    display: block;
+
+    #teamLeads.roster-subteam-info-container {
+      display: flex;
+      flex-wrap: nowrap;
+      float: left;
+      }
+    
+
+    .mobile-only{
+      display: block;
+    }
+  
+    .alumni-year-info-container {
+      display: flex;
+      flex-wrap: wrap;
+      font-size: 70%;
+      margin: 1em 0 2.5em 0;
+      justify-content: center;
+    }
+  
+    #alumni-inner-wrapper{
+      display: flex;
+      flex-wrap: wrap;
+      font-size: 50%;
+      margin: 1em 0 2.5em 0;
+      width: 100%;
+    }
+  
+    .team-divisions-info-container {
+      display: none;
+      float: left;
+      border-bottom: solid 1px lightgray;
+      border-right: solid 0px deeppink;
+      width:100%;
+    }
+  
+    .sidebar-list-label {
+      border-bottom: solid 1px lightgray;
+      border-right: solid 1px lightgray;
+      display: inline;
+      text-align: center;
+    }
+    .profile{
+      border-radius: 15px;
+      color: white;
+      position: relative;
+      width: 30%;
+      max-height: 33%;
+      text-align: center;
+      margin: .5em auto 1.25em auto;
+    }
+  
+    .team-descriptions{
+      font-size: 1.3em;
+      padding-bottom: 1em;
+    }
   }
+  
+  /* Desktop Sizing */
+  @media only screen and (min-width: 1024px){
+    .stop-scrolling {
+      height: 100%;
+      overflow: hidden;
+    }
+  
+    .qa-box p{
+      font-size: 18px;
+      color: #545454;
+    }
+  
+    .qa-box h5{
+      color: black;
+      font-size: 20px;
+    }
+    
+    .profile-modal {
+      top: 50px;
+      width: 60%;
+      max-height: 75%;
+    }
+  
+    .profile-modal h3 {
+      font-size: 30px;
+    }
+  
+    .roster-subteam-info-container{
+      position: relative;
+      width: 100%;
+      max-height: 100%;
+      height: 100%;
+      display: flex;
+      flex-flow: wrap;
+      scroll-snap-align: start;
+      justify-content: center;
+      align-items: center;
+      align-content: center;
+    }
 
-  #alumni-inner-wrapper{
-    display: flex;
-    flex-wrap: wrap;
-    font-size: 50%;
-    margin: 1em 0 2.5em 0;
+
+    #teamLeads.roster-subteam-info-container {
+      display: flex;
+      flex-wrap: nowrap;
+      float: left;
+      overflow-x: scroll;
+      }
+    
+    
+    .roster-info-container {
+      height: 100%;
+      margin: 0;
+      position: relative;
+      float: right;
+      min-width: 570px;
+      overflow-y: scroll;
+      scroll-snap-type: y mandatory;
+    }
+  
+    .alumni-year-info-container{
+      position: relative;
+      width: 100%;
+      /* max-height: 100%; */
+      height: 100%;
+      /* display: flex;
+      flex-flow: wrap; */
+      scroll-snap-align: start;
+      justify-content: center;
+      align-items: center;
+      align-content: center;
+    }
+    
+    .team-divisions-info-container{
+      padding: 0 1em 0 2em;
+      border-right: solid 1px lightgrey;
+      display: unset;
+    }
+    .team-info-container-wrapper {
+      display: flex;
+      flex-direction: row;
+      height: 95%;
+      margin: auto;
+      position: relative;
+      /* height: calc(100% - 4px); */
+      min-width: 840px;
+      width: 100%;
+      display: flex;
+      align-items: center;
+      overflow: hidden;
+    }
+    .page-content{
+      height: calc(100vh - var(--desktopHeaderHeight));
+      overflow-y: hidden;
+      position: relative;
+      margin: 0 auto 0 auto;
+      min-height: 720px;
+    }
+    
+    .profile{
+      max-width: 190px;
+      border-radius: 15px;
+      color: white;
+      position: relative;
+      width: 23%;
+      max-height: 33%;
+      text-align: center;
+      margin: 1em auto 1em auto;
+    }
+  
+    .alumni-container{
+      overflow-y: auto;
+      width: 80%;
+      margin: auto auto 3em 2%;
+    }
+  
+    #alumni-inner-wrapper h3{
+      max-height: 2em;
+     }
+  
+    #alumni-inner-wrapper{
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+    }
+  
+    .member-name{
+      height: 4em;
+    }
+  
+    .team-descriptions{
+      font-size: 1.2em;
+    }
+  
   }
-
-  .team-divisions-info-container {
-    display: inline;
-    display: none;
-    float: left;
-    border-bottom: solid 1px lightgray;
-    border-right: solid 0px deeppink;
-    width:100%;
+  .page-content{
+    display: inline-flex;
+    position: relative;
+    margin: 0 auto 0 auto;
   }
-
-  .sidebar-list-label {
-    border-bottom: solid 1px lightgray;
-    border-right: solid 1px lightgray;
-    float: left;
-    display: inline;
-    width: 50%;
-    text-align: center;
+  
+  /* .sidebar-list-label{ */
     /* text-transform: uppercase; */
-  }
-
-  .team-descriptions{
-    font-size: 1.5em;
-  }
-
-}
-/* Tablet Sizing */
-@media only screen and (min-width: 768px) and (max-width: 1023px){
-  .stop-scrolling {
-    height: 100%;
-    overflow: hidden;
-  }
-
-  .qa-box p{
-    font-size: 14px;
-    color: #545454;
-  }
-
-  .qa-box h5{
-    color: black;
-    font-size: 16px;
-  }
-
-  .profile-modal h3 {
-    font-size: 22px;
-  }
-
-  .page-content{
-    position: relative;
-    margin: 0 auto 0 auto;
-    background-repeat: repeat-y;
-  }
-  .profile {
-    /* background-color: lightgray; */
-    border-radius: 15px;
+  /* } */
+  
+  #inactive-label{
+    cursor: pointer;
     color: white;
-    position: relative;
-    width: 110%;
-    max-height: 33%;
-    text-align: center;
-    margin: 10% 10px 0 0;
-    font-size: 120%;
+    background-position: 0%;
+    opacity: .4;
   }
-
-  .profile-modal {
-    top: 50px;
-    width: 75%;
-    max-height: 75%;
+  
+  #alumni-label{
+    color: white;
   }
-
-  .roster-info-container {
-    text-align: center;
-    color:white;
-    overflow: auto;
-    display: flex;
-    flex-direction: column;
-    font-size: 175%;
+  
+  #alumni-label a{
+    text-decoration: none;
+    color: inherit;
   }
-
-  .roster-subteam-info-container {
-    display: flex;
-    flex-wrap: wrap;
-    font-size: 50%;
-    margin: 1em 0 2.5em 0;
+  
+  
+  
+  #inactive-label:hover {
+    opacity: .8;
+    transition: all 1s;
   }
-
-  #teamLeads.roster-subteam-info-container {
-    display: flex;
-    flex-wrap: nowrap;
-    }
-
-  /* .teamLead-row {
-    content: "";
-    clear:both;
-    display: table;
-  }
-
-  .teamLead-column {
-    float: left;
-    width: 33.33%;
-    padding: 5px;
-  } */
-
-  .mobile-only{
-    display: block;
-  }
-
-  .alumni-year-info-container {
-    display: flex;
-    flex-wrap: wrap;
-    font-size: 70%;
-    margin: 1em 0 2.5em 0;
-    justify-content: center;
-  }
-
-  #alumni-inner-wrapper{
-    display: flex;
-    flex-wrap: wrap;
-    font-size: 50%;
-    margin: 1em 0 2.5em 0;
+  
+  #active-label{
+    cursor: inherit;
+    opacity: 1;
     width: 100%;
+    color: var(--HyperloopRed);
+    background-position: -100%;
+    box-shadow: 0 0 4px 1px rgba(0, 0, 0, 0.01), 0 3px 24px rgba(0, 0, 0, 0.8);
   }
-
-  .team-divisions-info-container {
-    display: none;
-    float: left;
-    border-bottom: solid 1px lightgray;
-    border-right: solid 0px deeppink;
-    width:100%;
+  
+  
+  .profile h3{
+      font-size: 150%;
   }
-
-  .sidebar-list-label {
-    border-bottom: solid 1px lightgray;
-    border-right: solid 1px lightgray;
-    display: inline;
-    text-align: center;
+  
+  .headshot h3 {
+    max-height: 2em;
   }
-  .profile{
+  
+  .headshot img{
+    opacity: 1;
+    border-radius: 50%;
+    width: 180px;
+    height: 180px;
+    box-shadow: 0 0 4px 1px rgba(0, 0, 0, 0.01), 0 3px 24px rgba(0, 0, 0, 0.8);
+  }
+  
+  .silhouette {
+    border-radius: 50%;
+  }
+  
+  .subteam-info-container-heading{
+    width: 100%;
+    font-size: 2em;
+  }
+  
+  hr {
+    width: 75%;
+    margin: auto;
+    background-color: var(--HyperloopRed);
+    border: 2px solid white;
     border-radius: 15px;
-    color: white;
-    position: relative;
-    width: 30%;
-    max-height: 33%;
-    text-align: center;
-    margin: .5em auto 1.25em auto;
+    margin: 2px auto 5px auto;
   }
-
-  .team-descriptions{
-    font-size: 1.3em;
-    padding-bottom: 1em;
+  
+  .subteam-info-container-heading hr{
+    width: 75%;
+    margin: auto;
+    background-color: var(--HyperloopRed);
+    border: 2px solid white;
+    border-radius: 15px;
+    margin: 2px auto 5px auto;
   }
-}
-
-/* Desktop Sizing */
-@media only screen and (min-width: 1024px){
-  .stop-scrolling {
-    height: 100%;
-    overflow: hidden;
+  
+  
+  .team-divisions-info-container ul{
+    list-style: none;
   }
-
-  .qa-box p{
-    font-size: 18px;
-    color: #545454;
-  }
-
-  .qa-box h5{
+  
+  .profile-modal {
+    width: 50%;
+    height: 75%;
+    display: block;
+    background-color: rgba(255,255, 255, .9);
     color: black;
+    border: 2px solid var(--HyperloopRed);
+    border-radius: 10px;
+    position: fixed;
+    z-index: 1;
+    margin: auto;
+    text-align: center;
+    align-content: center;
+    overflow: auto;
     font-size: 20px;
   }
-
-  .profile-modal {
-    top: 50px;
-    width: 60%;
-    max-height: 75%;
-  }
-
-  .profile-modal h3 {
+  
+  /* .profile-modal h3 {
     font-size: 30px;
+  } */
+  
+  .profile-modal img {
+    width: 30%;
+    border: 1px solid black;
+    border-radius: 10px;
+    /* margin-top: 20px; */
   }
-
-  .roster-subteam-info-container{
-    position: relative;
-    width: 100%;
-    max-height: 100%;
+  
+  .profile-modal .x {
+    /* float: right; */
+    margin-top: 3%;
+    margin-left: 92%;
+    color: gray;
+    font-size: 20px;
+    background-color: rgba(255,255, 255, 0);
+    border: none;
+    outline: none;
+  }
+  
+  .profile-modal .x:hover {
+    color: black;
+    font-weight: bolder;
+    cursor: pointer;
+    border-radius: 50%;
+    /* border: 1px solid lightgray; */
+  }
+  
+  .profile-modal a {
+    color: black;
+    text-decoration: none;
+  }
+  
+  .profile-modal p{
+    width: 80%;
+    margin: 0 auto 12px auto;
+  }
+  
+  .profile img:hover {
+    border: 3px solid white;
+  }
+  
+  .profile-modal a {
+    display: inline-block;
+  }
+  
+  .profile-modal .linkedin {
+    border: none;
+    min-width: 35px;
+    max-width: 35px;
+    margin: 0 auto 12px auto;
+    display: block;
+  }
+  
+  .hidden {
+    display: none;
+  }
+  
+  .stop-scrolling {
     height: 100%;
-    display: flex;
-    flex-flow: wrap;
-    scroll-snap-align: start;
-    justify-content: center;
-    align-items: center;
-    align-content: center;
-  }
-
-  .roster-info-container {
-    height: 100%;
-    margin: 0;
-    position: relative;
-    float: right;
-    min-width: 570px;
-    overflow-y: scroll;
-    scroll-snap-type: y mandatory;
-  }
-
-  .alumni-year-info-container{
-    position: relative;
-    width: 100%;
-    /* max-height: 100%; */
-    height: 100%;
-    /* display: flex;
-    flex-flow: wrap; */
-    scroll-snap-align: start;
-    justify-content: center;
-    align-items: center;
-    align-content: center;
-  }
-
-  .team-divisions-info-container{
-    padding: 0 1em 0 2em;
-    border-right: solid 1px lightgrey;
-    display: unset;
-  }
-  .team-info-container-wrapper {
-    display: flex;
-    flex-direction: row;
-    height: 95%;
-    margin: auto;
-    position: relative;
-    /* height: calc(100% - 4px); */
-    min-width: 840px;
-    width: 100%;
-    display: flex;
-    align-items: center;
     overflow: hidden;
   }
-  .page-content{
-    height: calc(100vh - var(--desktopHeaderHeight));
-    overflow-y: hidden;
-    position: relative;
-    margin: 0 auto 0 auto;
-    min-height: 720px;
-  }
-
-  .profile{
-    max-width: 190px;
-    border-radius: 15px;
-    color: white;
-    position: relative;
-    width: 23%;
-    max-height: 33%;
-    text-align: center;
-    margin: 1em auto 1em auto;
-  }
-
-  .alumni-container{
-    overflow-y: auto;
-    width: 80%;
-    margin: auto auto 3em 2%;
-  }
-
-  #alumni-inner-wrapper h3{
-    max-height: 2em;
-   }
-
+  
+  /* .qa-box h5{
+    color: black;
+    font-size: 15px;
+  } */
+  
+  /* .qa-box p{
+    font-size: 20px;
+    color: #545454;
+  } */
+  
   #alumni-inner-wrapper{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+  
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    height: 110%;
   }
-
-  .member-name{
-    height: 4em;
+  
+  dialog::backdrop{
+    background-color: black;
+    opacity: 50%;
   }
-
+  
   .team-descriptions{
-    font-size: 1.2em;
+    padding: 0 2em 0 2em;
+    color: white;
+    text-align: center;
   }
-
-}
-.page-content{
-  display: inline-flex;
-  position: relative;
-  margin: 0 auto 0 auto;
-}
-
-/* .sidebar-list-label{ */
-  /* text-transform: uppercase; */
-/* } */
-
-#inactive-label{
-  cursor: pointer;
-  color: white;
-  background-position: 0%;
-  opacity: .4;
-}
-
-#alumni-label{
-  color: white;
-}
-
-#alumni-label a{
-  text-decoration: none;
-  color: inherit;
-}
-
-
-
-#inactive-label:hover {
-  opacity: .8;
-  transition: all 1s;
-}
-
-#active-label{
-  cursor: inherit;
-  opacity: 1;
-  width: 100%;
-  color: var(--HyperloopRed);
-  background-position: -100%;
-  box-shadow: 0 0 4px 1px rgba(0, 0, 0, 0.01), 0 3px 24px rgba(0, 0, 0, 0.8);
-}
-
-
-.profile h3{
-    font-size: 150%;
-}
-
-.headshot h3 {
-  max-height: 2em;
-}
-
-.headshot img{
-  opacity: 1;
-  border-radius: 50%;
-  width: 180px;
-  height: 180px;
-  box-shadow: 0 0 4px 1px rgba(0, 0, 0, 0.01), 0 3px 24px rgba(0, 0, 0, 0.8);
-}
-
-.silhouette {
-  border-radius: 50%;
-}
-
-.subteam-info-container-heading{
-  width: 100%;
-  font-size: 2em;
-}
-
-hr {
-  width: 75%;
-  margin: auto;
-  background-color: var(--HyperloopRed);
-  border: 2px solid white;
-  border-radius: 15px;
-  margin: 2px auto 5px auto;
-}
-.subteam-info-container-heading hr{
-  width: 75%;
-  margin: auto;
-  background-color: var(--HyperloopRed);
-  border: 2px solid white;
-  border-radius: 15px;
-  margin: 2px auto 5px auto;
-}
-
-
-.team-divisions-info-container ul{
-  list-style: none;
-}
-
-.profile-modal {
-  width: 50%;
-  height: 75%;
-  display: block;
-  background-color: rgba(255,255, 255, .9);
-  color: black;
-  border: 2px solid var(--HyperloopRed);
-  border-radius: 10px;
-  position: fixed;
-  z-index: 1;
-  margin: auto;
-  text-align: center;
-  align-content: center;
-  overflow: auto;
-  font-size: 20px;
-}
-
-/* .profile-modal h3 {
-  font-size: 30px;
-} */
-
-.profile-modal img {
-  width: 30%;
-  border: 1px solid black;
-  border-radius: 10px;
-  /* margin-top: 20px; */
-}
-
-.profile-modal .x {
-  /* float: right; */
-  margin-top: 3%;
-  margin-left: 92%;
-  color: gray;
-  font-size: 20px;
-  background-color: rgba(255,255, 255, 0);
-  border: none;
-  outline: none;
-}
-
-.profile-modal .x:hover {
-  color: black;
-  font-weight: bolder;
-  cursor: pointer;
-  border-radius: 50%;
-  /* border: 1px solid lightgray; */
-}
-
-.profile-modal a {
-  color: black;
-  text-decoration: none;
-}
-
-.profile-modal p{
-  width: 80%;
-  margin: 0 auto 12px auto;
-}
-
-.profile img:hover {
-  border: 3px solid white;
-}
-
-.profile-modal a {
-  display: inline-block;
-}
-
-.profile-modal .linkedin {
-  border: none;
-  min-width: 35px;
-  max-width: 35px;
-  margin: 0 auto 12px auto;
-  display: block;
-}
-
-.hidden {
-  display: none;
-}
-
-.stop-scrolling {
-  height: 100%;
-  overflow: hidden;
-}
-
-/* .qa-box h5{
-  color: black;
-  font-size: 15px;
-} */
-
-/* .qa-box p{
-  font-size: 20px;
-  color: #545454;
-} */
-
-#alumni-inner-wrapper{
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-
-  justify-content: center;
-  align-items: center;
-  align-content: center;
-  height: 110%;
-}
-
-dialog::backdrop{
-  background-color: black;
-  opacity: 50%;
-}
-
-.team-descriptions{
-  padding: 0 2em 0 2em;
-  color: white;
-  text-align: center;
-}
