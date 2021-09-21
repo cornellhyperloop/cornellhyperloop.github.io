@@ -59,7 +59,7 @@
     max-width: 30px;
     max-height: 50px;
   }
-  
+
   .headshot img{
     max-width: 40vw;
     max-height: 40vw;
@@ -147,7 +147,7 @@
   .team-descriptions{
     font-size: 1.5em;
   }
-  
+
 }
 /* Tablet Sizing */
 @media only screen and (min-width: 768px) and (max-width: 1023px){
@@ -208,6 +208,25 @@
     font-size: 50%;
     margin: 1em 0 2.5em 0;
   }
+
+  #teamLeads.roster-subteam-info-container {
+    display: flex;
+    flex-wrap: nowrap;
+    float: left;
+    }
+
+  /* .teamLead-row {
+    content: "";
+    clear:both;
+    display: table;
+  }
+
+  .teamLead-column {
+    float: left;
+    width: 33.33%;
+    padding: 5px;
+  } */
+
   .mobile-only{
     display: block;
   }
@@ -274,7 +293,7 @@
     color: black;
     font-size: 20px;
   }
-  
+
   .profile-modal {
     top: 50px;
     width: 60%;
@@ -297,7 +316,7 @@
     align-items: center;
     align-content: center;
   }
-  
+
   .roster-info-container {
     height: 100%;
     margin: 0;
@@ -320,7 +339,7 @@
     align-items: center;
     align-content: center;
   }
-  
+
   .team-divisions-info-container{
     padding: 0 1em 0 2em;
     border-right: solid 1px lightgrey;
@@ -346,7 +365,7 @@
     margin: 0 auto 0 auto;
     min-height: 720px;
   }
-  
+
   .profile{
     max-width: 190px;
     border-radius: 15px;
@@ -451,6 +470,14 @@
   font-size: 2em;
 }
 
+hr {
+  width: 75%;
+  margin: auto;
+  background-color: var(--HyperloopRed);
+  border: 2px solid white;
+  border-radius: 15px;
+  margin: 2px auto 5px auto;
+}
 .subteam-info-container-heading hr{
   width: 75%;
   margin: auto;
@@ -578,4 +605,3 @@ dialog::backdrop{
   color: white;
   text-align: center;
 }
-
