@@ -23,21 +23,21 @@ var modalDict = {
   //   "Being surrounded with people of diverse skill set and having the opportunity to listen on meetings and presentations of all the project team divisions.",
   //   "I am an Information Science major, a business minor, and I really enjoy reading about technology and watching movies",
   //   "I have the French and American passport."],
-  "MaxGreenberg": [
-    "Miami, Florida",
-    "Computer Science, December 2021",
-    "Elon Musk is one of my role models. In addition, I wanted to be a part of a project focused on revolutionizing long distance travel, particularly through the development of a new mode of transportation.",
-    "I love collaborating with my teammates.",
-    "I love hanging out with my friends, watching sports, and listening to music.",
-    "I can say the alphabet backwards."],
-  "DeeptiTalesra": [
-    "Edison, NJ",
-    "Computer Science 2021",
-    "I had been interested in Hyperloop ever since the first white pages were released by Elon, and after learning that Cornell had a project team for the Hyperloop, I already knew what I wanted to do. And also because ELON MUSK.",
-    "The people and the energy! Everyone is very passionate and excited about the team and what we're building. Being a part of this community is amazing.",
-    "Outside of Hyperloop, I'm also a part of CDS, Assorted Aces, and Find My Food (an app that lets college students know of free food)!",
-    "I have a youtube:)",
-  ],
+  // "MaxGreenberg": [
+  //   "Miami, Florida",
+  //   "Computer Science, December 2021",
+  //   "Elon Musk is one of my role models. In addition, I wanted to be a part of a project focused on revolutionizing long distance travel, particularly through the development of a new mode of transportation.",
+  //   "I love collaborating with my teammates.",
+  //   "I love hanging out with my friends, watching sports, and listening to music.",
+  //   "I can say the alphabet backwards."],
+  // "DeeptiTalesra": [
+  //   "Edison, NJ",
+  //   "Computer Science 2021",
+  //   "I had been interested in Hyperloop ever since the first white pages were released by Elon, and after learning that Cornell had a project team for the Hyperloop, I already knew what I wanted to do. And also because ELON MUSK.",
+  //   "The people and the energy! Everyone is very passionate and excited about the team and what we're building. Being a part of this community is amazing.",
+  //   "Outside of Hyperloop, I'm also a part of CDS, Assorted Aces, and Find My Food (an app that lets college students know of free food)!",
+  //   "I have a youtube:)",
+  // ],
   "TimTran": [
     "Ho Chi Minh City",
     "ECE, 2022",
@@ -206,14 +206,14 @@ var modalDict = {
     "Cornell Ski Club, Cornell Outing Club",
     "I am a certified scuba diver.",
   ],
-  "WinstonLiu": [
-    "Long Island, NY",
-    "Computer Science 2023",
-    "Hyperloop is a fascinating concept that will change the way we connect with each other as a society. I love to learn more about disruptive innovations and wanted to contribute to this project.",
-    "This is my first semester! So, I am looking forward to meeting new members and working on the Pod.",
-    "On campus, I am involved with Big Red Ambassadors and ACSU. I also enjoy playing tennis, basketball, and going rock climbing.",
-    "I am currently teaching myself how to ride a skateboard!",
-  ],
+  // "WinstonLiu": [
+  //   "Long Island, NY",
+  //   "Computer Science 2023",
+  //   "Hyperloop is a fascinating concept that will change the way we connect with each other as a society. I love to learn more about disruptive innovations and wanted to contribute to this project.",
+  //   "This is my first semester! So, I am looking forward to meeting new members and working on the Pod.",
+  //   "On campus, I am involved with Big Red Ambassadors and ACSU. I also enjoy playing tennis, basketball, and going rock climbing.",
+  //   "I am currently teaching myself how to ride a skateboard!",
+  // ],
   "FelipeHanuch": [
     "Rochester, NY",
     "Mechanical Engineering, 2022",
@@ -222,14 +222,14 @@ var modalDict = {
     "I play soccer and tennis in my down time and love to go out for a great meal with friends.",
     "I was on ESPN sports center top 10 plays of the night one time in 2017."
   ],
-  "ChristelleChemaly": [
-    "Middletown, NJ",
-    "Mechanical Engineering, 2022",
-    "Elon musk is an inspiration of mine. Working on one of his projects is an insanely great opportunity.",
-    "I can apply classroom concepts to real life which helps a lot with understanding my studies.",
-    "Singing, dancing, having fun.",
-    "I hate spicy food.",
-  ],
+  // "ChristelleChemaly": [
+  //   "Middletown, NJ",
+  //   "Mechanical Engineering, 2022",
+  //   "Elon musk is an inspiration of mine. Working on one of his projects is an insanely great opportunity.",
+  //   "I can apply classroom concepts to real life which helps a lot with understanding my studies.",
+  //   "Singing, dancing, having fun.",
+  //   "I hate spicy food.",
+  // ],
   // "NiaReid-Vicars":[
   //   "Queens, NY",
   //   "ECE, 2023",
@@ -262,14 +262,14 @@ var modalDict = {
     "I am on the Cornell Cheerleading team.",
     "I love to go on runs around Cornell's campus to see all of the beautiful scenery.",
   ],
-  "RaghavInder": [
-    "New York",
-    "2023",
-    "To experience the engineering process and to build something with others.",
-    "It's great being at the forefront of research for this new form of transportation, and hopefully in a few years we can see all of our work manifest in an actual Hyperloop connecting cities around the world.",
-    "In my free time I play golf, both for fun and competitively. Otherwise I love camping and exploring the outdoors, playing jeopardy, and watching documentaries.",
-    "I love fruits.",
-  ],
+  // "RaghavInder": [
+  //   "New York",
+  //   "2023",
+  //   "To experience the engineering process and to build something with others.",
+  //   "It's great being at the forefront of research for this new form of transportation, and hopefully in a few years we can see all of our work manifest in an actual Hyperloop connecting cities around the world.",
+  //   "In my free time I play golf, both for fun and competitively. Otherwise I love camping and exploring the outdoors, playing jeopardy, and watching documentaries.",
+  //   "I love fruits.",
+  // ],
   // "CourtneyGolden":[
   //   "Albany, NY",
   //   "Electrical and Computer Engineering, 2023",
@@ -294,38 +294,38 @@ var modalDict = {
     "On campus, I am part of the Cornell Engineering Peer Advisor program. Outside of college, I enjoy playing basketball, watching sports, and hanging out with friends and family.",
     "I am fluent in both Spanish and English.",
   ],
-  "JacobJohansen": [
-    "Saugerties, New York",
-    "Policy Analysis & Management 2021",
-    "Cornell Hyperloop is working at the forefront of technology that has the capability to revolutionize the transportation industry.",
-    "Cornell Hyperloop has allowed me to work directly with industry professionals and subject matter experts to gain technical skills I could not learn in the classroom. Being able to manage our Business Development team has put me in a position to help connect our University and my team to resources that are beneficial professionally, academically, and personally. ",
-    "Former President of the Cornell Global Economic & Finance Society, Club Lacrosse team member, and Aerospace and Defense enthusiast.",
-    "Roman History Nerd .",
-  ],
-  "TabuforTabufor": [
-    "Forney, TX",
-    "2022 Environmental and Sustainability ",
-    "I am passionate about creating a newer innovative form of sustainable transportation and I see Hyperloop as the manifestation of that.",
-    "Meeting with the sub team to business strategies for the semester .",
-    "I play intramural soccer and I am member of the Phi Gamma Nu Professional Business Fraternity.",
-    "I’m a huge fan of Formula 1 racing.",
-  ],
-  "WillebeekJacob": [
-    "Austin, TX",
-    "ILR; 2021",
-    "I wanted to gain exposure to the business side of tech!",
-    "My favorite part of Hyperloop is getting to collaborate with such a diverse and talented group of people.",
-    "Outside of Hyperloop, I am a member of the men's club soccer team and a professional business fraternity, Pi Sigma Epsilon.",
-    "I got punched by a Monkey in Bali two summers ago.",
-  ],
-  "StrouseDanny": [
-    "Miami, FL",
-    "June 2022",
-    "Elon Musk's white pages and the possibility of contributing to the future.",
-    "The group comradely and interdisciplinary function.",
-    "Research reparations for disadvantaged minorities and innovative business strategies.",
-    "I grew up in Ecuador.",
-  ],
+  // "JacobJohansen": [
+  //   "Saugerties, New York",
+  //   "Policy Analysis & Management 2021",
+  //   "Cornell Hyperloop is working at the forefront of technology that has the capability to revolutionize the transportation industry.",
+  //   "Cornell Hyperloop has allowed me to work directly with industry professionals and subject matter experts to gain technical skills I could not learn in the classroom. Being able to manage our Business Development team has put me in a position to help connect our University and my team to resources that are beneficial professionally, academically, and personally. ",
+  //   "Former President of the Cornell Global Economic & Finance Society, Club Lacrosse team member, and Aerospace and Defense enthusiast.",
+  //   "Roman History Nerd .",
+  // ],
+  // "TabuforTabufor": [
+  //   "Forney, TX",
+  //   "2022 Environmental and Sustainability ",
+  //   "I am passionate about creating a newer innovative form of sustainable transportation and I see Hyperloop as the manifestation of that.",
+  //   "Meeting with the sub team to business strategies for the semester .",
+  //   "I play intramural soccer and I am member of the Phi Gamma Nu Professional Business Fraternity.",
+  //   "I’m a huge fan of Formula 1 racing.",
+  // ],
+  // "WillebeekJacob": [
+  //   "Austin, TX",
+  //   "ILR; 2021",
+  //   "I wanted to gain exposure to the business side of tech!",
+  //   "My favorite part of Hyperloop is getting to collaborate with such a diverse and talented group of people.",
+  //   "Outside of Hyperloop, I am a member of the men's club soccer team and a professional business fraternity, Pi Sigma Epsilon.",
+  //   "I got punched by a Monkey in Bali two summers ago.",
+  // ],
+  // "StrouseDanny": [
+  //   "Miami, FL",
+  //   "June 2022",
+  //   "Elon Musk's white pages and the possibility of contributing to the future.",
+  //   "The group comradely and interdisciplinary function.",
+  //   "Research reparations for disadvantaged minorities and innovative business strategies.",
+  //   "I grew up in Ecuador.",
+  // ],
   "BenRotstein": [
     "Reading, Massachusetts ",
     "Mechanical Engineering, 2024",
@@ -350,22 +350,22 @@ var modalDict = {
     "I love long-distance running, baking/cooking, and hanging out with my friends.",
     "If there was one food that I could eat for the rest of my life, it would probably be pasta. Italian food>>"
   ],
-  "AnoushkaKabra": [
-    "Mumbai",
-    "Computer Science (CoE) - 2024",
-    "I chose to join Hyperloop in order to better understand transpiration and gain skills to work in a team as a software design contributor.",
-    "Socials! And meeting new people",
-    "Social Entreprise at Cornell (Partnerships co-director) and Cornell Current (Economics Sector), Chess, Squash, hiking.",
-    "I had my first internship when I was 11 years old, and I have travelled to 5 out of 7 continents."
-  ],
-  "OliviaMcGoldrick": [
-    "Simsbury, CT",
-    "Electrical and Computer Engineering, 2022",
-    "I chose to join Hyperloop because I want to be able to apply what I have been learning in my classes to something that is hands-on.  The idea of working on this potentially revolutionary technology in a very early stage of its development also really drew me in. ",
-    "",
-    "I am a involved in the Society of Women Engineers, the Cornell Rock Climbing Club, and Greek life.  I also really like to sew, play guitar, and be outdoors. ",
-    "I can unicycle!"
-  ],
+  // "AnoushkaKabra": [
+  //   "Mumbai",
+  //   "Computer Science (CoE) - 2024",
+  //   "I chose to join Hyperloop in order to better understand transpiration and gain skills to work in a team as a software design contributor.",
+  //   "Socials! And meeting new people",
+  //   "Social Entreprise at Cornell (Partnerships co-director) and Cornell Current (Economics Sector), Chess, Squash, hiking.",
+  //   "I had my first internship when I was 11 years old, and I have travelled to 5 out of 7 continents."
+  // ],
+  // "OliviaMcGoldrick": [
+  //   "Simsbury, CT",
+  //   "Electrical and Computer Engineering, 2022",
+  //   "I chose to join Hyperloop because I want to be able to apply what I have been learning in my classes to something that is hands-on.  The idea of working on this potentially revolutionary technology in a very early stage of its development also really drew me in. ",
+  //   "",
+  //   "I am a involved in the Society of Women Engineers, the Cornell Rock Climbing Club, and Greek life.  I also really like to sew, play guitar, and be outdoors. ",
+  //   "I can unicycle!"
+  // ],
   "CameronRobinson": [
     "Landen, OH ",
     "Physics 2024",
@@ -428,14 +428,14 @@ var modalDict = {
     "I was named after a cat"
   ],
 
-  "FredericMinzberg": [
-    "New York, NY",
-    "AEM, 2023",
-    "I wanted to have a window into the world of tomorrow. My aspirations are being a PM in the tech industry and being on the bizdev team can give me a powerful foundation in supply chain, promotion of new tech, and the establishment of strong relationships for a company",
-    "I enjoy working on the promotion of a cutting edge technological initiative with a multi-faceted collection of my peers with a diversity of majors. ",
-    "I am a new member of a professional business fraternity, as well as a team member on Cornell University Sustainable Design, Cornell Tech Consulting, and Cornell Blockchain- Advisory.",
-    "I am 6'8\". I know you can't see that on zoom. Also, I play the piano and the base guitar."
-  ]
+  // "FredericMinzberg": [
+  //   "New York, NY",
+  //   "AEM, 2023",
+  //   "I wanted to have a window into the world of tomorrow. My aspirations are being a PM in the tech industry and being on the bizdev team can give me a powerful foundation in supply chain, promotion of new tech, and the establishment of strong relationships for a company",
+  //   "I enjoy working on the promotion of a cutting edge technological initiative with a multi-faceted collection of my peers with a diversity of majors. ",
+  //   "I am a new member of a professional business fraternity, as well as a team member on Cornell University Sustainable Design, Cornell Tech Consulting, and Cornell Blockchain- Advisory.",
+  //   "I am 6'8\". I know you can't see that on zoom. Also, I play the piano and the base guitar."
+  // ]
 };
 
 
@@ -512,6 +512,8 @@ function createModal(key) {
     div.parentNode.removeChild(div)
     document.body.classList.remove("stop-scrolling");
   });
+
+  console.log(key);
 
   var existingImg = document.getElementById(key).childNodes[3];
   var cloneImg = existingImg.cloneNode(true);
