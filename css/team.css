@@ -218,7 +218,6 @@
   #teamLeads.roster-subteam-info-container {
     display: flex;
     flex-wrap: nowrap;
-    float: left;
     }
 
   /* .teamLead-row {
