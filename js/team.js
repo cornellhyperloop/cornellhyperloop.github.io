@@ -206,14 +206,14 @@ var modalDict = {
     "Cornell Ski Club, Cornell Outing Club",
     "I am a certified scuba diver.",
   ],
-  "WinstonLiu": [
-    "Long Island, NY",
-    "Computer Science 2023",
-    "Hyperloop is a fascinating concept that will change the way we connect with each other as a society. I love to learn more about disruptive innovations and wanted to contribute to this project.",
-    "This is my first semester! So, I am looking forward to meeting new members and working on the Pod.",
-    "On campus, I am involved with Big Red Ambassadors and ACSU. I also enjoy playing tennis, basketball, and going rock climbing.",
-    "I am currently teaching myself how to ride a skateboard!",
-  ],
+  // "WinstonLiu": [
+  //   "Long Island, NY",
+  //   "Computer Science 2023",
+  //   "Hyperloop is a fascinating concept that will change the way we connect with each other as a society. I love to learn more about disruptive innovations and wanted to contribute to this project.",
+  //   "This is my first semester! So, I am looking forward to meeting new members and working on the Pod.",
+  //   "On campus, I am involved with Big Red Ambassadors and ACSU. I also enjoy playing tennis, basketball, and going rock climbing.",
+  //   "I am currently teaching myself how to ride a skateboard!",
+  // ],
   "FelipeHanuch": [
     "Rochester, NY",
     "Mechanical Engineering, 2022",
@@ -222,14 +222,14 @@ var modalDict = {
     "I play soccer and tennis in my down time and love to go out for a great meal with friends.",
     "I was on ESPN sports center top 10 plays of the night one time in 2017."
   ],
-  "ChristelleChemaly": [
-    "Middletown, NJ",
-    "Mechanical Engineering, 2022",
-    "Elon musk is an inspiration of mine. Working on one of his projects is an insanely great opportunity.",
-    "I can apply classroom concepts to real life which helps a lot with understanding my studies.",
-    "Singing, dancing, having fun.",
-    "I hate spicy food.",
-  ],
+  // "ChristelleChemaly": [
+  //   "Middletown, NJ",
+  //   "Mechanical Engineering, 2022",
+  //   "Elon musk is an inspiration of mine. Working on one of his projects is an insanely great opportunity.",
+  //   "I can apply classroom concepts to real life which helps a lot with understanding my studies.",
+  //   "Singing, dancing, having fun.",
+  //   "I hate spicy food.",
+  // ],
   // "NiaReid-Vicars":[
   //   "Queens, NY",
   //   "ECE, 2023",
@@ -262,14 +262,14 @@ var modalDict = {
     "I am on the Cornell Cheerleading team.",
     "I love to go on runs around Cornell's campus to see all of the beautiful scenery.",
   ],
-  "RaghavInder": [
-    "New York",
-    "2023",
-    "To experience the engineering process and to build something with others.",
-    "It's great being at the forefront of research for this new form of transportation, and hopefully in a few years we can see all of our work manifest in an actual Hyperloop connecting cities around the world.",
-    "In my free time I play golf, both for fun and competitively. Otherwise I love camping and exploring the outdoors, playing jeopardy, and watching documentaries.",
-    "I love fruits.",
-  ],
+  // "RaghavInder": [
+  //   "New York",
+  //   "2023",
+  //   "To experience the engineering process and to build something with others.",
+  //   "It's great being at the forefront of research for this new form of transportation, and hopefully in a few years we can see all of our work manifest in an actual Hyperloop connecting cities around the world.",
+  //   "In my free time I play golf, both for fun and competitively. Otherwise I love camping and exploring the outdoors, playing jeopardy, and watching documentaries.",
+  //   "I love fruits.",
+  // ],
   // "CourtneyGolden":[
   //   "Albany, NY",
   //   "Electrical and Computer Engineering, 2023",
@@ -350,22 +350,22 @@ var modalDict = {
     "I love long-distance running, baking/cooking, and hanging out with my friends.",
     "If there was one food that I could eat for the rest of my life, it would probably be pasta. Italian food>>"
   ],
-  "AnoushkaKabra": [
-    "Mumbai",
-    "Computer Science (CoE) - 2024",
-    "I chose to join Hyperloop in order to better understand transpiration and gain skills to work in a team as a software design contributor.",
-    "Socials! And meeting new people",
-    "Social Entreprise at Cornell (Partnerships co-director) and Cornell Current (Economics Sector), Chess, Squash, hiking.",
-    "I had my first internship when I was 11 years old, and I have travelled to 5 out of 7 continents."
-  ],
-  "OliviaMcGoldrick": [
-    "Simsbury, CT",
-    "Electrical and Computer Engineering, 2022",
-    "I chose to join Hyperloop because I want to be able to apply what I have been learning in my classes to something that is hands-on.  The idea of working on this potentially revolutionary technology in a very early stage of its development also really drew me in. ",
-    "",
-    "I am a involved in the Society of Women Engineers, the Cornell Rock Climbing Club, and Greek life.  I also really like to sew, play guitar, and be outdoors. ",
-    "I can unicycle!"
-  ],
+  // "AnoushkaKabra": [
+  //   "Mumbai",
+  //   "Computer Science (CoE) - 2024",
+  //   "I chose to join Hyperloop in order to better understand transpiration and gain skills to work in a team as a software design contributor.",
+  //   "Socials! And meeting new people",
+  //   "Social Entreprise at Cornell (Partnerships co-director) and Cornell Current (Economics Sector), Chess, Squash, hiking.",
+  //   "I had my first internship when I was 11 years old, and I have travelled to 5 out of 7 continents."
+  // ],
+  // "OliviaMcGoldrick": [
+  //   "Simsbury, CT",
+  //   "Electrical and Computer Engineering, 2022",
+  //   "I chose to join Hyperloop because I want to be able to apply what I have been learning in my classes to something that is hands-on.  The idea of working on this potentially revolutionary technology in a very early stage of its development also really drew me in. ",
+  //   "",
+  //   "I am a involved in the Society of Women Engineers, the Cornell Rock Climbing Club, and Greek life.  I also really like to sew, play guitar, and be outdoors. ",
+  //   "I can unicycle!"
+  // ],
   "CameronRobinson": [
     "Landen, OH ",
     "Physics 2024",
