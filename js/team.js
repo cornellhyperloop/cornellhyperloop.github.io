@@ -23,21 +23,21 @@ var modalDict = {
   //   "Being surrounded with people of diverse skill set and having the opportunity to listen on meetings and presentations of all the project team divisions.",
   //   "I am an Information Science major, a business minor, and I really enjoy reading about technology and watching movies",
   //   "I have the French and American passport."],
-  "MaxGreenberg": [
-    "Miami, Florida",
-    "Computer Science, December 2021",
-    "Elon Musk is one of my role models. In addition, I wanted to be a part of a project focused on revolutionizing long distance travel, particularly through the development of a new mode of transportation.",
-    "I love collaborating with my teammates.",
-    "I love hanging out with my friends, watching sports, and listening to music.",
-    "I can say the alphabet backwards."],
-  "DeeptiTalesra": [
-    "Edison, NJ",
-    "Computer Science 2021",
-    "I had been interested in Hyperloop ever since the first white pages were released by Elon, and after learning that Cornell had a project team for the Hyperloop, I already knew what I wanted to do. And also because ELON MUSK.",
-    "The people and the energy! Everyone is very passionate and excited about the team and what we're building. Being a part of this community is amazing.",
-    "Outside of Hyperloop, I'm also a part of CDS, Assorted Aces, and Find My Food (an app that lets college students know of free food)!",
-    "I have a youtube:)",
-  ],
+  // "MaxGreenberg": [
+  //   "Miami, Florida",
+  //   "Computer Science, December 2021",
+  //   "Elon Musk is one of my role models. In addition, I wanted to be a part of a project focused on revolutionizing long distance travel, particularly through the development of a new mode of transportation.",
+  //   "I love collaborating with my teammates.",
+  //   "I love hanging out with my friends, watching sports, and listening to music.",
+  //   "I can say the alphabet backwards."],
+  // "DeeptiTalesra": [
+  //   "Edison, NJ",
+  //   "Computer Science 2021",
+  //   "I had been interested in Hyperloop ever since the first white pages were released by Elon, and after learning that Cornell had a project team for the Hyperloop, I already knew what I wanted to do. And also because ELON MUSK.",
+  //   "The people and the energy! Everyone is very passionate and excited about the team and what we're building. Being a part of this community is amazing.",
+  //   "Outside of Hyperloop, I'm also a part of CDS, Assorted Aces, and Find My Food (an app that lets college students know of free food)!",
+  //   "I have a youtube:)",
+  // ],
   "TimTran": [
     "Ho Chi Minh City",
     "ECE, 2022",
@@ -294,30 +294,30 @@ var modalDict = {
     "On campus, I am part of the Cornell Engineering Peer Advisor program. Outside of college, I enjoy playing basketball, watching sports, and hanging out with friends and family.",
     "I am fluent in both Spanish and English.",
   ],
-  "JacobJohansen": [
-    "Saugerties, New York",
-    "Policy Analysis & Management 2021",
-    "Cornell Hyperloop is working at the forefront of technology that has the capability to revolutionize the transportation industry.",
-    "Cornell Hyperloop has allowed me to work directly with industry professionals and subject matter experts to gain technical skills I could not learn in the classroom. Being able to manage our Business Development team has put me in a position to help connect our University and my team to resources that are beneficial professionally, academically, and personally. ",
-    "Former President of the Cornell Global Economic & Finance Society, Club Lacrosse team member, and Aerospace and Defense enthusiast.",
-    "Roman History Nerd .",
-  ],
-  "TabuforTabufor": [
-    "Forney, TX",
-    "2022 Environmental and Sustainability ",
-    "I am passionate about creating a newer innovative form of sustainable transportation and I see Hyperloop as the manifestation of that.",
-    "Meeting with the sub team to business strategies for the semester .",
-    "I play intramural soccer and I am member of the Phi Gamma Nu Professional Business Fraternity.",
-    "I’m a huge fan of Formula 1 racing.",
-  ],
-  "WillebeekJacob": [
-    "Austin, TX",
-    "ILR; 2021",
-    "I wanted to gain exposure to the business side of tech!",
-    "My favorite part of Hyperloop is getting to collaborate with such a diverse and talented group of people.",
-    "Outside of Hyperloop, I am a member of the men's club soccer team and a professional business fraternity, Pi Sigma Epsilon.",
-    "I got punched by a Monkey in Bali two summers ago.",
-  ],
+  // "JacobJohansen": [
+  //   "Saugerties, New York",
+  //   "Policy Analysis & Management 2021",
+  //   "Cornell Hyperloop is working at the forefront of technology that has the capability to revolutionize the transportation industry.",
+  //   "Cornell Hyperloop has allowed me to work directly with industry professionals and subject matter experts to gain technical skills I could not learn in the classroom. Being able to manage our Business Development team has put me in a position to help connect our University and my team to resources that are beneficial professionally, academically, and personally. ",
+  //   "Former President of the Cornell Global Economic & Finance Society, Club Lacrosse team member, and Aerospace and Defense enthusiast.",
+  //   "Roman History Nerd .",
+  // ],
+  // "TabuforTabufor": [
+  //   "Forney, TX",
+  //   "2022 Environmental and Sustainability ",
+  //   "I am passionate about creating a newer innovative form of sustainable transportation and I see Hyperloop as the manifestation of that.",
+  //   "Meeting with the sub team to business strategies for the semester .",
+  //   "I play intramural soccer and I am member of the Phi Gamma Nu Professional Business Fraternity.",
+  //   "I’m a huge fan of Formula 1 racing.",
+  // ],
+  // "WillebeekJacob": [
+  //   "Austin, TX",
+  //   "ILR; 2021",
+  //   "I wanted to gain exposure to the business side of tech!",
+  //   "My favorite part of Hyperloop is getting to collaborate with such a diverse and talented group of people.",
+  //   "Outside of Hyperloop, I am a member of the men's club soccer team and a professional business fraternity, Pi Sigma Epsilon.",
+  //   "I got punched by a Monkey in Bali two summers ago.",
+  // ],
   "StrouseDanny": [
     "Miami, FL",
     "June 2022",
@@ -428,14 +428,14 @@ var modalDict = {
     "I was named after a cat"
   ],
 
-  "FredericMinzberg": [
-    "New York, NY",
-    "AEM, 2023",
-    "I wanted to have a window into the world of tomorrow. My aspirations are being a PM in the tech industry and being on the bizdev team can give me a powerful foundation in supply chain, promotion of new tech, and the establishment of strong relationships for a company",
-    "I enjoy working on the promotion of a cutting edge technological initiative with a multi-faceted collection of my peers with a diversity of majors. ",
-    "I am a new member of a professional business fraternity, as well as a team member on Cornell University Sustainable Design, Cornell Tech Consulting, and Cornell Blockchain- Advisory.",
-    "I am 6'8\". I know you can't see that on zoom. Also, I play the piano and the base guitar."
-  ]
+  // "FredericMinzberg": [
+  //   "New York, NY",
+  //   "AEM, 2023",
+  //   "I wanted to have a window into the world of tomorrow. My aspirations are being a PM in the tech industry and being on the bizdev team can give me a powerful foundation in supply chain, promotion of new tech, and the establishment of strong relationships for a company",
+  //   "I enjoy working on the promotion of a cutting edge technological initiative with a multi-faceted collection of my peers with a diversity of majors. ",
+  //   "I am a new member of a professional business fraternity, as well as a team member on Cornell University Sustainable Design, Cornell Tech Consulting, and Cornell Blockchain- Advisory.",
+  //   "I am 6'8\". I know you can't see that on zoom. Also, I play the piano and the base guitar."
+  // ]
 };
 
 
@@ -512,6 +512,8 @@ function createModal(key) {
     div.parentNode.removeChild(div)
     document.body.classList.remove("stop-scrolling");
   });
+
+  console.log(key);
 
   var existingImg = document.getElementById(key).childNodes[3];
   var cloneImg = existingImg.cloneNode(true);
