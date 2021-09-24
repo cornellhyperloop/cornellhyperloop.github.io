@@ -148,7 +148,7 @@ header{
 .ELL_slideshow{
     max-width: 800px;
     position: relative;
-    margin: 24px auto;
+    margin: auto;
     box-shadow: 5px 2px 15px grey;
 }
 
