@@ -8,6 +8,10 @@
     align-items: center;
     padding-bottom: 2em;
 }
+
+.slideImage{
+    border-radius: 8px;
+}
 @media only screen and (max-width: 767px){
     .page-content{
     padding-top: var(--cellularHeaderHeight);
@@ -34,6 +38,14 @@
 
     .value img{
         padding-bottom: 10px
+    }
+
+    .ELL_slideshow{
+        width: 100%;
+        max-width: none;
+    }
+    .slideImage{
+        border-radius: 0px;
     }
 
 
@@ -134,9 +146,10 @@ header{
 }
 
 .ELL_slideshow{
-    max-width: 400px;
+    max-width: 800px;
     position: relative;
-    margin: auto;
+    margin: 24px auto;
+    box-shadow: 5px 2px 15px grey;
 }
 
 .mySlides {
@@ -169,7 +182,7 @@ header{
 
 .text {
   color: #f2f2f2;
-  font-size: 15px;
+  font-size: 18px;
   padding: 8px 12px;
   position: absolute;
   bottom: 8px;
