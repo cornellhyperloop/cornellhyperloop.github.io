@@ -104,7 +104,7 @@ height: auto;
     width: 85%;
   }
   .package {
-    font-size: 87%;
+    font-size: 70%;
   }
   #propulsion-content {
     padding: 0.5em 0;
@@ -115,6 +115,7 @@ height: auto;
   }
   .rightside-info-subcontainer {
     color: white;
+    font-size: 70%;
   }
   .package img {
     width: 100%;
@@ -132,6 +133,13 @@ height: auto;
   .rightside-info-subcontainer-content-header {
     display: none;
   }
+
+  .heading-hovering {
+    font-size: 80%;
+    display: flex;
+    flex-wrap: nowrap;
+  }
+
   #the-pod-img {
     display: block;
     margin-left: auto;
