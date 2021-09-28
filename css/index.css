@@ -62,12 +62,12 @@ html{
 }
 .fb_container{
     position: relative;
-    bottom: 660px;
+    bottom: 650px;
     left: 950px;
 }
 .linkedin_container{
     position: relative;
-    bottom: 0px;
+    bottom: -5px;
     left: -8px;
 }
 
