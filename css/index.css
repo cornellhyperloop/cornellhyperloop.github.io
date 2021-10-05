@@ -3,7 +3,7 @@ html{
 }
 
 .page{
-    background-image: url("../images/backgrounds/stars.jpg"); 
+    background-image: url("../images/backgrounds/stars.jpg");
     background-attachment: fixed;
     position: relative;
     min-height: 100vh;
@@ -51,9 +51,25 @@ html{
     margin: 4em auto 2em auto;
     padding: 3em 0 2em 0;
     /* float:right; */
-    text-align: center;
+    text-align:center;
+    float: left;
 }
 
+.insta_container{
+    position: relative;
+    bottom: 660px;
+    left: 950px;
+}
+.fb_container{
+    position: relative;
+    bottom: 650px;
+    left: 950px;
+}
+.linkedin_container{
+    position: relative;
+    bottom: -5px;
+    left: -8px;
+}
 
 
 /* mobile sizing */
@@ -120,7 +136,7 @@ html{
         left: 0;
         right: 0;
     }
- 
+
     #application-pdf-button{
         position: absolute;
         width: 60%;
@@ -177,7 +193,7 @@ html{
     #down-arrow{
         display: none;
     }
-    
+
     .blurb-container {
         width: 90%;
         margin: .5em auto 1.5em auto;
@@ -227,7 +243,7 @@ html{
         position: absolute;
         top: 0px;
         width: 100%;
-    
+
     }
     #landing-video{
         /* position: absolute; */
@@ -256,7 +272,7 @@ html{
         top: 90px;
         right: 2em;
     }
-    
+
     #application-pdf-button{
         position: absolute;
         top: 90px;
@@ -283,13 +299,13 @@ html{
     .recr-div {
         background-color: rgba(255,255, 255, .5);
     }
-    
+
     .recr-subdiv {
         display: flex;
         justify-content: center;
         padding: 5px;
     }
-    
+
     .recr-subdiv p {
         /* text-align: left; */
         margin: 10px 0;
@@ -298,7 +314,7 @@ html{
         font-size: 18px;
         color: rgb(170, 170, 170);
     }
-    
+
     .recr-subdiv p a {
         font-size: 18px;
         color: white;
@@ -308,11 +324,15 @@ html{
         margin: auto;
         /* background-color: */
     }
-    
+
+    .instagram-container{
+      margin: auto;
+    }
+
     .recr-subdiv p a:hover {
         text-decoration: underline;
     }
-    
+
     .info-session-div-container h3 {
         color: rgb(170, 170, 170);
     }
@@ -381,12 +401,12 @@ html{
     text-align: center;
     font-size: 1.2em;
   }
- 
+
 
 #landing-video{
     /* position: absolute; */
     width: 100%;
-  
+
     box-shadow:0 5px 30px black;
 }
 
@@ -439,4 +459,3 @@ html{
 /* .info-session-div-container h3 {
     color: rgb(170, 170, 170);
 } */
-  
