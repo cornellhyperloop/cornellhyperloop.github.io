@@ -49,6 +49,8 @@ html{
     width:100%;
     display: flex;
     justify-content: center;
+    margin-top: 4em;
+    margin-bottom: 2em;
 }
 
 #icons-container{
@@ -63,7 +65,7 @@ html{
 .twitter-container{
     height:700px;
     width: 400px;
-    margin: 4em auto 2em auto;
+    margin: 0;
     padding: 3em 0 2em 0;
     /* float:right; */
     /* text-align:center;
