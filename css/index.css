@@ -57,9 +57,10 @@ html{
     display: flex;
     flex-direction: column;
     margin-left: 48px;
-    height: 700px;
+    height: 600px;
     width: 50px;
     justify-content: space-between;
+    padding-top: 3em;
 }
 
 .twitter-container{
