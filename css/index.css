@@ -209,11 +209,16 @@ html{
         flex-direction: column;
         align-items: center;
     }
+
+    .twitter-container{
+        width: 320px;
+    }
     
     #icons-container{
         width: 100%;
         flex-direction: row;
         justify-content: space-around;
+        margin-left: 0;
     }
 
 
@@ -349,15 +354,6 @@ html{
     .recr-subdiv p a {
         font-size: 18px;
         color: white;
-    }
-
-    .twitter-container{
-        margin: auto;
-        /* background-color: */
-    }
-
-    .instagram-container{
-      margin: auto;
     }
 
     .recr-subdiv p a:hover {
