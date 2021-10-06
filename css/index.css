@@ -48,7 +48,7 @@ html{
 #socials-container{
     width:100%;
     display: flex;
-
+    justify-content: center;
 }
 
 #icons-container{
@@ -56,11 +56,13 @@ html{
     flex-direction: column;
     margin-left: 48px;
     height: 700px;
+    width: 50px;
     justify-content: space-between;
 }
 
 .twitter-container{
     height:700px;
+    width: 400px;
     margin: 4em auto 2em auto;
     padding: 3em 0 2em 0;
     /* float:right; */
