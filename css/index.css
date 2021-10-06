@@ -45,17 +45,30 @@ html{
     margin-top: 0;
 }
 
-.twitter-container{
+#socials-container{
     width:100%;
+    display: flex;
+
+}
+
+#icons-container{
+    display: flex;
+    flex-direction: column;
+    margin-left: 48px;
+    height: 700px;
+    justify-content: space-between;
+}
+
+.twitter-container{
     height:700px;
     margin: 4em auto 2em auto;
     padding: 3em 0 2em 0;
     /* float:right; */
-    text-align:center;
-    float: left;
+    /* text-align:center;
+    float: left; */
 }
 
-.insta_container{
+/* .insta_container{
     position: relative;
     bottom: 660px;
     left: 950px;
@@ -69,7 +82,7 @@ html{
     position: relative;
     bottom: -5px;
     left: -8px;
-}
+} */
 
 
 /* mobile sizing */
@@ -187,8 +200,21 @@ html{
         line-height: 1.3em;
     }
 
+    #socials-container{
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    #icons-container{
+        width: 100%;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
 
 }
+
+/* Tablet/Very small laptop sizing */
 @media only screen and (min-width: 768px) and (max-width: 1023px){
     #down-arrow{
         display: none;
