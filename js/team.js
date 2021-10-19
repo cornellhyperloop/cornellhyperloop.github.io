@@ -403,11 +403,11 @@ var modalDict = {
 
   "JaniceLee": [
     "Whippany, NJ",
-    "Computer Science, 2024",
+    "Information Science (ISST), 2024",
     "Hyperloop's revolutionary technology pushes boundaries of innovation in transportation. Being a part of that ambitious team will allow me to grow and think outside the box while also giving me opportunities to bond with people of similar passions.",
     "Learning new things and applying them to real world applications!",
-    "I love playing guitar & singing, trying new cooking recipes, and painting with acrylics.",
-    "I collect gum wrappers (my own of course) in a glass jar and write down my memories and thoughts in each."
+    "I love playing guitar & singing, cooking, and playing badminton.",
+    "I have two cats, two guinea pigs, and one dog."
   ],
 
   "JackRebillard": [
