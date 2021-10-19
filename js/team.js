@@ -550,7 +550,7 @@ function createModal(key) {
     div.appendChild(QAdiv);
   }
 
-  div.showModal();
+  document.getElementById(id).showModal();
 
   //Closing modal with click outside of dialog box
   var modal = document.getElementById(id);
