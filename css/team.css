@@ -500,19 +500,20 @@
   }
   
   .profile-modal {
-    width: 50%;
-    height: 75%;
+    width: 80%;
+    height: 100%;
     display: block;
     background-color: rgba(255,255, 255, .9);
     color: black;
     border: 2px solid var(--HyperloopRed);
-    border-radius: 10px;
-    position: fixed;
+    border-radius: 100%;
+    position:initial;
     z-index: 1;
     margin: auto;
+    padding: 70px;
     text-align: center;
-    align-content: center;
-    overflow: auto;
+    align-content:flex-start;
+    overflow:scroll;
     font-size: 20px;
   }
   
@@ -524,6 +525,7 @@
     width: 30%;
     border: 1px solid black;
     border-radius: 10px;
+    justify-content: start;
     /* margin-top: 20px; */
   }
   
@@ -543,6 +545,7 @@
     font-weight: bolder;
     cursor: pointer;
     border-radius: 50%;
+    padding: 20px;
     /* border: 1px solid lightgray; */
   }
   
@@ -568,7 +571,7 @@
     border: none;
     min-width: 35px;
     max-width: 35px;
-    margin: 0 auto 12px auto;
+    margin: 0 auto 10px auto;
     display: block;
   }
   
