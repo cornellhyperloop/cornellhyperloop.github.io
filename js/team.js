@@ -575,8 +575,9 @@ function createModal(key) {
         // $('#'+id).hide();
     }
  });
-
-  modalOpen = true;
+  setTimeout( ()=>{
+    modalOpen = true;},
+  100);
 }
 
 $(document).on("click", (event) => {
