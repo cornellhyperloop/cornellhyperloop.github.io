@@ -552,7 +552,7 @@ function createModal(key) {
 
   // document.getElementById(id).showModal();
   // div.setAttribute("open", "");
-  $(`#${id}`).show('modal');
+  $(`#${id}`).modal('show');
 
   //Closing modal with click outside of dialog box
   var modal = document.getElementById(id);
