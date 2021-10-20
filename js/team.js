@@ -555,9 +555,8 @@ function createModal(key) {
 
   // document.getElementById(id).showModal();
   // div.setAttribute("open", "");
-  modalOpen = true;
 
-  $('#'+id).modal('show');
+  $('#'+id).show();
 
   //Closing modal with click outside of dialog box
   var modal = document.getElementById(id);
@@ -576,13 +575,13 @@ function createModal(key) {
         $('#'+id).hide();
     }
  });
- 
+
+  modalOpen = true;
 }
 
 $(document).on("click", (event) => {
   //if you click on anything except the modal itself or the "open modal" link, close the modal
-  // setTimeout( ()=>{
-  if ($(".profile-modal").is(":visible")){
+  if (modalOpen){
     if (!$(event.target).closest(".profile-modal").length) {
       // $(".profile-modal").modal("hide");
       $(".profile-modal").hide();
@@ -592,7 +591,6 @@ $(document).on("click", (event) => {
     console.log("close modal")
     modalOpen = false;
   }
-// }, 50)
 });
 
 function addEventListenersToLabels() {
