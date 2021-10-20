@@ -552,7 +552,7 @@ function createModal(key) {
 
   // document.getElementById(id).showModal();
   // div.setAttribute("open", "");
-  $(`#${id}`).modal('show');
+  $('#'+id).modal('show');
 
   //Closing modal with click outside of dialog box
   var modal = document.getElementById(id);
@@ -560,6 +560,7 @@ function createModal(key) {
   window.onclick = function (event) {
     if (event.target == modal) {
       div.parentNode.removeChild(div)
+      $('#'+id).modal('hide');
       document.body.classList.remove("stop-scrolling");
     }
   }
