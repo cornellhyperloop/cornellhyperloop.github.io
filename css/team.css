@@ -624,7 +624,7 @@
   #backdrop{
     height: 110vh;
     width: 100vw;
-    position: absolute;
+    position: fixed;
     z-index: 998;
   }
   
