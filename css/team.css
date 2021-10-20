@@ -513,7 +513,7 @@
     box-shadow: 0 0 25px 5px var(--HyperloopRed);
     border-radius: 50%;
     position: fixed;
-    top: 25vh;
+    top: 15vh;
     z-index: 999;
     margin: auto;
     padding: 25px 25px 50px;
@@ -521,6 +521,7 @@
     align-content: flex-start;
     overflow: scroll;
     font-size: 20px;
+    cursor: pointer;
   }
   
   /* .profile-modal h3 {
