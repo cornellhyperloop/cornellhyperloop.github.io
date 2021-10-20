@@ -564,15 +564,15 @@ function createModal(key) {
   window.onclick = function (event) {
     if (event.target == modal) {
       div.parentNode.removeChild(div)
-      $('#'+id).modal('hide');
+      // $('#'+id).modal('hide');
       document.body.classList.remove("stop-scrolling");
     }
   }
 
   $("body").click(function() {
     if ($('#'+id).is(":visible")) {
-        $('#'+id).modal('hide');
-        $('#'+id).hide();
+        // $('#'+id).modal('hide');
+        // $('#'+id).hide();
     }
  });
 
@@ -580,7 +580,7 @@ function createModal(key) {
 }
 
 $(document).on("click", (event) => {
-  //if you click on anything except the modal itself or the "open modal" link, close the modal
+  //if you click on anything except the modal itself, close the modal
   if (modalOpen){
     if (!$(event.target).closest(".profile-modal").length) {
       // $(".profile-modal").modal("hide");
