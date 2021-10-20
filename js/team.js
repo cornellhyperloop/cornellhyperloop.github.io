@@ -498,7 +498,6 @@ function createModal(key) {
     document.body.classList.add("stop-scrolling");
   }
 
-  modalOpen = true;
 
   var div = document.createElement("dialog");
   document.body.appendChild(div);
@@ -556,6 +555,8 @@ function createModal(key) {
 
   // document.getElementById(id).showModal();
   // div.setAttribute("open", "");
+  modalOpen = true;
+
   $('#'+id).modal('show');
 
   //Closing modal with click outside of dialog box
@@ -580,6 +581,7 @@ function createModal(key) {
 
 $(document).on("click", (event) => {
   //if you click on anything except the modal itself or the "open modal" link, close the modal
+  setTimeout( ()=>{
   if (modalOpen){
     if (!$(event.target).closest(".profile-modal").length) {
       // $(".profile-modal").modal("hide");
@@ -590,6 +592,7 @@ $(document).on("click", (event) => {
     console.log("close modal")
     modalOpen = false;
   }
+}, 50)
 });
 
 function addEventListenersToLabels() {
