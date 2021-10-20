@@ -581,8 +581,8 @@ function createModal(key) {
 
 $(document).on("click", (event) => {
   //if you click on anything except the modal itself or the "open modal" link, close the modal
-  setTimeout( ()=>{
-  if (modalOpen){
+  // setTimeout( ()=>{
+  if ($(".profile-modal").is(":visible")){
     if (!$(event.target).closest(".profile-modal").length) {
       // $(".profile-modal").modal("hide");
       $(".profile-modal").hide();
@@ -592,7 +592,7 @@ $(document).on("click", (event) => {
     console.log("close modal")
     modalOpen = false;
   }
-}, 50)
+// }, 50)
 });
 
 function addEventListenersToLabels() {
