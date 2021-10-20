@@ -571,16 +571,18 @@ function createModal(key) {
         $('#'+id).hide();
     }
  });
- 
-}
 
-$(document).on("click", (event) => {
+ $(document).on("click", (event) => {
   //if you click on anything except the modal itself or the "open modal" link, close the modal
   if (!$(event.target).closest(".profile-modal").length) {
     $("body").find("dialog").hide();
   }
   console.log("close modal")
 });
+ 
+}
+
+
 
 function addEventListenersToLabels() {
   for (let index = 0; index < subteams.length; index++) {
