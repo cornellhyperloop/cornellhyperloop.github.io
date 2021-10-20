@@ -84,9 +84,10 @@
     .profile-modal {
       display: block;
       top: 75px;
-      width: 95%;
-      min-width: 95%;
-      max-height: 90%;
+      width: 95vw;
+      height: 95vw;
+      /* min-width: 95%;
+      max-height: 90%; */
     }
   
     .roster-info-container {
@@ -515,7 +516,7 @@
     top: 25vh;
     z-index: 999;
     margin: auto;
-    padding: 70px;
+    padding: 25px 25px 50px;
     text-align: center;
     align-content: flex-start;
     overflow: scroll;
@@ -527,9 +528,10 @@
   } */
   
   .profile-modal img {
-    width: 30%;
-    border: 1px solid black;
-    border-radius: 10px;
+    width: 40%;
+    /* border: 1px solid black; */
+    border: none;
+    border-radius: 40%;
     justify-content: start;
     /* margin-top: 20px; */
   }

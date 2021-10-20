@@ -564,6 +564,14 @@ function createModal(key) {
       document.body.classList.remove("stop-scrolling");
     }
   }
+
+  $("body").click(function() {
+    if ($('#'+id).is(":visible")) {
+        $('#'+id).modal('hide');
+        $('#'+id).hide();
+    }
+ });
+ 
 }
 
 function addEventListenersToLabels() {
