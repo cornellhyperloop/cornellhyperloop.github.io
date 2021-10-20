@@ -82,10 +82,10 @@
     }
   
     .profile-modal {
-      display: block;
-      top: 75px;
+      top: 25vh;
       width: 95vw;
       height: 95vw;
+      margin-left: 2.5vw;
       /* min-width: 95%;
       max-height: 90%; */
     }
@@ -196,9 +196,10 @@
     }
   
     .profile-modal {
-      top: 50px;
-      width: 75%;
-      max-height: 75%;
+      width: 50vw;
+      height: 50vw;
+      top: 15vh;
+      margin: auto 25vw;
     }
   
     .roster-info-container {
@@ -290,12 +291,6 @@
     .qa-box h5{
       color: black;
       font-size: 20px;
-    }
-    
-    .profile-modal {
-      top: 50px;
-      width: 60%;
-      max-height: 75%;
     }
   
     .profile-modal h3 {
@@ -407,8 +402,18 @@
     .team-descriptions{
       font-size: 1.2em;
     }
+
+    .profile-modal {
+      width: 50vw;
+      height: 50vw;
+      top: 15vh;
+      margin: auto 25vw;
+    }
   
   }
+
+
+
   .page-content{
     display: inline-flex;
     position: relative;
@@ -501,8 +506,6 @@
   }
   
   .profile-modal {
-    width: 50vw;
-    height: 50vw;
     max-width: 700px;
     max-height: 700px;
     display: block;
@@ -515,13 +518,14 @@
     position: fixed;
     top: 15vh;
     z-index: 999;
-    margin: auto;
     padding: 25px 25px 70px;
     text-align: center;
     align-content: flex-start;
     overflow: scroll;
     font-size: 20px;
   }
+
+
   
   /* .profile-modal h3 {
     font-size: 30px;
@@ -618,8 +622,8 @@
   }
 
   #backdrop{
-    height: 100vh;
-    width: 100vh;
+    height: 110vh;
+    width: 100vw;
     position: absolute;
     z-index: 998;
   }

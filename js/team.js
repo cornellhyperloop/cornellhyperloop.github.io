@@ -590,6 +590,7 @@ $(document).on("click", (event) => {
       $(".profile-modal").remove();
       $("#backdrop").hide();
       $(".roster-info-container").removeClass("stop-scrolling");
+      $("body").removeClass("stop-scrolling");
       modalOpen = false;
       console.log("modal hidden")
     }
