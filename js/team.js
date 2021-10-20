@@ -577,7 +577,7 @@ function createModal(key) {
 $(document).on("click", (event) => {
   //if you click on anything except the modal itself or the "open modal" link, close the modal
   if (!$(event.target).closest(".profile-modal").length) {
-    $(".profile-modal").modal("hide");
+    // $(".profile-modal").modal("hide");
     $(".profile-modal").hide();
     console.log("should be deleted");
     // $("body").find("dialog").hide();
