@@ -557,6 +557,8 @@ function createModal(key) {
   // div.setAttribute("open", "");
 
   $('#'+id).show();
+  $("#backdrop").show();
+  $(".roster-info-container").addClass("stop-scrolling");
 
   //Closing modal with click outside of dialog box
   var modal = document.getElementById(id);
@@ -585,12 +587,12 @@ $(document).on("click", (event) => {
   if (modalOpen){
     if (!$(event.target).closest(".profile-modal").length) {
       // $(".profile-modal").modal("hide");
-      $(".profile-modal").hide();
-      console.log("should be deleted");
-      // $("body").find("dialog").hide();
+      $(".profile-modal").remove();
+      $("#backdrop").hide();
+      $(".roster-info-container").removeClass("stop-scrolling");
+      modalOpen = false;
+      console.log("modal hidden")
     }
-    console.log("close modal")
-    modalOpen = false;
   }
 });
 
