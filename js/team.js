@@ -489,6 +489,8 @@ window.onload = function () {
 
 }
 
+var modalState = "closed";
+
 function createModal(key) {
   if (document.body.classList.contains("stop-scrolling")) {
     document.body.classList.remove("stop-scrolling");
@@ -553,6 +555,7 @@ function createModal(key) {
   // document.getElementById(id).showModal();
   // div.setAttribute("open", "");
   $('#'+id).modal('show');
+  modalState = "open";
 
   //Closing modal with click outside of dialog box
   var modal = document.getElementById(id);
@@ -576,13 +579,16 @@ function createModal(key) {
 
 $(document).on("click", (event) => {
   //if you click on anything except the modal itself or the "open modal" link, close the modal
-  if (!$(event.target).closest(".profile-modal").length) {
-    // $(".profile-modal").modal("hide");
-    $(".profile-modal").hide();
-    console.log("should be deleted");
-    // $("body").find("dialog").hide();
+  if (modalState=="open"){
+    if (!$(event.target).closest(".profile-modal").length) {
+      // $(".profile-modal").modal("hide");
+      $(".profile-modal").hide();
+      console.log("should be deleted");
+      // $("body").find("dialog").hide();
+    }
+    console.log("close modal")
+    modalState="closed";
   }
-  console.log("close modal")
 });
 
 function addEventListenersToLabels() {
