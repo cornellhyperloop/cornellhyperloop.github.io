@@ -147,8 +147,8 @@ var modalDict = {
     "Information Science, 2022",
     "The concept of working on a futuristic project like Hyperloop was, and still is, kind of a dream for me, even to just have a hand in it. Plus, I looked forward to making a bunch of great new connections with my teammates.",
     "I love the work ethic and passion of the team. Everyone is extraordinarily motivated to achieve our goals, and anyone on the team is welcomed with open arms to lend a hand in whatever project any other sub team is working on.",
-    "I am a member of the Delta Chi Fraternity, and write blog articles for a small furniture retail startup called Carter & Clyde. I also create personal coding projects in my spare time.",
-    "I was a NY State Bar Association mock trial county champion in high school.",
+    "I'm a big fan of watching basketball, hockey, and baseball. I also currently work as a part-time software developer.",
+    "I've travelled to 32 of the 50 states.",
   ],
   "JacobWise": [
     "Ardsley, NY",
