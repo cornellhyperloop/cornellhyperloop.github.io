@@ -521,7 +521,6 @@
     align-content: flex-start;
     overflow: scroll;
     font-size: 20px;
-    cursor: pointer;
   }
   
   /* .profile-modal h3 {
@@ -622,4 +621,8 @@
     padding: 0 2em 0 2em;
     color: white;
     text-align: center;
+  }
+
+  .headshot{
+    cursor: pointer;
   }
