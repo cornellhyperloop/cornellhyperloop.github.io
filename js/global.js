@@ -36,6 +36,14 @@ window.onload = function () {
 };
 
 // window.onresize = resizeElements
+function scrollscript() {
+  var elementToScrollTo = document.getElementById("down-arrow");
+  elementToScrollTo.scrollIntoView({behavior: "smooth"});
+
+}
+//var scrolldown = document.getElementById("down-arrow");
+//scrolldown.addEventListener("mousedown", function(){window.scrollTo(300,500);})
+
 
 function handleMobileDropdownButtonClick() {
   const dropdownContainer = document.getElementsByClassName(
