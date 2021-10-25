@@ -88,16 +88,6 @@ header{
     z-index: 10;
 }
 
-footer {
-    position: fixed;
-    left:0px;
-    bottom:0px;
-    height:30px;
-    margin: 0;
-    margin-top: 50px;
-    width: 100%;
-}
-
 .blurb-container {
     display: flex;
     flex-direction: row;
