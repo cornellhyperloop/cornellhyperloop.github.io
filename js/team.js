@@ -147,8 +147,8 @@ var modalDict = {
     "Information Science, 2022",
     "The concept of working on a futuristic project like Hyperloop was, and still is, kind of a dream for me, even to just have a hand in it. Plus, I looked forward to making a bunch of great new connections with my teammates.",
     "I love the work ethic and passion of the team. Everyone is extraordinarily motivated to achieve our goals, and anyone on the team is welcomed with open arms to lend a hand in whatever project any other sub team is working on.",
-    "I am a member of the Delta Chi Fraternity, and write blog articles for a small furniture retail startup called Carter & Clyde. I also create personal coding projects in my spare time.",
-    "I was a NY State Bar Association mock trial county champion in high school.",
+    "I'm a big fan of watching basketball, hockey, and baseball. I also currently work as a part-time software developer.",
+    "I've travelled to 32 of the 50 states.",
   ],
   "JacobWise": [
     "Ardsley, NY",
@@ -489,12 +489,15 @@ window.onload = function () {
 
 }
 
+var modalOpen = false;
+
 function createModal(key) {
   if (document.body.classList.contains("stop-scrolling")) {
     document.body.classList.remove("stop-scrolling");
   } else {
     document.body.classList.add("stop-scrolling");
   }
+
 
   var div = document.createElement("dialog");
   document.body.appendChild(div);
@@ -550,7 +553,12 @@ function createModal(key) {
     div.appendChild(QAdiv);
   }
 
-  div.showModal();
+  // document.getElementById(id).showModal();
+  // div.setAttribute("open", "");
+
+  $('#'+id).show();
+  $("#backdrop").show();
+  $(".roster-info-container").addClass("stop-scrolling");
 
   //Closing modal with click outside of dialog box
   var modal = document.getElementById(id);
@@ -558,10 +566,36 @@ function createModal(key) {
   window.onclick = function (event) {
     if (event.target == modal) {
       div.parentNode.removeChild(div)
+      // $('#'+id).modal('hide');
       document.body.classList.remove("stop-scrolling");
     }
   }
+
+  $("body").click(function() {
+    if ($('#'+id).is(":visible")) {
+        // $('#'+id).modal('hide');
+        // $('#'+id).hide();
+    }
+ });
+  setTimeout( ()=>{
+    modalOpen = true;},
+  100);
 }
+
+$(document).on("click", (event) => {
+  //if you click on anything except the modal itself, close the modal
+  if (modalOpen){
+    if (!$(event.target).closest(".profile-modal").length) {
+      // $(".profile-modal").modal("hide");
+      $(".profile-modal").remove();
+      $("#backdrop").hide();
+      $(".roster-info-container").removeClass("stop-scrolling");
+      $("body").removeClass("stop-scrolling");
+      modalOpen = false;
+      console.log("modal hidden")
+    }
+  }
+});
 
 function addEventListenersToLabels() {
   for (let index = 0; index < subteams.length; index++) {

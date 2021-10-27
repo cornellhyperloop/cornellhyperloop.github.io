@@ -82,11 +82,12 @@
     }
   
     .profile-modal {
-      display: block;
-      top: 75px;
-      width: 95%;
-      min-width: 95%;
-      max-height: 90%;
+      top: 25vh;
+      width: 95vw;
+      height: 95vw;
+      margin-left: 2.5vw;
+      /* min-width: 95%;
+      max-height: 90%; */
     }
   
     .roster-info-container {
@@ -195,9 +196,10 @@
     }
   
     .profile-modal {
-      top: 50px;
-      width: 75%;
-      max-height: 75%;
+      width: 50vw;
+      height: 50vw;
+      top: 15vh;
+      margin: auto 25vw;
     }
   
     .roster-info-container {
@@ -289,12 +291,6 @@
     .qa-box h5{
       color: black;
       font-size: 20px;
-    }
-    
-    .profile-modal {
-      top: 50px;
-      width: 60%;
-      max-height: 75%;
     }
   
     .profile-modal h3 {
@@ -406,8 +402,18 @@
     .team-descriptions{
       font-size: 1.2em;
     }
+
+    .profile-modal {
+      width: 50vw;
+      height: 50vw;
+      top: 15vh;
+      margin: auto 25vw;
+    }
   
   }
+
+
+
   .page-content{
     display: inline-flex;
     position: relative;
@@ -500,31 +506,43 @@
   }
   
   .profile-modal {
-    width: 80%;
-    height: 100%;
+    max-width: 700px;
+    max-height: 700px;
     display: block;
     background-color: rgba(255,255, 255, .9);
     color: black;
-    border: 2px solid var(--HyperloopRed);
-    border-radius: 100%;
-    position:initial;
-    z-index: 1;
-    margin: auto;
-    padding: 70px;
+    /* border: 2px solid var(--HyperloopRed); */
+    border: none;
+    box-shadow: 0 0 25px 5px var(--HyperloopRed);
+    border-radius: 50%;
+    position: fixed;
+    top: 15vh;
+    z-index: 999;
+    padding: 25px 25px 70px;
     text-align: center;
-    align-content:flex-start;
-    overflow:scroll;
+    align-content: flex-start;
+    overflow: scroll;
     font-size: 20px;
   }
+
+
   
   /* .profile-modal h3 {
     font-size: 30px;
   } */
   
   .profile-modal img {
+<<<<<<< HEAD
     width: 30%;
     border: 1px solid black;
     border-radius: 10px;
+=======
+    width: 40%;
+    /* border: 1px solid black; */
+    border: none;
+    border-radius: 40%;
+    justify-content: start;
+>>>>>>> 276115fb22bc706cc21c07ff8d7517a3ee09a712
     /* margin-top: 20px; */
   }
   
@@ -604,13 +622,24 @@
     height: 110%;
   }
   
-  dialog::backdrop{
+  dialog::backdrop, #backdrop{
     background-color: black;
     opacity: 50%;
+  }
+
+  #backdrop{
+    height: 110vh;
+    width: 100vw;
+    position: fixed;
+    z-index: 998;
   }
   
   .team-descriptions{
     padding: 0 2em 0 2em;
     color: white;
     text-align: center;
+  }
+
+  .headshot{
+    cursor: pointer;
   }
