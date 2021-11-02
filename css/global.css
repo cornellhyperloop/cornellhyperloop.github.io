@@ -836,15 +836,6 @@ footer a{
     width: 80%;
 }
 
-#facebook {
-    width: 70%;
-    margin-top: 3px;
-}
-
-#instagram {
-    width: 75%;
-    margin-top: 2px;
-}
 
 
 @media(max-width:787px) {
