@@ -777,7 +777,7 @@ footer {
 }
 
 footer {
-    position: fixed;
+    position: relative;
     left: 0px;
     bottom: 0px;
     height: 80px;
@@ -785,6 +785,7 @@ footer {
     width: 100%;
     display: flex;
     flex-direction: row;
+    background-color: #bbb8b8;
 }
 
 footer nav {
@@ -810,9 +811,10 @@ footer nav {
 
 .footer-media-logo {
     padding: 5px;
-    max-width: 40%;
+    max-width: 50%;
     height: auto;
     margin-left: 50px;
+    margin-top: 10px;
     justify-content: space-between;
 }
 
@@ -830,8 +832,43 @@ footer a{
   display: inline-block;
 }
 
+.logo-symbol {
+    width: 80%;
+}
+
+#facebook {
+    width: 70%;
+    margin-top: 3px;
+}
+
+#instagram {
+    width: 75%;
+    margin-top: 2px;
+}
 
 
+@media(max-width:787px) {
+    footer {
+
+    }
+
+    footer ul li {
+        /* display: flex;
+        flex-direction: column; */
+        border: 1px dashed red;
+    }
+
+    .footer-left {
+        border: 2px dotted black;
+        /* display: inline-block;
+        height: var(--cellularHeaderHeight);
+        width: 100%; */
+    }
+
+    .footer-right {
+        border: 2px solid blue;
+    }
+}
 
 .sticky-header div{
   opacity: 1;
