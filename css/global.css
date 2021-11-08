@@ -860,6 +860,7 @@ footer a{
 
     .footer-left ul{
         width:150%;
+        margin-left: 10px;
     }
 
     .footer-left li{
