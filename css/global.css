@@ -837,27 +837,106 @@ footer a{
 }
 
 
+@media only screen and (max-width: 767px) {
+    /* cellular sizing */
 
-@media(max-width:787px) {
     footer {
-
+        height: 60px;
+        padding:0;
+        margin:0;
     }
 
-    footer ul li {
-        /* display: flex;
-        flex-direction: column; */
-        border: 1px dashed red;
+    footer .footer-left {
+        align-items: center;
+        width:auto;
+        width:80%;
+        padding:0;
+        margin:0;
     }
 
-    .footer-left {
-        border: 2px dotted black;
-        /* display: inline-block;
-        height: var(--cellularHeaderHeight);
-        width: 100%; */
+    .footer-left ul{
+        width:150%;
     }
 
-    .footer-right {
-        border: 2px solid blue;
+    .footer-left li{
+        display: inline;
+        justify-content: center;
+        text-align: center;
+        font-size: 1.2em;
+        font-weight: bolder;
+        align-items:center;
+    }
+
+    .footer-nav-button{
+        background-color: #e2dddd;
+        padding: 5px;
+        margin: 3px;
+        border-radius: 3px;
+        color: black;
+    }
+
+    .footer-donate-button{
+        background-color: #a10f0f;
+        padding: 5px;
+        margin:3px;
+        border-radius:3px;
+        color: white;
+    }
+
+    footer .footer-right{
+        align-items: center;
+        justify-content: flex-end;
+    }
+    .footer-media-logo{
+        padding:0;
+        margin:0;
+    }
+    .footer-social-icons{
+        width:100%;
+        justify-content:space-around;
+    }
+}
+
+
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+    /* tablet sizing */
+    .footer-left ul{
+        width: 600px;
+    }
+    .footer-left li{
+        display: inline;
+        justify-content: center;
+        text-align: center;
+        font-size: 1.65em;
+        font-weight: bolder;
+    }
+
+    .footer-nav-button{
+        background-color: #e2dddd;
+        padding: 5px;
+        margin: 2%;
+        border-radius: 3px;
+        color: black;
+    }
+
+    .footer-donate-button{
+        background-color: #a10f0f;
+        padding: 5px;
+        margin:2%;
+        border-radius:3px;
+        color: white;
+    }
+
+    .footer-right{
+        align-items:center;
+    }
+    .footer-media-logo{
+        padding:0;
+        margin:0;
+    }
+    .footer-social-icons{
+        width:100%;
+        justify-content:space-around;
     }
 }
 
