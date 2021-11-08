@@ -532,17 +532,11 @@
   } */
   
   .profile-modal img {
-<<<<<<< HEAD
-    width: 30%;
-    border: 1px solid black;
-    border-radius: 10px;
-=======
     width: 40%;
     /* border: 1px solid black; */
     border: none;
     border-radius: 40%;
     justify-content: start;
->>>>>>> 276115fb22bc706cc21c07ff8d7517a3ee09a712
     /* margin-top: 20px; */
   }
   
