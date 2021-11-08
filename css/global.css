@@ -799,6 +799,10 @@ footer nav {
     align-items: center;
 }
 
+footer li {
+    font-size: 1.8em;
+}
+
 .footer-right {
     display: flex;
     width: 30%;
@@ -907,7 +911,7 @@ footer a{
         display: inline;
         justify-content: center;
         text-align: center;
-        font-size: 1.65em;
+        font-size: 1.8em;
         font-weight: bolder;
     }
 
