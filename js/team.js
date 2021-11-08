@@ -51,8 +51,8 @@ var modalDict = {
     "Electrical and Computer Engineering 2023",
     "I believe Hyperloop will be crucial towards building a sustainable future and I want to help us get there.",
     "My favorite part of being on Hyperloop is pushing the limits of my capabilities and learning new skills.",
-    "I participate in the Tae Kwon Do and boxing club at Cornell. I’m also an avid fan of all things Marvel/Star Wars.",
-    "I have a good french accent so I can sort of fake fluency.",
+    "I am part of the Taekwondo club and Academy FC at Cornell. I'm also a fan of all things Marvel/Star Wars.",
+    "I share the same birthday as my sister but two years apart.",
   ],
   "MatthewCreighton": [
     "Albany, NY",
@@ -177,9 +177,9 @@ var modalDict = {
   "AlexanderNutley": [
     "Smithtown, NY",
     "Operations Research, 2022",
-    "I decided to join hyperloop because it is a unique opportunity to gain experience working in a team engineering setting, as well as an opportunity to revolutionize transportation which is a vital part of our world.",
-    "I love working with my team and SubTeam leads to solve unique problems.",
-    "I work in Statler Library on campus, play guitar, and learn graphic design.",
+    "I chose to join hyperloop because the concept is so interesting! Having the opportunity to innovate and gain valuable experience right here on campus has been invaluable.",
+    "My favorite part of Cornell Hyperloop is its interdisciplinary nature. Learning from and working with students from a wide range of academic backgrounds is awesome.",
+    "Outside of Hyperloop, I love to write songs and play music, watch Motorsport, and tinker with tech and computers!",
     "I play the bagpipes!",
   ],
   "CoralWang": [
@@ -404,9 +404,9 @@ var modalDict = {
   "JaniceLee": [
     "Whippany, NJ",
     "Information Science (ISST), 2024",
-    "Hyperloop's revolutionary technology pushes boundaries of innovation in transportation. Being a part of that ambitious team will allow me to grow and think outside the box while also giving me opportunities to bond with people of similar passions.",
-    "Learning new things and applying them to real world applications!",
-    "I love playing guitar & singing, cooking, and playing badminton.",
+    "Hyperloop's revolutionary technology pushes boundaries of innovation in transportation. Being a part of an ambitious team will allow me to grow and think outside the box while also bonding with people of similar passions.",
+    "Learning new things and applying them to real world projects!",
+    "I love playing guitar, cooking, and playing badminton.",
     "I have two cats, two guinea pigs, and one dog."
   ],
 
@@ -436,6 +436,70 @@ var modalDict = {
   //   "I am a new member of a professional business fraternity, as well as a team member on Cornell University Sustainable Design, Cornell Tech Consulting, and Cornell Blockchain- Advisory.",
   //   "I am 6'8\". I know you can't see that on zoom. Also, I play the piano and the base guitar."
   // ]
+
+  "JasonNg": [
+    "Rancho Cucamonga",
+    "AEM 2024",
+    "I chose to join Hyperloop because I felt that it was a project team that interlaced both 3d modeling and business.",
+    "The community and how it is relatively small so I can ask anyone for help.",
+    "On my free time, I trade stocks, cook, and collect watches.",
+    "My favorite color is black."
+  ],
+
+  "HenryScharff": [
+    "Los Angeles, CA",
+    "AEM 2024",
+    "I wanted to contribute to a cause that betters our world and changes the way humans and goods are transported.",
+    "The opportunity to make real, substantive societal change for the future in a sustainable way.",
+    "I love to play chess, watch movies, and watch the Green Bay Packers play on Sundays.",
+    "I am a German citizen!"
+  ],
+
+  "ElliePerlitz": [
+    "Simsbury, CT",
+    "Operations Research Engineering, 2024",
+    "I chose to join Hyperloop because I wanted to be part of something revolutionary that will make a big impact on the future of transportation!",
+    "My favorite part about being on Hyperloop is being able to work with my sub team to promote Hyperloop.",
+    "Outside of Hyperloop I am a member of the Pi Beta Phi sorority, Base Productions Dance Team, Society of Women Engineers, and the Cornell Dairy Club.",
+    "I was a Starbucks Barista for over 2 years."
+  ],
+
+  "MathieuBoyer": [
+    "Santa Clara",
+    "Mechanical Engineering 2024",
+    "I wanted to join a team heavily focused on mechanical engineering to work on something bigger than me and gain valuable experience and skills in mechanical engineering as well as build strong interpersonal skills.",
+    "My favorite part is using Solidworks to make our ideas into a reality.",
+    "I am on the club soccer team Academy FC, and enjoy spending time with my friends.",
+    "I am French."
+  ],
+
+  "MarkEdwards": [
+    "Naples, Florida",
+    "Mechanical Engineering 2025",
+    "Hyperloop allows you the opportunity to discover a whole new form of transportation and contribute to the next big discovery in engineering.  ",
+    "The ability to learn new things that I wouldn't be able to experience in just courses",
+    "I really enjoy playing hockey, spikeball, and going to the beach",
+    "I was in the national history bee, but got second to last place."
+  ],
+
+  "AshnaGupta": [
+    "Basking Ridge, New Jersey",
+    "Mechanical Engineering, 2025",
+    "Joining Hyperloop will help me achieve my  dream of being an automotive engineer. I can help revolutionize transportation through research and hands-on work.",
+    "Being able to use cool software and have hands-on experience in labs.",
+    "I like to go outside and spend time with my friends",
+    "I did gymnastics in high school"
+  ],
+
+  "RachelTong": [
+    "Chino Hills, CA",
+    "Undecided, 2025",
+    "Cornell Hyperloop allows me to work on an innovative project that can revolutionize the future of transportation and create lasting impacts in the world.",
+    "Working with other people who are also passionate about creating new technology",
+    "Outside of Hyperloop, I am involved in alpha phi omega, tip, and WICC.",
+    "I love going on morning runs!"
+  ],
+
 };
 
 
