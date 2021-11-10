@@ -208,10 +208,13 @@ html{
     #socials-container{
         flex-direction: column;
         align-items: center;
+        margin-top: 0;
     }
 
     .twitter-container{
         width: 320px;
+        padding-top: 0;
+        height: 650px;
     }
     
     #icons-container{
@@ -220,6 +223,11 @@ html{
         justify-content: space-around;
         margin-left: 0;
         height: 80px;
+        padding-top: 0;
+    }
+
+    #navbar-container-mobile{
+        position: fixed;
     }
 
 
