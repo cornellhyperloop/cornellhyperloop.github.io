@@ -163,7 +163,7 @@
     height: auto;
 }
 .rightside-info-subcontainer-content #tekton{
-    height: 10%; 
+    height: 10%;
     width: auto;
 }
 .rightside-info-subcontainer-content #teconn{
@@ -171,6 +171,11 @@
     width: auto;
 } */
 
+.desktop_blurb {
+    color: white;
+    font-size: 1.2em;
+
+}
 .rightside-info-subcontainer-content-header h1 {
   width: 100%;
   text-align: center;
