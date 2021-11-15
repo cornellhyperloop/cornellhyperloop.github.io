@@ -464,6 +464,15 @@ var modalDict = {
     "I was a Starbucks Barista for over 2 years."
   ],
 
+  "PranavKengeri": [
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+  ],
+
   "MathieuBoyer": [
     "Santa Clara",
     "Mechanical Engineering 2024",
@@ -499,6 +508,204 @@ var modalDict = {
     "Outside of Hyperloop, I am involved in alpha phi omega, tip, and WICC.",
     "I love going on morning runs!"
   ],
+
+  "CatherineTom": [
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+  ],
+
+  "RidhitBhura": [
+    "Mumbai, India",
+    "Computer Science 2024",
+    "To be a part of the journey of developing the most transformative transportation mode.",
+    "The collaborative work sessions and socials",
+    "I'm a tenor at Cornell Tarana, a south Asian A Capella group. Apart from that, I play for Cornell Badminton and Cornell Cricket. ",
+    "I make cool maps (https://ridhitbhura.com/visualizations)",
+  ],
+
+  "DavidGlantz": [
+    "Scarsdale, NY",
+    "Computer Scienxe 2024",
+    "To learn more about the future of transportation and get an opportunity to get hands on experience working with other passionate students.",
+    "I love the sense of community and being driven by my peers.",
+    "I love to play chess and do sudoku puzzles, I am a big fan of the Mets and baseball",
+    "I am Brasilian ",
+  ],
+
+  "KelvinWang": [
+    "Ithaca, NY",
+    "Computer Science, 2024",
+    "I wanted to work on a project involving technology that can affect the future.",
+    "I have found that Hyperloop involves a mix of creativity, dedication, perseverance and diligence; improving and refining these parts of my character and workflow remain a lifelong goal of mine.",
+    "I like to rock climb, watch movies, go bird watching, and eat poke with Michael Sheen.",
+    "I was on a prank show in China.",
+  ],
+
+  "RyanMao": [
+    "Ithaca, NY",
+    "CS & ORIE, 2024",
+    "I thought the idea was pretty neat, and it seemed like a fun experience.",
+    "It is so chill.",
+    "I am dying to Algo.",
+    "I love cats.",
+  ],
+
+  "VanshajJain": [
+    "Jaipur, Rajasthan, India ",
+    "Computer Science 2024",
+    "Enhancing the hyperloop technology and be part of this emerging community. ",
+    "Favorite part of Hyperloop is the team. The team is very friendly and I love the socials that we have and other group bonding activites.",
+    "I am the president of Society for India, member of the bollywood fusion dance team Sitara, and on the Cornell Table Tennis and Cornell Cricket team.",
+    "I am a big fan of Pokemon. I have almost all knowledge about pokemon games and anime in general.",
+  ],
+
+  "KyraWatts": [
+    "Poughkeepsie, NY",
+    "Physics & CS, Class of 2024",
+    "It seemed like a really interesting, cutting edge project! It's the only project team really working on something completely new!",
+    "Gettin the chance to work with so many talented, passionate people!",
+    "I work in the Space Systems Design Studio Lab on the CisLunar Project, and I play the violin here on campus in the Symphony Orchestra!",
+    "Fun fact: My favorite color is definitely yellow, and 'yellow' was actually the third word I ever said as a baby :)",
+  ],
+
+  "KennyYamashita": [
+    "Schenectady, NY",
+    "Computer Science 2024",
+    "I wanted to contribute to the creation of a revolutionary technology.",
+    "Everyone has been super nice and working on the GUI has been a lot of fun.",
+    "I like playing sports, music, and video games.",
+    "My ethnicity is Chinese, not Japanese.",
+  ],
+
+  "LikitaGangireddy": [
+    "Plymouth, Minnesota",
+    "Computer Science, 2024",
+    "I chose to join Hyperloop because I want to use my CS skills to work towards developing groundbreaking technology ",
+    "Working with really smart and nice people ",
+    "I am an AEW facilitator for CS 1110 and I am in an a cappella group called Cornell Tarana",
+    "I like to sing :)",
+  ],
+
+  "JonathanChen": [
+    "Queens, NY",
+    "Computer Science, 2025",
+    "Hyperloop appealed to me mainly because it occupied a unique niche; almost as if it were a hidden secret. Almost everyone has been in or at least seen a car, plane, or boat before, but very few people have ever even heard about this. Hyperloop exists for the purpose of revolutionizing transportation, which is something that I believe is of great importance.",
+    "The social events are always enjoyable, I really do enjoy strengthening bonds with fellow team members outside of our usual work.",
+    "I serve on my local community's student government and work at the bowling alley in Helen Newman.",
+    "I have a rock collection, and my current goal is to get one from every state.",
+  ],
+
+  "MorganLo": [
+    "Poughkeepsie, NY",
+    "Computer Science, 2025",
+    "I joined Hyperloop because I want to be part of a team that contributes toward the development of a revolutionary and re-imagined transportation system that is greener, safer, more economical, and convenient. ",
+    "My favorite part about being on Hyperloop is the people, a diverse, talented, and fun group who share the same passion in pursuing the mission associated with Hyperloop.  ",
+    "I like to hike and dance. ",
+    "I've danced ballet for 15 years.",
+  ],
+
+  "EdwardLiu": [
+    "Millbrae, CA",
+    "ECE + CS 2023",
+    "I've always been a bit discontent with the time spent on traveling, and Hyperloop has been one of the most interesting solutions in the present time--something that I'm glad to contribute to!",
+    "Working with all the team members.",
+    "I love to go climbing and making personal electronics projects.",
+    "I went to high school in Canada!",
+  ],
+
+  "EshitaSangani": [
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+  ],
+
+  "ChristopherChan": [
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+  ],
+
+  "AfuaAnsah": [
+    "Accra, Ghana",
+    "Electrical and Computer Engineering, 2024",
+    "Cornell Hyperloop stood out to me as an avenue to work on a project that is far from conventional and pushes the boundaries of science and technology",
+    "The challenge of gaining more knowledge and researching on computing systems technology",
+    "I'm on the society of Women Engineers DiverSWEty Committee where we meet to plan and coordinate events to foster diversity and inclusion in our community. I enjoy binge-watching Netflix and solving coding challenges as well :)",
+    "I love rock climbing!",
+  ],
+
+  "SchuylerSeyram": [
+    "Accra, Ghana",
+    "Electrical and Computer Engineering 2024",
+    "Very eager to join a team that was working on something that could possibly be the next big thing when it comes to transportation",
+    "Hands-on experience and meddling with new technology.",
+    "I'm into music and I mostly read novels or check device specs. Car specs too.",
+    "I have no idea. I think I'm like an open book.",
+  ],
+
+  "YuemingLiu": [
+    "Brooklyn, NY",
+    "Mechanical Engineering 2024",
+    "The concept behind Hyperloop is revolutionary and innovative! I hope to see it being constructed and widely used in real life 🚅. ",
+    "Working with teammates on a project we love ❤️. ",
+    "Painting and choreographed swords fighting ⚔️.",
+    "I craft daggers and develop games🎮.",
+  ],
+
+  "MaddeHart": [
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+  ],
+
+  "EvaCantalapledra": [
+    "Rye, New York",
+    "Mechanical Engineering 2025",
+    "Being part of the Hyperloop Project team is an honor because we are all able to contribute to revolutionizing technology that people use every day: transportation. By working with other dedicated students of various fields, the Hyperloop team can find innovative solutions to challenges that help humanity progress.",
+    "I love being part of a team of motivated engineers working together to solve real world problems. There is a great sense of community within the team and so many people are willing to uplift one another. ",
+    "I love to hike with friends and bake in my free time. I played soccer, squash, and golf in high school. ",
+    "My favorite place is the beach, but I'm terrified of the ocean.",
+  ],
+
+  "JuliaKruse": [
+    "New York",
+    "Civil, 2024",
+    "I chose to join Hyperloop because it aligns perfectly with the career path I plan to pursue and the projects it focuses on correspond to my passions. Working with this team provides me with the opportunity to get involved with my field and get practical hands-on experience.",
+    "Designing something that could very well be part of our future.",
+    "Outside of Hyperloop I enjoy rock climbing and the occasional docu-series.",
+    "I was born outside of the country.",
+  ],
+
+  "SienaGavin": [
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+  ],
+
+  "KerenGross": [
+    "Tenafly, NJ",
+    "Mechanical Engineering 2025",
+    "I choose to join Hyperloop because it offers a great team environment where I can learn new skills and help contribute to the development of the hyperloop.",
+    "So far I love the team environment and I like learning new skills such as how to use Solidworks.",
+    "Outside of Hyperloop, I play ultimate frisbee on the Cornell Thorny Roses team. I also spend a lot of my time reading.",
+    "Something most people wouldn’t guess about me is that I was a three year consecutive champion of my high school’s pie eating competition.",
+  ]
 
 };
 
