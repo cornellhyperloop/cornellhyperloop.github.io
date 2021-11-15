@@ -905,8 +905,13 @@ footer a{
 
 @media only screen and (min-width: 768px) and (max-width: 1023px) {
     /* tablet sizing */
+
+    footer {
+        overflow: hidden;
+    }
+
     .footer-left ul{
-        width: 600px;
+        width: 550px;
     }
     .footer-left li{
         display: inline;
@@ -914,12 +919,13 @@ footer a{
         text-align: center;
         font-size: 1.8em;
         font-weight: bolder;
+        margin-left: 8px;
     }
 
     .footer-nav-button{
         background-color: #e2dddd;
         padding: 5px;
-        margin: 2%;
+        margin: 5px;
         border-radius: 3px;
         color: black;
     }
@@ -927,7 +933,7 @@ footer a{
     .footer-donate-button{
         background-color: #a10f0f;
         padding: 5px;
-        margin:2%;
+        margin:5px;
         border-radius:3px;
         color: white;
     }
@@ -938,6 +944,7 @@ footer a{
     .footer-media-logo{
         padding:0;
         margin:0;
+        justify-content: space-between;
     }
     .footer-social-icons{
         width:100%;
