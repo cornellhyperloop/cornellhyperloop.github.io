@@ -1,10 +1,11 @@
-@import url("https://fonts.googleapis.com/css?family=Quattrocento+Sans");
+@import url("http://fonts.googleapis.com/css?family=Montserrat:light");
+
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Quattrocento Sans", "SF Pro Display", Helvetica, Arial, sans-serif;
+  font-family: "Montserrat";
   letter-spacing: -0.035em;
 }
 
@@ -15,8 +16,8 @@ a{
 
 /* Put all global vars here */
 :root {
-  --HyperloopRed: #b41414;
-  --buttonColor: #dd413c;
+  --HyperloopRed: #be1e2d;
+  --buttonColor: #be1e2d;
   --footerHeight: 120px;
   --navigationButtonHeight: 5px;
 
