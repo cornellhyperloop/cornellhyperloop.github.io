@@ -465,12 +465,12 @@ var modalDict = {
   ],
 
   "PranavKengeri": [
-    "",
-    "",
-    "",
-    "",
-    "",
-    "",
+    "New Hyde Park",
+    "AEM 2024",
+    "I really wanted to dive deep into the business side of a tech focused club. Hyperloop seemed like the perfect place to develop new skills while learning more about this high speed transportation technology.",
+    "The people. There are many great people in Hyperloop and, especially, on the business team!",
+    "I am in Cornell Business Analytics, The Daily Sun Business Team, and the Cornell Paintball team. ",
+    "I was once stuck in an airport for 40 hours",
   ],
 
   "MathieuBoyer": [
@@ -510,12 +510,12 @@ var modalDict = {
   ],
 
   "CatherineTom": [
-    "",
-    "",
-    "",
-    "",
-    "",
-    "",
+    "Long Island, NY",
+    "Information Science, 2024",
+    "The Hyperloop mission is bold and exciting; I wanted to help design a website that reflects that.",
+    "Working with my teammates! Everyone is always so passionate and willing to lend a hand.",
+    "I spend a lot of time reading, TA-ing, and watching videos on the Internet.",
+    "My dream is to start a charity.",
   ],
 
   "RidhitBhura": [
@@ -618,12 +618,12 @@ var modalDict = {
   ],
 
   "EshitaSangani": [
-    "",
-    "",
-    "",
-    "",
-    "",
-    "",
+    "Austin, Texas",
+    "ECE 2024",
+    "I love that I get to work on something that will help make the world more sustainable and work on crazy cool technology!!  ",
+    "Learning cool things in school and applying them to real world applications and getting to work with so many cool people!! ",
+    "I love to bike, speedskate, rock climb, and cook!",
+    "I hate chocolate and have only tried it once!! ",
   ],
 
   "ChristopherChan": [
