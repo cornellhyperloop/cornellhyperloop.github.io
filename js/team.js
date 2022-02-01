@@ -350,14 +350,14 @@ var modalDict = {
     "I love long-distance running, baking/cooking, and hanging out with my friends.",
     "If there was one food that I could eat for the rest of my life, it would probably be pasta. Italian food>>"
   ],
-  // "AnoushkaKabra": [
-  //   "Mumbai",
-  //   "Computer Science (CoE) - 2024",
-  //   "I chose to join Hyperloop in order to better understand transpiration and gain skills to work in a team as a software design contributor.",
-  //   "Socials! And meeting new people",
-  //   "Social Entreprise at Cornell (Partnerships co-director) and Cornell Current (Economics Sector), Chess, Squash, hiking.",
-  //   "I had my first internship when I was 11 years old, and I have travelled to 5 out of 7 continents."
-  // ],
+  "AnoushkaKabra": [
+    "Mumbai",
+    "Computer Science (CoE) - 2024",
+    "I chose to join Hyperloop in order to better understand transpiration and gain skills to work in a team as a software design contributor.",
+    "Socials! And meeting new people",
+    "Social Entreprise at Cornell (Partnerships co-director) and Cornell Current (Economics Sector), Chess, Squash, hiking.",
+    "I had my first internship when I was 11 years old, and I have travelled to 5 out of 7 continents."
+  ],
   // "OliviaMcGoldrick": [
   //   "Simsbury, CT",
   //   "Electrical and Computer Engineering, 2022",
