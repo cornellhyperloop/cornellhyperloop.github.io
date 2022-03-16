@@ -11,7 +11,7 @@ pageType = {
   sponsors: 4
 };
 
-var countDownDate = new Date("March 16, 2022 11:59:00").getTime();
+/*var countDownDate = new Date("March 16, 2022 11:59:00").getTime();
 var x = setInterval(function() {
 
   // Get today's date and time
@@ -34,7 +34,7 @@ var x = setInterval(function() {
       clearInterval(x);
       document.getElementById("giv-day-id").innerHTML = "Giving day is TODAY";
   }
-}, 1000);
+}, 1000);*/
 
 function getPageType() {
   var path = window.location.pathname;
