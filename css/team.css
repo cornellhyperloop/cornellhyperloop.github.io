@@ -18,6 +18,10 @@
     height: 100%;
     overflow: hidden;
   }
+
+  .headshot img{
+    transition: all 0.2s;
+  }
   
   @media only screen and (max-width: 768px) {
     .stop-scrolling {
@@ -198,7 +202,7 @@
     .profile-modal {
       width: 50vw;
       height: 50vw;
-      top: 15vh;
+      top: 10vh;
       margin: auto 25vw;
     }
   
@@ -369,7 +373,7 @@
     }
     
     .profile{
-      max-width: 190px;
+      max-width: 140px;
       border-radius: 15px;
       color: white;
       position: relative;
@@ -406,7 +410,7 @@
     .profile-modal {
       width: 50vw;
       height: 50vw;
-      top: 15vh;
+      top: 10vh;
       margin: auto 25vw;
     }
   
@@ -458,7 +462,12 @@
   
   
   .profile h3{
-      font-size: 150%;
+      font-size: 120%;
+  }
+
+  .profile p{
+    height: 1em;
+    font-size: 12px;
   }
   
   .headshot h3 {
@@ -468,8 +477,8 @@
   .headshot img{
     opacity: 1;
     border-radius: 50%;
-    width: 180px;
-    height: 180px;
+    width: 130px;
+    height: 130px;
     box-shadow: 0 0 4px 1px rgba(0, 0, 0, 0.01), 0 3px 24px rgba(0, 0, 0, 0.8);
   }
   
@@ -518,7 +527,7 @@
     position: fixed;
     top: 15vh;
     z-index: 999;
-    padding: 25px 25px 70px;
+    padding: 25px 25px 90px;
     text-align: center;
     align-content: flex-start;
     overflow: scroll;

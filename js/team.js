@@ -54,14 +54,14 @@ var modalDict = {
     "I am part of the Taekwondo club and Academy FC at Cornell. I'm also a fan of all things Marvel/Star Wars.",
     "I share the same birthday as my sister but two years apart.",
   ],
-  "MatthewCreighton": [
-    "Albany, NY",
-    "Materials Science & Engineering 2022",
-    "I wanted to contribute to changing the way we commute and travel.",
-    "Being able to apply classroom knowledge to real systems.",
-    "I play the saxophone and ultimate frisbee.",
-    "I almost pursued a career in theater tech.",
-  ],
+  // "MatthewCreighton": [
+  //   "Albany, NY",
+  //   "Materials Science & Engineering 2022",
+  //   "I wanted to contribute to changing the way we commute and travel.",
+  //   "Being able to apply classroom knowledge to real systems.",
+  //   "I play the saxophone and ultimate frisbee.",
+  //   "I almost pursued a career in theater tech.",
+  // ],
   "MichaelGuan": [
     "Ithaca, NY",
     "Computer Science 2022",
@@ -174,14 +174,14 @@ var modalDict = {
   //   "Read, bike, hike, drive around with my older brothers.",
   //   "Cornell is the seventh school I have gone to in my 14 years of schooling",
   // ],
-  "AlexanderNutley": [
-    "Smithtown, NY",
-    "Operations Research, 2022",
-    "I chose to join hyperloop because the concept is so interesting! Having the opportunity to innovate and gain valuable experience right here on campus has been invaluable.",
-    "My favorite part of Cornell Hyperloop is its interdisciplinary nature. Learning from and working with students from a wide range of academic backgrounds is awesome.",
-    "Outside of Hyperloop, I love to write songs and play music, watch Motorsport, and tinker with tech and computers!",
-    "I play the bagpipes!",
-  ],
+  // "AlexanderNutley": [
+  //   "Smithtown, NY",
+  //   "Operations Research, 2022",
+  //   "I chose to join hyperloop because the concept is so interesting! Having the opportunity to innovate and gain valuable experience right here on campus has been invaluable.",
+  //   "My favorite part of Cornell Hyperloop is its interdisciplinary nature. Learning from and working with students from a wide range of academic backgrounds is awesome.",
+  //   "Outside of Hyperloop, I love to write songs and play music, watch Motorsport, and tinker with tech and computers!",
+  //   "I play the bagpipes!",
+  // ],
   "CoralWang": [
     "Chicago, IL",
     "Mechanical Engineering 2022",
@@ -509,14 +509,14 @@ var modalDict = {
     "I love going on morning runs!"
   ],
 
-  "CatherineTom": [
-    "Long Island, NY",
-    "Information Science, 2024",
-    "The Hyperloop mission is bold and exciting; I wanted to help design a website that reflects that.",
-    "Working with my teammates! Everyone is always so passionate and willing to lend a hand.",
-    "I spend a lot of time reading, TA-ing, and watching videos on the Internet.",
-    "My dream is to start a charity.",
-  ],
+  // "CatherineTom": [
+  //   "Long Island, NY",
+  //   "Information Science, 2024",
+  //   "The Hyperloop mission is bold and exciting; I wanted to help design a website that reflects that.",
+  //   "Working with my teammates! Everyone is always so passionate and willing to lend a hand.",
+  //   "I spend a lot of time reading, TA-ing, and watching videos on the Internet.",
+  //   "My dream is to start a charity.",
+  // ],
 
   "RidhitBhura": [
     "Mumbai, India",

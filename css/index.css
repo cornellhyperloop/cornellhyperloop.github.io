@@ -62,6 +62,13 @@ html{
     align-items: center;
 }
 
+hr{
+    width: 80%;
+    border-color: var(--HyperloopRed);
+    border-radius: 8px;
+    margin: 12px auto;
+}
+
 #socials-container h1{
     display: table-column;
     justify-content: center;
@@ -69,37 +76,51 @@ html{
     margin-top: 1.2em;
     font-size: 50px;
     border-radius: 3em;
-    border: 1.5px rgb(201, 50, 50) solid;
+    /* border: 1.5px rgb(201, 50, 50) solid; */
     color: white;
 }
 
 .about_container a {
     color: rgb(201, 50, 50);
-    border: 2px white solid;
+    border: 2px var(--HyperloopRed) solid;
     border-radius: 3em;
-    border-style: dotted;
-    margin-bottom: 2em;
+    /* border-style: dotted; */
+    margin-bottom: 4em;
+    padding: 6px 10px;
+    background-color: #54545470;
+    transition: all 0.25s;
 }
 
-#recruitment-info h1 {
-    margin-top: 25px;
+.about_container a:hover{
+    background-color: #182436;
+}
+
+#recruitment-info {
+    margin-top: 4em;
+}
+
+#recuitment-info img{
 }
 
 #team-icons img {
     justify-content: center;
     flex-direction: column;
-    width: 100;
-    height: 100px;
-    margin-top: -10px;
+    width: 90px;
+    /* height: 100px; */
+    /* margin-top: -10px; */
     filter: brightness(0) invert(1);
+    margin-bottom: 16px;
+
 }
 
 #mission img{
     justify-content: center;
     flex-direction: column;
-    width: 110%;
-    height: 100px;
+    width: 120px;
+    /* max-width: 100%; */
+    /* height: 100px; */
     margin-top: -10px;
+    
 }
 
 #icons-container{
@@ -120,6 +141,12 @@ html{
     /* float:right; */
     /* text-align:center;
     float: left; */
+}
+
+#recruitment-link-container{
+    background-color: none;
+    border: none;
+    transition: all 0.25s;
 }
 
 /* .insta_container{
@@ -264,10 +291,10 @@ html{
     #socials-container h1{
         justify-content: center;
         text-align: center;
-        font-size: 60px;
+        font-size: 45px;
         border-radius: 3em;
-        border: 1.5px rgb(201, 50, 50) solid;
-        margin-bottom: 40px;
+        /* border: 1.5px rgb(201, 50, 50) solid; */
+        margin-bottom: 20px;
         color: white;
     }
     
@@ -290,26 +317,46 @@ html{
     }
     
     .about_container h1 {
-        font-size: 60px;
+        font-size: 45px;
         border-radius: 3em;
-        border: 1.5px rgb(201, 50, 50) solid;
-        margin-bottom: 40px;
+        /* border: 1.5px rgb(201, 50, 50) solid; */
+        /* margin-bottom: 40px; */
         position: relative;
     }
     
     .about_container p {
         font-size: 25px;
-        margin-bottom: 40px;
+        margin-bottom: 25px;
     }
+
     .about_container a{
-        position: relative;
-        margin-top: 90px;
-        font-size: 17px;
+        font-size: 22px;
         color: white;
+        padding: 12px;
+    }
+
+    #recruitment-info a{
+        /* position: relative;
+        margin-top: 90px; */
+        font-size: 22px;
+        color: white;
+       border: none;
+       background: none;
+        /* border-style: dotted; */
+        /* margin-bottom: 40px; */
+        box-sizing: content-box !important;
+    }
+
+    #recruitment-link-container{
         border: 2px rgb(201, 50, 50) solid;
         border-radius: 10em;
-        border-style: dotted;
-        margin-bottom: 40px;
+        background-color: #54545470;
+        transition: all 0.25s;
+        padding: 8px;
+    }
+    
+    .recruitment-link-container:hover{
+        background-color: #182436;
     }
 
     #recruitment-info h1{
@@ -319,7 +366,7 @@ html{
 
     .twitter-container{
         width: 320px;
-        padding-top: 0;
+        padding-top: 7px;
         height: 650px;
     }
     
@@ -477,23 +524,23 @@ html{
     .about_container h1 {
         font-size: 35px;
         border-radius: 3em;
-        border: 1.5px rgb(201, 50, 50) solid;
-        margin-bottom: 40px;
+        /* border: 1.5px rgb(201, 50, 50) solid; */
+        /* margin-bottom: 40px; */
     }
     
     .about_container p {
         font-size: 20px;
-        margin-bottom: 40px;
+        margin-bottom: 25px;
     }
     .about_container a{
         position: relative;
         margin-top: 90px;
         font-size: 120%;
-        border: 2px rgb(201, 50, 50)solid;
+        border: solid 2px rgb(201, 50, 50);
         color: white;
         border-radius: 3em;
-        border-style: dotted;
-        margin-bottom: 40px;
+        /* border-style: dotted; */
+        /* margin-bottom: 40px; */
     }
 
     #icons-container{
@@ -570,9 +617,9 @@ html{
         width:100%;
         display: flex;
         justify-content: center;
-        margin-top: 2em;
-        margin-bottom: 2em;
         border: 10px;
+        max-width: 1450px;
+        margin: 2em auto;
     }
     
     .about_container{
@@ -585,15 +632,15 @@ html{
     }
     
     .about_container h1 {
-        font-size: 60px;
+        font-size: 45px;
         border-radius: 3em;
-        border: 1.5px rgb(201, 50, 50) solid;
-        margin-bottom: 40px;
+        /* border: 1.5px rgb(201, 50, 50) solid; */
+        /* margin-bottom: 40px; */
     }
     
     .about_container p {
         font-size: 25px;
-        margin-bottom: 40px;
+        margin-bottom: 25px;
     }
     .about_container a{
         position: relative;
@@ -602,8 +649,8 @@ html{
         border: 2px rgb(201, 50, 50)solid;
         color: white;
         border-radius: 3em;
-        border-style: dotted;
-        margin-bottom: 40px;
+        /* border-style: dotted; */
+        /* margin-bottom: 40px; */
     }
 
 #down-arrow{
