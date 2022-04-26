@@ -1,0 +1,235 @@
+  .page {
+    background-image: url("../images/backgrounds/stars.jpg");
+    background-attachment: fixed;
+    color: black;
+    /* height: 702px; */
+  }
+  
+  .page-content{
+    color: white;
+    align-items: center;
+  }
+  
+  .sidebar-list-label {
+    text-transform: uppercase;
+    white-space: pre-line;
+    text-align: center;
+  }
+  
+  .rightside-info-subcontainer {
+    align-items: center;
+  }
+
+  .nav {
+    list-style: none;
+    position: relative;
+    flex-direction: row;
+    display: flex;
+    font-size: 1.4em;
+    font-weight: 300;
+  }
+
+  .subnavbtn {
+    background-color: var(--HyperloopRed);
+    border-radius: 3px;
+    text-transform: uppercase;
+    transition-duration: 1s;
+    box-shadow: 0px 0px 13px white;
+    font-size: 1em;
+    font-weight: 300;
+  }
+
+  .subnav .subnavbtn {
+    border: none;
+    outline: none;
+    color: black;
+    background-color: inherit;
+    font-family: inherit;
+  }
+
+  .subnavntn:hover{
+    color: white;
+  }
+
+  .navbar a:hover, .subnav:hover .subnavbtn {
+    background-color: #be1e2edb;
+  }
+
+  /* .subnav-content a:hover {
+    background-color: darkgrey;
+  } */
+
+  .subnav-content a {
+    padding: 10px;
+    float:none;
+    color: black;
+    text-decoration: none;
+  }
+
+  .subnav-content {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    width: 30%;
+    z-index: 1;
+    justify-content: center;
+    background-color: darkgray;
+    font-size: 0.9em;
+  }
+  
+  .subnav:hover .subnav-content {
+    display: flex;
+    flex-direction: column;
+  }
+
+  hr{
+    width: 80%;
+    border-color: var(--HyperloopRed);
+    border-radius: 8px;
+    margin: 10px auto;
+}
+
+  h1 {
+    font-size: 3em;
+    position: relative;
+    text-align: center;
+    margin-top: 1em;
+    color: white;
+    width: 70%;
+  }
+
+  li {
+    list-style-type: none;
+    font-size: 1.5em;
+    padding: 0.3em;
+    font-weight: bolder;
+  }
+
+  .img-container {
+    position: relative;
+    text-align: center;
+    color: white;
+    font-size: 5em;
+    padding: 10px;
+    -webkit-text-stroke: 1px #F8F8F8;
+	text-shadow: 0px 7px 5px black;
+  }
+
+  .img-container img {
+      width: 100%;
+  }
+
+  .img-text-centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .centered {
+    position: relative;
+    margin-top: 1em;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .about-container {
+    padding: 1.5em;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+  }
+
+  .abt-box {
+    margin-top: 2em;
+    width: 60%;
+    padding: 1em;
+  }
+
+  .abt-box img {
+    justify-content: center;
+    width: 120px;
+    /* max-width: 100%; */
+    /* height: 100px; */
+    filter: brightness(0) invert(1);
+  }
+
+  .tools-box {
+    position: relative;
+    margin-top: 20px;
+    width: 40%;
+    padding: 0.5em;
+  }
+
+  .tools-box h1 {
+    position: relative;
+    margin-top: 1.5em;
+  }
+
+  .tools-box hr {
+    position: relative;
+    margin-top: -52.5px;
+  }
+
+  .tools-box img {
+    justify-content: center;
+    padding: 0.2em;
+    width: 120px;
+    margin-top: 1px;
+    filter: brightness(0) invert(1);
+  }
+
+  #inactive-label {
+    cursor: pointer;
+    color: white;
+    opacity: 0.4;
+  }
+  
+  #inactive-label:hover {
+    opacity: 1;
+    transition: all 1s;
+  }
+  
+  #active-label {
+    cursor: inherit;
+    opacity: 1;
+    color: var(--HyperloopRed);
+    background-position: -100%;
+    box-shadow: 0 0 4px 1px rgba(0, 0, 0, 0.01), 0 3px 24px rgba(0, 0, 0, 0.8);
+  }
+  
+
+  /* Mobile Sizing */
+  @media only screen and (max-width: 768px) {
+
+    .about-container {
+      position: relative;
+      display: block;
+      margin-left: auto;
+      left: 16%;
+      width: 95%;
+    }
+
+    .abt-box img{
+      position: relative;
+      margin-top: 0%;
+      margin-bottom: 2em;
+    }
+
+    .about-container p {
+      margin: 0;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+    }
+
+    .tools-box {
+      position: relative;
+      display: block;
+      margin-left: auto;
+      right: 21%;
+      width: 100%;
+    }
+  
+    }

@@ -646,7 +646,7 @@ hr{
         position: relative;
         margin-top: 90px;
         font-size: 20px;
-        border: 2px rgb(201, 50, 50)solid;
+        border: 2px rgb(201, 50, 50) solid; 
         color: white;
         border-radius: 3em;
         /* border-style: dotted; */
@@ -697,25 +697,10 @@ hr{
     box-shadow:0 5px 30px black;
 }
 
-
-
-
-
-
-
-
 .applications-info-box h3{
     margin-top: .5em;
     /* color: var); */
 }
-
-
-
-
-
-
-
-
 
   #hyperloop-mobile-title{
       margin: 0 20px;
@@ -732,8 +717,6 @@ hr{
     padding: 5px;
 }
 
-
-
 .recr-subdiv p a {
     font-size: 18px;
     color: white;
@@ -742,7 +725,4 @@ hr{
 .recr-subdiv p a:hover {
     text-decoration: underline;
 }
-
-/* .info-session-div-container h3 {
-    color: rgb(170, 170, 170);
-} */
+}

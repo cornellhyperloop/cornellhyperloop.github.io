@@ -520,7 +520,7 @@ a{
     max-height: 100%;
   } */
 
-  nav {
+  .nav {
     /* background-color: yellow; */
     float: right;
     height: 100%;
@@ -529,7 +529,7 @@ a{
     right: 0%;
   }
 
-  nav ul {
+  .nav ul {
     list-style: none;
     height: 80%;
     top: 10%;
@@ -539,7 +539,7 @@ a{
     margin-right: 1.5em;
   }
 
-  nav ul li {
+  .nav ul li {
     text-decoration: none;
     text-transform: uppercase;
     margin: auto;
@@ -577,7 +577,7 @@ a{
     right: auto;
   }
 
-  nav ul li a {
+  .nav ul li a button {
     margin: auto;
     text-decoration: none;
     color: black;
@@ -586,7 +586,7 @@ a{
     position: relative;
   }
 
-  nav ul li a:hover {
+  .nav ul li a button :hover {
     font-weight: 1000;
   }
 
