@@ -617,14 +617,14 @@ var modalDict = {
     "I went to high school in Canada!",
   ],
 
-  "EshitaSangani": [
-    "Austin, Texas",
-    "ECE 2024",
-    "I love that I get to work on something that will help make the world more sustainable and work on crazy cool technology!!  ",
-    "Learning cool things in school and applying them to real world applications and getting to work with so many cool people!! ",
-    "I love to bike, speedskate, rock climb, and cook!",
-    "I hate chocolate and have only tried it once!! ",
-  ],
+  // "EshitaSangani": [
+  //   "Austin, Texas",
+  //   "ECE 2024",
+  //   "I love that I get to work on something that will help make the world more sustainable and work on crazy cool technology!!  ",
+  //   "Learning cool things in school and applying them to real world applications and getting to work with so many cool people!! ",
+  //   "I love to bike, speedskate, rock climb, and cook!",
+  //   "I hate chocolate and have only tried it once!! ",
+  // ],
 
   "ChristopherChan": [
     "",
