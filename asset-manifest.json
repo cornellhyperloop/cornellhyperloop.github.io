@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/static/css/main.88ee082f.chunk.css",
-    "main.js": "/static/js/main.96d3d2fb.chunk.js",
-    "main.js.map": "/static/js/main.96d3d2fb.chunk.js.map",
+    "main.js": "/static/js/main.b60dfd30.chunk.js",
+    "main.js.map": "/static/js/main.b60dfd30.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.7f53c1d4.js",
     "runtime-main.js.map": "/static/js/runtime-main.7f53c1d4.js.map",
     "static/js/2.5b294485.chunk.js": "/static/js/2.5b294485.chunk.js",
@@ -48,7 +48,6 @@
     "static/media/IMG_4472.jpg": "/static/media/IMG_4472.0029ad0d.jpg",
     "static/media/JackCrespo.jpg": "/static/media/JackCrespo.0538a962.jpg",
     "static/media/JoshuaCoombs.jpg": "/static/media/JoshuaCoombs.5740fdbb.jpg",
-    "static/media/MahikaGoel.jpg": "/static/media/MahikaGoel.ec7a17c7.jpg",
     "static/media/MarkEdwards.jpg": "/static/media/MarkEdwards.0ac0eb16.jpg",
     "static/media/Max_and_Tim_working.png": "/static/media/Max_and_Tim_working.b6e37afe.png",
     "static/media/Relay_circuit.jpeg": "/static/media/Relay_circuit.b92bf5d9.jpeg",
@@ -69,6 +68,7 @@
     "static/media/logo.6ce24c58.svg": "/static/media/logo.6ce24c58.svg",
     "static/media/logo_symbol.png": "/static/media/logo_symbol.2e56b1bf.png",
     "static/media/logotextthin.png": "/static/media/logotextthin.c4c75660.png",
+    "static/media/mahikagoel.jpg": "/static/media/mahikagoel.6cc61422.jpg",
     "static/media/mechanical.png": "/static/media/mechanical.5af20395.png",
     "static/media/mechanical.jpg": "/static/media/mechanical.d477588b.jpg",
     "static/media/profilephoto.png": "/static/media/profilephoto.7a6a6c54.png",
@@ -80,6 +80,6 @@
     "static/js/runtime-main.7f53c1d4.js",
     "static/js/2.5b294485.chunk.js",
     "static/css/main.88ee082f.chunk.css",
-    "static/js/main.96d3d2fb.chunk.js"
+    "static/js/main.b60dfd30.chunk.js"
   ]
 }
