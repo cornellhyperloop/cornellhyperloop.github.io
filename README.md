@@ -2,6 +2,9 @@
 Current Team Website
 
 Currently Managing the Site:
+
 Stephen Chien
+
 Devika Krishna 
+
 Vanshaj Jain 
